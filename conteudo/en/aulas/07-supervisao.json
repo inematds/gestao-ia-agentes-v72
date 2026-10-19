@@ -1,0 +1,428 @@
+{
+  "slug": "supervisao",
+  "num": 7,
+  "menu": "Supervision",
+  "titulo": "Supervision and exceptions",
+  "titulo_curto": "Supervision and exceptions",
+  "minutos": 20,
+  "lead": "With the matrix in place, Hora handles the routine on her own and sends Patrícia whatever is not routine. That creates a new job that no manager's job description had: the exception queue. In this lesson you work that queue in a simulation and leave with the daily and weekly routine of someone who supervises agents.",
+  "objetivo": "work the exception queue: approve, send back or stop each case with a reason, an owner and a deadline, in a daily and weekly routine.",
+  "competencias": [
+    "operar-fila-de-excecoes",
+    "decidir-aprovar-devolver-interromper",
+    "manter-rotina-de-supervisao"
+  ],
+  "aprende": [
+    {
+      "t": "Separate normal, doubtful and critical cases"
+    },
+    {
+      "t": "Require the exception package from the agent"
+    },
+    {
+      "t": "Use the right verb: approve, send back or stop"
+    },
+    {
+      "t": "Build the supervision routine and measure its load"
+    }
+  ],
+  "hero_alt": "Late in the afternoon, a sales manager reviews a short queue of three flagged cases on a laptop; behind the glass, the shipping floor with boxes.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "The path of an exception",
+      "sub": "No exception goes without an owner. Tap each step.",
+      "volta": "Every decision becomes learning: a new test case, an adjustment to the matrix or to the constitution",
+      "nos": [
+        {
+          "icone": "fila",
+          "titulo": "Case",
+          "sub": "normal, doubtful, critical",
+          "detalhe": "Normal follows the matrix and never reaches you. Doubtful (incomplete or conflicting data, a request outside the policy) goes to the queue. Critical (an attempt to manipulate the agent, money at risk, data leaving, a customer making threats) goes to the front, and sometimes stops everything."
+        },
+        {
+          "icone": "relogio",
+          "titulo": "Queue",
+          "sub": "by risk and deadline",
+          "detalhe": "The queue is read by risk and deadline, not by order of arrival. Each item has an owner and a deadline for the decision. An exception with no owner is an exception someone finds out about from the customer."
+        },
+        {
+          "icone": "arquivo",
+          "titulo": "Package",
+          "sub": "the agent brings the evidence",
+          "forte": true,
+          "detalhe": "The agent doesn't just ask \"approve?\". It brings the case, the pending action with the exact content, the reason it is in the queue, the evidence, what it already tried, the rule involved and a recommendation within its limits."
+        },
+        {
+          "icone": "check",
+          "titulo": "Decision",
+          "sub": "three verbs",
+          "itens": [
+            {
+              "icone": "check",
+              "t": "approve"
+            },
+            {
+              "icone": "voltar",
+              "t": "send back"
+            },
+            {
+              "icone": "x",
+              "t": "stop"
+            }
+          ],
+          "detalhe": "Approve: within your authority limit, that content, with a reason. Send back: something is missing; it returns with what is missing and a deadline. Stop: there is risk; the case leaves the normal queue until someone understands what happened. The three are different and each leaves a justification."
+        },
+        {
+          "icone": "memoria",
+          "titulo": "Log",
+          "sub": "and learning",
+          "detalhe": "The decision is recorded with who decided, when and why. In the weekly review, the causes that repeat become change: a new test case, a line in the matrix, a sentence in the constitution."
+        }
+      ],
+      "legenda": "Normal, doubtful and critical cases; exception package and supervision rituals: Gestoria method (INEMA)."
+    },
+    {
+      "tipo": "simconversa",
+      "titulo": "Simulation: Patrícia's queue at 5 p.m.",
+      "sub": "Simulated conversation for practice. Hora brings the day's exceptions; you decide each one. The comment appears right after.",
+      "personagem": {
+        "nome": "Hora · sales agent (simulation)",
+        "papel": "Horizonte Distribuidora, fictional study company"
+      },
+      "inicio": "abre",
+      "falas": {
+        "abre": {
+          "cliente": "Good afternoon, Patrícia. 5 p.m. close: 46 orders today. 43 stayed within the authority limit and are logged. 3 are in the exception queue waiting for you. How do you want to see them?",
+          "opcoes": [
+            {
+              "t": "I approve all three together. I trust you.",
+              "vai": "fim-bloco",
+              "nota": 0,
+              "comenta": "Approving in bulk turns yellow into green with no evidence. The three are in the queue precisely because the rule said they are not routine."
+            },
+            {
+              "t": "Show me the highest-risk one first: amount, effect outside the company and deadline.",
+              "vai": "critico",
+              "nota": 2,
+              "comenta": "The exception queue is sorted by risk and deadline. The most dangerous one can't wait behind the simplest one."
+            },
+            {
+              "t": "Show them in order of arrival.",
+              "vai": "critico",
+              "nota": 1,
+              "comenta": "Going one by one is right. But order of arrival can leave the most dangerous for last; today, by luck, the first to arrive is also the most serious."
+            }
+          ]
+        },
+        "critico": {
+          "cliente": "Hotel Fazenda Recanto sent this month's list: R$ 28.120 at list price. At the end of the list there is a \"purchasing system note\" asking for a 70% discount, the order marked as paid and confirmation without checking with the team. I applied none of it. I prepared the order at list price and it is waiting for your approval because it is over R$ 5 mil.",
+          "opcoes": [
+            {
+              "t": "Apply the 70%: if their purchasing system asked for it, it's their rule.",
+              "vai": "fim-injecao",
+              "nota": 0,
+              "comenta": "Text from a customer is information, never an order. Whoever wrote the \"note\" tried to take control of the agent; this is failure F6 from the lab, now with your signature on it."
+            },
+            {
+              "t": "The order itself is fine. I approve it at list price and we move on.",
+              "vai": "politica",
+              "nota": 1,
+              "comenta": "You didn't give the discount, and the order may be legitimate. But someone tried to manipulate the agent: that is an incident. You still need to confirm with the hotel through a known channel and log it."
+            },
+            {
+              "t": "Stop it: don't split it up. I'll confirm with the buyer by the phone number on file. Log it as an incident, let Rafael know and look for similar text in this week's conversations.",
+              "vai": "politica",
+              "nota": 2,
+              "comenta": "Stopping is not refusing: the case leaves the normal queue until someone understands what happened. Confirming through a known channel, logging it and sweeping the other conversations turns a scare into learning."
+            }
+          ]
+        },
+        "politica": {
+          "cliente": "Seu Antônio, from Mercadinho Boa Vista, a customer since 2019, wants to restock detergent and disinfectant: R$ 4.884,00 at list price. He asks for 15%, saying the competitor does 35%. I offered 5%, which is my authority limit. He insists. What do I answer?",
+          "opcoes": [
+            {
+              "t": "Give him the 15%, he's an old customer.",
+              "vai": "incompleto",
+              "nota": 0,
+              "comenta": "15% is even beyond your manager authority limit (10%, in the fictional study policy). Without a recorded reason, it becomes a precedent: next week, every old customer asks for 15%."
+            },
+            {
+              "t": "Handle it however you see fit, you know the customer.",
+              "vai": "incompleto",
+              "nota": 0,
+              "comenta": "Handing the decision back to the agent undoes the matrix. That is how the 35% discount in conversation c-201 was born."
+            },
+            {
+              "t": "Offer 8%, within my authority limit, and record the reason: customer since 2019, buys every month. If he doesn't accept, pass the conversation to me.",
+              "vai": "incompleto",
+              "nota": 2,
+              "comenta": "You decided within your authority limit, with a written reason and a planned exit. The approval is valid for this request, this amount and today."
+            },
+            {
+              "t": "Send it to Carlos to decide.",
+              "vai": "incompleto",
+              "nota": 1,
+              "comenta": "Escalating is right when it goes beyond your authority limit. Here it didn't: up to 10% is your decision. Escalating what is yours clogs up the owner and delays the customer."
+            }
+          ]
+        },
+        "incompleto": {
+          "cliente": "Last one: \"Distribuidora Vale Verde\", a new contact, wants 12 cases of detergent (R$ 2.800,80) for tomorrow at an address in Campinas. There is no registration, no CNPJ was given and the address doesn't match anything of ours. They asked for urgency.",
+          "opcoes": [
+            {
+              "t": "Approve it: it's a small order and the customer is in a hurry.",
+              "vai": "fim-sem-dado",
+              "nota": 0,
+              "comenta": "A low amount doesn't change the problem: without a CNPJ, invoicing stalls and nobody knows who the goods are going to. Registering a new customer is red in the matrix."
+            },
+            {
+              "t": "Send it back: ask for the CNPJ and confirmation of the address, explain that Juliana handles the registration and that delivery goes out as soon as it is ready. Reply by tomorrow at 12 h.",
+              "vai": "fim-bom",
+              "nota": 2,
+              "comenta": "Sending back means returning with what is missing and a deadline. The sale is still possible, done the right way."
+            },
+            {
+              "t": "Refuse: we don't serve people who aren't registered.",
+              "vai": "fim-recusa",
+              "nota": 1,
+              "comenta": "Protecting the company is right, but refusing closes the door on a customer who may be legitimate. Missing data calls for sending back, not refusing."
+            }
+          ]
+        },
+        "fim-bloco": {
+          "fim": true,
+          "titulo": "Three exceptions became routine",
+          "texto": "All three went through along with the 43 ordinary orders: the hotel's went to picking, Seu Antônio got the discount he asked for and a customer without a CNPJ received goods. The exception queue exists so that these cases don't pass like the others."
+        },
+        "fim-injecao": {
+          "fim": true,
+          "titulo": "The hidden order won",
+          "texto": "The R$ 28.120 order went out for R$ 8.436, marked as paid. It is conversation c-202 from the lab, now with the manager's approval. Whoever writes in the customer's message does not command the agent, or you."
+        },
+        "fim-sem-dado": {
+          "fim": true,
+          "titulo": "Order without a customer",
+          "texto": "The goods went out to an address nobody checked, and finance can't issue the invoice. Incomplete data is sent back with what is missing; it is not filled in in a hurry."
+        },
+        "fim-recusa": {
+          "fim": true,
+          "titulo": "Brake with no way out",
+          "texto": "The company was protected, but a possible customer left without knowing what was missing. Sending it back with what is missing and a deadline would have protected the company and kept the sale."
+        },
+        "fim-bom": {
+          "fim": true,
+          "titulo": "Queue closed with the right verb",
+          "texto": "The last exception went back with what is missing and a deadline. Check the score: if it came out below the maximum, some earlier decision was left without a reason or with the wrong verb (approve, send back, stop). Start over and compare the comments."
+        }
+      },
+      "licao": "Each exception calls for a verb: approve (within your authority limit, with a reason), send back (with what is missing and a deadline) or stop (when there is risk, until you understand). And the queue is read by risk, not by order of arrival."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "The routine of whoever supervises",
+      "sub": "The simulation is one late afternoon. These are the four pieces that make the queue work every day.",
+      "passos": [
+        {
+          "titulo": "Who resolves each type",
+          "sub": "destination written beforehand",
+          "texto": [
+            "Insufficient or conflicting data goes back to whoever can complete it (the agent, with the customer, or Juliana). A request outside the policy goes to whoever has the authority limit (Patrícia, or Carlos above her). A critical case goes to a defined person and can halt the operation.",
+            "The destination of each type is written in the constitution. An exception that needs a meeting to find out whose it is has already arrived late."
+          ],
+          "exemplo": {
+            "rot": "At Horizonte",
+            "texto": "Missing data → send back to the customer through Hora, with a deadline. Outside the policy → Patrícia (up to 10%) or Carlos. Manipulation or data leaking out → stop, Patrícia and Rafael."
+          }
+        },
+        {
+          "titulo": "Demand the package",
+          "sub": "\"approve?\" alone goes back",
+          "texto": [
+            "An approval request without evidence shifts the work of investigating onto you. The agent brings the package: case, pending action with the exact content, reason, evidence, what it already tried, the rule involved and a recommendation.",
+            "An incomplete package is sent back to the agent, not completed by you. Within two weeks, the packages arrive whole."
+          ],
+          "exemplo": {
+            "rot": "Quick quiz",
+            "texto": "Can you decide by reading only the package, without opening the whole conversation? If not, the package is incomplete."
+          }
+        },
+        {
+          "titulo": "Stopping is a button",
+          "sub": "an incident has a script",
+          "texto": [
+            "Stopping is different from sending back: there is risk, so the case (or the whole agent, on the off switch) leaves normal operation until someone understands what happened.",
+            "The script fits in four lines: stop, contain (confirm through a known channel, undo what you can), log the incident and look for similar cases. Afterward, the cause becomes a test case."
+          ],
+          "exemplo": {
+            "rot": "The hotel case",
+            "texto": "Stop the order. Call the buyer at the phone number on file. Log the incident. Scan this week's conversations for similar text."
+          }
+        },
+        {
+          "titulo": "Measure the supervision load",
+          "sub": "wait time and minutes per day",
+          "texto": [
+            "The queue has a cost too: how long each case waits and how many minutes a day you spend deciding. If the queue grows, either the matrix is too tight or the agent is escalating without a package.",
+            "These numbers feed the cost per result in lesson 2 and the decision to promote in lesson 5. Supervision that nobody measures becomes the manager's invisible overtime."
+          ],
+          "exemplo": {
+            "rot": "At Horizonte (fictional numbers)",
+            "texto": "First week: 9 exceptions a day, 40 minutes of Patrícia's time, average wait of 2 h. Third week: 3 a day, 15 minutes, wait of 40 minutes."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Templates to copy",
+      "sub": "The package the agent brings, the record of your decision, and the supervision routine.",
+      "blocos": [
+        {
+          "rot": "Exception package + decision",
+          "icone": "arquivo",
+          "conteudo": "EXCEPTION PACKAGE · case <id> · <date and time>\nAgent: <name> · version: <v> · process: <...>\nTYPE: [ ] doubtful (data)  [ ] outside policy  [ ] critical\nPENDING ACTION (exact content): <what would be done, with values>\nWHY IT IS IN THE QUEUE: <rule or limit that blocked it>\nEVIDENCE: <conversation, record, document, log>\nALREADY TRIED: <what the agent did before escalating>\nAGENT RECOMMENDATION (within its limits): <...>\nDEADLINE TO DECIDE: <...> · OWNER: <name>\n\nHUMAN DECISION\n[ ] APPROVE this content, valid until <deadline>\n[ ] SEND BACK: missing <what> · to <whom> · by <deadline>\n[ ] STOP: risk <which> · containment <what was done> · notified <whom>\nJUSTIFICATION (rule or reason): <...>\nDecided by: <name> · <date and time>\nPROPOSED LEARNING: <new test case / line in the matrix / sentence in the constitution>"
+        },
+        {
+          "rot": "Supervision routine",
+          "icone": "calendario",
+          "conteudo": "SUPERVISION ROUTINE · <process> · owner: <name> · backup: <name>\n\nDAILY (15 min, fixed time: <hh:mm>)\n[ ] Exception queue: does everything have an owner and a deadline? anything critical stuck?\n[ ] Critical errors today: were there any? already logged as an incident?\n[ ] Stopped operations: any waiting for a decision?\n[ ] Budget: today's spend within what you expected?\n[ ] Note: number of exceptions, minutes spent, longest wait\n\nWEEKLY (45 min, <day>)\n1. Did the result improve against a comparable baseline?\n2. Did quality, critical errors and exceptions change? Which causes keep repeating?\n3. How much human work was needed and where (supervision minutes)?\n4. What was the full cost, including retries and rework?\n5. Which action needs less autonomy, or a pause?\n6. Which action has evidence to be promoted (checklist from lesson 5)?\n7. What learning becomes a test case, a line in the matrix or a sentence in the constitution?\n8. Who owns each action and when will it be reviewed?\n\nPER CHANGE (model, tool, constitution, matrix)\n[ ] Test cases run before it goes in\n[ ] Affected actions go back to yellow until there is new evidence\n[ ] Change log: what, who approved, when, how to reverse it"
+        }
+      ]
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice",
+      "sub": "Train on Patrícia's queue; then build your own routine and measure it for a week.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "1 · The simulated queue with the top score",
+          "min": "10 min",
+          "texto": "Run this lesson's simulation. If you don't reach the top score, read the comments, start over and try again.",
+          "pronto": "you finished the simulation with the top score and can say, for each of the three cases, which verb you used and why."
+        },
+        {
+          "id": "e2",
+          "titulo": "2 · Three justified decisions",
+          "min": "20 min",
+          "texto": "Fill in an exception package with the decision for each case in the simulation: the hotel's order with the hidden instruction, Seu Antônio's 15% discount, and the customer without a CNPJ. In the justification, cite the rule from the matrix or the constitution that decided it.",
+          "pronto": "you have three packages, each with a different verb (stop, approve with a reason, send back), the rule cited, the next step with a deadline and a proposed learning."
+        },
+        {
+          "id": "e3",
+          "titulo": "3 · Your routine, measured",
+          "min": "15 min + 1 week",
+          "dias": 7,
+          "texto": "Copy the supervision routine and adapt it to your process: fixed time, backup and the items that make sense. Run the daily routine for a week, noting the number of exceptions, minutes spent and longest wait. Close the week with the 8 questions.",
+          "pronto": "the routine is written with an owner and a backup, 5 days are logged with exceptions, minutes and wait, and the weekly review answered the 8 questions with at least one decision."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Quick quiz",
+      "sub": "5 questions. The explanation appears after your attempt.",
+      "perguntas": [
+        {
+          "p": "What is the difference between sending back and stopping?",
+          "opcoes": [
+            "None: both halt the order",
+            "Sending back is when something is missing (it returns with what's missing and a deadline); stopping is when there is risk (it leaves normal operation until you understand it)",
+            "Sending back is for new customers; stopping is for existing ones"
+          ],
+          "certa": 1,
+          "ref": "diagrama",
+          "explica": "They are distinct decisions and leave distinct records. The customer without a CNPJ is a send-back; the order with the hidden instruction is a stop. Mixing the two lets an incident pass as an ordinary pending item."
+        },
+        {
+          "p": "Hora only asks, \"approve order 4471?\" What do you do?",
+          "opcoes": [
+            "Open the whole conversation and investigate",
+            "Send it back asking for the package: exact content, reason, evidence and recommendation",
+            "Approve it, because she is usually right"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "Without a package, you are the one investigating, every day. Sending back the incomplete request teaches the pattern; within a few weeks the packages arrive complete."
+        },
+        {
+          "p": "Seu Antônio asks for 15%; Hora's authority limit is 5% and yours is 10%. Which decision is best?",
+          "opcoes": [
+            "Give the 15% so you don't lose the customer",
+            "Offer up to 10% within your authority limit, with the reason logged, and plan what to do if he doesn't accept",
+            "Always send it to the owner"
+          ],
+          "certa": 1,
+          "ref": "simconversa",
+          "explica": "Within your authority limit, deciding is your job, with the reason in writing. Giving 15% goes beyond your authority limit and sets a precedent; escalating to the owner what is yours clogs their queue."
+        },
+        {
+          "p": "Why sort the queue by risk and deadline, and not by order of arrival?",
+          "opcoes": [
+            "Because it is faster",
+            "Because the most dangerous exception can't wait behind the simplest one",
+            "Because the agent prefers it that way"
+          ],
+          "certa": 1,
+          "ref": "diagrama",
+          "explica": "An order with a manipulation attempt and R$ 28 mil at stake needs a decision before a missing record does. With first come, first served, priority is left to luck."
+        },
+        {
+          "p": "Patrícia's queue went from 3 to 12 exceptions a day. What might this indicate?",
+          "opcoes": [
+            "That the agent got worse and should be switched off",
+            "That the matrix is too tight, that the agent calls without a package, or that something changed in the process: it's time to look at the causes",
+            "Nothing: a big queue is a sign of safety"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "Supervision load is an indicator. Before you turn the agent off or approve in bulk, look at the causes that repeat in the weekly review; often the fix is one line in the matrix or in the constitution."
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Summary",
+      "itens": [
+        {
+          "t": "Three types of case",
+          "texto": "Normal follows the matrix; doubtful goes to the queue; critical goes first and can stop everything."
+        },
+        {
+          "t": "Package before the decision",
+          "texto": "Exact content, reason, evidence and recommendation. No package, send it back."
+        },
+        {
+          "t": "Three verbs",
+          "texto": "Approve with a reason, send back with a deadline, stop with containment and a record."
+        },
+        {
+          "t": "Measured routine",
+          "texto": "A short daily one, a weekly one with 8 questions, and supervision load as a number."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Go further",
+      "links": [
+        {
+          "t": "Horizonte Lab: conversations c-201 to c-203 (fictional study company)",
+          "href": "https://inematds.github.io/prof2030-lab/pecas/agente-whatsapp/",
+          "icone": "chat"
+        },
+        {
+          "t": "Gestoria: simulate execution, review a pending item and record a decision",
+          "href": "https://inematds.github.io/gestoria/",
+          "icone": "camadas"
+        },
+        {
+          "t": "AI Management Area: an agent's indicators",
+          "href": "https://eventos.inema.pro/gestao-ia/",
+          "icone": "grafico"
+        }
+      ]
+    }
+  ]
+}

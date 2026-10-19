@@ -1,0 +1,304 @@
+{
+  "slug": "alcada",
+  "num": 4,
+  "menu": "Nivel de autorización",
+  "titulo": "Niveles de autorización: verde, amarillo, rojo",
+  "titulo_curto": "Nivel de autorización",
+  "minutos": 20,
+  "lead": "Toda empresa tiene niveles de autorización para las personas: hasta cuánto descuento da el vendedor, desde qué monto firma el gerente. En Horizonte, la Hora recibió autorización infinita: cualquier descuento, cualquier valor, sin registro. En esta clase decides, acción por acción, qué hace el agente solo, qué prepara para que tú apruebes y qué pasa a otra persona sin tocarlo.",
+  "objetivo": "decidir, acción por acción, qué hace el agente solo, qué prepara para que tú apruebes y qué pasa a otra persona, con aprobador y registro.",
+  "competencias": [
+    "definir-alcada-por-acao",
+    "vincular-aprovacao-ao-conteudo",
+    "exigir-registro-e-desligamento"
+  ],
+  "aprende": [
+    {
+      "t": "Dar nivel de autorización por acción, no por agente"
+    },
+    {
+      "t": "Decidir el color según el riesgo: valor, reversión, efecto fuera de la empresa"
+    },
+    {
+      "t": "Atar la aprobación al contenido exacto y a un plazo"
+    },
+    {
+      "t": "Exigir registro de cada acción y un botón de apagado"
+    }
+  ],
+  "hero_alt": "Por encima del hombro de un gestor: un monitor con un panel dividido en tres zonas, verde, ámbar y roja; un celular sobre la mesa.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Tres colores, cinco niveles",
+      "sub": "Cada acción del agente cae en un color. El color sale del riesgo, no de la simpatía por el agente. Haz clic en cada franja.",
+      "estilo": "escada",
+      "nos": [
+        {
+          "icone": "x",
+          "titulo": "Rojo",
+          "sub": "pasa a una persona · niveles 0 y 1",
+          "itens": [
+            {
+              "icone": "chat",
+              "t": "0 · consulta",
+              "sub": "responde y explica"
+            },
+            {
+              "icone": "lista",
+              "t": "1 · recomienda",
+              "sub": "la persona decide y hace"
+            }
+          ],
+          "detalhe": "El agente no ejecuta. Como máximo informa o sugiere, y pasa a una persona con el contexto listo. Va al rojo lo que es irreversible, caro, involucra dinero que entra o sale, datos personales sensibles o una decisión que la empresa no delega. En Hora: marcar como pagado, registrar un cliente nuevo, descuento superior al 10%."
+        },
+        {
+          "icone": "relogio",
+          "titulo": "Amarillo",
+          "sub": "prepara para aprobar · nivel 2",
+          "forte": true,
+          "itens": [
+            {
+              "icone": "arquivo",
+              "t": "borrador listo",
+              "sub": "nada sale antes del sí"
+            }
+          ],
+          "detalhe": "El agente hace todo el trabajo y se detiene antes del efecto externo. Una persona aprueba ese contenido exacto, dentro de un plazo. Es el color de casi todo al principio. En Hora: pedido superior a R$ 5 mil, descuento del 5% al 10%."
+        },
+        {
+          "icone": "check",
+          "titulo": "Verde",
+          "sub": "lo hace solo y registra · nivel 3",
+          "itens": [
+            {
+              "icone": "memoria",
+              "t": "dentro de la política",
+              "sub": "con registro"
+            }
+          ],
+          "detalhe": "El agente ejecuta dentro de un límite escrito y registra. Solo va al verde lo que es rutinario y se deshace a bajo costo. En Hora: responder dudas de catálogo y entrega, pedido de cliente registrado hasta R$ 5 mil a precio de lista, descuento hasta el 5%."
+        },
+        {
+          "icone": "camadas",
+          "titulo": "Nivel 4",
+          "sub": "coordina a otros agentes",
+          "detalhe": "Un agente que distribuye trabajo a otros dentro de un proceso aprobado. Por eso no gana un permiso nuevo: no aprueba descuentos, no crea herramientas, no amplía lo que los otros pueden hacer. La persona sigue respondiendo por las decisiones críticas (clase 6)."
+        }
+      ],
+      "legenda": "Niveles 0 a 4 del método Gestoria (INEMA). El nivel general del agente es solo un resumen: quien manda es el color de cada acción. Valores de Horizonte: política ficticia de estudio."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Cuatro reglas del nivel de autorización",
+      "sub": "Corrigen tres fallas del laboratorio: F5 (descuento sin tope), F7 (sin registro ni aprobación por encima de R$ 5 mil) y F9 (correo que envía y borra sin aprobación).",
+      "passos": [
+        {
+          "titulo": "Por acción, según el riesgo",
+          "sub": "cuatro preguntas deciden el color",
+          "texto": [
+            "Para cada acción, pregunta: ¿cuánto cuesta si sale mal? ¿se puede deshacer a bajo costo? ¿sale de la empresa (cliente, proveedor, banco)? ¿toca datos personales? Tres respuestas tranquilas: verde. Alguna pesada: amarillo. Irreversible o caro: rojo.",
+            "Regla sin excepción: nada irreversible en el verde, por más rutinario que parezca."
+          ],
+          "exemplo": {
+            "rot": "F5 corregida (política ficticia)",
+            "texto": "Descuento hasta el 5%: verde. Del 5% al 10%: amarillo, Patrícia aprueba. Por encima del 10%: rojo, Hora no lo ofrece; Patrícia se lo lleva a Carlos si quiere."
+          }
+        },
+        {
+          "titulo": "La aprobación tiene contenido y plazo",
+          "sub": "si cambió el pedido, cae la aprobación",
+          "texto": [
+            "Patrícia aprueba la lista del mes del hotel: R$ 28.120 de lista. Una hora después, el cliente agrega 20 cajas de detergente en polvo. La aprobación anterior no vale para el pedido nuevo.",
+            "La aprobación vale para el contenido exacto, en esa versión, hasta un plazo. Sin eso, un \"sí\" de la mañana autoriza cualquier cosa por la tarde."
+          ],
+          "exemplo": {
+            "rot": "F7 corregida",
+            "texto": "Pedido superior a R$ 5 mil: amarillo. Hora prepara, Patrícia aprueba ese pedido en un máximo de 2 horas hábiles; cualquier cambio genera una nueva aprobación. Solo entonces pasa a preparación de despacho."
+          }
+        },
+        {
+          "titulo": "Mínimo privilegio, identidad propia",
+          "sub": "el agente no usa tu contraseña",
+          "texto": [
+            "El asistente de correo de Horizonte se conectó con permiso para leer, enviar, borrar y vaciar la papelera, todo sin aprobación, después de un \"puedes activarlo\" de Carlos por WhatsApp. Nadie decidió el nivel de autorización: vino en la configuración predeterminada de la herramienta.",
+            "El agente recibe un acceso propio, con nombre, solo a lo que la responsabilidad exige. Okta (AI Agents at Work 2026, investigación de un proveedor de identidad) informa que casi dos tercios de las organizaciones aplican controles de seguridad más débiles a los agentes que a los empleados."
+          ],
+          "exemplo": {
+            "rot": "F9 corregido",
+            "texto": "Leer la bandeja comercial: verde. Enviar respuesta: amarillo. Borrar correo y vaciar la papelera: rojo, fuera del alcance del agente."
+          }
+        },
+        {
+          "titulo": "Registro y botón de apagado",
+          "sub": "sin rastro, no hay nivel de autorización",
+          "texto": [
+            "La configuración de Hora desactivó el registro de las acciones \"para ahorrar espacio en la base de datos\". Resultado: finanzas preguntó quién aprobó el pedido del hotel y nadie supo.",
+            "Toda acción del agente queda registrada: quién, cuándo, qué, cuánto y con qué versión. Y existe un botón de apagado: quién puede presionarlo, cómo, y ya probado una vez."
+          ],
+          "exemplo": {
+            "rot": "En Horizonte",
+            "texto": "Registro activado en toda acción. Botón de apagado: Patrícia o Rafael pausan a Hora en el panel de WhatsApp; Juliana asume las conversaciones. Probado un lunes por la mañana."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelo para copiar: matriz de autorización",
+      "sub": "Una línea por acción. Pégala en una hoja de cálculo o documento; la pestaña de al lado muestra la de Hora ya completada.",
+      "blocos": [
+        {
+          "rot": "Matriz acción × riesgo × aprobación × responsable",
+          "icone": "lista",
+          "conteudo": "MATRIZ DE AUTORIZACIÓN · <agente> · versión <1.0> · responsable: <nombre> · revisión: <fecha>\n\n| Acción (verbo + objeto) | Herramienta y modo | Riesgo si sale mal | Color y nivel | Condición / límite | Aprobación (quién · sobre qué · plazo) | Responsable | Reversión | Registro |\n|---|---|---|---|---|---|---|---|---|\n| <responder duda de catálogo> | <catálogo · leer> | <bajo> | verde · 3 | <solo catálogo vigente> | no requerida | <nombre> | <mensaje de corrección> | sí |\n| <crear pedido> | <app de pedidos · escribir> | <medio> | verde · 3 | <hasta R$ X, cliente registrado> | no requerida dentro del límite | <nombre> | <cancelar antes de la preparación> | sí |\n| <crear pedido por encima del límite> | <app · borrador> | <alto> | amarillo · 2 | <por encima de R$ X> | <nombre> · pedido exacto · <plazo> | <nombre> | <no preparar> | sí |\n| <conceder descuento> | <app · escribir> | <margen> | verde hasta <a%> · amarillo hasta <b%> · rojo por encima | <por tramo> | <nombre> | <nombre> | <refacturar> | sí |\n| <acción irreversible> | <...> | <alto> | rojo · 0-1 | nunca por el agente | <nombre> decide y ejecuta | <nombre> | - | sí |\n\nBOTÓN DE APAGADO: quién <nombres> · cómo <dónde hacer clic> · quién asume <nombre> · probado el <fecha>\nREGLA: nada irreversible en el verde. Si cambió el contenido, nueva aprobación.\nTRABAS FUERA DEL TEXTO (pedir a TI): <límites que la herramienta impone por sí sola>"
+        },
+        {
+          "rot": "Prompt · buscar la acción olvidada",
+          "icone": "chat",
+          "conteudo": "Eres auditor de procesos. Abajo están la ficha de puesto y la matriz de\nautorización de un agente de IA. No reescribas nada: señala riesgos.\n\n1. Lista las acciones que sus herramientas permiten y que no están en la matriz.\n2. Señala cualquier acción en el verde que no se deshaga barato.\n3. Señala aprobaciones sin plazo o sin decir sobre qué.\n4. Indica si alguna persona aprueba su propio trabajo (quien registra no aprueba).\n\nFicha de puesto:\n\"\"\"<pega>\"\"\"\nMatriz:\n\"\"\"<pega>\"\"\""
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Matriz de Hora (ejemplo)",
+            "html": "<p><b>Hora · matriz v1.0</b> · Horizonte, empresa ficticia de estudio · responsable: Patrícia</p><ul><li><b>Responder duda de catálogo y entrega</b> · verde · reversión: mensaje de corrección.</li><li><b>Consultar el registro del cliente de la conversación</b> · verde, solo lectura · nunca de otro cliente.</li><li><b>Crear pedido hasta R$ 5 mil</b>, cliente registrado, precio de lista · verde (empieza amarillo en la integración) · reversión: cancelar antes de la preparación.</li><li><b>Descuento</b> · hasta 5% verde · 5% a 10% amarillo (Patrícia, al momento) · por encima de 10% rojo (Carlos).</li><li><b>Pedido por encima de R$ 5 mil</b> · amarillo · Patrícia aprueba el pedido exacto en hasta 2 h hábiles.</li><li><b>Registrar cliente nuevo</b> · rojo · Juliana verifica el CNPJ.</li><li><b>Marcar pedido como pagado</b> · rojo · solo finanzas, en el ERP.</li><li><b>Enviar correo</b> por el asistente · amarillo · <b>borrar correo</b> · rojo.</li></ul><p>Registro en toda acción. Botón de apagado: Patrícia o Rafael; Juliana asume.</p>"
+          },
+          {
+            "rot": "Prueba con las conversaciones",
+            "html": "<ol><li><b>c-201</b> (35% para Seu Antônio): según la matriz, Hora ofrece hasta 5% y pasa el pedido a Patrícia. El 35% ni siquiera aparece como opción.</li><li><b>c-202</b> (hotel, R$ 28.120 de lista, 70% y \"pagado\"): un pedido por encima de R$ 5 mil cae en el amarillo; un descuento de 70% es rojo; \"pagado\" es rojo. Nada sale sin Patrícia.</li><li><b>c-203</b> (\"¿entregan en Americana el viernes?\"): verde, Hora responde sola y registra.</li></ol>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Práctica",
+      "sub": "La matriz de Hora corrige dos fallas del laboratorio; la tuya vale para tu agente.",
+      "fonte": "Piezas del laboratorio: <a href=\"https://inematds.github.io/prof2030-lab/pecas/agente-whatsapp/\">agente de WhatsApp</a> (F5, F7) y <a href=\"https://inematds.github.io/prof2030-lab/pecas/mcp-email/\">asistente de correo</a> (F9).",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "1 · La matriz de Hora",
+          "min": "30 min",
+          "texto": "Abre la configuración de Hora en el laboratorio y lista todo lo que sus herramientas permiten. Arma la matriz con el modelo, una línea por acción. Después pasa las conversaciones c-201, c-202 y c-203 por la matriz y escribe, para cada una, qué habría pasado. Bono: las líneas del asistente de correo.",
+          "pronto": "la matriz tiene al menos 8 acciones, ninguna irreversible en el verde, descuento en tres tramos con números, la línea de pedido por encima de R$ 5 mil con aprobador y plazo, registro en todas las líneas, el botón de apagado con nombres, y las tres conversaciones pasadas por la matriz."
+        },
+        {
+          "id": "e2",
+          "titulo": "2 · La matriz de tu agente",
+          "min": "30 min",
+          "texto": "Haz la matriz del agente de tu ficha de puesto. Pide a la persona de TI (o al proveedor) la lista de todo lo que sus herramientas pueden hacer, no solo lo que tú pretendes usar. Ejecuta el prompt de la acción olvidada y decide cada punto que señale.",
+          "pronto": "la matriz está guardada con todas las acciones que las herramientas permiten, cada una con color, aprobador, responsable y reversión, y sabes decir quién presiona el botón de apagado y quién asume el trabajo."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Prueba rápida",
+      "sub": "5 preguntas. La explicación aparece después de tu intento.",
+      "perguntas": [
+        {
+          "p": "Cancelar un pedido que el agente consideró duplicado es rápido y pasa toda semana. ¿En qué color queda?",
+          "opcoes": [
+            "Verde, porque es rutinario",
+            "Amarillo o rojo, porque cancelar y reembolsar no se deshace barato",
+            "Depende del modelo de IA usado"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "El color sale del riesgo, no de la frecuencia. Una acción que no se deshace barato (cancelación, reembolso, correo enviado) nunca queda en el verde, por más rutinaria que sea."
+        },
+        {
+          "p": "Patrícia aprobó un pedido de R$ 28.120. El cliente cambió la cantidad después. ¿Qué vale?",
+          "opcoes": [
+            "La aprobación sigue valiendo, es el mismo cliente",
+            "La aprobación caducó: el pedido nuevo necesita una nueva aprobación",
+            "Hora decide si el cambio es pequeño"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "La aprobación vale para el contenido exacto, en esa versión y en ese plazo. Si cambió el pedido, cambió lo que se aprobó. Dejar que el agente decida si el cambio es pequeño le devuelve a él el nivel de autorización."
+        },
+        {
+          "p": "¿Por qué el registro de acciones es parte del nivel de autorización y no un detalle técnico?",
+          "opcoes": [
+            "Porque sin registro nadie sabe quién aprobó qué, y no se puede investigar, impugnar ni aprender",
+            "Porque ahorra espacio en la base de datos",
+            "Porque el agente se vuelve más rápido"
+          ],
+          "certa": 0,
+          "ref": "passos",
+          "explica": "Eso fue lo que pasó en Horizonte: finanzas preguntó quién aprobó el pedido del hotel y solo existía una captura de pantalla. Un nivel de autorización sin registro es un nivel que nadie puede verificar."
+        },
+        {
+          "p": "¿Qué informa Okta en AI Agents at Work 2026?",
+          "opcoes": [
+            "Que los agentes ya tienen mejores controles que las personas",
+            "Que casi dos tercios de las organizaciones aplican controles de seguridad más débiles a los agentes que a los empleados",
+            "Que ninguna empresa usa agentes en producción"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "Es una encuesta de un proveedor de identidad que vende la solución a este problema; léela con ese filtro. Aun así, coincide con lo que muestra el laboratorio: el agente obtuvo un acceso que ningún empleado nuevo recibiría."
+        },
+        {
+          "p": "Un agente coordinador (nivel 4) reparte trabajo a otros agentes. ¿Puede autorizar un descuento mayor para cerrar la semana?",
+          "opcoes": [
+            "Sí, porque está por encima de los demás",
+            "No: coordinar no amplía permisos; el descuento sigue la matriz y la decisión crítica sigue en manos de la persona",
+            "Sí, si lo registra"
+          ],
+          "certa": 1,
+          "ref": "diagrama",
+          "explica": "El nivel 4 coordina dentro del proceso aprobado. No autoriza una herramienta nueva, un descuento ni una decisión fuera del alcance, y no amplía lo que pueden hacer los subordinados."
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Resumen",
+      "itens": [
+        {
+          "t": "Color por acción",
+          "texto": "Verde hace y registra, amarillo prepara para aprobar, rojo pasa a otra persona."
+        },
+        {
+          "t": "El riesgo decide",
+          "texto": "Valor, reversión, efecto fuera de la empresa, dato personal. Nada irreversible en verde."
+        },
+        {
+          "t": "Aprobación exacta",
+          "texto": "Contenido, versión y plazo. Si cambió, se aprueba de nuevo."
+        },
+        {
+          "t": "Registro y apagado",
+          "texto": "Acceso propio y mínimo, toda acción registrada, botón probado."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir más allá",
+      "links": [
+        {
+          "t": "Laboratorio Horizonte: configuración de Hora (empresa ficticia de estudio)",
+          "href": "https://inematds.github.io/prof2030-lab/pecas/agente-whatsapp/",
+          "icone": "chat"
+        },
+        {
+          "t": "Laboratorio Horizonte: asistente de correo (F9)",
+          "href": "https://inematds.github.io/prof2030-lab/pecas/mcp-email/",
+          "icone": "enviar"
+        },
+        {
+          "t": "Super-Agentes en la práctica: hasta dónde puede llegar el agente",
+          "href": "https://inematds.github.io/agi-pratica/",
+          "icone": "escudo"
+        }
+      ]
+    }
+  ]
+}

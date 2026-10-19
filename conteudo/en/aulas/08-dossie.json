@@ -1,0 +1,440 @@
+{
+  "slug": "dossie",
+  "num": 8,
+  "menu": "Project",
+  "titulo": "Project: the hired agent + What changed",
+  "titulo_curto": "Project: the dossier",
+  "minutos": 20,
+  "lead": "A new person only starts after a signed contract, a described role and a defined boss. Agents too. The project for this course is the hiring dossier: the pieces from lessons 1 to 7, put together, run through a rubric and signed by someone who didn't write them. At the end, what changed in the market, with date and source.",
+  "objetivo": "build the agent's hiring dossier and approve it with the rubric before it starts working, with a signature from someone who did not write it.",
+  "competencias": [
+    "montar-dossie-de-contratacao",
+    "aplicar-rubrica-de-aprovacao",
+    "ler-relatorios-de-mercado-com-criterio"
+  ],
+  "aprende": [
+    {
+      "t": "What goes into the hiring dossier and in what order"
+    },
+    {
+      "t": "Apply the rubric, including the items that fail on their own"
+    },
+    {
+      "t": "Who signs the hire (and why it is not the person who built it)"
+    },
+    {
+      "t": "What changed through October 2026, with date and source"
+    }
+  ],
+  "hero_alt": "A sales manager shows a binder with colored dividers to the company owner, who flips through it with attention from the other side of the desk.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "The hiring dossier",
+      "sub": "Four required pieces, the rubric and a signature. Click each part.",
+      "volta": "Failed on an item: it goes back to the piece that failed, not to zero",
+      "nos": [
+        {
+          "icone": "arquivo",
+          "titulo": "Role and delegation",
+          "sub": "lessons 1 and 2",
+          "detalhe": "Mission, verifiable deliverable, prohibited actions and owner; and the delegation sheet with objective, context with an owner, tools, deadline and evidence of completion."
+        },
+        {
+          "icone": "escudo",
+          "titulo": "Constitution",
+          "sub": "lesson 3",
+          "detalhe": "One page with priorities in order, limits, when to call a person and hard cases with the reason why. With it, the test cases run on the current version and the list of what has a lock in the system."
+        },
+        {
+          "icone": "cadeado",
+          "titulo": "Authority matrix",
+          "sub": "lessons 4 and 5",
+          "forte": true,
+          "detalhe": "Each action with a color, approver, owner, reversal and record; the off switch; and, for each action that has already moved up a level, the promotion checklist with the demotion criterion."
+        },
+        {
+          "icone": "calendario",
+          "titulo": "Supervision",
+          "sub": "lessons 6 and 7",
+          "detalhe": "The daily and weekly routine, the destination of each type of exception, the package template and, if there is more than one agent, the team design with the handoff contracts."
+        },
+        {
+          "icone": "check",
+          "titulo": "Rubric and signature",
+          "sub": "whoever posts does not approve",
+          "detalhe": "The rubric gives the score and has items that fail on their own. Whoever built the dossier does not sign the approval: at Horizonte, Patrícia builds it, Rafael confirms the locks and Carlos signs."
+        }
+      ],
+      "legenda": "The educational approval of the dossier does not, on its own, authorize putting the agent into production at the company: that decision remains with whoever is accountable for it."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "From draft to signature",
+      "sub": "Four steps. Hora's dossier is the practice run; your agent's dossier is the one that counts.",
+      "passos": [
+        {
+          "titulo": "Gather the pieces",
+          "sub": "one folder, one cover page",
+          "texto": [
+            "Put the pieces from lessons 1 to 7 in a single folder, in the order of the diagram, with a one-page cover: agent, process, version, owner, date and the index.",
+            "If a piece changed after it was written (the matrix gained a row in lesson 7, for example), update the version. A dossier with pieces from different versions is the first thing the rubric catches."
+          ],
+          "exemplo": {
+            "rot": "At Horizonte",
+            "texto": "Folder \"Hora · dossier v2.0\": cover, job sheet, restocking delegation, constitution with 8 test cases, matrix with the checklist for the promoted action, supervision routine and the design with the collections agent."
+          }
+        },
+        {
+          "titulo": "Run it through the rubric",
+          "sub": "100 points and six must-haves",
+          "texto": [
+            "The rubric adds up to 100 points across six blocks. You pass with 75 or more and every must-have checked. One missing must-have fails it, even with 95 points.",
+            "The must-haves are the ones that prevent the big damage: a named owner, nothing irreversible in green, a cap in numbers wherever money is involved, every exception with a destination and a deadline, a written demotion criterion, and fictional or anonymized data labeled as such."
+          ],
+          "exemplo": {
+            "rot": "Panel test",
+            "texto": "Run the panel prompt (template alongside). It points out gaps; the grade is decided by you and by whoever signs."
+          }
+        },
+        {
+          "titulo": "Who signs",
+          "sub": "separation of duties",
+          "texto": [
+            "Whoever put the dossier together does not approve the hiring, for the same reason that whoever enters a payment does not approve it. The person who signs reads the cover, checks the must-haves and asks about anything they did not understand.",
+            "IT confirms in writing that the safeguards requested (discount cap, maximum amount, logging, off switch) exist in the tool, and not just in the text."
+          ],
+          "exemplo": {
+            "rot": "At Horizonte",
+            "texto": "Patrícia puts it together. Rafael confirms the safeguards. Carlos reads, asks questions and signs. Juliana gets the supervision routine because she is Patrícia's backup."
+          }
+        },
+        {
+          "titulo": "Review date",
+          "sub": "a contract with a deadline",
+          "texto": [
+            "The dossier goes out with a review date: 30 days after hiring, or sooner if there is a serious failure, or a change of model, tool or vendor.",
+            "At the review, the pieces go back through the rubric. This is how the agent moves up a level without anyone having to remember what the rule used to be."
+          ],
+          "exemplo": {
+            "rot": "Rule",
+            "texto": "If the model or the tool changes: the affected actions go back to yellow and the test cases run again."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Templates to copy",
+      "sub": "The dossier cover, the rubric and a panel prompt to find gaps before the signature.",
+      "blocos": [
+        {
+          "rot": "Hiring dossier cover",
+          "icone": "arquivo",
+          "conteudo": "HIRING DOSSIER · <agent name> · version <2.0> · <date>\nCompany / area: <...> · Process: <from where to where>\nOwner of the result: <name and role> · Backup: <name>\nTechnical support: <name> · Data used: [ ] real, authorized [ ] anonymized [ ] fictional\n\nINDEX (all pieces on the same version)\n1. Job sheet ................................ v<...>\n2. Delegation sheet ......................... v<...>\n3. Constitution + test cases (result) ....... v<...>\n4. Authority matrix + off switch ............ v<...>\n5. Promotion checklists (promoted actions) .. v<...>\n6. Team design + contracts (if any) ......... v<...>\n7. Supervision routine + exception package .. v<...>\n\nSAFEGUARDS CONFIRMED BY IT (outside the text): <list> · confirmed by <name> on <date>\nRUBRIC SCORE: <...>/100 · must-haves: <6 of 6>\nPUT TOGETHER BY: <name>  ·  APPROVED BY (cannot be whoever put it together): <name> on <date>\nNEXT REVIEW: <date> or sooner, if there is a serious failure or a change of model/tool"
+        },
+        {
+          "rot": "Dossier rubric (100 points)",
+          "icone": "lista",
+          "conteudo": "RUBRIC · hiring dossier · passes with >= 75 AND the 6 must-haves\n\nBLOCK                                   POINTS  CRITERION FOR FULL POINTS\n1. Role and delegation                    20    mission with process and result; verifiable deliverable;\n                                                prohibited items with a verb and a number; 6 delegation pieces\n2. Constitution                           20    4 priorities in order; limits; when to call, with\n                                                person and deadline; 3+ cases with the why; tests run\n3. Authority matrix                       25    every tool action; color by risk;\n                                                approval with content and deadline; reversal; logging\n4. Supervision and exceptions             20    destination per type of exception; package; 3 verbs;\n                                                daily and weekly routine; measured load\n5. Trust and team                         10    checklist for promoted actions; team only with a signal;\n                                                handoff contracts with limits\n6. Clarity of evidence                     5    same versions; cover; labeled data\n\nMUST-HAVES (one missing fails it)\n[ ] Human owner with a name (from the business)\n[ ] No irreversible action in green\n[ ] Cap in numbers on every action that involves money\n[ ] Every exception with a destination and a deadline\n[ ] Demotion criterion written down\n[ ] Fictional or anonymized data labeled as such\n\nSCORE: <...>/100 · must-haves: <...>/6 · result: [ ] approved [ ] goes back to <piece>"
+        },
+        {
+          "rot": "Prompt · panel review before signing",
+          "icone": "chat",
+          "conteudo": "You are the panel that reviews the hiring dossier of an AI agent,\nusing the rubric below. You do not approve or fail it: you point out gaps\nfor whoever is going to sign.\n\nFor each block of the rubric:\n1. Say what is present and what is missing for full points,\n   quoting the passage from the dossier.\n2. Mark each must-have as present or absent, with the passage.\n3. List the three questions the approver should ask before signing.\n\nDo not invent information that is not in the dossier.\n\nRubric:\n\"\"\"<paste the rubric>\"\"\"\nDossier:\n\"\"\"<paste the pieces>\"\"\""
+        }
+      ]
+    },
+    {
+      "tipo": "passos",
+      "titulo": "What changed · October 2026",
+      "sub": "Quarterly panel, replaced at each course review. Each item has a date, a source and the type of claim. The products are examples: the method in lessons 1 to 7 does not depend on any of them.",
+      "passos": [
+        {
+          "titulo": "Agents became a product",
+          "sub": "interchangeable examples",
+          "texto": [
+            "OpenAI: Workspace Agents, which replace Custom GPTs, are now billed per token (07/06/2026); ChatGPT Work delivers documents, spreadsheets and slides (07/09/2026). The AgentKit Agent Builder will be shut down on 11/30/2026.",
+            "Anthropic: Managed Agents and, in Claude Code, background computer use (09/2026). Microsoft: Agent 365, announced at Build (06/2026). Sources: each vendor's release notes and announcements."
+          ],
+          "exemplo": {
+            "rot": "For the dossier",
+            "texto": "Products get discontinued and change price within months. The dossier records which tool the agent uses and what happens if it changes: actions go back to yellow and the tests run again."
+          }
+        },
+        {
+          "titulo": "How management is changing",
+          "sub": "consultancies and vendors",
+          "texto": [
+            "Microsoft, Work Trend Index 2025: the \"agent boss,\" a human manager of agents, and the metric of the ratio between humans and agents. WTI 2026 (05/2026, 20,000 people in 10 countries): when the manager uses AI in front of the team, perceived value goes up 17 points (vendor survey).",
+            "Deloitte, Tech Trends 2026: graduated autonomy and agent integration. Gartner, forecast from 10/2024: by the end of 2026, 1 in 5 organizations will use AI to cut more than half of middle management."
+          ],
+          "exemplo": {
+            "rot": "Reading",
+            "texto": "Taking a layer off the org chart does not eliminate its work: coordinating, reviewing, training people. That is the work the dossier and the exception queue organize."
+          }
+        },
+        {
+          "titulo": "Brazil and the world",
+          "sub": "compare the definition before the number",
+          "texto": [
+            "GFT, Tech Trends 2026 LATAM, with data from BCG: 18% of Brazilian companies integrate agents, versus 13% worldwide. ABES and IDC (06/15/2026, 103 executives): 40% already invest in agents and 33% plan to within 12 months. Gartner (2026): only 17% of companies have agents in use.",
+            "Deloitte (09/17/2026): 27% of Brazilian companies have mature AI governance. Okta (2026): nearly two-thirds apply weaker controls to agents than to people."
+          ],
+          "exemplo": {
+            "rot": "Why the numbers don't match",
+            "texto": "\"Integrate,\" \"invest\" and \"in use\" measure different things, with different samples. Compare the definition before you compare the percentage."
+          }
+        },
+        {
+          "titulo": "How to read these reports",
+          "sub": "three questions",
+          "texto": [
+            "Who pays, and what do they sell? Microsoft and Okta sell the solution to the problem they measure; consultancies sell the transformation they describe. How did they measure? A survey with a sample, self-reported experience, or a forecast? What is a forecast?",
+            "An analysis from The Microsoft Cloud Blog (05/2026) notes that the WTI 2026 numbers should not support a business case on their own. Use a report as a map, never as proof of your case."
+          ],
+          "exemplo": {
+            "rot": "Next review of this panel",
+            "texto": "January 2027, with the next quarter's overview. The method (lessons 1 to 7) does not change; products and numbers do."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "mapa",
+      "titulo": "The course map",
+      "sub": "The four required pieces of the dossier and the exercises that produce them. Click an exercise to see its \"done when.\"",
+      "degraus": [
+        {
+          "aula": "cargo-digital",
+          "icone": "arquivo",
+          "quando": "Week 1",
+          "titulo": "Hire",
+          "sub": "role and delegation",
+          "saida": "Job sheet with a responsible person and a delegation with evidence.",
+          "passo": "The base of everything: without a mission, a verifiable deliverable and a responsible person, the other pieces have nothing to rest on. The delegation (lesson 2) comes in with it."
+        },
+        {
+          "aula": "constituicao",
+          "icone": "escudo",
+          "quando": "Week 1",
+          "titulo": "Guide",
+          "sub": "constitution and tests",
+          "saida": "A one-page set of criteria and 8 test cases run.",
+          "passo": "Requires the job sheet. The hard cases come from real conversations; what is critical becomes a lock request for IT."
+        },
+        {
+          "aula": "alcada",
+          "icone": "cadeado",
+          "quando": "Week 2",
+          "titulo": "Limit",
+          "sub": "authority limits and trust",
+          "saida": "Matrix by action, off switch and promotion checklist.",
+          "passo": "Requires the constitution. The matrix starts tight; lesson 5 teaches you to loosen it with evidence, one action at a time, after a week of records."
+        },
+        {
+          "aula": "supervisao",
+          "icone": "calendario",
+          "quando": "Weeks 2 and 3",
+          "titulo": "Supervise",
+          "sub": "team and exceptions",
+          "saida": "Measured daily and weekly routine, package and destinations for exceptions.",
+          "passo": "Requires the matrix: the exception queue is everything the matrix sends to you. The team (lesson 6) comes in only if one of the three signals appears."
+        }
+      ],
+      "rolagem_fim": {
+        "titulo": "The whole dossier",
+        "texto": "Hire, guide, limit and supervise, in this order. Each piece builds on the previous one, and the dossier only goes to signature when the \"done when\" of each step is true."
+      },
+      "resultado": {
+        "titulo": "At the end of the course",
+        "texto": "A hired agent with an approved dossier: role, constitution, authority limits and supervision, signed by someone who did not write them.",
+        "total": "18 exercises"
+      },
+      "legenda": "Recommended order: each piece builds on the previous one."
+    },
+    {
+      "tipo": "gerador",
+      "titulo": "Generate your plan with dates",
+      "sub": "Choose the start date and how much time you have per week. The plan respects the exercises that call for a week of real use.",
+      "curso": "Agents: hire, delegate and supervise",
+      "horas_padrao": 3,
+      "degraus": [
+        {
+          "titulo": "Lesson 1 · The digital role",
+          "aula": "cargo-digital"
+        },
+        {
+          "titulo": "Lesson 2 · Delegating for real",
+          "aula": "delegar"
+        },
+        {
+          "titulo": "Lesson 3 · The agent constitution",
+          "aula": "constituicao"
+        },
+        {
+          "titulo": "Lesson 4 · Authority limits",
+          "aula": "alcada"
+        },
+        {
+          "titulo": "Lesson 5 · Progressive trust",
+          "aula": "confianca"
+        },
+        {
+          "titulo": "Lesson 6 · One agent or a team",
+          "aula": "equipe"
+        },
+        {
+          "titulo": "Lesson 7 · Supervision and exceptions",
+          "aula": "supervisao"
+        },
+        {
+          "titulo": "Lesson 8 · The dossier",
+          "aula": "dossie"
+        }
+      ],
+      "txt": {
+        "titulo": "Plan — Agents: hire, delegate and supervise",
+        "inicio": "Start",
+        "ritmo": "Pace",
+        "termino": "Expected finish",
+        "ate": "by",
+        "pronto": "done when",
+        "semanas": "weeks",
+        "travou": "## What got stuck and the rule I created",
+        "h": "h per week",
+        "exs": "exercises"
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice",
+      "sub": "Hora's dossier to train the rubric; your agent's for real.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "1 · Hora's dossier",
+          "min": "40 min",
+          "texto": "Put together the Hora pieces you made in lessons 1 through 7, build the cover and run it through the rubric. Run the panel prompt. Fix whatever is missing until the score is above 75 with all six required items. Write down who would sign at Horizonte and why.",
+          "pronto": "Hora's dossier has a cover, the pieces are all the same version, it scores 75 or more on the rubric with all six required items checked, and it names who signs, someone other than whoever built it."
+        },
+        {
+          "id": "e2",
+          "titulo": "2 · Your agent's dossier",
+          "min": "60 min",
+          "texto": "Do the same with the agent for your process, using the pieces from the \"in your process\" practices. Hand it to someone in your area who wrote none of it, ask them to check the required items, and note their questions.",
+          "pronto": "your agent's dossier scores 75 or more, has all six required items, the date of the next review, and the signature (or written acceptance) of someone who did not build it."
+        },
+        {
+          "id": "e3",
+          "titulo": "3 · Your dated plan",
+          "min": "5 min",
+          "texto": "Use the generator above to build the plan with your dates and download the .ics file for your calendar.",
+          "pronto": "the plan is saved and the dates are in your calendar."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Quick quiz",
+      "sub": "4 questions. The explanation appears after your attempt.",
+      "perguntas": [
+        {
+          "p": "Hora's dossier scored 92 points, but the action \"create order with no value limit\" is in green. Result?",
+          "opcoes": [
+            "Approved: 92 is well above 75",
+            "Rejected: a numeric cap is missing on an action that involves money, and that is required",
+            "Approved with reservations"
+          ],
+          "certa": 1,
+          "ref": "codigo",
+          "explica": "The required items exist precisely so that a high score doesn't hide major damage. One missing means a fail; the dossier goes back to the matrix, not back to zero."
+        },
+        {
+          "p": "Who should sign off on hiring Hora?",
+          "opcoes": [
+            "Patrícia, who built the dossier and knows everything",
+            "Carlos, after Rafael confirms the locks: whoever built it doesn't approve",
+            "The agent itself, after reading the dossier"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "Separation of duties: whoever enters it doesn't approve it. Patrícia builds it and answers for the result; approval belongs to someone else, with technical confirmation that the locks exist outside the text."
+        },
+        {
+          "p": "One report says 40% of companies are investing in agents; another says only 17% have agents in use. What should you do before citing either?",
+          "opcoes": [
+            "Pick the number that helps your argument",
+            "Compare the definition (investing vs. having in use), the sample and who published it",
+            "Average the two"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "\"Investing,\" \"integrating\" and \"in use\" measure different things. Without comparing definition and sample, comparing the percentages tells you nothing."
+        },
+        {
+          "p": "The vendor of the agent's tool announced it will shut it down. What changes in the dossier?",
+          "opcoes": [
+            "Nothing: the dossier is about the agent, not the tool",
+            "Affected actions go back to yellow, the test cases run again on the new tool, and the dossier gets a new version",
+            "Just change the tool name on the cover"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "Swapping a tool is a change like any other: behavior can change. The method survives the swap, but the evidence has to be redone."
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Summary",
+      "itens": [
+        {
+          "t": "Four pieces",
+          "texto": "Job sheet and delegation, constitution, matrix, supervision. In the same version."
+        },
+        {
+          "t": "Rubric with mandatory items",
+          "texto": "75 points and all six mandatory items. One missing means a fail."
+        },
+        {
+          "t": "Whoever builds it doesn't sign it",
+          "texto": "And IT confirms the locks outside the text."
+        },
+        {
+          "t": "Market as a map",
+          "texto": "Date, source, definition, and who sells what, before any number."
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "titulo": "Certification",
+      "paragrafos": [
+        "INEMA qualification certificate \"AI Manager\", coming soon at cert.inema.pro. It is not a regulated professional certification.",
+        "This is course G3 of the AI Management Program 2027. The other courses cover the agentic company (G0), people (G1), processes (G2), resources (G4), and governing, measuring and evolving (G5), where the program's final project lives."
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Go further",
+      "links": [
+        {
+          "t": "AI Management Area: the program and the courses",
+          "href": "https://eventos.inema.pro/gestao-ia/",
+          "icone": "alvo"
+        },
+        {
+          "t": "Gestoria: running a hybrid operation from end to end",
+          "href": "https://inematds.github.io/gestoria/",
+          "icone": "camadas"
+        },
+        {
+          "t": "Horizonte Lab: all the pieces (fictional study company)",
+          "href": "https://inematds.github.io/prof2030-lab/",
+          "icone": "pasta"
+        }
+      ]
+    }
+  ]
+}

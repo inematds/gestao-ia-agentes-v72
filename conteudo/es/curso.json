@@ -1,0 +1,185 @@
+{
+  "id": "gestao-ia-agentes-v72",
+  "lang": "es",
+  "url": "https://inematds.github.io/gestao-ia-agentes-v72/es/",
+  "nome": "Agentes: contratar, delegar y supervisar",
+  "sub": "Formación Gestión de IA 2027 · G3",
+  "volta": {
+    "t": "Área Gestión de IA",
+    "href": "https://eventos.inema.pro/gestao-ia/"
+  },
+  "lado_card": {
+    "rot": "Formación Gestión de IA 2027 · G3",
+    "t": "Empieza por la puerta de entrada",
+    "texto": "El G0 muestra la empresa agéntica y el papel del gestor de 2027. Los demás cursos de la formación parten de él.",
+    "link": "Ir al G0",
+    "href": "https://inematds.github.io/gestao-ia-base-v72/"
+  },
+  "rodape": "INEMA.CLUB · contenido abierto y gratuito · formato INEMA Learning v7.2 · <a href=\"https://eventos.inema.pro/gestao-ia/\">eventos.inema.pro/gestao-ia</a> · <a href=\"https://inematds.github.io/prof2030-lab/\">laboratorio Horizonte (empresa ficticia de estudio)</a> · <a href=\"https://inema.club/\">inema.club</a>",
+  "videos": {},
+  "inicio": {
+    "kicker": "Formación Gestión de IA 2027 · G3 · 8 clases",
+    "titulo": "Agentes: contratar, delegar y supervisar",
+    "lead": "Crear un agente ya es fácil. Responder por lo que hace, no. En ocho clases escribes el puesto, la delegación, la constitución y el nivel de autorización de un agente, decides cuándo gana más autonomía, cuándo se vuelve equipo y cómo tratar las excepciones, y cierras con el expediente de contratación aprobado por rúbrica.",
+    "cta": "Empezar por la clase 1",
+    "cta2": {
+      "t": "Ver el área Gestión de IA",
+      "href": "https://eventos.inema.pro/gestao-ia/"
+    },
+    "capa_alt": "Gerente comercial de una distribuidora señala un panel de cola de aprobaciones mientras el equipo trabaja; al fondo, el inventario de productos de limpieza.",
+    "numeros": [
+      {
+        "v": "8",
+        "t": "clases de 15 a 20 minutos"
+      },
+      {
+        "v": "18",
+        "t": "ejercicios con \"listo cuando\""
+      },
+      {
+        "v": "13",
+        "t": "modelos para copiar"
+      },
+      {
+        "v": "1",
+        "t": "cola de excepciones simulada"
+      }
+    ],
+    "aulas_titulo": "Las clases",
+    "aulas_sub": "En el orden en que un gestor recibe un agente: contratar (puesto y delegación), orientar (constitución), limitar (nivel de autorización), soltar la mano con evidencia, armar el equipo y supervisar. La clase 8 junta todo en el expediente.",
+    "blocos": [
+      {
+        "t": "Para quién es",
+        "itens": [
+          "Gestor de área, dueño de una pequeña o mediana empresa, líder de operaciones o de RR. HH. que ya tiene, o va a tener, agentes de IA en el equipo.",
+          "Quien no programa y no quiere programar: aquí administras el agente. Construir agentes es otro curso.",
+          "Quien necesita responder por lo que hace el agente: el descuento que dio, el pedido que aprobó, el cliente que atendió."
+        ]
+      },
+      {
+        "t": "Lo que sales haciendo",
+        "itens": [
+          "Escribir el puesto de un agente con misión, entrega verificable, prohibiciones y un responsable humano.",
+          "Delegar una tarea con objetivo, contexto, herramientas, plazo y evidencia de conclusión.",
+          "Decidir el nivel de autorización acción por acción (verde, amarillo, rojo) y promover o degradar con evidencia.",
+          "Operar la cola de excepciones: aprobar, devolver o detener, siempre con justificación."
+        ]
+      },
+      {
+        "t": "El caso que atraviesa el curso",
+        "itens": [
+          "La <b>Horizonte Distribuidora</b>, <a href=\"https://inematds.github.io/prof2030-lab/\">empresa ficticia de estudio</a> de 40 personas que distribuye productos de limpieza en el interior de São Paulo.",
+          "Tú haces el papel de <b>Patrícia Lima, gerente comercial</b>, que recibió a <b>Hora</b>, un agente que vende por WhatsApp. El proceso es el pedido que llega por WhatsApp y llega hasta la facturación.",
+          "Las fallas plantadas en el laboratorio (descuento sin tope, orden escondida, pedido grande sin aprobación) se vuelven problemas de gestión. Cada clase tiene una práctica en Horizonte y otra en tu propio proceso."
+        ]
+      }
+    ]
+  },
+  "ui": {
+    "pular": "Saltar al contenido",
+    "aulas": "Clases",
+    "concluido": "concluido",
+    "aula": "Clase",
+    "nesta_aula": "En esta clase vas a aprender:",
+    "objetivo": "Objetivo:",
+    "proxima_aula": "Siguiente clase",
+    "aula_anterior": "Clase anterior",
+    "voltar_inicio": "Volver al inicio del curso",
+    "marcar_concluida": "Marcar clase como concluida",
+    "dg_dica": "Haz clic en cada bloque del diagrama para ver qué hace.",
+    "copiar": "Copiar",
+    "copiado": "Copiado",
+    "selo_simulacao": "Simulación: ejemplo ilustrativo",
+    "selo_real": "Ejemplo del repositorio",
+    "pronto_quando": "Listo cuando:",
+    "fiz": "Hice este ejercicio",
+    "video_pagina": "Página del video con guion",
+    "pergunta": "Pregunta",
+    "de": "de",
+    "cert_tag": "competencia",
+    "correto": "Correcto",
+    "errado": "No es esa",
+    "quiz_aguarda": "Elige una alternativa. La explicación aparece después de tu intento.",
+    "proxima_pergunta": "Siguiente pregunta",
+    "quiz_ver": "Ver resultado",
+    "quiz_fim": "Prueba terminada",
+    "quiz_total": "Acertaste {a} de {n}. Si aciertas todas, la clase se marca como completada.",
+    "aparencia": "Apariencia",
+    "tamanho_texto": "Tamaño del texto",
+    "tema": "Tema",
+    "tema_escuro": "Oscuro",
+    "tema_papel": "Papel claro",
+    "role_dica": "Desplázate por la página: cada etapa de abajo enciende su parte del diagrama.",
+    "pre_requisito": "requiere",
+    "ver_aula": "Ver la clase",
+    "mapa_dica": "Haz clic en un ejercicio para ver qué hacer y el \"listo cuando\".",
+    "etapas": "Etapas",
+    "exercicios": "ejercicios",
+    "rever": "Repasar:",
+    "revisar_erradas": "Revisar las erróneas",
+    "refazer": "Rehacer la prueba",
+    "h_semana": "h por semana",
+    "data_inicio": "Fecha de inicio",
+    "ritmo": "Tiempo disponible",
+    "gerar_plano": "Generar mi plan",
+    "baixar_md": "Descargar plan.md",
+    "baixar_ics": "Descargar para el calendario (.ics)",
+    "ind_estudo": "Estudio (clases)",
+    "ind_pratica": "Práctica declarada",
+    "ind_nota": "Práctica = ejercicios que marcaste como hechos. La comprobación viene en el examen de la certificación.",
+    "estudo": {
+      "titulo": "Tu estudio",
+      "continuar": "Continuar donde lo dejé",
+      "comecar": "Empezar por la clase 1",
+      "cta_continuar": "Continuar la clase {n}",
+      "hoje": "hoy",
+      "ontem": "ayer",
+      "ha_dias": "hace {n} días",
+      "desempenho": "Desempeño en las pruebas",
+      "notas": "Mis anotaciones",
+      "dados": "Copiar mis datos",
+      "sem_testes": "Aún no has hecho ningún test. El test queda al final de cada clase.",
+      "nao_fez": "test aún no realizado",
+      "ultimo": "Último",
+      "melhor": "Mejor",
+      "tentativas": "intentos",
+      "tentativa": "intento",
+      "tudo_certo": "Acertaste todo en el último test.",
+      "rever": "Para repasar",
+      "resposta": "Respuesta correcta:",
+      "ir_teste": "Rehacer la prueba",
+      "sem_notas": "Aún no hay anotaciones. En la clase, selecciona un fragmento del texto y toca Marcar o Anotar.",
+      "so_marcado": "(solo marcado)",
+      "marcar": "Marcar",
+      "anotar": "Anotar",
+      "salvar": "Guardar",
+      "apagar": "Borrar marca",
+      "fechar": "Cerrar",
+      "nota_ph": "Escribe tu anotación sobre este fragmento…",
+      "um_bloco": "Marca dentro de un solo párrafo.",
+      "nao_marca": "Este fragmento no se puede marcar.",
+      "dados_exp": "Tu progreso, tus anotaciones y las notas de los tests quedan solo en este navegador. Descarga una copia (.json) para guardarla o para continuar en otro computador o navegador; allá, carga la copia. Cargar se suma a lo que ya existe y no borra nada.",
+      "exportar": "Descargar copia",
+      "importar": "Cargar copia",
+      "import_ok": "Copia cargada ({n} elementos). Actualizando la página…",
+      "import_erro": "Archivo no reconocido. No se cambió nada.",
+      "import_outro": "Esta copia es de otro curso. No se cambió nada.",
+      "export_ok": "Copia descargada."
+    },
+    "conv_dica": "Elige tu respuesta. El comentario aparece justo después y la conversación sigue según tu elección.",
+    "conv_voce": "Tú",
+    "conv_escolha": "Tu respuesta",
+    "conv_boa": "Buena elección",
+    "conv_meio": "Se puede mejorar",
+    "conv_ruim": "Elección débil",
+    "conv_fim": "Fin de la conversación",
+    "conv_placar": "Hiciste {p} de {m} puntos posibles.",
+    "conv_licao": "Lección:",
+    "conv_recomecar": "Reiniciar la conversación",
+    "conv_feita": "Tu mejor puntaje: {p} de {m} puntos.",
+    "comecar": "Empezar la clase",
+    "nesta_vai": "En esta clase vas a",
+    "trocar_tema": "Cambiar tema claro/oscuro"
+  },
+  "icone": "usuario"
+}

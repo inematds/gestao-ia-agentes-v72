@@ -1,0 +1,278 @@
+{
+  "slug": "delegar",
+  "num": 2,
+  "menu": "Delegate",
+  "titulo": "Really delegate",
+  "titulo_curto": "Really delegate",
+  "minutos": 18,
+  "lead": "\"Take care of the WhatsApp orders\" is not delegation: it is hoping it works out. Someone who really delegates hands over the goal, the size of the responsibility, the context, the tools, the deadline and the way to prove it is finished. It is what you would do with a new person on the team, and the agent deserves the same clarity.",
+  "objetivo": "hand an agent the goal, context, tools, deadline and proof of completion in a one-page delegation sheet.",
+  "competencias": [
+    "delegate-by-outcome",
+    "choose-a-delegable-task",
+    "define-proof-of-completion"
+  ],
+  "aprende": [
+    {
+      "t": "Telling task, process and responsibility apart"
+    },
+    {
+      "t": "Choose what is worth delegating with three filters"
+    },
+    {
+      "t": "Write the criterion, indicator, deadline and proof of completion"
+    },
+    {
+      "t": "Treat delegation like onboarding a new employee"
+    }
+  ],
+  "hero_alt": "A sales manager hands a folder to a colleague in a quick standing meeting, pointing at a tablet; stockroom shelves in the background.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "The six parts of a delegation",
+      "sub": "If one is missing, the agent fills the gap on its own. Tap each part.",
+      "volta": "The proof from each delivery feeds the next conversation about autonomy (lesson 5)",
+      "nos": [
+        {
+          "icone": "alvo",
+          "titulo": "Goal",
+          "sub": "an outcome, not effort",
+          "detalhe": "What must be true when the work is finished. \"Every restock order logged the same day\" is a goal. \"Take good care of customers\" is effort: it doesn't say when it's done."
+        },
+        {
+          "icone": "camadas",
+          "titulo": "Responsibility",
+          "sub": "the size",
+          "detalhe": "Task (starts and ends in one sitting), process (a sequence with an end) or responsibility (ongoing, judged on results every week). The size changes what you need to write: a responsibility calls for an indicator and a periodic review."
+        },
+        {
+          "icone": "memoria",
+          "titulo": "Context",
+          "sub": "what it needs to know",
+          "detalhe": "The sources the agent reads, where they are, who owns each one and how long they stay valid: price list, customer records, delivery rules, discount policy. Context without an owner goes stale, and the agent answers wrong with total confidence."
+        },
+        {
+          "icone": "chip",
+          "titulo": "Tools",
+          "sub": "what it touches",
+          "detalhe": "What the agent can use and in which mode: read, write, send. Start with the minimum that lets it work. The authority matrix, action by action, comes in lesson 4."
+        },
+        {
+          "icone": "relogio",
+          "titulo": "Deadline",
+          "sub": "by when, and the minimum",
+          "detalhe": "The agreed time for each delivery and the minimum acceptable. A deadline is also a stop condition: if it isn't done by then, the agent tells you instead of pushing on."
+        },
+        {
+          "icone": "check",
+          "titulo": "Proof",
+          "sub": "how to show it's done",
+          "forte": true,
+          "detalhe": "What the agent shows you so you know it's finished and right, without redoing it: the order number in the app, the conversation ID, the daily report. It's the most forgotten part and the one that saves the most back-and-forth."
+        }
+      ],
+      "legenda": "The six parts come from competency 3 of the AI Management Area (delegation): goal, responsibility, context, tools, deadline and proof of completion."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "How to delegate at Horizonte",
+      "sub": "Patrícia is going to hand Hora part of the order process. Four decisions before writing the sheet.",
+      "passos": [
+        {
+          "titulo": "Pick the size",
+          "sub": "task, process or responsibility",
+          "texto": [
+            "Task: \"reply whether we deliver to Americana on Friday\". Process: \"put together Seu Antônio's order\". Responsibility: \"keep the restock orders from registered customers logged and ready for picking, every day\".",
+            "Only the third describes an agent working toward an outcome. The first two describe someone pressing a button."
+          ],
+          "exemplo": {
+            "rot": "At Horizonte",
+            "texto": "Patrícia delegates a narrow responsibility: restock orders from registered customers. New customers, negotiation and complaints stay out."
+          }
+        },
+        {
+          "titulo": "Pass the three filters",
+          "sub": "repetitive, verifiable, in a system",
+          "texto": [
+            "Good work for an agent happens every week with little variation, has a criterion that says whether it came out right, and takes place in systems and messages, not in the physical world. If it fails a filter, it stays with a person for now.",
+            "The restock order passes all three. Negotiating the hotel's annual contract does not: it happens once a year and depends on the relationship. It stays with Patrícia."
+          ],
+          "exemplo": {
+            "rot": "Test question",
+            "texto": "Can I say in one sentence how I'd know the agent got it right? If not, it isn't ready to delegate yet."
+          }
+        },
+        {
+          "titulo": "Write the criterion, the number and the deadline",
+          "sub": "what you would ask of a person",
+          "texto": [
+            "Acceptance criterion: what a good delivery is. Indicator: the number you look at every week, with a target. Deadline: how long each delivery can take.",
+            "To know if it is worth it, track the cost per accepted result: the month's cost (model usage, tools and your review time) divided by the deliveries accepted without correction. It is an estimate, and whatever was corrected cost money without delivering."
+          ],
+          "exemplo": {
+            "rot": "At Horizonte (fictional numbers)",
+            "texto": "Criterion: an order that picking does not correct. Indicator: accepted without correction, target 95%. Deadline: logged within 30 minutes after the customer confirms."
+          }
+        },
+        {
+          "titulo": "Treat it as onboarding",
+          "sub": "the agent needs onboarding too",
+          "texto": [
+            "Deloitte (Tech Trends 2026) treats agents as a new workforce: they need to be onboarded into the data and the operation, they need graduated autonomy with human oversight triggers, and the people who supervise them need training too. It is one consultancy's view, useful as a map.",
+            "In practice: the agent's first week is onboarding, with everything going through you. Autonomy goes up later, with evidence."
+          ],
+          "exemplo": {
+            "rot": "Hora's first week",
+            "texto": "Every order goes out as a draft and Patrícia approves it. Juliana logs what had to be corrected. On Friday, the two of them go over the list together."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Template to copy: delegation sheet",
+      "sub": "One sheet per delegated responsibility. It complements the job sheet: the role says who the agent is, the delegation says what it has been given now.",
+      "blocos": [
+        {
+          "rot": "Delegation sheet",
+          "icone": "lista",
+          "conteudo": "DELEGATION SHEET · <agent> · <date> · delegated by <name>\n\nSIZE: [ ] task  [ ] process  [ ] ongoing responsibility\nTHREE FILTERS: repetitive? <yes/no> · verifiable? <yes/no> · in a system? <yes/no>\n\n1. GOAL (what will be true when it is finished):\n   <result sentence>\n\n2. OUT OF SCOPE (what is not theirs):\n   - <case 1>\n   - <case 2>\n\n3. CONTEXT (source · where it is · owner · valid until):\n   - <price table> · <location> · <owner> · <date>\n   - <customer records> · <location> · <owner> · <date>\n   - <rules and policies> · <location> · <owner> · <date>\n\n4. TOOLS (what · mode: read / write draft / write / send):\n   - <tool> · <mode> · <limit>\n\n5. DEADLINE:\n   - Each delivery within <time>\n   - If it does not finish on time: <notifies whom, how>\n\n6. PROOF OF COMPLETION (what it shows, without me redoing it):\n   - <log, number, link, report>\n\nACCEPTANCE CRITERION: <what a good delivery is>\nINDICATOR AND TARGET: <number> · target <value> · checked <when>\nSTOPS AND CALLS WHEN: <situation> → <person> (details in lesson 3)\nONBOARDING: in week 1 everything goes through <name>; review on <date>"
+        },
+        {
+          "rot": "Prompt · find the gap in the delegation",
+          "icone": "chat",
+          "conteudo": "You are going to receive a delegation sheet for an AI agent.\nPretend you are the agent, on your first day of work, and list:\n\n1. The three questions you would need to ask before starting,\n   because the sheet does not answer them.\n2. A common situation in which you would not know whether you were done.\n3. A context source cited without an owner or without a validity date.\n4. A tool where it is not clear whether you can write or only read.\n\nDo not invent answers to the questions: just point out the gaps.\n\nSheet:\n\"\"\"<paste the sheet here>\"\"\""
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Hora's delegation (example)",
+            "html": "<p><b>Hora · delegated by Patrícia</b> · Horizonte, fictional study company</p><ul><li><b>Size:</b> ongoing responsibility; passes all three filters.</li><li><b>Goal:</b> every restock order from a registered customer logged in the app the same day, at the table price.</li><li><b>Out of scope:</b> new customers, annual contracts, complaints, exchanges and returns.</li><li><b>Context:</b> catalog and price table (owner: Patrícia, monthly review); customer records (read); delivery rule \"orders placed by Thursday 2 p.m. ship on Friday\"; discount policy.</li><li><b>Tools:</b> look up catalog (read); look up customer (read); create order (write, up to R$ 5 mil; above that, draft only).</li><li><b>Deadline:</b> order logged within 30 min after confirmation; if it can't be done, notifies Juliana.</li><li><b>Proof:</b> order number + conversation ID in the log; daily summary at 6 p.m.</li></ul>"
+          },
+          {
+            "rot": "Common mistakes",
+            "html": "<ul><li><b>Delegating the wrong task first:</b> starting with negotiation (which does not pass the filters) instead of restocking.</li><li><b>Context without an owner:</b> the price table changed and nobody told the agent.</li><li><b>Proof = \"the agent said it did it\":</b> an explanation is not proof; a log is.</li><li><b>Skipping onboarding:</b> giving autonomy on day one, before seeing a week of work.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice",
+      "sub": "One delegation practiced at Horizonte and one real one from your own work.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "1 · The restock delegation",
+          "min": "20 min",
+          "texto": "Write the delegation sheet that Patrícia hands to Hora for restock orders. Use the job sheet from lesson 1 as a base and don't copy the example: write it first, then compare. Run the \"find the gap\" prompt and fix what it points out.",
+          "pronto": "the sheet has the six parts, at least two out-of-scope cases, each context source with an owner, and one proof of completion that you can check without opening the whole conversation."
+        },
+        {
+          "id": "e2",
+          "titulo": "2 · A delegation of your own",
+          "min": "25 min",
+          "texto": "List five activities in your area and run each one through the three filters. Pick one that passes all three and write its delegation sheet. Show the \"out of scope\" list to the person who does this work today and note what they add.",
+          "pronto": "the sheet is saved with the six parts, the chosen activity passes the three filters in writing, and there is at least one item added by the person who does the work today."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Quick quiz",
+      "sub": "4 questions. The explanation appears after your attempt.",
+      "perguntas": [
+        {
+          "p": "Patrícia wrote: \"Hora, take care of the WhatsApp orders\". What is missing, first of all?",
+          "opcoes": [
+            "A more upbeat tone of voice",
+            "Goal, context, tools, deadline and proof of completion",
+            "A more powerful AI model"
+          ],
+          "certa": 1,
+          "ref": "diagrama",
+          "explica": "The sentence doesn't state the result, the sources, what it may touch, the deadline or how to prove it finished. The agent fills in each gap on its own. A more powerful model fills the gaps with more confidence, not with more accuracy."
+        },
+        {
+          "p": "Which of these Horizonte activities passes the three filters to be delegated now?",
+          "opcoes": [
+            "Negotiating the hotel's annual contract",
+            "Logging restock orders from registered customers",
+            "Deciding which customer deserves a longer payment term"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "Restocking is repetitive, verifiable (the order matches the table and the records) and happens in a system. The annual contract is rare and depends on the relationship; the payment term is a credit decision, with no written criterion."
+        },
+        {
+          "p": "The agent says \"I finished today's orders\". Is that proof of completion?",
+          "opcoes": [
+            "Yes, if it is usually right",
+            "No: proof is the record you can check, like the order number and the source conversation",
+            "Yes, as long as it explains how it did it"
+          ],
+          "certa": 1,
+          "ref": "diagrama",
+          "explica": "An agent's explanation is not evidence. Evidence is what gets recorded and what you can check without redoing the work: a number in the app, a conversation ID, the daily summary."
+        },
+        {
+          "p": "The agent cost R$ 400 in the month (adding up review time) and delivered 500 requests, of which 320 were accepted without correction. How do you calculate the cost per accepted result?",
+          "opcoes": [
+            "400 ÷ 500 = R$ 0.80 per request",
+            "400 ÷ 320 = R$ 1.25 per accepted request",
+            "You can't calculate it without knowing the model's price"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "Only what was actually useful counts: 400 ÷ 320. The 180 that needed fixing cost money and delivered nothing. The number is an estimate for tracking the trend, not proof of savings. The values in the example are fictional."
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Summary",
+      "itens": [
+        {
+          "t": "Six pieces",
+          "texto": "Goal, responsibility, context, tools, deadline and evidence."
+        },
+        {
+          "t": "Three filters",
+          "texto": "Repetitive, verifiable, in a system. If it fails one, it stays with a person."
+        },
+        {
+          "t": "Criterion, number, deadline",
+          "texto": "And cost per accepted result, always as an estimate."
+        },
+        {
+          "t": "Onboarding first",
+          "texto": "In the first week everything goes through you; autonomy grows with evidence."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Go further",
+      "links": [
+        {
+          "t": "Super-Agents in practice: delegate responsibilities, not tasks",
+          "href": "https://inematds.github.io/agi-pratica/",
+          "icone": "robo"
+        },
+        {
+          "t": "Agent Architect Kit: long-horizon request",
+          "href": "https://inematds.github.io/kit-arquiteto-agentes/",
+          "icone": "arquivo"
+        },
+        {
+          "t": "Horizonte Lab: Hora's conversations (fictional study company)",
+          "href": "https://inematds.github.io/prof2030-lab/pecas/agente-whatsapp/",
+          "icone": "chat"
+        }
+      ]
+    }
+  ]
+}

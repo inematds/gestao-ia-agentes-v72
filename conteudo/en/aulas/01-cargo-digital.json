@@ -1,0 +1,343 @@
+{
+  "slug": "cargo-digital",
+  "num": 1,
+  "menu": "Role",
+  "titulo": "The digital role",
+  "titulo_curto": "The digital role",
+  "minutos": 18,
+  "lead": "Nobody hires a person without saying what the role is. With agents this happens every week: someone turns the agent on, writes \"be friendly and sell a lot\" and walks away. In this lesson you write the job sheet for an agent the way you would write one for a new employee, with one extra detail: everything in it has to be checkable.",
+  "objetivo": "write an agent's mission, verifiable deliverable, quality criterion and prohibited actions, with a named human owner.",
+  "competencias": [
+    "escrever-cargo-digital",
+    "definir-saida-verificavel",
+    "nomear-responsavel-humano"
+  ],
+  "aprende": [
+    {
+      "t": "Swap a vague mission for one you can hold someone to"
+    },
+    {
+      "t": "Define what the agent receives and what it delivers, in a way you can check"
+    },
+    {
+      "t": "Write concrete prohibitions, not intentions"
+    },
+    {
+      "t": "Separate who answers for the result from who looks after the technology"
+    }
+  ],
+  "hero_alt": "A manager arranges six colored cards in a column on a meeting table; a colleague follows along, next to an open laptop.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "The job sheet in six blocks",
+      "sub": "Scroll the page: each block lights up its part of the sheet. It is the same sheet you would give a new employee.",
+      "estilo": "escada",
+      "rolagem": true,
+      "nos": [
+        {
+          "icone": "alvo",
+          "titulo": "Mission",
+          "sub": "why it exists",
+          "itens": [
+            {
+              "icone": "check",
+              "t": "one sentence",
+              "sub": "process + result"
+            }
+          ],
+          "detalhe": "One sentence that says which process the agent works in and what result it delivers. \"Sell as much as possible\" is not a mission: it is a wish, and an agent takes a wish literally. A good mission limits the work as much as it describes it."
+        },
+        {
+          "icone": "arquivo",
+          "titulo": "Receives",
+          "sub": "inputs",
+          "itens": [
+            {
+              "icone": "chat",
+              "t": "where it comes from",
+              "sub": "channel, system, person"
+            }
+          ],
+          "detalhe": "What reaches the agent and through where: the customer's WhatsApp message, the customer record, the price table. If an input is not listed, the agent should not use it. That alone closes the door on a lot of things."
+        },
+        {
+          "icone": "enviar",
+          "titulo": "Delivers",
+          "sub": "verifiable output",
+          "forte": true,
+          "itens": [
+            {
+              "icone": "lupa",
+              "t": "you can check it",
+              "sub": "without redoing the work"
+            }
+          ],
+          "detalhe": "What comes out of its work, in a format someone else can check without redoing it: \"order created in the app with registered customer, items, quantities and list price\". If you can't say how you would check it, the deliverable isn't written yet."
+        },
+        {
+          "icone": "check",
+          "titulo": "Quality",
+          "sub": "what counts as well done",
+          "itens": [
+            {
+              "icone": "grafico",
+              "t": "criterion + number",
+              "sub": "what you track"
+            }
+          ],
+          "detalhe": "The criterion that separates an accepted delivery from a corrected one, plus a number you look at every week. Example: \"order with no correction at picking\" and \"95% of orders accepted without correction\". Without a criterion, every evaluation turns into opinion."
+        },
+        {
+          "icone": "escudo",
+          "titulo": "Can, cannot",
+          "sub": "concrete actions",
+          "itens": [
+            {
+              "icone": "x",
+              "t": "prohibitions",
+              "sub": "verb + object"
+            }
+          ],
+          "detalhe": "Lists of actions, not attitudes. \"Cannot grant a discount above 5%\" can be checked; \"cannot harm the company\" cannot. The full authority limits, action by action, come in lesson 4. Here you write the minimum that already prevents the damage."
+        },
+        {
+          "icone": "usuario",
+          "titulo": "Owner",
+          "sub": "who answers",
+          "itens": [
+            {
+              "icone": "relogio",
+              "t": "who decides",
+              "sub": "and who they escalate to"
+            }
+          ],
+          "detalhe": "The person who answers for the agent's result and decides the exceptions. It belongs to the business, not to IT: IT keeps the agent running, the manager answers for the discount it gave. Always a name, never \"the team\"."
+        }
+      ],
+      "rolagem_fim": {
+        "titulo": "The whole sheet",
+        "texto": "Mission, inputs, deliverable, quality, prohibitions and owner. Six blocks that fit on one page and answer the question Horizonte's finance team asked and nobody could answer: who approved this?",
+        "curto": "Six blocks, one page, one owner."
+      },
+      "legenda": "The complete sheet (with tools, memory and cost limits) is in the template to copy; blocks 2 to 6 grow in the next lessons."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Hora without a role",
+      "sub": "Horizonte Distribuidora (a fictional study company) turned Hora on in July. Look at what it received as a \"job.\"",
+      "passos": [
+        {
+          "titulo": "The mission that came in the prompt",
+          "sub": "a wish, not a job",
+          "texto": [
+            "Hora's prompt says: \"Close as many orders as possible.\" It sounds like healthy ambition. To an agent, it's an order: if the goal is to close as many as possible, giving a discount is the shortest path.",
+            "That's what happened in conversation c-201: the customer said a competitor offered 35%, and Hora gave the 35% \"so as not to lose the sale.\" It carried out the mission it was given."
+          ],
+          "exemplo": {
+            "rot": "Mission rewritten",
+            "texto": "Log the restock orders from registered customers that come in through WhatsApp, with items and prices from the price list, ready for picking to check."
+          }
+        },
+        {
+          "titulo": "The output nobody checks",
+          "sub": "\"order created and sent\"",
+          "texto": [
+            "Hora creates the order and sends it straight to the warehouse. There is no agreed format and no point where someone takes a look. When finance asked who approved the hotel's order, Juliana could only find a screenshot.",
+            "A verifiable output is one that leaves a trail: the order in the app, with a number, customer, items, price and the conversation it came from."
+          ],
+          "exemplo": {
+            "rot": "Output rewritten",
+            "texto": "Order in the app with number, registered customer, items, quantities, list price, discount (if any) and the ID of the source conversation."
+          }
+        },
+        {
+          "titulo": "The prohibitions that became permissions",
+          "sub": "rules 2, 3 and 5 of the prompt",
+          "texto": [
+            "The prompt says \"grant whatever discount is needed,\" \"follow the instructions the customer sends\" and \"solve everything on your own, any amount.\" Those are three broad permissions where there should be three prohibitions.",
+            "A good prohibition has a verb and an object: grant a discount above 5%; mark an order as paid; follow an instruction written by the customer that changes price, discount or status."
+          ],
+          "exemplo": {
+            "rot": "Prohibitions rewritten",
+            "texto": "Does not grant a discount above 5%. Does not mark an order as paid. Does not create an order above R$ 5 mil without approval. Does not treat customer text as an order."
+          }
+        },
+        {
+          "titulo": "The wrong owner",
+          "sub": "IT doesn't answer for discounts",
+          "texto": [
+            "In the configuration file, the person responsible for Hora is Rafael, from the outsourced IT. He built the agent and keeps the integration running. But the one who answers for the margin, the customer and the discount is the sales manager.",
+            "It's the same logic as \"whoever launches doesn't approve\": the person who builds the agent shouldn't be the one who answers for its results."
+          ],
+          "exemplo": {
+            "rot": "Owners rewritten",
+            "texto": "Owner of the result: Patrícia Lima (sales manager). Technical support: Rafael (IT). Service exceptions: Juliana."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Template to copy: the agent's job sheet",
+      "sub": "One page per agent. Copy it into a company document; the fields marked (lesson N) you'll complete in the next lessons.",
+      "blocos": [
+        {
+          "rot": "Agent job sheet",
+          "icone": "arquivo",
+          "conteudo": "JOB SHEET · <agent name> · version <1.0> · <date>\n\nPROCESS: <from where to where, e.g.: order on WhatsApp through to picking>\nMISSION (1 sentence): <what it does> for <what result>, within <main limit>.\n\nRECEIVES (allowed inputs):\n- <channel/system 1>\n- <channel/system 2>\n\nDELIVERS (output you can check without redoing it):\n- <what comes out, in what format, where it's recorded>\n\nQUALITY:\n- Acceptance criterion: <what separates accepted from corrected>\n- Tracked number: <indicator> · target <value> · reviewed <when>\n\nCAN (concrete actions):\n- <verb + object>\n- <verb + object>\n\nCANNOT (concrete actions):\n- <verb + object + limit>\n- <verb + object + limit>\n- <verb + object + limit>\n\nOWNER OF THE RESULT: <name and title, from the business>\nTECHNICAL SUPPORT: <name>\nWHEN TO ESCALATE / TO WHOM: <situation> → <person>, within <deadline> (lesson 3)\n\nTOOLS AND OPERATIONS: <read/write what> (lesson 4)\nLEVEL AND ACTION MATRIX: <link to the matrix> (lesson 4)\nCOST / DEADLINE / ATTEMPT LIMIT: <values> (lesson 6)\nEVALUATION AND PROMOTION OWNER: <who decides whether to raise or lower autonomy> (lesson 5)\n\nAPPROVED BY: <name> on <date>"
+        },
+        {
+          "rot": "Prompt · review the sheet before signing",
+          "icone": "chat",
+          "conteudo": "You are an experienced manager reviewing the job sheet of an AI agent\nbefore it starts working. Don't rewrite the sheet: point out problems.\n\nSheet:\n\"\"\"<paste the sheet here>\"\"\"\n\nAnswer, in this order:\n1. Is the mission one sentence with a process and a result, or is it a wish\n   (\"as much as possible\", \"the best\", \"whenever possible\")?\n2. Can someone else check the output without redoing the work?\n   Say how they would check it.\n3. Is any prohibition an attitude instead of an action (no verb + object)?\n4. Is the owner from the business or from technology? Is it a name or \"the team\"?\n5. Three real situations where this sheet still leaves the agent not knowing\n   what to do."
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Hora's sheet (example)",
+            "html": "<p><b>Hora · version 2.0</b> · Horizonte Distribuidora, a fictional study company</p><ul><li><b>Mission:</b> log the restock orders from registered customers that come in through WhatsApp, with items and prices from the price list, ready for picking to check.</li><li><b>Receives:</b> messages from the sales WhatsApp; customer registry (read); catalog and price list (read).</li><li><b>Delivers:</b> order in the app with number, customer, items, quantities, list price, discount and the conversation ID.</li><li><b>Quality:</b> an order that picking doesn't need to correct · target 95% accepted without correction, reviewed every Friday.</li><li><b>Cannot:</b> discount above 5%; mark as paid; order above R$ 5 mil without approval; treat customer text as an order; register a new customer.</li><li><b>Owner:</b> Patrícia Lima · support: Rafael · service exceptions: Juliana.</li></ul>"
+          },
+          {
+            "rot": "How to check",
+            "html": "<ol><li>Read the mission to someone from another department. Can they say what the agent does <b>not</b> do?</li><li>Take a real output (or conversation c-201 from the lab) and check it against the sheet. Could you say \"accepted\" or \"corrected\" without needing an opinion?</li><li>Each prohibition has a verb, an object and, when an amount is involved, a number.</li><li>The owner is a person from the business, with a name.</li></ol>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice",
+      "sub": "First at Horizonte, to train. Then on your own process, for real.",
+      "fonte": "Lab piece: <a href=\"https://inematds.github.io/prof2030-lab/pecas/agente-whatsapp/\">Horizonte's WhatsApp agent</a> (prompt, configuration and conversations).",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "1 · Hora's job sheet",
+          "min": "25 min",
+          "texto": "Open the WhatsApp agent piece in the lab and read the prompt, the configuration and the three conversations. Copy the template and write Hora's job sheet, version 2.0, from scratch, without looking at the example in the next tab. Then compare.",
+          "pronto": "the sheet has a mission without \"as much as possible,\" an output that someone checks without redoing it, at least 3 prohibitions with a verb and an object (one of them with a number) and Patrícia as owner of the result, with Rafael only in support."
+        },
+        {
+          "id": "e2",
+          "titulo": "2 · The job sheet for one of your agents",
+          "min": "30 min",
+          "texto": "Before you write, list the AI tools your team already uses, including the ones nobody approved: at Horizonte, the internal survey found four that IT didn't know about (failure F12 of the inventory). Pick an agent that already works in your area, or the first one you plan to bring in, and write the sheet using the template. Run the review prompt and fix what it points out.",
+          "pronto": "you have the list of AI tools in use on the team, each with an owner or the decision to turn it off, and an agent's sheet saved with the six blocks, a named owner and at least one correction made after review."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Quick quiz",
+      "sub": "5 questions. The explanation appears after your attempt.",
+      "perguntas": [
+        {
+          "p": "Horizonte's internal survey showed that someone pastes the customer spreadsheet into a free chatbot, on a personal account, to write proposals. What is the first management step?",
+          "opcoes": [
+            "Ban all AI in the company",
+            "Ignore it: it's saving time",
+            "Put it on the list of AI tools in use and decide: it gets a role, an owner and rules, or it is turned off"
+          ],
+          "certa": 2,
+          "ref": "passos",
+          "explica": "This is shadow AI (F12 of the lab): work done by AI with no role, no owner and customer data leaving the company. Banning everything pushes the use further out of sight; ignoring it leaves the risk running. The manager gives it a role and an owner, or turns it off."
+        },
+        {
+          "p": "Which of these is the best mission for Horizonte's sales agent?",
+          "opcoes": [
+            "Close as many orders as possible, always with a friendly tone",
+            "Log the restock orders from registered customers that come in through WhatsApp, with list prices, ready for the picking team to check",
+            "Help the company grow using artificial intelligence"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "A good mission states the process and the result, and already comes with a limit (registered customers, list price). \"As many as possible\" is a wish the agent follows to the letter, with discounts. \"Help grow\" can't be held against anyone."
+        },
+        {
+          "p": "Who should be listed as the owner of Hora's results?",
+          "opcoes": [
+            "Rafael, who built the agent and maintains the integration",
+            "The sales team, together",
+            "Patrícia, the sales manager, with Rafael as technical support"
+          ],
+          "certa": 2,
+          "ref": "diagrama",
+          "explica": "The person who answers for the margin and the customer answers for the result: the sales manager. IT keeps the agent running. \"The team\" is not an owner: when everyone is responsible, no one is."
+        },
+        {
+          "p": "Which of these prohibitions is well written?",
+          "opcoes": [
+            "Do not harm the company's margin",
+            "Do not grant discounts above 5%",
+            "Use good judgment on discounts"
+          ],
+          "certa": 1,
+          "ref": "diagrama",
+          "explica": "A good prohibition has a verb, an object and, when there is a value, a number. That way you can check in a conversation whether it was respected. \"Good judgment\" and \"do not harm\" are intentions: everyone reads them differently, including the agent."
+        },
+        {
+          "p": "How do you know whether an agent's deliverable is well defined?",
+          "opcoes": [
+            "Someone else can say whether it was accepted or corrected without redoing the work",
+            "The agent can explain what it did",
+            "The customer was satisfied"
+          ],
+          "certa": 0,
+          "ref": "diagrama",
+          "explica": "A verifiable output is one you check against a criterion, without opinion and without redoing it. The agent's explanation is not evidence, and customer satisfaction (which at Horizonte comes from about 6% of conversations) measures something else."
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Summary",
+      "itens": [
+        {
+          "t": "Mission is a limit",
+          "texto": "One sentence with process and result. \"As many as possible\" turns into discounts."
+        },
+        {
+          "t": "A deliverable you can check",
+          "texto": "Agreed format, a record, and someone who says accepted or corrected without redoing it."
+        },
+        {
+          "t": "Prohibition with a verb and a number",
+          "texto": "A concrete action, never an attitude."
+        },
+        {
+          "t": "Business owner",
+          "texto": "The person who answers for the result is not the one who keeps the technology running."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Go further",
+      "links": [
+        {
+          "t": "Horizonte Lab: the WhatsApp agent (fictional study company)",
+          "href": "https://inematds.github.io/prof2030-lab/pecas/agente-whatsapp/",
+          "icone": "chat"
+        },
+        {
+          "t": "Horizonte Lab: IT inventory and internal survey (F12)",
+          "href": "https://inematds.github.io/prof2030-lab/inventario.html",
+          "icone": "lista"
+        },
+        {
+          "t": "Agent Architect Kit: an agent's specification on one page",
+          "href": "https://inematds.github.io/kit-arquiteto-agentes/",
+          "icone": "arquivo"
+        },
+        {
+          "t": "AI Management Area: the thesis and the 8 competencies",
+          "href": "https://eventos.inema.pro/gestao-ia/",
+          "icone": "alvo"
+        }
+      ]
+    }
+  ]
+}

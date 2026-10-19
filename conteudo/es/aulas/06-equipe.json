@@ -1,0 +1,286 @@
+{
+  "slug": "equipe",
+  "num": 6,
+  "menu": "Equipo",
+  "titulo": "Un agente o un equipo",
+  "titulo_curto": "Un agente o un equipo",
+  "minutos": 20,
+  "lead": "A Carlos le gustó Hora y ya quiere otro agente, para la cobranza. Quizás un tercero para revisar a los dos. A veces es justo eso; a veces es solo un problema más grande con más lugares donde puede fallar. En esta lección decides cuándo el trabajo pide más de un agente, cómo se pasan el trabajo entre ellos y dónde se detiene el equipo.",
+  "objetivo": "decidir cuándo separar el trabajo en varios agentes, en serie o en paralelo, con contrato de traspaso y límites de intentos, plazo y costo.",
+  "competencias": [
+    "decidir-un-o-varios-agentes",
+    "escribir-contrato-de-traspaso",
+    "limitar-intentos-plazo-costo"
+  ],
+  "aprende": [
+    {
+      "t": "Sacar del agente lo que es regla fija"
+    },
+    {
+      "t": "Reconocer las tres señales de que llegó la hora del equipo"
+    },
+    {
+      "t": "Escribir el contrato de traspaso entre agentes"
+    },
+    {
+      "t": "Decidir serie o paralelo y poner límite a intentos, plazo y costo"
+    }
+  ],
+  "hero_alt": "Un gerente comercial y un técnico de TI montan, en un pizarrón de vidrio, un flujo de notas adhesivas de colores unidas por flechas.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "La escalera de la decisión",
+      "sub": "Sube un escalón solo cuando el de abajo no resuelve. Haz clic en cada escalón.",
+      "estilo": "escada",
+      "nos": [
+        {
+          "icone": "lista",
+          "titulo": "Paso fijo",
+          "sub": "regla que no cambia",
+          "detalhe": "Si la respuesta es siempre la misma para la misma entrada (¿el precio es el de la tabla? ¿el valor pasa de R$ 5 mil? ¿el cliente está registrado?), no es trabajo de agente: es una regla en la herramienta. Más barata, más rápida y auditable."
+        },
+        {
+          "icone": "usuario",
+          "titulo": "Un agente",
+          "sub": "una responsabilidad",
+          "detalhe": "Una responsabilidad, un conjunto de permisos, un contexto que cabe en su escritorio. Un agente bien escrito llega lejos. Es el punto de partida, no un nivel que se pueda saltar."
+        },
+        {
+          "icone": "camadas",
+          "titulo": "Equipo",
+          "sub": "tres señales",
+          "forte": true,
+          "itens": [
+            {
+              "icone": "memoria",
+              "t": "el escritorio se llena"
+            },
+            {
+              "icone": "cadeado",
+              "t": "permisos diferentes"
+            },
+            {
+              "icone": "lupa",
+              "t": "revisión independiente"
+            }
+          ],
+          "detalhe": "Separa cuando aparezca una de estas: el contexto no cabe y la calidad baja; partes del trabajo piden permisos o reglas que no pueden convivir; o quieres que quien revisa no sea quien hizo el trabajo. Sin uno de estos motivos, más agentes es solo más costo y más traspasos."
+        },
+        {
+          "icone": "fila",
+          "titulo": "Serie o paralelo",
+          "sub": "decidir antes",
+          "detalhe": "Las decisiones que dependen unas de otras van en serie. El trabajo repetido e independiente (cien recordatorios iguales, cien revisiones) va en paralelo, de preferencia como automatización. Regla práctica: inteligencia en secuencia, automatización en paralelo, archivos para compartir el contexto."
+        },
+        {
+          "icone": "check",
+          "titulo": "Supervisor y persona",
+          "sub": "quién cierra",
+          "detalhe": "Un agente supervisor coordina, pero no recibe ni reparte permisos nuevos. Los puntos amarillos y rojos de la matriz siguen con una persona, y ella responde por todo el equipo."
+        }
+      ],
+      "legenda": "\"Inteligencia en secuencia, automatización en paralelo\": regla del Arquitecto de Ejecución (INEMA). Las tres señales vienen del curso Super-Agentes en la práctica."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Horizonte quiere hacer crecer el equipo",
+      "sub": "El pedido de Carlos: un agente para recordar a los clientes las facturas por vencer. Cuatro decisiones.",
+      "passos": [
+        {
+          "titulo": "Primero, saca la regla del agente",
+          "sub": "no todo se vuelve agente",
+          "texto": [
+            "Alguien sugirió un \"agente revisor\" para chequear los pedidos de Hora. Pero revisar precio de tabla, tope de descuento, valor superior a R$ 5 mil y registro del cliente es regla fija: la misma entrada da siempre la misma respuesta.",
+            "Eso va a la herramienta de pedidos, como Rafael ya hizo después de la clase 3. Un agente para hacer cuentas es costo y riesgo sin motivo."
+          ],
+          "exemplo": {
+            "rot": "Decisión",
+            "texto": "Revisión de pedido: regla en la herramienta, no agente."
+          }
+        },
+        {
+          "titulo": "¿Cobranza es otro agente?",
+          "sub": "la señal de los permisos",
+          "texto": [
+            "La cobranza necesita leer cuentas por cobrar en el ERP, un dato que Hora no debe ver. Tiene otro tono, otras reglas (nunca amenazar, nunca renegociar solo) y otro responsable, el área financiera.",
+            "Es la segunda señal: permisos y reglas que no pueden convivir en el mismo agente. Aquí la separación se justifica. El agente de cobranza recibe su propia ficha, constitución y matriz, todas empezando en amarillo."
+          ],
+          "exemplo": {
+            "rot": "Diseño (propuesta ficticia)",
+            "texto": "Hora (ventas) → pedido facturado en el ERP → agente de cobranza (recordatorio) → finanzas decide la renegociación."
+          }
+        },
+        {
+          "titulo": "Escribe el traspaso",
+          "sub": "qué va junto y qué no",
+          "texto": [
+            "Todo traspaso entre agentes tiene contrato: el disparador, lo que pasa, la evidencia que va junto, lo que el receptor no puede hacer, el plazo y a quién devuelve.",
+            "Pasa lo mínimo necesario. El agente de cobranza recibe número de factura, vencimiento y contacto autorizado, no toda la conversación de ventas. Menos datos circulando, menos riesgo y menos contexto pagado."
+          ],
+          "exemplo": {
+            "rot": "Regla de oro",
+            "texto": "Quien recibe lee el registro de lo que se hizo y no empieza de cero, ni le pregunta al cliente lo que ya informó."
+          }
+        },
+        {
+          "titulo": "Pon límites y paradas",
+          "sub": "intentos, plazo, costo",
+          "texto": [
+            "Un equipo sin límite entra en bucle: un agente se lo devuelve al otro, que se lo devuelve de vuelta, y la factura crece. Escribe: como máximo dos intentos por tarea, una devolución entre agentes y después una persona; plazo por etapa; presupuesto mensual del equipo.",
+            "McKinsey describe organizaciones con equipos pequeños por resultado, de 2 a 5 personas supervisando de 50 a 100 agentes. Es experiencia declarada de la consultora, no un estudio medido. La unidad es el resultado, no el número de agentes."
+          ],
+          "exemplo": {
+            "rot": "En Horizonte (valores ficticios)",
+            "texto": "Recordatorio: como máximo 2 por factura. Error de herramienta: 2 intentos, después avisa a finanzas. Presupuesto del equipo: tope mensual escrito; si pasa del 80%, se avisa a Patrícia."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Plantillas para copiar",
+      "sub": "Una página para todo el equipo y un contrato para cada flecha.",
+      "blocos": [
+        {
+          "rot": "Diseño del equipo (1 página)",
+          "icone": "camadas",
+          "conteudo": "DISEÑO DEL EQUIPO · proceso: <de dónde hasta dónde> · responsable: <nombre> · versión <1.0>\n\nRESULTADO DEL EQUIPO (1 frase): <qué será verdad>\n\nPIEZAS (una línea cada una; tipo = regla en la herramienta | agente | persona)\n| Pieza | Tipo | Por qué existe separada (señal) | Permisos | Ficha/constitución/matriz |\n|---|---|---|---|---|\n| <revisión de pedido> | regla | <respuesta fija> | - | - |\n| <agente 1> | agente | <motivo> | <leer/escribir qué> | <links> |\n| <agente 2> | agente | <el escritorio se llena / permisos / revisión> | <...> | <links> |\n| <persona> | persona | <decide amarillo y rojo> | - | - |\n\nORDEN: serie <qué etapas> · paralelo <qué etapas, de preferencia automatización>\nSUPERVISOR: <agente o persona> · NO amplía los permisos de nadie\nPUNTOS HUMANOS: <acciones amarillas/rojas y quién aprueba>\n\nLÍMITES DEL EQUIPO\n- Intentos por tarea: <n> · devoluciones entre agentes: <n>, después <persona>\n- Plazo por etapa: <...>\n- Presupuesto mensual: <valor> · alerta en <%> para <nombre>\nBOTÓN DE APAGADO DEL EQUIPO: <qué detiene todo de una vez> · quién: <nombres>"
+        },
+        {
+          "rot": "Contrato de traspaso entre agentes",
+          "icone": "seta",
+          "conteudo": "CONTRATO DE TRASPASO · <agente A> → <agente B> · versión <1.0>\n\nDISPARADOR: <evento que dispara el traspaso>\nQUÉ PASA (solo lo necesario): <campos>\nQUÉ NO PASA: <datos que se quedan con A>\nEVIDENCIA JUNTO: <registro de lo que hizo A, con identificador del caso>\nB DEBE: <qué entrega B y en qué plazo>\nB NO PUEDE: <acciones prohibidas para B en este caso>\nSI FALTA UN DATO: B devuelve a A una vez, con el motivo; a la 2ª, va a <persona>\nLÍMITE: <n> intentos · plazo <tiempo> · costo máximo por caso <valor estimado>\nRESPONSABLE DEL TRASPASO: <nombre>\nREGISTRO: todo traspaso genera una línea (fecha, caso, de, para, qué fue, resultado)"
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Equipo de Horizonte (ejemplo)",
+            "html": "<p>Horizonte, empresa ficticia de estudio · responsables: Patrícia (ventas) y finanzas (cobranza).</p><ul><li><b>Revisión de pedido</b> · regla en la herramienta: precio, tope, valor, registro.</li><li><b>Hora</b> · agente de ventas · registra pedidos de reposición.</li><li><b>Agente de cobranza</b> · separado por la señal de los permisos: lee cuentas por cobrar, envía un recordatorio aprobado; nunca renegocia.</li><li><b>Personas</b> · Patrícia aprueba pedidos de más de R$ 5 mil y descuentos de 5% a 10%; finanzas decide la renegociación.</li><li><b>Serie:</b> pedido → aprobación → separación → facturación → recordatorio. <b>Paralelo:</b> recordatorios de facturas distintas, como rutina automática.</li></ul>"
+          },
+          {
+            "rot": "Traspaso Hora → cobranza",
+            "html": "<ul><li><b>Disparador:</b> factura emitida en el ERP.</li><li><b>Pasa:</b> número de la factura, valor, vencimiento, contacto autorizado para la cobranza.</li><li><b>No pasa:</b> la conversación de ventas, los descuentos negociados, otros contactos.</li><li><b>Cobranza no puede:</b> renegociar, dar descuento, amenazar, cobrar antes del vencimiento.</li><li><b>Faltó un dato:</b> lo devuelve una vez a Juliana; la segunda vez, a finanzas.</li><li><b>Límite:</b> 2 recordatorios por factura.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Práctica",
+      "sub": "Dibuja el equipo de Horizonte y después el tuyo. Es solo un papel: hoy no se enciende ningún agente nuevo.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "1 · El equipo del pedido a la cobranza",
+          "min": "30 min",
+          "texto": "Dibuja, con el modelo, el equipo del proceso de Horizonte desde el pedido por WhatsApp hasta el recordatorio de cobranza. Para cada pieza, di si es regla, agente o persona, y por qué. Escribe el contrato de traspaso de Hora al agente de cobranza sin mirar el ejemplo; después compara.",
+          "pronto": "el diseño tiene al menos una pieza que decidiste que NO sea agente, cada agente con la señal que justifica que exista por separado, el contrato de traspaso con lo que pasa y lo que no pasa, y límites de intentos, devoluciones, plazo y presupuesto."
+        },
+        {
+          "id": "e2",
+          "titulo": "2 · Tu equipo, o tu agente solo",
+          "min": "25 min",
+          "texto": "Toma tu proceso y sube la escalera: ¿qué es un paso fijo? ¿Basta un agente? ¿Aparece alguna de las tres señales? Si aparece, dibuja el equipo y escribe el contrato de un traspaso. Si no aparece, escribe en dos líneas por qué por ahora basta un agente.",
+          "pronto": "tienes por escrito la decisión (un agente o un equipo) con la señal que la justifica y, si es equipo, el diseño y un contrato de traspaso con límites."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Prueba rápida",
+      "sub": "4 preguntas. La explicación aparece después de tu intento.",
+      "perguntas": [
+        {
+          "p": "¿Quién debe revisar si el descuento pasa de 5% y si el pedido pasa de R$ 5 mil?",
+          "opcoes": [
+            "Un agente revisor dedicado",
+            "Una regla en la herramienta de pedidos",
+            "La propia Hora, después de crear el pedido"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "Es una regla fija: la misma entrada siempre da la misma respuesta. Una regla en la herramienta es más barata, más rápida y no se deja convencer por un texto del cliente. El agente es para lo que exige criterio."
+        },
+        {
+          "p": "¿Cuál de estos es un buen motivo para separar la cobranza en otro agente?",
+          "opcoes": [
+            "Tener más agentes impresiona al dueño",
+            "La cobranza necesita permisos y reglas que no deben convivir con los de ventas",
+            "Cada agente nuevo es más barato que el anterior"
+          ],
+          "certa": 1,
+          "ref": "diagrama",
+          "explica": "Es la señal de los permisos: leer cuentas por cobrar no es algo que el agente de ventas deba poder hacer. Las otras dos señales son la mesa que se llena y la revisión independiente."
+        },
+        {
+          "p": "El agente de cobranza devolvió el caso a Hora por falta de un dato, y Hora lo devolvió de vuelta. ¿Qué debería prever el contrato de traspaso?",
+          "opcoes": [
+            "Que lo intenten hasta resolverlo",
+            "Una devolución como máximo; a la segunda, una persona se hace cargo",
+            "Que el supervisor libere más permisos"
+          ],
+          "certa": 1,
+          "ref": "codigo",
+          "explica": "Sin límite de devoluciones e intentos, el equipo entra en un bucle y el costo crece sin que nadie lo vea. Liberar permisos para destrabar es el error opuesto: el supervisor no amplía permisos."
+        },
+        {
+          "p": "McKinsey habla de 2 a 5 personas supervisando de 50 a 100 agentes. ¿Cómo usar ese dato?",
+          "opcoes": [
+            "Como meta: Horizonte necesita 50 agentes",
+            "Como experiencia declarada de una consultora, que muestra la unidad de organización por resultado, y no como un estudio medido",
+            "Como prueba de que los agentes reemplazan a las personas"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "Es un relato de la propia consultora, que vende esa transformación. Sirve para pensar la unidad (equipo pequeño por resultado), no como meta de cantidad ni como prueba."
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Resumen",
+      "itens": [
+        {
+          "t": "Una regla no es un agente",
+          "texto": "Lo que tiene respuesta fija va a la herramienta."
+        },
+        {
+          "t": "Tres señales",
+          "texto": "Mesa que se llena, permisos distintos, revisión independiente. Sin ellas, basta un agente."
+        },
+        {
+          "t": "Contrato en cada flecha",
+          "texto": "Disparador, lo que pasa y lo que no pasa, prohibiciones, plazo, devolución."
+        },
+        {
+          "t": "Límites del equipo",
+          "texto": "Intentos, devoluciones, plazo, presupuesto y un botón que detiene a todos."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir más allá",
+      "links": [
+        {
+          "t": "Arquitecto de Ejecución: paralelo × secuencial",
+          "href": "https://inematds.github.io/agenteexecuta/guia/",
+          "icone": "fila"
+        },
+        {
+          "t": "Superagentes en la práctica: equipos de agentes",
+          "href": "https://inematds.github.io/agi-pratica/",
+          "icone": "camadas"
+        },
+        {
+          "t": "Kit del Arquitecto de Agentes: cadena de orquestación",
+          "href": "https://inematds.github.io/kit-arquiteto-agentes/",
+          "icone": "arquivo"
+        }
+      ]
+    }
+  ]
+}

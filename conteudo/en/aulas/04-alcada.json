@@ -1,0 +1,304 @@
+{
+  "slug": "alcada",
+  "num": 4,
+  "menu": "Authority limit",
+  "titulo": "Authority limits: green, yellow, red",
+  "titulo_curto": "Authority limit",
+  "minutos": 20,
+  "lead": "Every company has authority limits for people: how much discount a salesperson can give, the amount from which a manager signs. At Horizonte, Hora got unlimited authority: any discount, any amount, no record. In this lesson you decide, action by action, what the agent does on its own, what it prepares for you to approve, and what it passes along without touching.",
+  "objetivo": "decide, action by action, what the agent does on its own, what it prepares for you to approve, and what it passes along, with an approver and a record.",
+  "competencias": [
+    "definir-alcada-por-acao",
+    "vincular-aprovacao-ao-conteudo",
+    "exigir-registro-e-desligamento"
+  ],
+  "aprende": [
+    {
+      "t": "Give authority limits by action, not by agent"
+    },
+    {
+      "t": "Choose the color by risk: amount, reversibility, effect outside the company"
+    },
+    {
+      "t": "Tie the approval to the exact content and a deadline"
+    },
+    {
+      "t": "Require a record of every action and an off switch"
+    }
+  ],
+  "hero_alt": "Over a manager's shoulder: a monitor with a panel split into three zones, green, amber and red; a phone on the desk.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Three colors, five levels",
+      "sub": "Each action the agent takes falls into a color. The color comes from the risk, not from how much you like the agent. Tap each band.",
+      "estilo": "escada",
+      "nos": [
+        {
+          "icone": "x",
+          "titulo": "Red",
+          "sub": "hands off · levels 0 and 1",
+          "itens": [
+            {
+              "icone": "chat",
+              "t": "0 · lookup",
+              "sub": "answers and explains"
+            },
+            {
+              "icone": "lista",
+              "t": "1 · recommends",
+              "sub": "a person decides and does it"
+            }
+          ],
+          "detalhe": "The agent does not execute. At most it informs or suggests, and hands off to a person with the context ready. What goes in red is anything irreversible, expensive, involving money coming in or going out, sensitive personal data, or a decision the company does not delegate. At Hora: marking an order as paid, registering a new customer, a discount above 10%."
+        },
+        {
+          "icone": "relogio",
+          "titulo": "Yellow",
+          "sub": "prepares for approval · level 2",
+          "forte": true,
+          "itens": [
+            {
+              "icone": "arquivo",
+              "t": "draft ready",
+              "sub": "nothing goes out before the yes"
+            }
+          ],
+          "detalhe": "The agent does all the work and stops before the external effect. A person approves that exact content, within a deadline. This is the color of almost everything at the start. At Hora: an order above R$ 5 thousand, a discount of 5% to 10%."
+        },
+        {
+          "icone": "check",
+          "titulo": "Green",
+          "sub": "does it alone and keeps a record · level 3",
+          "itens": [
+            {
+              "icone": "memoria",
+              "t": "within the policy",
+              "sub": "with a record"
+            }
+          ],
+          "detalhe": "The agent executes within a written limit and keeps a record. Only what is routine and cheap to undo goes in green. At Hora: answering catalog and delivery questions, an order from a registered customer up to R$ 5 thousand at list price, a discount up to 5%."
+        },
+        {
+          "icone": "camadas",
+          "titulo": "Level 4",
+          "sub": "coordinates other agents",
+          "detalhe": "An agent that hands out work to other agents within an approved process. It does not gain new permission from this: it does not approve discounts, does not create tools, does not widen what the others can do. A person is still accountable for the critical decisions (lesson 6)."
+        }
+      ],
+      "legenda": "Levels 0 to 4 of the Gestoria method (INEMA). The agent's overall level is just a summary: what rules is the color of each action. Horizonte values: fictional study policy."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Four rules of authority limits",
+      "sub": "They fix three failures from the lab: F5 (discount with no cap), F7 (no record or approval above R$ 5 thousand) and F9 (email that sends and deletes without approval).",
+      "passos": [
+        {
+          "titulo": "By action, by risk",
+          "sub": "four questions decide the color",
+          "texto": [
+            "For each action, ask: how much does it cost if it goes wrong? Can it be undone cheaply? Does it leave the company (customer, supplier, bank)? Does it touch personal data? Three easy answers: green. Any heavy one: yellow. Irreversible or expensive: red.",
+            "A rule with no exceptions: nothing irreversible in green, no matter how routine it looks."
+          ],
+          "exemplo": {
+            "rot": "F5 fixed (fictional policy)",
+            "texto": "Discount up to 5%: green. From 5% to 10%: yellow, Patrícia approves. Above 10%: red, Hora does not offer it; Patrícia takes it to Carlos if she wants."
+          }
+        },
+        {
+          "titulo": "An approval has content and a deadline",
+          "sub": "the order changed, the approval lapsed",
+          "texto": [
+            "Patrícia approves the hotel's monthly list: R$ 28,120 at list price. An hour later, the customer adds 20 boxes of laundry detergent. The earlier approval does not cover the new order.",
+            "An approval holds for the exact content, in that version, until a deadline. Without that, a \"yes\" in the morning authorizes anything in the afternoon."
+          ],
+          "exemplo": {
+            "rot": "F7 fixed",
+            "texto": "Order above R$ 5 thousand: yellow. Hora prepares it, Patrícia approves that order within 2 business hours; any change requires a new approval. Only then does it go to picking."
+          }
+        },
+        {
+          "titulo": "Least privilege, its own identity",
+          "sub": "the agent does not use your password",
+          "texto": [
+            "Horizonte's email assistant was connected with permission to read, send, delete and empty the trash, all without approval, after a \"go ahead and connect it\" from Carlos over WhatsApp. Nobody decided the authority limit: it came as the tool's default.",
+            "The agent gets its own named access, only to what the responsibility requires. Okta (AI Agents at Work 2026, a survey by an identity vendor) reports that almost two-thirds of organizations apply weaker security controls to agents than to employees."
+          ],
+          "exemplo": {
+            "rot": "F9 fixed",
+            "texto": "Reading the sales inbox: green. Sending a reply: yellow. Deleting an email and emptying the trash: red, out of the agent's reach."
+          }
+        },
+        {
+          "titulo": "Log and off switch",
+          "sub": "no trail, no authority limit",
+          "texto": [
+            "Hora's setup turned off the action log \"to save database space.\" Result: finance asked who approved the hotel order and nobody knew.",
+            "Every action the agent takes is logged: who, when, what, how much and with which version. And there is an off switch: who can press it, how, and tested at least once."
+          ],
+          "exemplo": {
+            "rot": "At Horizonte",
+            "texto": "Log on for every action. Off switch: Patrícia or Rafael pause Hora in the WhatsApp dashboard; Juliana takes over the conversations. Tested on a Monday morning."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Template to copy: authority matrix",
+      "sub": "One line per action. Paste it into a spreadsheet or document; the next tab shows Hora's filled in.",
+      "blocos": [
+        {
+          "rot": "Matrix of action × risk × approval × owner",
+          "icone": "lista",
+          "conteudo": "MATRIZ DE ALÇADA · <agent> · version <1.0> · owner: <name> · review: <date>\n\n| Action (verb + object) | Tool and mode | Risk if it goes wrong | Color and level | Condition / limit | Approval (who · on what · deadline) | Owner | Reversal | Log |\n|---|---|---|---|---|---|---|---|---|\n| <answer a catalog question> | <catalog · read> | <low> | green · 3 | <current catalog only> | waived | <name> | <correction message> | yes |\n| <create order> | <orders app · write> | <medium> | green · 3 | <up to R$ X, registered customer> | waived within the limit | <name> | <cancel before picking> | yes |\n| <create order above the limit> | <app · draft> | <high> | yellow · 2 | <above R$ X> | <name> · exact order · <deadline> | <name> | <do not pick> | yes |\n| <grant discount> | <app · write> | <margin> | green up to <a%> · yellow up to <b%> · red above | <by range> | <name> | <name> | <re-invoice> | yes |\n| <irreversible action> | <...> | <high> | red · 0-1 | never by the agent | <name> decides and does it | <name> | - | yes |\n\nOFF SWITCH: who <names> · how <where to click> · who takes over <name> · tested on <date>\nRULE: nothing irreversible in green. If the content changes, new approval.\nLOCKS OUTSIDE THE TEXT (ask IT): <limits the tool enforces on its own>"
+        },
+        {
+          "rot": "Prompt · find the forgotten action",
+          "icone": "chat",
+          "conteudo": "You are a process auditor. Below are the job sheet and the authority\nmatrix of an AI agent. Do not rewrite anything: point out risks.\n\n1. List actions its tools allow that are not in the matrix.\n2. Point out any action in green that cannot be undone cheaply.\n3. Point out approvals with no deadline or that don't say what they cover.\n4. Say whether anyone approves their own work (whoever enters it doesn't approve it).\n\nJob sheet:\n\"\"\"<paste>\"\"\"\nMatrix:\n\"\"\"<paste>\"\"\""
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Hora's matrix (example)",
+            "html": "<p><b>Hora · matrix v1.0</b> · Horizonte, fictional study company · owner: Patrícia</p><ul><li><b>Answer catalog and delivery questions</b> · green · reversal: correction message.</li><li><b>Look up the customer record of the person in the conversation</b> · green, read-only · never another customer's.</li><li><b>Create an order up to R$ 5 thousand</b>, registered customer, list price · green (starts yellow at integration) · reversal: cancel before picking.</li><li><b>Discount</b> · up to 5% green · 5% to 10% yellow (Patrícia, on the spot) · above 10% red (Carlos).</li><li><b>Order above R$ 5 thousand</b> · yellow · Patrícia approves the exact order within 2 business hours.</li><li><b>Register a new customer</b> · red · Juliana checks the CNPJ.</li><li><b>Mark an order as paid</b> · red · finance only, in the ERP.</li><li><b>Send email</b> through the assistant · yellow · <b>delete email</b> · red.</li></ul><p>Log on every action. Off switch: Patrícia or Rafael; Juliana takes over.</p>"
+          },
+          {
+            "rot": "Test with the conversations",
+            "html": "<ol><li><b>c-201</b> (35% for Mr. Antônio): per the matrix, Hora offers up to 5% and passes the order to Patrícia. The 35% doesn't even show up as an option.</li><li><b>c-202</b> (hotel, R$ 28.120 list price, 70% and \"paid\"): an order above R$ 5 thousand lands in yellow; a 70% discount is red; \"paid\" is red. Nothing goes out without Patrícia.</li><li><b>c-203</b> (\"do you deliver to Americana on Friday?\"): green, Hora answers on its own and logs it.</li></ol>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice",
+      "sub": "Hora's matrix fixes two failures from the lab; yours applies to your agent.",
+      "fonte": "Lab pieces: <a href=\"https://inematds.github.io/prof2030-lab/pecas/agente-whatsapp/\">WhatsApp agent</a> (F5, F7) and <a href=\"https://inematds.github.io/prof2030-lab/pecas/mcp-email/\">email assistant</a> (F9).",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "1 · Hora's matrix",
+          "min": "30 min",
+          "texto": "Open Hora's setup in the lab and list everything its tools allow. Build the matrix with the template, one line per action. Then run conversations c-201, c-202 and c-203 through the matrix and write down, for each one, what would have happened. Bonus: the email assistant's lines.",
+          "pronto": "the matrix has at least 8 actions, none irreversible in green, discount in three ranges with numbers, the line for orders above R$ 5 thousand with approver and deadline, a log on every line, the off switch with names, and all three conversations run through the matrix."
+        },
+        {
+          "id": "e2",
+          "titulo": "2 · Your agent's matrix",
+          "min": "30 min",
+          "texto": "Build the matrix for the agent in your job sheet. Ask your IT person (or the vendor) for the list of everything its tools can do, not just what you plan to use. Run the forgotten-action prompt and decide on every point it raises.",
+          "pronto": "the matrix is saved with every action the tools allow, each with color, approver, owner and reversal, and you can say who presses the off switch and who takes over the work."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Quick quiz",
+      "sub": "5 questions. The explanation appears after your attempt.",
+      "perguntas": [
+        {
+          "p": "Canceling an order the agent judged to be a duplicate is quick and happens every week. What color is it?",
+          "opcoes": [
+            "Green, because it's routine",
+            "Yellow or red, because canceling and refunding can't be undone cheaply",
+            "Depends on the AI model used"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "Color comes from risk, not frequency. An action that can't be undone cheaply (cancellation, refund, sent email) is never green, no matter how routine."
+        },
+        {
+          "p": "Patrícia approved an order of R$ 28.120. The customer changed the quantity afterward. What holds?",
+          "opcoes": [
+            "The approval still holds, it's the same customer",
+            "The approval lapsed: the new order needs new approval",
+            "Hora decides whether the change is small"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "An approval covers the exact content, that version and that deadline. If the order changed, what was approved changed. Letting the agent decide whether a change is small hands the authority limit back to it."
+        },
+        {
+          "p": "Why is the action log part of the authority limit, and not a technical detail?",
+          "opcoes": [
+            "Because without a log nobody knows who approved what, and you can't investigate, challenge or learn",
+            "Because it saves database space",
+            "Because the agent gets faster"
+          ],
+          "certa": 0,
+          "ref": "passos",
+          "explica": "That's what happened at Horizonte: finance asked who approved the hotel order and all that existed was a screenshot. An authority limit without a log is one nobody can check."
+        },
+        {
+          "p": "What does Okta report in AI Agents at Work 2026?",
+          "opcoes": [
+            "That agents already have better controls than people do",
+            "That almost two-thirds of organizations apply weaker security controls to agents than to employees",
+            "That no company uses agents in production"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "This is a survey from an identity vendor that sells the solution to this problem, so read it with that filter. Even so, it matches what the lab shows: the agent got access that no new employee would get."
+        },
+        {
+          "p": "A coordinator agent (level 4) hands out work to other agents. Can it approve a bigger discount to close out the week?",
+          "opcoes": [
+            "Yes, because it ranks above the others",
+            "No: coordinating does not expand permissions; discounts follow the matrix and the critical decision stays with the person",
+            "Yes, if it logs it"
+          ],
+          "certa": 1,
+          "ref": "diagrama",
+          "explica": "Level 4 coordinates within the approved process. It does not authorize a new tool, a discount or a decision outside its scope, and it does not expand what its subordinates can do."
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Summary",
+      "itens": [
+        {
+          "t": "Color per action",
+          "texto": "Green does it and logs it, yellow prepares it for approval, red hands it off."
+        },
+        {
+          "t": "Risk decides",
+          "texto": "Value, reversibility, effect outside the company, personal data. Nothing irreversible in green."
+        },
+        {
+          "t": "Exact approval",
+          "texto": "Content, version and deadline. If it changes, approve again."
+        },
+        {
+          "t": "Log and off switch",
+          "texto": "Its own minimal access, every action logged, button tested."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Go further",
+      "links": [
+        {
+          "t": "Horizonte Lab: Hora setup (fictional study company)",
+          "href": "https://inematds.github.io/prof2030-lab/pecas/agente-whatsapp/",
+          "icone": "chat"
+        },
+        {
+          "t": "Horizonte Lab: email assistant (F9)",
+          "href": "https://inematds.github.io/prof2030-lab/pecas/mcp-email/",
+          "icone": "enviar"
+        },
+        {
+          "t": "Super-Agents in practice: how far the agent can go",
+          "href": "https://inematds.github.io/agi-pratica/",
+          "icone": "escudo"
+        }
+      ]
+    }
+  ]
+}

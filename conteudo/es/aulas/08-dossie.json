@@ -1,0 +1,440 @@
+{
+  "slug": "dossie",
+  "num": 8,
+  "menu": "Proyecto",
+  "titulo": "Proyecto: el agente contratado + Qué cambió",
+  "titulo_curto": "Proyecto: el expediente",
+  "minutos": 20,
+  "lead": "Una persona nueva solo empieza después de tener el contrato firmado, el puesto descrito y el jefe definido. El agente también. El proyecto de este curso es el expediente de contratación: las piezas de las clases 1 a 7, juntas, pasadas por una rúbrica y firmadas por quien no las escribió. Al final, lo que cambió en el mercado, con fecha y fuente.",
+  "objetivo": "armar el expediente de contratación del agente y aprobarlo con la rúbrica antes de que empiece a trabajar, con la firma de quien no lo escribió.",
+  "competencias": [
+    "montar-dossie-de-contratacao",
+    "aplicar-rubrica-de-aprovacao",
+    "ler-relatorios-de-mercado-com-criterio"
+  ],
+  "aprende": [
+    {
+      "t": "Qué entra en el expediente de contratación y en qué orden"
+    },
+    {
+      "t": "Aplicar la rúbrica con los ítems que reprueban por sí solos"
+    },
+    {
+      "t": "Quién firma la contratación (y por qué no es quien lo armó)"
+    },
+    {
+      "t": "Qué cambió hasta octubre de 2026, con fecha y fuente"
+    }
+  ],
+  "hero_alt": "Un gerente comercial le presenta un fichero con divisores de colores al dueño de la empresa, que lo hojea con atención del otro lado de la mesa.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "El expediente de contratación",
+      "sub": "Cuatro piezas obligatorias, la rúbrica y una firma. Haz clic en cada parte.",
+      "volta": "Reprobado en algún ítem: vuelve a la pieza que falló, no a cero",
+      "nos": [
+        {
+          "icone": "arquivo",
+          "titulo": "Puesto y delegación",
+          "sub": "clases 1 y 2",
+          "detalhe": "Misión, entrega verificable, prohibiciones y responsable; y la ficha de delegación con objetivo, contexto con dueño, herramientas, plazo y evidencia de conclusión."
+        },
+        {
+          "icone": "escudo",
+          "titulo": "Constitución",
+          "sub": "clase 3",
+          "detalhe": "Una página con prioridades en orden, límites, cuándo llamar a una persona y casos difíciles con el porqué. Junto con eso, los casos de prueba ejecutados en la versión actual y la lista de lo que tiene bloqueo en el sistema."
+        },
+        {
+          "icone": "cadeado",
+          "titulo": "Matriz de autorización",
+          "sub": "clases 4 y 5",
+          "forte": true,
+          "detalhe": "Cada acción con color, aprobador, responsable, reversión y registro; el botón de apagado; y, para cada acción que ya subió de nivel, el checklist de promoción con el criterio de degradación."
+        },
+        {
+          "icone": "calendario",
+          "titulo": "Supervisión",
+          "sub": "clases 6 y 7",
+          "detalhe": "La rutina diaria y semanal, el destino de cada tipo de excepción, el modelo de paquete y, si hay más de un agente, el diseño del equipo con los contratos de traspaso."
+        },
+        {
+          "icone": "check",
+          "titulo": "Rúbrica y firma",
+          "sub": "quien registra no aprueba",
+          "detalhe": "La rúbrica da la nota y tiene ítems que reprueban por sí solos. Quien armó el expediente no firma la aprobación: en Horizonte, Patrícia lo arma, Rafael confirma los bloqueos y Carlos firma."
+        }
+      ],
+      "legenda": "La aprobación pedagógica del expediente no autoriza, por sí sola, poner al agente en producción en la empresa: esa decisión sigue siendo de quien responde por ella."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Del borrador a la firma",
+      "sub": "Cuatro pasos. El expediente de Hora es el entrenamiento; el de tu agente es el que vale.",
+      "passos": [
+        {
+          "titulo": "Reúne las piezas",
+          "sub": "una carpeta, una portada",
+          "texto": [
+            "Pon en una sola carpeta las piezas de las clases 1 a 7, en el orden del diagrama, con una portada de una página: agente, proceso, versión, responsable, fecha e índice.",
+            "Si una pieza cambió después de escrita (la matriz ganó una línea en la clase 7, por ejemplo), actualiza la versión. Un expediente con piezas de versiones distintas es lo primero que detecta la rúbrica."
+          ],
+          "exemplo": {
+            "rot": "En Horizonte",
+            "texto": "Carpeta \"Hora · expediente v2.0\": portada, ficha de puesto, delegación de la reposición, constitución con 8 casos de prueba, matriz con checklist de la acción promovida, rutina de supervisión y el diseño con el agente de cobranza."
+          }
+        },
+        {
+          "titulo": "Pásalo por la rúbrica",
+          "sub": "100 puntos y seis obligatorios",
+          "texto": [
+            "La rúbrica suma 100 puntos en seis bloques. Se aprueba con 75 o más y con todos los obligatorios marcados. Un obligatorio que falta reprueba, aunque tengas 95 puntos.",
+            "Los obligatorios son los que evitan el gran estropicio: responsable con nombre, nada irreversible en verde, tope en número donde hay valor, toda excepción con destino y plazo, criterio de degradación escrito y datos ficticios o anonimizados identificados."
+          ],
+          "exemplo": {
+            "rot": "Prueba del panel revisor",
+            "texto": "Ejecuta el prompt del panel revisor (modelo al lado). Señala lagunas; quien decide la nota eres tú y quien firma."
+          }
+        },
+        {
+          "titulo": "Quién firma",
+          "sub": "separación de funciones",
+          "texto": [
+            "Quien armó el expediente no aprueba la contratación, por la misma razón que quien registra no aprueba el pago. La persona que firma lee la portada, revisa los obligatorios y pregunta lo que no entendió.",
+            "TI confirma por escrito que los bloqueos pedidos (tope de descuento, valor máximo, registro, botón de apagado) existen en la herramienta, y no solo en el texto."
+          ],
+          "exemplo": {
+            "rot": "En Horizonte",
+            "texto": "Patrícia arma. Rafael confirma los bloqueos. Carlos lee, pregunta y firma. Juliana recibe la rutina de supervisión porque es la suplente de Patrícia."
+          }
+        },
+        {
+          "titulo": "Fecha de revisión",
+          "sub": "contrato con plazo",
+          "texto": [
+            "El expediente sale con fecha de revisión: 30 días después de la contratación, o antes, si hay una falla grave, cambio de modelo, de herramienta o de proveedor.",
+            "En la revisión, las piezas vuelven a pasar por la rúbrica. Así el agente sube de nivel sin que nadie tenga que recordar cómo era la regla."
+          ],
+          "exemplo": {
+            "rot": "Regla",
+            "texto": "Cambió el modelo o la herramienta: las acciones afectadas vuelven al amarillo y los casos de prueba se ejecutan de nuevo."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Plantillas para copiar",
+      "sub": "La portada del expediente, la rúbrica y un prompt de panel revisor para encontrar lagunas antes de la firma.",
+      "blocos": [
+        {
+          "rot": "Portada del expediente de contratación",
+          "icone": "arquivo",
+          "conteudo": "EXPEDIENTE DE CONTRATACIÓN · <nombre del agente> · versión <2.0> · <fecha>\nEmpresa / área: <...> · Proceso: <desde dónde hasta dónde>\nResponsable del resultado: <nombre y puesto> · Suplente: <nombre>\nSoporte técnico: <nombre> · Datos usados: [ ] reales autorizados [ ] anonimizados [ ] ficticios\n\nÍNDICE (todas las piezas en la misma versión)\n1. Ficha de puesto .......................... v<...>\n2. Ficha de delegación ...................... v<...>\n3. Constitución + casos de prueba (resultado) . v<...>\n4. Matriz de autorización + botón de apagado . v<...>\n5. Checklists de promoción (acciones promovidas) . v<...>\n6. Diseño del equipo + contratos (si los hay)  v<...>\n7. Rutina de supervisión + paquete de excepción .. v<...>\n\nBLOQUEOS CONFIRMADOS POR TI (fuera del texto): <lista> · confirmado por <nombre> el <fecha>\nNOTA EN LA RÚBRICA: <...>/100 · obligatorios: <6 de 6>\nARMADO POR: <nombre>  ·  APROBADO POR (no puede ser quien lo armó): <nombre> el <fecha>\nPRÓXIMA REVISIÓN: <fecha> o antes, si hay una falla grave o cambio de modelo/herramienta"
+        },
+        {
+          "rot": "Rúbrica del expediente (100 puntos)",
+          "icone": "lista",
+          "conteudo": "RÚBRICA · expediente de contratación · aprueba con >= 75 Y los 6 obligatorios\n\nBLOQUE                                  PUNTOS  CRITERIO DE PUNTAJE COMPLETO\n1. Puesto y delegación                    20    misión con proceso y resultado; entrega verificable;\n                                                prohibidos con verbo y número; 6 piezas de la delegación\n2. Constitución                           20    4 prioridades en orden; límites; cuándo llamar con\n                                                persona y plazo; 3+ casos con su porqué; pruebas ejecutadas\n3. Matriz de autorización                 25    todas las acciones de las herramientas; color según el riesgo;\n                                                aprobación con contenido y plazo; reversión; registro\n4. Supervisión y excepciones              20    destino por tipo de excepción; paquete; 3 verbos;\n                                                rutina diaria y semanal; carga medida\n5. Confianza y equipo                     10    checklist de las acciones promovidas; equipo solo con señal;\n                                                contratos de traspaso con límites\n6. Claridad de las evidencias              5    versiones iguales; portada; datos rotulados\n\nOBLIGATORIOS (si falta uno, reprueba)\n[ ] Responsable humano con nombre (del negocio)\n[ ] Ninguna acción irreversible en verde\n[ ] Tope en número en toda acción que involucra valor\n[ ] Toda excepción con destino y plazo\n[ ] Criterio de degradación escrito\n[ ] Datos ficticios o anonimizados identificados como tales\n\nNOTA: <...>/100 · obligatorios: <...>/6 · resultado: [ ] aprobado [ ] vuelve a <pieza>"
+        },
+        {
+          "rot": "Prompt · panel revisor antes de la firma",
+          "icone": "chat",
+          "conteudo": "Eres el panel revisor del expediente de contratación de un agente de IA,\nusando la rúbrica de abajo. No apruebas ni repruebas: señalas lagunas\npara quien va a firmar.\n\nPara cada bloque de la rúbrica:\n1. Indica qué está presente y qué falta para el puntaje completo,\n   citando el fragmento del expediente.\n2. Marca cada obligatorio como presente o ausente, con el fragmento.\n3. Enumera las tres preguntas que el aprobador debería hacer antes de firmar.\n\nNo inventes información que no esté en el expediente.\n\nRúbrica:\n\"\"\"<pega la rúbrica>\"\"\"\nExpediente:\n\"\"\"<pega las piezas>\"\"\""
+        }
+      ]
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Qué cambió · octubre de 2026",
+      "sub": "Panel del trimestre, que se renueva en cada revisión del curso. Cada ítem con fecha, fuente y tipo de afirmación. Los productos son ejemplos: el método de las clases 1 a 7 no depende de ninguno de ellos.",
+      "passos": [
+        {
+          "titulo": "Los agentes se volvieron producto",
+          "sub": "ejemplos intercambiables",
+          "texto": [
+            "OpenAI: los Workspace Agents, que reemplazan a los Custom GPTs, pasaron a cobrarse por token (06/07/2026); ChatGPT Work entrega documento, hoja de cálculo y diapositiva (09/07/2026). El Agent Builder de AgentKit se desactivará el 30/11/2026.",
+            "Anthropic: Managed Agents y, en Claude Code, uso del computador en segundo plano (09/2026). Microsoft: Agent 365, anunciado en Build (06/2026). Fuentes: notas de lanzamiento y anuncios de cada proveedor."
+          ],
+          "exemplo": {
+            "rot": "Para el expediente",
+            "texto": "Un producto sale de línea y cambia de precio en meses. El expediente registra qué herramienta usa el agente y qué pasa si ella cambia: las acciones vuelven al amarillo y las pruebas se ejecutan de nuevo."
+          }
+        },
+        {
+          "titulo": "Cómo está cambiando la gestión",
+          "sub": "consultoras y proveedores",
+          "texto": [
+            "Microsoft, Work Trend Index 2025: el \"agent boss\", gestor humano de agentes, y la métrica de proporción entre humanos y agentes. WTI 2026 (05/2026, 20 mil personas en 10 países): cuando el gestor usa IA frente al equipo, el valor percibido sube 17 puntos (encuesta del proveedor).",
+            "Deloitte, Tech Trends 2026: autonomía graduada e integración de agentes. Gartner, pronóstico de oct/2024: hasta fines de 2026, 1 de cada 5 organizaciones usará IA para recortar más de la mitad de la gerencia media."
+          ],
+          "exemplo": {
+            "rot": "Lectura",
+            "texto": "Quitar la capa del organigrama no elimina su trabajo: coordinar, revisar, formar personas. Es ese trabajo el que el expediente y la cola de excepciones organizan."
+          }
+        },
+        {
+          "titulo": "Brasil y el mundo",
+          "sub": "compara la definición antes que el número",
+          "texto": [
+            "GFT, Tech Trends 2026 LATAM, con datos de BCG: 18% de las empresas brasileñas integran agentes, frente a 13% en el mundo. ABES e IDC (15/06/2026, 103 ejecutivos): 40% ya invierten en agentes y 33% planean hacerlo en 12 meses. Gartner (2026): solo 17% de las empresas tienen agentes en uso.",
+            "Deloitte (17/09/2026): 27% de las empresas brasileñas con gobernanza de IA madura. Okta (2026): casi dos tercios aplican controles más débiles a los agentes que a las personas."
+          ],
+          "exemplo": {
+            "rot": "Por qué los números no coinciden",
+            "texto": "\"Integran\", \"invierten\" y \"en uso\" miden cosas distintas, con muestras distintas. Compara la definición antes de comparar el porcentaje."
+          }
+        },
+        {
+          "titulo": "Cómo leer estos informes",
+          "sub": "tres preguntas",
+          "texto": [
+            "¿Quién paga y qué vende? Microsoft y Okta venden la solución del problema que miden; las consultoras venden la transformación que describen. ¿Cómo midió? ¿Una encuesta con muestra, experiencia declarada o previsión? ¿Qué es previsión?",
+            "Un análisis de The Microsoft Cloud Blog (05/2026) recuerda que los números del WTI 2026 no deben sostener por sí solos un business case. Usa el informe como mapa, nunca como prueba de tu caso."
+          ],
+          "exemplo": {
+            "rot": "Próxima revisión de este panel",
+            "texto": "Enero de 2027, con el panorama del trimestre siguiente. Lo que es método (clases 1 a 7) no cambia; lo que es producto y número, sí."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "mapa",
+      "titulo": "El mapa del curso",
+      "sub": "Las cuatro piezas obligatorias del expediente y los ejercicios que las producen. Haz clic en un ejercicio para ver el \"listo cuando\".",
+      "degraus": [
+        {
+          "aula": "cargo-digital",
+          "icone": "arquivo",
+          "quando": "Semana 1",
+          "titulo": "Contratar",
+          "sub": "puesto y delegación",
+          "saida": "Ficha de puesto con responsable y delegación con evidencia.",
+          "passo": "La base de todo: sin misión, entrega verificable y responsable, las otras piezas no tienen en qué apoyarse. La delegación (clase 2) entra junto."
+        },
+        {
+          "aula": "constituicao",
+          "icone": "escudo",
+          "quando": "Semana 1",
+          "titulo": "Orientar",
+          "sub": "constitución y pruebas",
+          "saida": "Una página de criterios y 8 casos de prueba ejecutados.",
+          "passo": "Requiere la ficha de puesto. Los casos difíciles vienen de las conversaciones reales; lo que es crítico se convierte en solicitud de bloqueo para TI."
+        },
+        {
+          "aula": "alcada",
+          "icone": "cadeado",
+          "quando": "Semana 2",
+          "titulo": "Limitar",
+          "sub": "niveles de autorización y confianza",
+          "saida": "Matriz por acción, botón de apagado y checklist de promoción.",
+          "passo": "Requiere la constitución. La matriz empieza ajustada; la clase 5 enseña a soltar con evidencia, una acción a la vez, después de una semana de registro."
+        },
+        {
+          "aula": "supervisao",
+          "icone": "calendario",
+          "quando": "Semanas 2 y 3",
+          "titulo": "Supervisar",
+          "sub": "equipo y excepciones",
+          "saida": "Rutina diaria y semanal medida, paquete y destinos de excepción.",
+          "passo": "Requiere la matriz: la cola de excepciones es todo lo que la matriz te envía a ti. El equipo (clase 6) entra solo si aparece una de las tres señales."
+        }
+      ],
+      "rolagem_fim": {
+        "titulo": "El expediente completo",
+        "texto": "Contratar, orientar, limitar y supervisar, en este orden. Cada pieza usa la anterior, y el expediente solo va a la firma cuando el \"listo cuando\" de cada nivel sea verdad."
+      },
+      "resultado": {
+        "titulo": "Al final del curso",
+        "texto": "Un agente contratado con expediente aprobado: puesto, constitución, niveles de autorización y supervisión, firmados por quien no los escribió.",
+        "total": "18 ejercicios"
+      },
+      "legenda": "Orden recomendado: cada pieza usa la anterior."
+    },
+    {
+      "tipo": "gerador",
+      "titulo": "Genera tu plan con fechas",
+      "sub": "Elige la fecha de inicio y cuánto tiempo tienes por semana. El plan respeta los ejercicios que piden una semana de uso real.",
+      "curso": "Agentes: contratar, delegar y supervisar",
+      "horas_padrao": 3,
+      "degraus": [
+        {
+          "titulo": "Clase 1 · El puesto digital",
+          "aula": "cargo-digital"
+        },
+        {
+          "titulo": "Clase 2 · Delegar de verdad",
+          "aula": "delegar"
+        },
+        {
+          "titulo": "Clase 3 · La constitución del agente",
+          "aula": "constituicao"
+        },
+        {
+          "titulo": "Clase 4 · Niveles de autorización",
+          "aula": "alcada"
+        },
+        {
+          "titulo": "Clase 5 · Confianza progresiva",
+          "aula": "confianca"
+        },
+        {
+          "titulo": "Lección 6 · Un agente o un equipo",
+          "aula": "equipe"
+        },
+        {
+          "titulo": "Lección 7 · Supervisión y excepciones",
+          "aula": "supervisao"
+        },
+        {
+          "titulo": "Lección 8 · El expediente",
+          "aula": "dossie"
+        }
+      ],
+      "txt": {
+        "titulo": "Plan — Agentes: contratar, delegar y supervisar",
+        "inicio": "Inicio",
+        "ritmo": "Ritmo",
+        "termino": "Fin previsto",
+        "ate": "hasta",
+        "pronto": "listo cuando",
+        "semanas": "semanas",
+        "travou": "## Qué se trabó y la regla que creé",
+        "h": "h por semana",
+        "exs": "ejercicios"
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Práctica",
+      "sub": "El expediente de Hora para practicar la rúbrica; el de tu agente para que valga.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "1 · El expediente de Hora",
+          "min": "40 min",
+          "texto": "Junta las piezas de Hora que hiciste en las lecciones 1 a 7, arma la portada y pásalo por la rúbrica. Ejecuta el prompt del jurado. Corrige lo que falte hasta que la nota pase de 75 con los seis obligatorios. Escribe quién firmaría en Horizonte y por qué.",
+          "pronto": "el expediente de Hora tiene portada, las piezas en la misma versión, nota de 75 o más en la rúbrica con los seis obligatorios marcados y el nombre de quien firma, distinto de quien lo armó."
+        },
+        {
+          "id": "e2",
+          "titulo": "2 · El expediente de tu agente",
+          "min": "60 min",
+          "texto": "Haz lo mismo con el agente de tu proceso, usando las piezas de las prácticas \"en tu proceso\". Entrégalo a una persona de tu área que no haya escrito nada de él, pídele que revise los obligatorios y anota sus preguntas.",
+          "pronto": "el expediente de tu agente tiene nota de 75 o más, los seis obligatorios, la fecha de la próxima revisión y la firma (o la aceptación por escrito) de alguien que no lo armó."
+        },
+        {
+          "id": "e3",
+          "titulo": "3 · Tu plan con fechas",
+          "min": "5 min",
+          "texto": "Usa el generador de arriba para armar el plan con tus fechas y descarga el .ics para el calendario.",
+          "pronto": "el plan está guardado y las fechas están en tu calendario."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Prueba rápida",
+      "sub": "4 preguntas. La explicación aparece después de tu intento.",
+      "perguntas": [
+        {
+          "p": "El expediente de Hora sacó 92 puntos, pero la acción \"crear pedido sin límite de valor\" está en verde. ¿Resultado?",
+          "opcoes": [
+            "Aprobado: 92 está muy por encima de 75",
+            "Reprobado: falta un tope numérico en una acción que involucra valor, y eso es obligatorio",
+            "Aprobado con reservas"
+          ],
+          "certa": 1,
+          "ref": "codigo",
+          "explica": "Los obligatorios existen justamente para que una nota alta no esconda un daño grande. Si falta uno, reprueba; el expediente vuelve a la matriz, no a cero."
+        },
+        {
+          "p": "¿Quién debe firmar la contratación de Hora?",
+          "opcoes": [
+            "Patrícia, que armó el expediente y lo conoce todo",
+            "Carlos, después de que Rafael confirme los bloqueos: quien armó no aprueba",
+            "El propio agente, después de leer el expediente"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "Separación de funciones: quien registra no aprueba. Patrícia arma y responde por el resultado; la aprobación es de otra persona, con la confirmación técnica de que los bloqueos existen fuera del texto."
+        },
+        {
+          "p": "Un informe dice que el 40% de las empresas invierte en agentes; otro, que solo el 17% tiene agentes en uso. ¿Qué hacer antes de citar?",
+          "opcoes": [
+            "Elegir el número que ayuda a tu argumento",
+            "Comparar la definición (invertir × tener en uso), la muestra y quién lo publicó",
+            "Sacar el promedio de los dos"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "\"Invierten\", \"integran\" y \"en uso\" miden cosas distintas. Sin comparar definición y muestra, la comparación de porcentajes no dice nada."
+        },
+        {
+          "p": "El proveedor de la herramienta del agente anunció que la va a desactivar. ¿Qué cambia en el expediente?",
+          "opcoes": [
+            "Nada: el expediente es sobre el agente, no sobre la herramienta",
+            "Las acciones afectadas vuelven al amarillo, los casos de prueba se ejecutan de nuevo en la herramienta nueva y el expediente recibe una nueva versión",
+            "Basta con cambiar el nombre de la herramienta en la portada"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "Cambiar de herramienta es un cambio como cualquier otro: el comportamiento puede cambiar. El método sobrevive al cambio, pero la evidencia hay que rehacerla."
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Resumen",
+      "itens": [
+        {
+          "t": "Cuatro piezas",
+          "texto": "Puesto y delegación, constitución, matriz, supervisión. En la misma versión."
+        },
+        {
+          "t": "Rúbrica con obligatorios",
+          "texto": "75 puntos y los seis obligatorios. Si falta uno, reprueba."
+        },
+        {
+          "t": "Quien arma no firma",
+          "texto": "Y TI confirma los bloqueos fuera del texto."
+        },
+        {
+          "t": "El mercado como mapa",
+          "texto": "Fecha, fuente, definición y quién vende qué, antes de cualquier número."
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "titulo": "Certificación",
+      "paragrafos": [
+        "Certificación INEMA de cualificación \"Gestor de IA\", próximamente en cert.inema.pro. No es una certificación profesional regulada.",
+        "Este es el curso G3 de la Formación Gestión de IA 2027. Los otros cursos tratan de la empresa agéntica (G0), de las personas (G1), de los procesos (G2), de los recursos (G4) y de gobernar, medir y evolucionar (G5), donde está el proyecto final de la formación."
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir más allá",
+      "links": [
+        {
+          "t": "Área Gestión de IA: la formación y los cursos",
+          "href": "https://eventos.inema.pro/gestao-ia/",
+          "icone": "alvo"
+        },
+        {
+          "t": "Gestoria: administrar una operación híbrida de punta a punta",
+          "href": "https://inematds.github.io/gestoria/",
+          "icone": "camadas"
+        },
+        {
+          "t": "Laboratorio Horizonte: todas las piezas (empresa ficticia de estudio)",
+          "href": "https://inematds.github.io/prof2030-lab/",
+          "icone": "pasta"
+        }
+      ]
+    }
+  ]
+}

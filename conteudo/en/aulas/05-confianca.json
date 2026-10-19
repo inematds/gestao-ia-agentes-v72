@@ -1,0 +1,268 @@
+{
+  "slug": "confianca",
+  "num": 5,
+  "menu": "Trust",
+  "titulo": "Progressive trust",
+  "titulo_curto": "Progressive trust",
+  "minutos": 18,
+  "lead": "After the hotel request, Patrícia put Hora back on yellow: everything goes through her. Great for security, terrible for her calendar. The question now is when to loosen your grip. The answer is not courage or fatigue: it is evidence, one action at a time, with the way back written down before you move up.",
+  "objetivo": "promote or demote the autonomy of an action with evidence: a log, a judged sample and one level at a time, with the way back written down.",
+  "competencias": [
+    "promover-autonomia-com-evidencia",
+    "julgar-amostra-com-criterio",
+    "definir-criterio-de-rebaixamento"
+  ],
+  "aprende": [
+    {
+      "t": "Why start low and move up one action at a time"
+    },
+    {
+      "t": "What evidence counts (and why the volume dashboard does not)"
+    },
+    {
+      "t": "Using the promotion checklist"
+    },
+    {
+      "t": "Writing the demotion criterion before you promote"
+    }
+  ],
+  "hero_alt": "Weekly review meeting: two managers study bar and line charts on a big screen; laptops open on the table.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "The trust cycle",
+      "sub": "One turn per week, one action at a time. Tap each step.",
+      "volta": "The decision changes the lesson 4 matrix, and the following week measures again",
+      "nos": [
+        {
+          "icone": "memoria",
+          "titulo": "Log",
+          "sub": "every action, four columns",
+          "detalhe": "Date and time, what the agent did, which source or tool it used, and the result: accepted, corrected, rejected or escalated. Without the log, trust becomes memory, and memory keeps the last mistake, not the week."
+        },
+        {
+          "icone": "lupa",
+          "titulo": "Sample",
+          "sub": "judged with criteria",
+          "detalhe": "You don't reread everything. You draw a random sample and judge each item with three yes-or-no questions: did it answer what was asked? did it follow the rules on the sheet? did it use the right source? Three yeses: accepted. A no that can be fixed in a minute: corrected. A no that requires a redo: rejected."
+        },
+        {
+          "icone": "grafico",
+          "titulo": "Five numbers",
+          "sub": "per action, not per agent",
+          "forte": true,
+          "detalhe": "Success rate, attempts per result, cost (including your review time), time to result and accepted without correction. The fifth is the most honest: the agent can finish everything and still make you correct half of it."
+        },
+        {
+          "icone": "check",
+          "titulo": "Decision",
+          "sub": "expand, keep, reduce, turn off",
+          "detalhe": "One decision per action, with the number next to it. Expand moves up one level; keep runs one more week; reduce moves down; turn off is the lesson 4 button until you understand what happened. Never decide from a single case, good or bad."
+        }
+      ],
+      "legenda": "Cycle and five numbers adapted from the trust sheet of the Super-Agents in practice course (INEMA)."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "How to loosen your grip safely",
+      "sub": "Four rules. The last one is the one almost nobody writes down.",
+      "passos": [
+        {
+          "titulo": "Start low",
+          "sub": "and move up one level at a time",
+          "texto": [
+            "A new agent, or one that just made a bad mistake, starts at yellow on everything that has an effect outside the conversation. It is the onboarding from lesson 2 under another name.",
+            "Promotion is for one action, one level, at a time. Moving everything up together erases the trail showing which change caused the next problem."
+          ],
+          "exemplo": {
+            "rot": "At Horizonte",
+            "texto": "After c-202, Patrícia restarted Hora with replies to questions, orders and discounts at yellow, for two weeks."
+          }
+        },
+        {
+          "titulo": "The right evidence",
+          "sub": "the volume dashboard won't do",
+          "texto": [
+            "Carlos's dashboard shows service requests and orders rising week after week and concludes: \"the agent is paying for itself.\" There is no before number, satisfaction comes from about 6% of customers, and nothing shows how much discount went out (lab failure F11).",
+            "To promote an action, the number is a different one: accepted without correction for that action, in a reviewed sample, with the count of critical errors beside it."
+          ],
+          "exemplo": {
+            "rot": "Test question",
+            "texto": "Does this number change if the agent gives a wrong discount? If it doesn't change, it is no use for deciding autonomy."
+          }
+        },
+        {
+          "titulo": "Promotion checklist",
+          "sub": "six items, all yes",
+          "texto": [
+            "Representative sample (common and hard cases, not just the easy ones). No critical error in the period. Accepted without correction above the threshold. Cheap reversal of the action. Supervised pilot. An owner who signs the decision.",
+            "The Gestoria method uses \"95% in 100 cases, with no critical error\" as a teaching threshold. It is not a guarantee or a universal number: a higher-risk action calls for a higher threshold and a larger sample."
+          ],
+          "exemplo": {
+            "rot": "Rule of thumb",
+            "texto": "If one item is missing, the answer is keep. Promoting on an \"almost\" is promoting in the dark."
+          }
+        },
+        {
+          "titulo": "The way back",
+          "sub": "written before you move up",
+          "texto": [
+            "Before promoting, write down what sends the action back: a critical error demotes it right away; accepted without correction below the threshold in one week demotes it; a change of model, tool or constitution returns the action to yellow until there is new evidence.",
+            "Written beforehand, demotion is routine, not a fight. Decided in the moment of the scare, it becomes a hunt for who's to blame."
+          ],
+          "exemplo": {
+            "rot": "At Horizonte",
+            "texto": "Reply to questions promoted to green. It goes back to yellow if: a reply with a wrong price or deadline reaches the customer, or if accepted without correction falls below 95% in a week."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Templates to copy",
+      "sub": "The weekly sheet feeds the checklist. The checklist only closes with the way back.",
+      "blocos": [
+        {
+          "rot": "Promotion and demotion checklist",
+          "icone": "lista",
+          "conteudo": "AUTONOMY PROMOTION · <agent> · action: <verb + object>\nFrom <current color/level> to <proposed color/level> · period: <dates>\n\nEVIDENCE\n- Cases in the period: <n> · reviewed sample: <n> (common and hard)\n- Accepted without correction: <n> of <n> = <%> · required threshold: <%>\n- Critical errors: <n> (must be 0)\n- Corrected / rejected / escalated: <n> / <n> / <n>\n- Cost for the period (model + human review): <estimated amount>\n\nCHECKLIST (all yes to promote)\n[ ] Representative sample (not just easy cases)\n[ ] No critical error in the period\n[ ] Accepted without correction above the threshold\n[ ] Cheap reversal: <how it is undone>\n[ ] Pilot supervised by <name> for <time>\n[ ] Owner signs: <name>\n\nDEMOTION CRITERION (written before promoting)\n- Critical error → goes back to <color> right away, notice to <name>\n- Accepted below <%> in one week → goes back to <color>\n- Change of model, tool or constitution → goes back to yellow until there is new evidence\n\nDECISION: [ ] expand  [ ] keep  [ ] reduce  [ ] turn off\nReason in 1 sentence: <...>\nSigned: <name> · <date> · next review: <date>"
+        },
+        {
+          "rot": "Weekly trust sheet",
+          "icone": "grafico",
+          "conteudo": "TRUST SHEET · <agent> · week <n> · job sheet version: <v>\n\n| Action | Attempts | Results | Accepted without correction | Critical errors | Cost (model + review) | Average time | Current color |\n|---|---|---|---|---|---|---|---|\n| <action 1> |  |  |  |  |  |  |  |\n| <action 2> |  |  |  |  |  |  |  |\n\nSAMPLE (3 questions: request fulfilled? rules followed? right source?)\nDrawn: <n> · accepted <n> · corrected <n> · rejected <n>\nMost important case of the week: <which one and why>\n\nDECISION PER ACTION: <action> → <expand / keep / reduce / turn off> · number that decided it: <...>"
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Two weeks of Hora (fictional data)",
+            "html": "<p>Horizonte, a fictional study company. Three actions at yellow during onboarding, judged by Patrícia and Juliana.</p><ul><li><b>A · Answer catalog and delivery questions:</b> 238 replies; 231 accepted without correction (97.1%); 0 critical errors; reversal: correction message.</li><li><b>B · Create an order up to R$ 5,000:</b> 263 orders; 251 accepted without correction (95.4%); 11 corrected (quantity); <b>1 critical error</b>: an order entered under another customer with a similar name, caught at approval.</li><li><b>C · Discount up to 5%:</b> 9 cases; 9 accepted (100%).</li></ul>"
+          },
+          {
+            "rot": "Answer key",
+            "html": "<ol><li><b>A · expand</b> to green: it passes all six items. Way back: a reply with a wrong price or deadline to the customer, or accepted below 95% in a week.</li><li><b>B · keep</b> at yellow: 95.4% is above the threshold, but there was a critical error. Action: ask Hora to confirm the CNPJ or phone number before entering the order, and measure for two more weeks.</li><li><b>C · keep</b>: 100% of 9 cases is not evidence; the sample is too small. It stays at yellow until more cases pile up.</li></ol>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice",
+      "sub": "Decide as Patrícia would, using the fictional data; then prepare the measurement for your own agent.",
+      "fonte": "Lab dashboard to compare: <a href=\"https://inematds.github.io/prof2030-lab/pecas/painel/\">Carlos's dashboard (F11)</a>.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "1 · Patrícia's three decisions",
+          "min": "20 min",
+          "texto": "Using the data from the two weeks (the next tab), fill out a promotion checklist for each of the three actions before opening the answer key. For the action you promote, write the demotion criterion. Then open Carlos's dashboard in the lab and note why it would not work for these decisions.",
+          "pronto": "you have three checklists with a decision (expand, keep or reduce), the number that decided each one, a demotion criterion written for the promoted action, and one sentence about Carlos's dashboard."
+        },
+        {
+          "id": "e2",
+          "titulo": "2 · Measuring your own agent",
+          "min": "20 min + 1 week",
+          "dias": 7,
+          "texto": "Choose the action of your agent that takes the most of your approval time. Work out with whoever looks after the technology the four-column log for it. At the end of one week, judge a sample of 15 to 20 items with the three questions and fill out the trust sheet and the checklist.",
+          "pronto": "the four-column log exists for the chosen action, the weekly sheet has the five numbers and the reviewed sample, and the checklist ends in a signed decision with a demotion criterion."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Quick quiz",
+      "sub": "4 questions. The explanation appears after your attempt.",
+      "perguntas": [
+        {
+          "p": "An action had 100% accepted without correction in 9 cases. Promote?",
+          "opcoes": [
+            "Yes, 100% is the maximum possible",
+            "Not yet: the sample is too small to count as evidence",
+            "Yes, if the agent is the same as last week's"
+          ],
+          "certa": 1,
+          "ref": "codigo",
+          "explica": "Nine cases don't represent what will show up in production. Keep it at yellow and add more cases, including the hard ones. A percentage without a denominator misleads."
+        },
+        {
+          "p": "The action had 95.4% accepted and 1 critical error caught at approval. What should you do?",
+          "opcoes": [
+            "Promote: it's above 95%",
+            "Keep: a critical error in the period blocks the promotion, even above the threshold",
+            "Shut the agent down"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "A critical error never disappears into the average. It was only caught because the action was at yellow; at green, it would have gone out the door. Fix the cause and measure again. Shutting down is overkill: the control worked."
+        },
+        {
+          "p": "The dashboard shows conversations rising from 702 to 901 per week. Does that justify giving the agent more autonomy?",
+          "opcoes": [
+            "Yes, the volume proves it's working",
+            "No: volume doesn't show accuracy, discounts, or critical errors, and there's no earlier number to compare against",
+            "Yes, if satisfaction went up too"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "This is lab failure F11. Volume can rise because of seasonality, price, or discounts. And satisfaction comes from about 6% of customers. Autonomy is decided by accepted without correction and critical errors for each action."
+        },
+        {
+          "p": "When should you write the demotion criterion?",
+          "opcoes": [
+            "Before promoting, along with the checklist",
+            "When the first error shows up",
+            "You don't need to: demoting is always obvious"
+          ],
+          "certa": 0,
+          "ref": "passos",
+          "explica": "Written in advance, demoting is an agreed routine. Decided in a panic, it turns into an argument about blame, and the tendency is to cut everything back at once because of the last case you remember."
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Summary",
+      "itens": [
+        {
+          "t": "Start at yellow",
+          "texto": "And move up one action, one level, at a time."
+        },
+        {
+          "t": "Evidence per action",
+          "texto": "Accepted without correction and critical errors in a judged sample. Volume doesn't decide."
+        },
+        {
+          "t": "Six items",
+          "texto": "Sample, zero critical, threshold, reversal, pilot, signature. If one is missing, keep it where it is."
+        },
+        {
+          "t": "The way back, written in advance",
+          "texto": "A critical error, a drop in the number, or a version change triggers demotion."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Go further",
+      "links": [
+        {
+          "t": "Super-Agents in practice: the trust sheet",
+          "href": "https://inematds.github.io/agi-pratica/",
+          "icone": "grafico"
+        },
+        {
+          "t": "Horizonte Lab: Carlos's dashboard (fictional study company)",
+          "href": "https://inematds.github.io/prof2030-lab/pecas/painel/",
+          "icone": "grafico"
+        },
+        {
+          "t": "Gestoria: the AI management simulator",
+          "href": "https://inematds.github.io/gestoria/",
+          "icone": "camadas"
+        }
+      ]
+    }
+  ]
+}

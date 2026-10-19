@@ -1,0 +1,286 @@
+{
+  "slug": "equipe",
+  "num": 6,
+  "menu": "Team",
+  "titulo": "One agent or a team",
+  "titulo_curto": "One agent or a team",
+  "minutos": 20,
+  "lead": "Carlos liked Hora and already wants another agent, for collections. Maybe a third one to check the first two. Sometimes that's right; sometimes it's just a bigger problem with more places to go wrong. In this lesson you decide when the work calls for more than one agent, how they hand work to each other, and where the team stops.",
+  "objetivo": "decide when to split the work across several agents, in series or in parallel, with a handoff contract and limits on attempts, time, and cost.",
+  "competencias": [
+    "decidir-um-ou-varios-agentes",
+    "escrever-contrato-de-passagem",
+    "limitar-tentativas-prazo-custo"
+  ],
+  "aprende": [
+    {
+      "t": "Take fixed rules out of the agent"
+    },
+    {
+      "t": "Recognize the three signs that it's time for a team"
+    },
+    {
+      "t": "Write the handoff contract between agents"
+    },
+    {
+      "t": "Decide series or parallel, and set limits on attempts, time, and cost"
+    }
+  ],
+  "hero_alt": "A sales manager and an IT technician build, on a glass board, a flow of colored sticky notes linked by arrows.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "The decision ladder",
+      "sub": "Move up one step only when the one below doesn't solve it. Click each step.",
+      "estilo": "escada",
+      "nos": [
+        {
+          "icone": "lista",
+          "titulo": "Fixed step",
+          "sub": "a rule that doesn't change",
+          "detalhe": "If the answer is always the same for the same input (is the price the one in the table? does the amount go over R$ 5 thousand? is the customer registered?), it's not agent work: it's a rule in the tool. Cheaper, faster, and auditable."
+        },
+        {
+          "icone": "usuario",
+          "titulo": "One agent",
+          "sub": "one responsibility",
+          "detalhe": "One responsibility, one set of permissions, one context that fits on its desk. A well-written agent goes a long way. It is the starting point, not a step to skip."
+        },
+        {
+          "icone": "camadas",
+          "titulo": "Team",
+          "sub": "three signs",
+          "forte": true,
+          "itens": [
+            {
+              "icone": "memoria",
+              "t": "the desk overflows"
+            },
+            {
+              "icone": "cadeado",
+              "t": "different permissions"
+            },
+            {
+              "icone": "lupa",
+              "t": "independent checking"
+            }
+          ],
+          "detalhe": "Split when one of these shows up: the context doesn't fit and quality drops; parts of the work need permissions or rules that can't live together; or you want the one who checks to be different from the one who did the work. Without one of these reasons, more agents just means more cost and more handoffs."
+        },
+        {
+          "icone": "fila",
+          "titulo": "Series or parallel",
+          "sub": "decide first",
+          "detalhe": "Decisions that depend on each other go in series. Repeated, independent work (a hundred identical reminders, a hundred checks) goes in parallel, preferably as automation. Rule of thumb: intelligence in sequence, automation in parallel, files to share the context."
+        },
+        {
+          "icone": "check",
+          "titulo": "Supervisor and person",
+          "sub": "who closes it",
+          "detalhe": "A supervisor agent coordinates, but it does not gain or hand out new permissions. The yellow and red points of the matrix stay with a person, and that person answers for the whole team."
+        }
+      ],
+      "legenda": "\"Intelligence in sequence, automation in parallel\": rule from the Execution Architect (INEMA). The three signs come from the Super-Agents in practice course."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Horizonte Distribuidora wants to grow the team",
+      "sub": "Carlos's request: an agent to remind customers about invoices coming due. Four decisions.",
+      "passos": [
+        {
+          "titulo": "First, take the rule out of the agent",
+          "sub": "not everything becomes an agent",
+          "texto": [
+            "Someone suggested a \"checking agent\" to review Hora's orders. But checking list price, discount ceiling, amounts above R$ 5 mil and customer records is a fixed rule: the same input always gives the same answer.",
+            "That goes into the order tool, as Rafael already did after lesson 3. An agent to do math is cost and risk for no reason."
+          ],
+          "exemplo": {
+            "rot": "Decision",
+            "texto": "Order checking: a rule in the tool, not an agent."
+          }
+        },
+        {
+          "titulo": "Is collections another agent?",
+          "sub": "the permissions sign",
+          "texto": [
+            "Collections needs to read accounts receivable in the ERP, data that Hora should not see. It has a different tone, different rules (never threaten, never renegotiate alone) and a different owner, finance.",
+            "This is the second sign: permissions and rules that can't live in the same agent. Here the split is justified. The collections agent gets its own job sheet, constitution and matrix, all starting at yellow."
+          ],
+          "exemplo": {
+            "rot": "Design (fictional proposal)",
+            "texto": "Hora (sales) → invoiced order in the ERP → collections agent (reminder) → finance decides on renegotiation."
+          }
+        },
+        {
+          "titulo": "Write the handoff",
+          "sub": "what goes along and what doesn't",
+          "texto": [
+            "Every handoff between agents has a contract: the trigger, what gets passed, the evidence that goes with it, what the receiver cannot do, the deadline and who it goes back to.",
+            "Pass the minimum needed. The collections agent receives the invoice number, due date and authorized contact, not the whole sales conversation. Less data moving around means less risk and less paid context."
+          ],
+          "exemplo": {
+            "rot": "Golden rule",
+            "texto": "Whoever receives it reads the record of what was done and does not start from zero, nor ask the customer what they have already said."
+          }
+        },
+        {
+          "titulo": "Set limits and stops",
+          "sub": "attempts, deadline, cost",
+          "texto": [
+            "A team without limits gets stuck in a loop: one agent sends it back to the other, which sends it back again, and the bill grows. Write it down: at most two attempts per task, one handback between agents and then a person; a deadline per step; a monthly budget for the team.",
+            "McKinsey describes organizations with small teams per outcome, with 2 to 5 people supervising 50 to 100 agents. This is the consultancy's own stated experience, not a measured study. The unit is the outcome, not the number of agents."
+          ],
+          "exemplo": {
+            "rot": "At Horizonte (fictional values)",
+            "texto": "Reminder: at most 2 per invoice. Tool error: 2 attempts, then it alerts finance. Team budget: monthly ceiling in writing; past 80%, Patrícia is notified."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Templates to copy",
+      "sub": "One page for the whole team and one contract for each arrow.",
+      "blocos": [
+        {
+          "rot": "Team design (1 page)",
+          "icone": "camadas",
+          "conteudo": "DESENHO DA EQUIPE · processo: <de onde até onde> · responsável: <nome> · versão <1.0>\n\nRESULTADO DA EQUIPE (1 frase): <o que estará verdadeiro>\n\nPEÇAS (uma linha cada; tipo = regra na ferramenta | agente | pessoa)\n| Peça | Tipo | Por que existe separada (sinal) | Permissões | Ficha/constituição/matriz |\n|---|---|---|---|---|\n| <conferência de pedido> | regra | <resposta fixa> | - | - |\n| <agente 1> | agente | <motivo> | <ler/escrever o quê> | <links> |\n| <agente 2> | agente | <mesa lota / permissões / conferência> | <...> | <links> |\n| <pessoa> | pessoa | <decide amarelo e vermelho> | - | - |\n\nORDEM: série <quais etapas> · paralelo <quais etapas, de preferência automação>\nSUPERVISOR: <agente ou pessoa> · NÃO amplia permissões de ninguém\nPONTOS HUMANOS: <ações amarelas/vermelhas e quem aprova>\n\nLIMITES DA EQUIPE\n- Tentativas por tarefa: <n> · devoluções entre agentes: <n>, depois <pessoa>\n- Prazo por etapa: <...>\n- Orçamento mensal: <valor> · alerta em <%> para <nome>\nBOTÃO DE DESLIGAR DA EQUIPE: <o que para todos de uma vez> · quem: <nomes>"
+        },
+        {
+          "rot": "Handoff contract between agents",
+          "icone": "seta",
+          "conteudo": "CONTRATO DE PASSAGEM · <agente A> → <agente B> · versão <1.0>\n\nGATILHO: <evento que dispara a passagem>\nO QUE PASSA (só o necessário): <campos>\nO QUE NÃO PASSA: <dados que ficam com A>\nEVIDÊNCIA JUNTO: <registro do que A fez, com identificador do caso>\nB DEVE: <o que B entrega e em que prazo>\nB NÃO PODE: <ações proibidas para B neste caso>\nSE FALTAR DADO: B devolve para A uma vez, com o motivo; na 2ª, vai para <pessoa>\nLIMITE: <n> tentativas · prazo <tempo> · custo máximo por caso <valor estimado>\nRESPONSÁVEL PELA PASSAGEM: <nome>\nREGISTRO: toda passagem gera uma linha (data, caso, de, para, o que foi, resultado)"
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Horizonte team (example)",
+            "html": "<p>Horizonte, fictional study company · owners: Patrícia (sales) and finance (collections).</p><ul><li><b>Order check</b> · rule in the tool: price, cap, amount, customer record.</li><li><b>Hora</b> · sales agent · logs restock orders.</li><li><b>Collections agent</b> · kept separate because of the permissions signal: reads accounts receivable, sends an approved reminder; never renegotiates.</li><li><b>People</b> · Patrícia approves orders above R$ 5 mil and discounts from 5% to 10%; finance decides renegotiation.</li><li><b>Series:</b> order → approval → picking → invoicing → reminder. <b>Parallel:</b> reminders for different invoices, as an automatic routine.</li></ul>"
+          },
+          {
+            "rot": "Handoff Hora → collections",
+            "html": "<ul><li><b>Trigger:</b> invoice issued in the ERP.</li><li><b>Passes:</b> invoice number, amount, due date, contact authorized for collections.</li><li><b>Does not pass:</b> the sales conversation, negotiated discounts, other contacts.</li><li><b>Collections cannot:</b> renegotiate, give a discount, threaten, or collect before the due date.</li><li><b>Missing data:</b> send it back once to Juliana; the second time, to finance.</li><li><b>Limit:</b> 2 reminders per invoice.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice",
+      "sub": "Draw Horizonte's team, then yours. This is on paper: no new agent gets turned on today.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "1 · The team from order to collections",
+          "min": "30 min",
+          "texto": "With the model, draw the team for Horizonte's process, from the WhatsApp order to the collections reminder. For each piece, say whether it is a rule, an agent or a person, and why. Write the handoff contract from Hora to the collections agent without looking at the example; then compare.",
+          "pronto": "the drawing has at least one piece you decided is NOT an agent, each agent has the signal that justifies it existing separately, the handoff contract states what passes and what does not, and there are limits on attempts, send-backs, deadline and budget."
+        },
+        {
+          "id": "e2",
+          "titulo": "2 · Your team, or your agent on its own",
+          "min": "25 min",
+          "texto": "Take your process and climb the ladder: which parts are fixed steps? Is one agent enough? Does any of the three signals show up? If so, draw the team and write the contract for one handoff. If not, write in two lines why one agent is enough for now.",
+          "pronto": "you have the decision in writing (one agent or a team) with the signal that justifies it, and, if it is a team, the drawing and a handoff contract with limits."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Quick quiz",
+      "sub": "4 questions. The explanation appears after your attempt.",
+      "perguntas": [
+        {
+          "p": "Who should check whether the discount goes over 5% and whether the order goes over R$ 5 mil?",
+          "opcoes": [
+            "A dedicated checking agent",
+            "A rule in the order tool",
+            "Hora herself, after creating the order"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "It is a fixed rule: the same input always gives the same answer. A rule in the tool is cheaper, faster and cannot be talked around by text from the customer. Agents are for what takes judgment."
+        },
+        {
+          "p": "Which of these is a good reason to split collections into another agent?",
+          "opcoes": [
+            "More agents impress the owner",
+            "Collections needs permissions and rules that should not live alongside those of sales",
+            "Each new agent is cheaper than the last"
+          ],
+          "certa": 1,
+          "ref": "diagrama",
+          "explica": "That is the permissions signal: reading accounts receivable is not something the sales agent should be able to do. The other two signals are the desk that overflows and the independent check."
+        },
+        {
+          "p": "The collections agent sent the case back to Hora for missing data, and Hora sent it back again. What should the handoff contract have set?",
+          "opcoes": [
+            "That they keep trying until it is solved",
+            "One send-back at most; the second time, a person takes over",
+            "That the supervisor grants more permissions"
+          ],
+          "certa": 1,
+          "ref": "codigo",
+          "explica": "Without a limit on send-backs and attempts, the team falls into a loop and the cost grows without anyone seeing it. Granting permissions to unblock is the opposite mistake: a supervisor does not widen permissions."
+        },
+        {
+          "p": "McKinsey talks about 2 to 5 people supervising 50 to 100 agents. How should you use that figure?",
+          "opcoes": [
+            "As a target: Horizonte needs 50 agents",
+            "As a consultancy's stated experience, which shows the unit of organization by outcome, and not as a measured study",
+            "As proof that agents replace people"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "It is the consultancy's own account, and it sells that transformation. It helps you think about the unit (a small team per outcome), not as a target number or as proof."
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Summary",
+      "itens": [
+        {
+          "t": "A rule is not an agent",
+          "texto": "Whatever has a fixed answer goes into the tool."
+        },
+        {
+          "t": "Three signals",
+          "texto": "The desk that overflows, different permissions, independent check. Without them, one agent is enough."
+        },
+        {
+          "t": "A contract on every arrow",
+          "texto": "Trigger, what passes and what does not, prohibitions, deadline, send-back."
+        },
+        {
+          "t": "Team limits",
+          "texto": "Attempts, send-backs, deadline, budget and one button that stops everyone."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Go further",
+      "links": [
+        {
+          "t": "Execution Architect: parallel × sequential",
+          "href": "https://inematds.github.io/agenteexecuta/guia/",
+          "icone": "fila"
+        },
+        {
+          "t": "Super-Agents in practice: teams of agents",
+          "href": "https://inematds.github.io/agi-pratica/",
+          "icone": "camadas"
+        },
+        {
+          "t": "Agent Architect Kit: orchestration chain",
+          "href": "https://inematds.github.io/kit-arquiteto-agentes/",
+          "icone": "arquivo"
+        }
+      ]
+    }
+  ]
+}
