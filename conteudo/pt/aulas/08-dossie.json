@@ -1,0 +1,207 @@
+{
+  "slug": "dossie",
+  "num": 8,
+  "menu": "Projeto",
+  "titulo": "Projeto: o agente contratado + O que mudou",
+  "titulo_curto": "Projeto: o dossiê",
+  "minutos": 20,
+  "lead": "Pessoa nova só começa depois de contrato assinado, cargo descrito e chefe definido. Agente também. O projeto deste curso é o dossiê de contratação: as peças que você escreveu nas aulas 1 a 7, juntas, passadas por uma rubrica e assinadas por quem não as escreveu. Antes de fechar, um panorama datado do que mudou no mercado e de como ler esses números.",
+  "objetivo": "montar o dossiê de contratação do agente e aprová-lo pela rubrica antes de ele começar a trabalhar, com assinatura de quem não o escreveu.",
+  "competencias": ["montar-dossie-de-contratacao", "aplicar-rubrica-de-aprovacao", "ler-relatorios-de-mercado-com-criterio"],
+  "aprende": [
+    {"t": "O que entra no dossiê de contratação e em que ordem"},
+    {"t": "Aplicar a rubrica com os itens que reprovam sozinhos"},
+    {"t": "Quem assina a contratação (e por que não é quem montou)"},
+    {"t": "O que mudou até outubro de 2026, com data e fonte"}
+  ],
+  "hero_alt": "Gerente comercial apresenta um fichário com divisórias coloridas ao dono da empresa, que folheia com atenção do outro lado da mesa.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "O dossiê de contratação",
+      "sub": "Quatro peças obrigatórias, a rubrica e uma assinatura. Clique em cada parte.",
+      "volta": "Reprovado em algum item: volta para a peça que falhou, não para o zero",
+      "nos": [
+        {"icone": "arquivo", "titulo": "Cargo e delegação", "sub": "aulas 1 e 2",
+         "detalhe": "Missão, entrega verificável, proibidos e responsável; e a ficha de delegação com objetivo, contexto com dono, ferramentas, prazo e evidência de conclusão."},
+        {"icone": "escudo", "titulo": "Constituição", "sub": "aula 3",
+         "detalhe": "Uma página com prioridades em ordem, limites, quando chamar uma pessoa e casos difíceis com o porquê. Junto, os casos de teste rodados na versão atual e a lista do que tem trava no sistema."},
+        {"icone": "cadeado", "titulo": "Matriz de alçada", "sub": "aulas 4 e 5", "forte": true,
+         "detalhe": "Cada ação com cor, aprovador, responsável, reversão e registro; o botão de desligar; e, para cada ação que já subiu de nível, o checklist de promoção com o critério de volta."},
+        {"icone": "calendario", "titulo": "Supervisão", "sub": "aulas 6 e 7",
+         "detalhe": "A rotina diária e semanal, o destino de cada tipo de exceção, o modelo de pacote e, se houver mais de um agente, o desenho da equipe com os contratos de passagem."},
+        {"icone": "check", "titulo": "Rubrica e assinatura", "sub": "quem lança não aprova",
+         "detalhe": "A rubrica dá a nota e tem itens que reprovam sozinhos. Quem montou o dossiê não assina a aprovação: na Horizonte, a Patrícia monta, o Rafael confirma as travas e o Carlos assina."}
+      ],
+      "legenda": "A aprovação pedagógica do dossiê não autoriza, sozinha, colocar o agente em produção na empresa: essa decisão continua sendo de quem responde por ela."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Do rascunho à assinatura",
+      "sub": "Quatro passos. O dossiê da Hora é o treino; o do seu agente é o que vale.",
+      "passos": [
+        {"titulo": "Junte as peças", "sub": "uma pasta, uma capa",
+         "texto": ["Coloque numa pasta só as peças das aulas 1 a 7, na ordem do diagrama, com uma capa de uma página: agente, processo, versão, responsável, data e o índice.", "Se uma peça mudou depois de escrita (a matriz ganhou uma linha na aula 7, por exemplo), atualize a versão. Dossiê com peças de versões diferentes é a primeira coisa que a rubrica pega."],
+         "exemplo": {"rot": "Na Horizonte", "texto": "Pasta \"Hora · dossiê v2.0\": capa, ficha de cargo, delegação da reposição, constituição com 8 casos de teste, matriz com checklist da ação promovida, rotina de supervisão e o desenho com o agente de cobrança."}},
+        {"titulo": "Passe pela rubrica", "sub": "100 pontos e seis obrigatórios",
+         "texto": ["A rubrica soma 100 pontos em seis blocos. Aprova com 75 ou mais e todos os obrigatórios marcados. Um obrigatório faltando reprova, mesmo com 95 pontos.", "Os obrigatórios são os que evitam o estrago grande: responsável com nome, nada irreversível no verde, teto em número onde há valor, toda exceção com destino e prazo, critério de rebaixamento escrito e dados fictícios ou anonimizados identificados."],
+         "exemplo": {"rot": "Teste da banca", "texto": "Rode o prompt da banca (modelo ao lado). Ele aponta lacunas; quem decide a nota é você e quem assina."}},
+        {"titulo": "Quem assina", "sub": "separação de funções",
+         "texto": ["Quem montou o dossiê não aprova a contratação, pelo mesmo motivo que quem lança não aprova o pagamento. A pessoa que assina lê a capa, confere os obrigatórios e pergunta o que não entendeu.", "A TI confirma por escrito que as travas pedidas (teto de desconto, valor máximo, registro, botão de desligar) existem na ferramenta, e não só no texto."],
+         "exemplo": {"rot": "Na Horizonte", "texto": "Patrícia monta. Rafael confirma as travas. Carlos lê, pergunta e assina. A Juliana recebe a rotina de supervisão porque é a substituta da Patrícia."}},
+        {"titulo": "Data de revisão", "sub": "contrato com prazo",
+         "texto": ["O dossiê sai com data de revisão: 30 dias depois da contratação, ou antes, se houver falha grave, troca de modelo, de ferramenta ou de fornecedor.", "Na revisão, as peças voltam pela rubrica. É assim que o agente cresce de nível sem que ninguém precise lembrar como era a regra."],
+         "exemplo": {"rot": "Regra", "texto": "Mudou o modelo ou a ferramenta: ações afetadas voltam ao amarelo e os casos de teste rodam de novo."}}
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelos para copiar",
+      "sub": "A capa do dossiê, a rubrica e um prompt de banca para achar lacunas antes da assinatura.",
+      "blocos": [
+        {"rot": "Capa do dossiê de contratação", "icone": "arquivo",
+         "conteudo": "DOSSIÊ DE CONTRATAÇÃO · <nome do agente> · versão <2.0> · <data>\nEmpresa / área: <...> · Processo: <de onde até onde>\nResponsável pelo resultado: <nome e cargo> · Substituto: <nome>\nSuporte técnico: <nome> · Dados usados: [ ] reais autorizados [ ] anonimizados [ ] fictícios\n\nÍNDICE (todas as peças na mesma versão)\n1. Ficha de cargo ........................... v<...>\n2. Ficha de delegação ....................... v<...>\n3. Constituição + casos de teste (resultado) . v<...>\n4. Matriz de alçada + botão de desligar ...... v<...>\n5. Checklists de promoção (ações promovidas) . v<...>\n6. Desenho da equipe + contratos (se houver)  v<...>\n7. Rotina de supervisão + pacote de exceção .. v<...>\n\nTRAVAS CONFIRMADAS PELA TI (fora do texto): <lista> · confirmado por <nome> em <data>\nNOTA NA RUBRICA: <...>/100 · obrigatórios: <6 de 6>\nMONTADO POR: <nome>  ·  APROVADO POR (não pode ser quem montou): <nome> em <data>\nPRÓXIMA REVISÃO: <data> ou antes, se houver falha grave ou troca de modelo/ferramenta"},
+        {"rot": "Rubrica do dossiê (100 pontos)", "icone": "lista",
+         "conteudo": "RUBRICA · dossiê de contratação · aprova com >= 75 E os 6 obrigatórios\n\nBLOCO                                   PONTOS  CRITÉRIO DE PONTO CHEIO\n1. Cargo e delegação                      20    missão com processo e resultado; entrega verificável;\n                                                proibidos com verbo e número; 6 peças da delegação\n2. Constituição                           20    4 prioridades em ordem; limites; quando chamar com\n                                                pessoa e prazo; 3+ casos com porquê; testes rodados\n3. Matriz de alçada                       25    todas as ações das ferramentas; cor pelo risco;\n                                                aprovação com conteúdo e prazo; reversão; registro\n4. Supervisão e exceções                  20    destino por tipo de exceção; pacote; 3 verbos;\n                                                rotina diária e semanal; carga medida\n5. Confiança e equipe                     10    checklist das ações promovidas; equipe só com sinal;\n                                                contratos de passagem com limites\n6. Clareza das evidências                  5    versões iguais; capa; dados rotulados\n\nOBRIGATÓRIOS (um faltando reprova)\n[ ] Responsável humano com nome (do negócio)\n[ ] Nenhuma ação irreversível no verde\n[ ] Teto em número em toda ação que envolve valor\n[ ] Toda exceção com destino e prazo\n[ ] Critério de rebaixamento escrito\n[ ] Dados fictícios ou anonimizados identificados como tal\n\nNOTA: <...>/100 · obrigatórios: <...>/6 · resultado: [ ] aprovado [ ] volta para <peça>"},
+        {"rot": "Prompt · banca antes da assinatura", "icone": "chat",
+         "conteudo": "Você é a banca que revisa o dossiê de contratação de um agente de IA,\nusando a rubrica abaixo. Você não aprova nem reprova: aponta lacunas\npara quem vai assinar.\n\nPara cada bloco da rubrica:\n1. Diga o que está presente e o que falta para o ponto cheio,\n   citando o trecho do dossiê.\n2. Marque cada obrigatório como presente ou ausente, com o trecho.\n3. Liste as três perguntas que o aprovador deveria fazer antes de assinar.\n\nNão invente informação que não esteja no dossiê.\n\nRubrica:\n\"\"\"<cole a rubrica>\"\"\"\nDossiê:\n\"\"\"<cole as peças>\"\"\""}
+      ]
+    },
+    {
+      "tipo": "passos",
+      "titulo": "O que mudou · outubro de 2026",
+      "sub": "Painel do trimestre, trocado a cada revisão do curso. Cada item com data, fonte e o tipo de afirmação. Os produtos são exemplos: o método das aulas 1 a 7 não depende de nenhum deles.",
+      "passos": [
+        {"titulo": "Agentes viraram produto", "sub": "exemplos trocáveis",
+         "texto": ["OpenAI: os Workspace Agents, que substituem os Custom GPTs, passaram a ser cobrados por token (06/07/2026); o ChatGPT Work entrega documento, planilha e slide (09/07/2026). O Agent Builder do AgentKit será desativado em 30/11/2026.", "Anthropic: Managed Agents e, no Claude Code, uso do computador em segundo plano (09/2026). Microsoft: Agent 365, anunciado no Build (06/2026). Fontes: notas de lançamento e anúncios de cada fornecedor."],
+         "exemplo": {"rot": "Para o dossiê", "texto": "Produto sai de linha e muda de preço em meses. O dossiê registra qual ferramenta o agente usa e o que acontece se ela mudar: ações voltam ao amarelo e os testes rodam de novo."}},
+        {"titulo": "Como a gestão está mudando", "sub": "consultorias e fornecedores",
+         "texto": ["Microsoft, Work Trend Index 2025: o \"agent boss\", gestor humano de agentes, e a métrica de proporção entre humanos e agentes. WTI 2026 (05/2026, 20 mil pessoas em 10 países): quando o gestor usa IA na frente da equipe, o valor percebido sobe 17 pontos (pesquisa do fornecedor).", "Deloitte, Tech Trends 2026: autonomia graduada e integração de agentes. Gartner, previsão de out/2024: até o fim de 2026, 1 em cada 5 organizações usará IA para cortar mais da metade da gerência média."],
+         "exemplo": {"rot": "Leitura", "texto": "Tirar a camada do organograma não elimina o trabalho dela: coordenar, revisar, formar gente. É esse trabalho que o dossiê e a fila de exceções organizam."}},
+        {"titulo": "Brasil e mundo", "sub": "compare a definição antes do número",
+         "texto": ["GFT, Tech Trends 2026 LATAM, com dados da BCG: 18% das empresas brasileiras integram agentes, contra 13% no mundo. ABES e IDC (15/06/2026, 103 executivos): 40% já investem em agentes e 33% planejam em 12 meses. Gartner (2026): só 17% das empresas têm agentes em uso.", "Deloitte (17/09/2026): 27% das empresas brasileiras com governança de IA madura. Okta (2026): quase dois terços aplicam controles mais fracos aos agentes do que às pessoas."],
+         "exemplo": {"rot": "Por que os números não batem", "texto": "\"Integram\", \"investem\" e \"em uso\" medem coisas diferentes, com amostras diferentes. Compare a definição antes de comparar a porcentagem."}},
+        {"titulo": "Como ler esses relatórios", "sub": "três perguntas",
+         "texto": ["Quem paga e o que vende? Microsoft e Okta vendem a solução do problema que medem; consultorias vendem a transformação que descrevem. Como mediu? Pesquisa com amostra, experiência declarada ou previsão? O que é previsão?", "Uma análise do The Microsoft Cloud Blog (05/2026) lembra que os números do WTI 2026 não devem sustentar sozinhos um business case. Use relatório como mapa, nunca como prova do seu caso."],
+         "exemplo": {"rot": "Próxima revisão deste painel", "texto": "Janeiro de 2027, com o panorama do trimestre seguinte. O que é método (aulas 1 a 7) não muda; o que é produto e número, sim."}}
+      ]
+    },
+    {
+      "tipo": "mapa",
+      "titulo": "O mapa do curso",
+      "sub": "As quatro peças obrigatórias do dossiê e os exercícios que as produzem. Clique num exercício para ver o \"pronto quando\".",
+      "degraus": [
+        {"aula": "cargo-digital", "icone": "arquivo", "quando": "Semana 1", "titulo": "Contratar", "sub": "cargo e delegação",
+         "saida": "Ficha de cargo com responsável e delegação com evidência.",
+         "passo": "A base de tudo: sem missão, entrega verificável e responsável, as outras peças não têm em que se apoiar. A delegação (aula 2) entra junto."},
+        {"aula": "constituicao", "icone": "escudo", "quando": "Semana 1", "titulo": "Orientar", "sub": "constituição e testes",
+         "saida": "Uma página de critérios e 8 casos de teste rodados.",
+         "passo": "Requer a ficha de cargo. Os casos difíceis vêm das conversas reais; o que é crítico vira pedido de trava para a TI."},
+        {"aula": "alcada", "icone": "cadeado", "quando": "Semana 2", "titulo": "Limitar", "sub": "alçada e confiança",
+         "saida": "Matriz por ação, botão de desligar e checklist de promoção.",
+         "passo": "Requer a constituição. A matriz começa apertada; a aula 5 ensina a soltar com evidência, uma ação por vez, depois de uma semana de registro."},
+        {"aula": "supervisao", "icone": "calendario", "quando": "Semanas 2 e 3", "titulo": "Supervisionar", "sub": "equipe e exceções",
+         "saida": "Rotina diária e semanal medida, pacote e destinos de exceção.",
+         "passo": "Requer a matriz: a fila de exceções é tudo o que a matriz manda para você. A equipe (aula 6) entra só se aparecer um dos três sinais."}
+      ],
+      "rolagem_fim": {"titulo": "O dossiê inteiro", "texto": "Contratar, orientar, limitar e supervisionar, nesta ordem. Cada peça usa a anterior, e o dossiê só vai para a assinatura quando o \"pronto quando\" de cada degrau for verdade."},
+      "resultado": {"titulo": "Ao final do curso", "texto": "Um agente contratado com dossiê aprovado: cargo, constituição, alçada e supervisão, assinados por quem não os escreveu.", "total": "18 exercícios"},
+      "legenda": "Ordem recomendada: cada peça usa a anterior."
+    },
+    {
+      "tipo": "gerador",
+      "titulo": "Gere o seu plano com datas",
+      "sub": "Escolha a data de início e quanto tempo você tem por semana. O plano respeita os exercícios que pedem uma semana de uso real.",
+      "curso": "Agentes: contratar, delegar e supervisionar",
+      "horas_padrao": 3,
+      "degraus": [
+        {"titulo": "Aula 1 · O cargo digital", "aula": "cargo-digital"},
+        {"titulo": "Aula 2 · Delegar de verdade", "aula": "delegar"},
+        {"titulo": "Aula 3 · A constituição do agente", "aula": "constituicao"},
+        {"titulo": "Aula 4 · Alçada", "aula": "alcada"},
+        {"titulo": "Aula 5 · Confiança progressiva", "aula": "confianca"},
+        {"titulo": "Aula 6 · Um agente ou uma equipe", "aula": "equipe"},
+        {"titulo": "Aula 7 · Supervisão e exceções", "aula": "supervisao"},
+        {"titulo": "Aula 8 · O dossiê", "aula": "dossie"}
+      ],
+      "txt": {
+        "titulo": "Plano — Agentes: contratar, delegar e supervisionar",
+        "inicio": "Início",
+        "ritmo": "Ritmo",
+        "termino": "Término previsto",
+        "ate": "até",
+        "pronto": "pronto quando",
+        "semanas": "semanas",
+        "travou": "## O que travou e a regra que criei",
+        "h": "h por semana",
+        "exs": "exercícios"
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Prática",
+      "sub": "O dossiê da Hora para treinar a rubrica; o do seu agente para valer.",
+      "exercicios": [
+        {"id": "e1", "titulo": "1 · O dossiê da Hora", "min": "40 min",
+         "texto": "Junte as peças da Hora que você fez nas aulas 1 a 7, monte a capa e passe pela rubrica. Rode o prompt da banca. Corrija o que faltar até a nota passar de 75 com os seis obrigatórios. Escreva quem assinaria na Horizonte e por quê.",
+         "pronto": "o dossiê da Hora tem capa, as peças na mesma versão, nota de 75 ou mais na rubrica com os seis obrigatórios marcados e o nome de quem assina, diferente de quem montou."},
+        {"id": "e2", "titulo": "2 · O dossiê do seu agente", "min": "60 min",
+         "texto": "Faça o mesmo com o agente do seu processo, usando as peças das práticas \"no seu processo\". Entregue a uma pessoa da sua área que não escreveu nada dele, peça que confira os obrigatórios e anote as perguntas dela.",
+         "pronto": "o dossiê do seu agente tem nota de 75 ou mais, os seis obrigatórios, a data da próxima revisão e a assinatura (ou o aceite por escrito) de alguém que não o montou."},
+        {"id": "e3", "titulo": "3 · O seu plano datado", "min": "5 min",
+         "texto": "Use o gerador acima para montar o plano com as suas datas e baixe o .ics para o calendário.",
+         "pronto": "o plano está salvo e as datas estão no seu calendário."}
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Teste rápido",
+      "sub": "4 perguntas. A explicação aparece depois da sua tentativa.",
+      "perguntas": [
+        {"p": "O dossiê da Hora fez 92 pontos, mas a ação \"criar pedido sem limite de valor\" está no verde. Resultado?",
+         "opcoes": ["Aprovado: 92 é bem acima de 75", "Reprovado: falta teto em número numa ação que envolve valor, e isso é obrigatório", "Aprovado com ressalva"],
+         "certa": 1, "ref": "codigo",
+         "explica": "Os obrigatórios existem justamente para que uma nota alta não esconda o estrago grande. Um faltando reprova; o dossiê volta para a matriz, não para o zero."},
+        {"p": "Quem deve assinar a contratação da Hora?",
+         "opcoes": ["A Patrícia, que montou o dossiê e conhece tudo", "O Carlos, depois que o Rafael confirmar as travas: quem montou não aprova", "O próprio agente, depois de ler o dossiê"],
+         "certa": 1, "ref": "passos",
+         "explica": "Separação de funções: quem lança não aprova. A Patrícia monta e responde pelo resultado; a aprovação é de outra pessoa, com a confirmação técnica de que as travas existem fora do texto."},
+        {"p": "Um relatório diz que 40% das empresas investem em agentes; outro, que só 17% têm agentes em uso. O que fazer antes de citar?",
+         "opcoes": ["Escolher o número que ajuda o seu argumento", "Comparar a definição (investir × ter em uso), a amostra e quem publicou", "Fazer a média dos dois"],
+         "certa": 1, "ref": "passos",
+         "explica": "\"Investem\", \"integram\" e \"em uso\" medem coisas diferentes. Sem comparar definição e amostra, a comparação de porcentagens não diz nada."},
+        {"p": "O fornecedor da ferramenta do agente anunciou que vai desativá-la. O que muda no dossiê?",
+         "opcoes": ["Nada: o dossiê é sobre o agente, não a ferramenta", "Ações afetadas voltam ao amarelo, os casos de teste rodam de novo na ferramenta nova e o dossiê ganha nova versão", "Basta trocar o nome da ferramenta na capa"],
+         "certa": 1, "ref": "passos",
+         "explica": "Troca de ferramenta é mudança como qualquer outra: o comportamento pode mudar. O método sobrevive à troca, mas a evidência precisa ser refeita."}
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Resumo",
+      "itens": [
+        {"t": "Quatro peças", "texto": "Cargo e delegação, constituição, matriz, supervisão. Na mesma versão."},
+        {"t": "Rubrica com obrigatórios", "texto": "75 pontos e os seis obrigatórios. Um faltando reprova."},
+        {"t": "Quem monta não assina", "texto": "E a TI confirma as travas fora do texto."},
+        {"t": "Mercado como mapa", "texto": "Data, fonte, definição e quem vende o quê, antes de qualquer número."}
+      ]
+    },
+    {
+      "tipo": "texto",
+      "titulo": "Certificação",
+      "paragrafos": [
+        "Certificação INEMA de qualificação \"Gestor de IA\", em breve no cert.inema.pro. Não é certificação profissional regulada.",
+        "Este é o curso G3 da Formação Gestão de IA 2027. Os outros cursos tratam da empresa agêntica (G0), das pessoas (G1), dos processos (G2), dos recursos (G4) e de governar, medir e evoluir (G5), onde fica o projeto final da formação."
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir além",
+      "links": [
+        {"t": "Área Gestão de IA: a formação e os cursos", "href": "https://eventos.inema.pro/gestao-ia/", "icone": "alvo"},
+        {"t": "Gestoria: administrar uma operação híbrida de ponta a ponta", "href": "https://inematds.github.io/gestoria/", "icone": "camadas"},
+        {"t": "Laboratório Horizonte: todas as peças (empresa fictícia de estudo)", "href": "https://inematds.github.io/prof2030-lab/", "icone": "pasta"}
+      ]
+    }
+  ]
+}
