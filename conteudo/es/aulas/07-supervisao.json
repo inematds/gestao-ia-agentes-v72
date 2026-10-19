@@ -327,31 +327,31 @@
         {
           "p": "¿Cuál es la diferencia entre devolver y detener?",
           "opcoes": [
-            "Ninguna: los dos detienen el pedido",
-            "Devolver es cuando falta algo (vuelve con lo que falta y un plazo); detener es cuando hay riesgo (sale de la operación normal hasta entender)",
-            "Devolver es para clientes nuevos; detener, para antiguos"
+            "Ninguna: los dos detienen el pedido y esperan a la gerente",
+            "Devolver es para cliente nuevo; detener es para cliente antiguo",
+            "Devolver: falta algo, vuelve con plazo. Detener: hay riesgo"
           ],
-          "certa": 1,
+          "certa": 2,
           "ref": "diagrama",
           "explica": "Son decisiones distintas y dejan registros distintos. El cliente sin CNPJ es una devolución; el pedido con orden escondida es una interrupción. Mezclar las dos hace que el incidente pase como un pendiente común."
         },
         {
           "p": "Hora pregunta solo \"¿apruebas el pedido 4471?\". ¿Qué haces?",
           "opcoes": [
-            "Abres la conversación completa e investigas",
-            "Lo devuelves pidiendo el paquete: contenido exacto, motivo, evidencias y recomendación",
-            "Apruebas, porque ella suele acertar"
+            "Devuelve pidiendo el paquete: contenido, motivo, evidencia",
+            "Abre la conversación completa e investiga el caso por su cuenta",
+            "Aprueba, porque Hora suele acertar en esos pedidos"
           ],
-          "certa": 1,
+          "certa": 0,
           "ref": "passos",
           "explica": "Sin paquete, quien investiga eres tú, todos los días. Devolver el pedido incompleto enseña el patrón; en pocas semanas los paquetes llegan completos."
         },
         {
           "p": "Seu Antônio pide 15%; el nivel de autorización de Hora es 5% y el tuyo, 10%. ¿Cuál es la mejor decisión?",
           "opcoes": [
-            "Dar los 15% para no perder al cliente",
-            "Ofrecer hasta 10%, dentro de tu nivel de autorización, con el motivo registrado, y prever qué hacer si no lo acepta",
-            "Enviarlo siempre al dueño"
+            "Dar el 15 %, para no perder a un cliente desde 2019",
+            "Ofrecer hasta 10 %, con motivo registrado y salida prevista",
+            "Mandarlo a Carlos, que es quien siempre decide sobre descuentos"
           ],
           "certa": 1,
           "ref": "simconversa",
@@ -360,22 +360,22 @@
         {
           "p": "¿Por qué ordenar la cola por riesgo y plazo, y no por orden de llegada?",
           "opcoes": [
-            "Porque es más rápido",
-            "Porque la excepción más peligrosa no puede esperar detrás de la más simple",
-            "Porque el agente lo prefiere así"
+            "Porque así la cola avanza más rápido al final del día",
+            "Porque el agente organiza mejor la cola de ese modo",
+            "Porque la excepción peligrosa no puede esperar a la simple"
           ],
-          "certa": 1,
+          "certa": 2,
           "ref": "diagrama",
           "explica": "Un pedido con intento de manipulación y R$ 28 mil en juego pide una decisión antes que un registro incompleto. Con el orden de llegada, la prioridad queda en manos de la suerte."
         },
         {
           "p": "La cola de Patrícia pasó de 3 a 12 excepciones por día. ¿Qué puede indicar eso?",
           "opcoes": [
-            "Que el agente empeoró y hay que apagarlo",
-            "Que la matriz está demasiado ajustada, que el agente llama sin paquete, o que algo cambió en el proceso: es hora de mirar las causas",
-            "Nada: una cola grande es señal de seguridad"
+            "Puede ser una matriz ajustada, un paquete incompleto o un proceso que cambió",
+            "Que el agente empeoró y hay que apagarlo hoy, hasta que TI revise",
+            "Nada: una cola grande solo muestra que la seguridad funciona"
           ],
-          "certa": 1,
+          "certa": 0,
           "ref": "passos",
           "explica": "La carga de la supervisión es un indicador. Antes de apagar o de aprobar en bloque, mira las causas que se repiten en la revisión semanal; muchas veces la corrección es una línea en la matriz o en la constitución."
         }

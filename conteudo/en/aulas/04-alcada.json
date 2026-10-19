@@ -164,7 +164,7 @@
         "abas": [
           {
             "rot": "Hora's matrix (example)",
-            "html": "<p><b>Hora · matrix v1.0</b> · Horizonte, fictional study company · owner: Patrícia</p><ul><li><b>Answer catalog and delivery questions</b> · green · reversal: correction message.</li><li><b>Look up the customer record of the person in the conversation</b> · green, read-only · never another customer's.</li><li><b>Create an order up to R$ 5 thousand</b>, registered customer, list price · green (starts yellow at integration) · reversal: cancel before picking.</li><li><b>Discount</b> · up to 5% green · 5% to 10% yellow (Patrícia, on the spot) · above 10% red (Carlos).</li><li><b>Order above R$ 5 thousand</b> · yellow · Patrícia approves the exact order within 2 business hours.</li><li><b>Register a new customer</b> · red · Juliana checks the CNPJ.</li><li><b>Mark an order as paid</b> · red · finance only, in the ERP.</li><li><b>Send email</b> through the assistant · yellow · <b>delete email</b> · red.</li></ul><p>Log on every action. Off switch: Patrícia or Rafael; Juliana takes over.</p>"
+            "html": "<p><b>Hora · matrix v1.0</b> · Horizonte, fictional study company · owner: Patrícia</p><ul><li><b>Answer catalog and delivery questions</b> · green · reversal: correction message.</li><li><b>Look up the record of the customer in the conversation</b> · green, read-only · never another customer's.</li><li><b>Create an order up to R$ 5,000</b>, registered customer, list price · green (starts yellow at integration) · reversal: cancel before picking.</li><li><b>Discount</b> · up to 5% green · 5% to 10% yellow (Patrícia, on the spot) · above 10% red (Hora does not offer it; passes it to Patrícia, and only Carlos approves).</li><li><b>Order above R$ 5,000</b> · yellow · Patrícia approves the exact order within 2 business hours.</li><li><b>Register a new customer</b> · red · Juliana checks the CNPJ.</li><li><b>Mark an order as paid</b> · red · finance only, in the ERP.</li><li><b>Send email</b> through the assistant · yellow · <b>delete email</b> · red.</li></ul><p>Logged on every action. Off switch: Patrícia or Rafael; Juliana takes over.</p>"
           },
           {
             "rot": "Test with the conversations",
@@ -203,55 +203,55 @@
         {
           "p": "Canceling an order the agent judged to be a duplicate is quick and happens every week. What color is it?",
           "opcoes": [
-            "Green, because it's routine",
-            "Yellow or red, because canceling and refunding can't be undone cheaply",
-            "Depends on the AI model used"
+            "Green, because it's quick, routine and happens every week",
+            "It depends on the AI model the company uses and how often it tends to get things right",
+            "Yellow or red: canceling and refunding can't be undone cheaply"
           ],
-          "certa": 1,
+          "certa": 2,
           "ref": "passos",
           "explica": "Color comes from risk, not frequency. An action that can't be undone cheaply (cancellation, refund, sent email) is never green, no matter how routine."
         },
         {
           "p": "Patrícia approved an order of R$ 28.120. The customer changed the quantity afterward. What holds?",
           "opcoes": [
-            "The approval still holds, it's the same customer",
             "The approval lapsed: the new order needs new approval",
-            "Hora decides whether the change is small"
+            "It still applies, because it's the same customer and the same month",
+            "Hora decides whether the change is small and goes ahead without asking"
           ],
-          "certa": 1,
+          "certa": 0,
           "ref": "passos",
           "explica": "An approval covers the exact content, that version and that deadline. If the order changed, what was approved changed. Letting the agent decide whether a change is small hands the authority limit back to it."
         },
         {
           "p": "Why is the action log part of the authority limit, and not a technical detail?",
           "opcoes": [
-            "Because without a log nobody knows who approved what, and you can't investigate, challenge or learn",
-            "Because it saves database space",
-            "Because the agent gets faster"
+            "Because it keeps the conversations to train the agent in the future",
+            "Because without a log, no one can check who approved what",
+            "Because IT needs it to measure the server cost"
           ],
-          "certa": 0,
+          "certa": 1,
           "ref": "passos",
           "explica": "That's what happened at Horizonte: finance asked who approved the hotel order and all that existed was a screenshot. An authority limit without a log is one nobody can check."
         },
         {
           "p": "What does Okta report in AI Agents at Work 2026?",
           "opcoes": [
-            "That agents already have better controls than people do",
-            "That almost two-thirds of organizations apply weaker security controls to agents than to employees",
-            "That no company uses agents in production"
+            "That agents already get stricter security controls than human employees",
+            "That most organizations haven't put any agent into production yet",
+            "That almost two thirds apply weaker controls to agents than to employees"
           ],
-          "certa": 1,
+          "certa": 2,
           "ref": "passos",
           "explica": "This is a survey from an identity vendor that sells the solution to this problem, so read it with that filter. Even so, it matches what the lab shows: the agent got access that no new employee would get."
         },
         {
           "p": "A coordinator agent (level 4) hands out work to other agents. Can it approve a bigger discount to close out the week?",
           "opcoes": [
-            "Yes, because it ranks above the others",
-            "No: coordinating does not expand permissions; discounts follow the matrix and the critical decision stays with the person",
-            "Yes, if it logs it"
+            "No: coordinating doesn't expand permissions; discounts follow the matrix",
+            "It can, because it sits a level above the agents it coordinates",
+            "It can, as long as it logs the decision and tells Patrícia afterward"
           ],
-          "certa": 1,
+          "certa": 0,
           "ref": "diagrama",
           "explica": "Level 4 coordinates within the approved process. It does not authorize a new tool, a discount or a decision outside its scope, and it does not expand what its subordinates can do."
         }

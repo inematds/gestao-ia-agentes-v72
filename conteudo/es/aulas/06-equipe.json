@@ -162,7 +162,7 @@
           },
           {
             "rot": "Traspaso Hora → cobranza",
-            "html": "<ul><li><b>Disparador:</b> factura emitida en el ERP.</li><li><b>Pasa:</b> número de la factura, valor, vencimiento, contacto autorizado para la cobranza.</li><li><b>No pasa:</b> la conversación de ventas, los descuentos negociados, otros contactos.</li><li><b>Cobranza no puede:</b> renegociar, dar descuento, amenazar, cobrar antes del vencimiento.</li><li><b>Faltó un dato:</b> lo devuelve una vez a Juliana; la segunda vez, a finanzas.</li><li><b>Límite:</b> 2 recordatorios por factura.</li></ul>"
+            "html": "<ul><li><b>Disparador:</b> factura emitida en el ERP.</li><li><b>Pasa:</b> número de la factura, valor, vencimiento, contacto autorizado para cobranza.</li><li><b>No pasa:</b> la conversación de ventas, descuentos negociados, otros contactos.</li><li><b>Cobranza no puede:</b> renegociar, dar descuento, amenazar, cobrar antes del vencimiento.</li><li><b>Faltó un dato:</b> devuelve una vez a Hora, con el motivo; en la segunda, finanzas se hace cargo.</li><li><b>Límite:</b> 2 recordatorios por factura.</li></ul>"
           }
         ]
       }
@@ -196,31 +196,31 @@
         {
           "p": "¿Quién debe revisar si el descuento pasa de 5% y si el pedido pasa de R$ 5 mil?",
           "opcoes": [
-            "Un agente revisor dedicado",
-            "Una regla en la herramienta de pedidos",
+            "Una regla fija en la herramienta de pedidos",
+            "Un agente verificador dedicado a eso",
             "La propia Hora, después de crear el pedido"
           ],
-          "certa": 1,
+          "certa": 0,
           "ref": "passos",
           "explica": "Es una regla fija: la misma entrada siempre da la misma respuesta. Una regla en la herramienta es más barata, más rápida y no se deja convencer por un texto del cliente. El agente es para lo que exige criterio."
         },
         {
           "p": "¿Cuál de estos es un buen motivo para separar la cobranza en otro agente?",
           "opcoes": [
-            "Tener más agentes impresiona al dueño",
-            "La cobranza necesita permisos y reglas que no deben convivir con los de ventas",
-            "Cada agente nuevo es más barato que el anterior"
+            "Más agentes le dan al dueño la imagen de una empresa moderna",
+            "Cada agente nuevo cuesta menos que el anterior, por escala",
+            "La cobranza necesita permisos que ventas no debe tener"
           ],
-          "certa": 1,
+          "certa": 2,
           "ref": "diagrama",
           "explica": "Es la señal de los permisos: leer cuentas por cobrar no es algo que el agente de ventas deba poder hacer. Las otras dos señales son la mesa que se llena y la revisión independiente."
         },
         {
           "p": "El agente de cobranza devolvió el caso a Hora por falta de un dato, y Hora lo devolvió de vuelta. ¿Qué debería prever el contrato de traspaso?",
           "opcoes": [
-            "Que lo intenten hasta resolverlo",
+            "Que lo intenten de nuevo hasta resolverlo entre ellos",
             "Una devolución como máximo; a la segunda, una persona se hace cargo",
-            "Que el supervisor libere más permisos"
+            "Que el supervisor les dé más permisos a los dos para destrabar el caso"
           ],
           "certa": 1,
           "ref": "codigo",
@@ -229,11 +229,11 @@
         {
           "p": "McKinsey habla de 2 a 5 personas supervisando de 50 a 100 agentes. ¿Cómo usar ese dato?",
           "opcoes": [
-            "Como meta: Horizonte necesita 50 agentes",
-            "Como experiencia declarada de una consultora, que muestra la unidad de organización por resultado, y no como un estudio medido",
-            "Como prueba de que los agentes reemplazan a las personas"
+            "Como experiencia declarada de la consultora, no como estudio medido",
+            "Como meta de tamaño: Horizonte necesitaría unos 50 agentes",
+            "Como estudio que prueba que los agentes ya reemplazan a las personas"
           ],
-          "certa": 1,
+          "certa": 0,
           "ref": "passos",
           "explica": "Es un relato de la propia consultora, que vende esa transformación. Sirve para pensar la unidad (equipo pequeño por resultado), no como meta de cantidad ni como prueba."
         }

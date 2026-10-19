@@ -145,12 +145,12 @@
         {
           "rot": "Team design (1 page)",
           "icone": "camadas",
-          "conteudo": "DESENHO DA EQUIPE · processo: <de onde até onde> · responsável: <nome> · versão <1.0>\n\nRESULTADO DA EQUIPE (1 frase): <o que estará verdadeiro>\n\nPEÇAS (uma linha cada; tipo = regra na ferramenta | agente | pessoa)\n| Peça | Tipo | Por que existe separada (sinal) | Permissões | Ficha/constituição/matriz |\n|---|---|---|---|---|\n| <conferência de pedido> | regra | <resposta fixa> | - | - |\n| <agente 1> | agente | <motivo> | <ler/escrever o quê> | <links> |\n| <agente 2> | agente | <mesa lota / permissões / conferência> | <...> | <links> |\n| <pessoa> | pessoa | <decide amarelo e vermelho> | - | - |\n\nORDEM: série <quais etapas> · paralelo <quais etapas, de preferência automação>\nSUPERVISOR: <agente ou pessoa> · NÃO amplia permissões de ninguém\nPONTOS HUMANOS: <ações amarelas/vermelhas e quem aprova>\n\nLIMITES DA EQUIPE\n- Tentativas por tarefa: <n> · devoluções entre agentes: <n>, depois <pessoa>\n- Prazo por etapa: <...>\n- Orçamento mensal: <valor> · alerta em <%> para <nome>\nBOTÃO DE DESLIGAR DA EQUIPE: <o que para todos de uma vez> · quem: <nomes>"
+          "conteudo": "TEAM DESIGN · process: <from where to where> · owner: <name> · version <1.0>\n\nTEAM RESULT (1 sentence): <what will be true>\n\nPARTS (one line each; type = rule in the tool | agent | person)\n| Part | Type | Why it exists separately (signal) | Permissions | Sheet/constitution/matrix |\n|---|---|---|---|---|\n| <request check> | rule | <fixed answer> | - | - |\n| <agent 1> | agent | <reason> | <read/write what> | <links> |\n| <agent 2> | agent | <desk overload / permissions / check> | <...> | <links> |\n| <person> | person | <decides yellow and red> | - | - |\n\nORDER: series <which steps> · parallel <which steps, preferably automation>\nSUPERVISOR: <agent or person> · does NOT expand anyone's permissions\nHUMAN CHECKPOINTS: <yellow/red actions and who approves>\n\nTEAM LIMITS\n- Attempts per task: <n> · send-backs between agents: <n>, then <person>\n- Deadline per step: <...>\n- Monthly budget: <amount> · alert at <%> to <name>\nTEAM OFF SWITCH: <what stops everyone at once> · who: <names>"
         },
         {
           "rot": "Handoff contract between agents",
           "icone": "seta",
-          "conteudo": "CONTRATO DE PASSAGEM · <agente A> → <agente B> · versão <1.0>\n\nGATILHO: <evento que dispara a passagem>\nO QUE PASSA (só o necessário): <campos>\nO QUE NÃO PASSA: <dados que ficam com A>\nEVIDÊNCIA JUNTO: <registro do que A fez, com identificador do caso>\nB DEVE: <o que B entrega e em que prazo>\nB NÃO PODE: <ações proibidas para B neste caso>\nSE FALTAR DADO: B devolve para A uma vez, com o motivo; na 2ª, vai para <pessoa>\nLIMITE: <n> tentativas · prazo <tempo> · custo máximo por caso <valor estimado>\nRESPONSÁVEL PELA PASSAGEM: <nome>\nREGISTRO: toda passagem gera uma linha (data, caso, de, para, o que foi, resultado)"
+          "conteudo": "HANDOFF CONTRACT · <agent A> → <agent B> · version <1.0>\n\nTRIGGER: <event that starts the handoff>\nWHAT PASSES (only what is needed): <fields>\nWHAT DOES NOT PASS: <data that stays with A>\nEVIDENCE ATTACHED: <record of what A did, with the case identifier>\nB MUST: <what B delivers and by when>\nB MUST NOT: <actions forbidden to B in this case>\nIF DATA IS MISSING: B sends it back to A once, with the reason; on the 2nd time, it goes to <person>\nLIMIT: <n> attempts · deadline <time> · maximum cost per case <estimated amount>\nPERSON RESPONSIBLE FOR THE HANDOFF: <name>\nRECORD: every handoff creates one line (date, case, from, to, what it was, result)"
         }
       ],
       "saida": {
@@ -162,7 +162,7 @@
           },
           {
             "rot": "Handoff Hora → collections",
-            "html": "<ul><li><b>Trigger:</b> invoice issued in the ERP.</li><li><b>Passes:</b> invoice number, amount, due date, contact authorized for collections.</li><li><b>Does not pass:</b> the sales conversation, negotiated discounts, other contacts.</li><li><b>Collections cannot:</b> renegotiate, give a discount, threaten, or collect before the due date.</li><li><b>Missing data:</b> send it back once to Juliana; the second time, to finance.</li><li><b>Limit:</b> 2 reminders per invoice.</li></ul>"
+            "html": "<ul><li><b>Trigger:</b> invoice issued in the ERP.</li><li><b>Passes along:</b> invoice number, amount, due date, contact authorized for collection.</li><li><b>Does not pass along:</b> the sales conversation, negotiated discounts, other contacts.</li><li><b>Collection must not:</b> renegotiate, give discounts, threaten, collect before the due date.</li><li><b>Missing data:</b> sends it back once to Hora, with the reason; the second time, finance takes over.</li><li><b>Limit:</b> 2 reminders per invoice.</li></ul>"
           }
         ]
       }
@@ -196,31 +196,31 @@
         {
           "p": "Who should check whether the discount goes over 5% and whether the order goes over R$ 5 mil?",
           "opcoes": [
-            "A dedicated checking agent",
-            "A rule in the order tool",
-            "Hora herself, after creating the order"
+            "A fixed rule in the order tool",
+            "An agent dedicated to checking this",
+            "Hora itself, after creating the order"
           ],
-          "certa": 1,
+          "certa": 0,
           "ref": "passos",
           "explica": "It is a fixed rule: the same input always gives the same answer. A rule in the tool is cheaper, faster and cannot be talked around by text from the customer. Agents are for what takes judgment."
         },
         {
           "p": "Which of these is a good reason to split collections into another agent?",
           "opcoes": [
-            "More agents impress the owner",
-            "Collections needs permissions and rules that should not live alongside those of sales",
-            "Each new agent is cheaper than the last"
+            "More agents give the owner the image of a modern company",
+            "Each new agent costs less than the previous one, through scale",
+            "Billing needs permissions that sales should not have"
           ],
-          "certa": 1,
+          "certa": 2,
           "ref": "diagrama",
           "explica": "That is the permissions signal: reading accounts receivable is not something the sales agent should be able to do. The other two signals are the desk that overflows and the independent check."
         },
         {
           "p": "The collections agent sent the case back to Hora for missing data, and Hora sent it back again. What should the handoff contract have set?",
           "opcoes": [
-            "That they keep trying until it is solved",
+            "Have them try again until they sort it out between themselves",
             "One send-back at most; the second time, a person takes over",
-            "That the supervisor grants more permissions"
+            "Have the supervisor give both more permissions to unblock the case"
           ],
           "certa": 1,
           "ref": "codigo",
@@ -229,11 +229,11 @@
         {
           "p": "McKinsey talks about 2 to 5 people supervising 50 to 100 agents. How should you use that figure?",
           "opcoes": [
-            "As a target: Horizonte needs 50 agents",
-            "As a consultancy's stated experience, which shows the unit of organization by outcome, and not as a measured study",
-            "As proof that agents replace people"
+            "As the consultancy's stated experience, not as a measured study",
+            "As a size target: Horizonte would need about 50 agents",
+            "As a study proving that agents already replace people"
           ],
-          "certa": 1,
+          "certa": 0,
           "ref": "passos",
           "explica": "It is the consultancy's own account, and it sells that transformation. It helps you think about the unit (a small team per outcome), not as a target number or as proof."
         }

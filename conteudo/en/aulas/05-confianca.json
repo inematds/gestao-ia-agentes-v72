@@ -178,31 +178,31 @@
         {
           "p": "An action had 100% accepted without correction in 9 cases. Promote?",
           "opcoes": [
-            "Yes, 100% is the maximum possible",
-            "Not yet: the sample is too small to count as evidence",
-            "Yes, if the agent is the same as last week's"
+            "Yes: 100% is the maximum possible, there's nothing left to wait for",
+            "Yes, as long as the model is the same as last week's",
+            "Not yet: 9 cases are too few to count as evidence"
           ],
-          "certa": 1,
+          "certa": 2,
           "ref": "codigo",
           "explica": "Nine cases don't represent what will show up in production. Keep it at yellow and add more cases, including the hard ones. A percentage without a denominator misleads."
         },
         {
           "p": "The action had 95.4% accepted and 1 critical error caught at approval. What should you do?",
           "opcoes": [
-            "Promote: it's above 95%",
-            "Keep: a critical error in the period blocks the promotion, even above the threshold",
-            "Shut the agent down"
+            "Keep: a critical error in the period blocks the promotion",
+            "Promote: the rate came in above the 95% threshold",
+            "Turn the agent off until you find the cause of the error"
           ],
-          "certa": 1,
+          "certa": 0,
           "ref": "passos",
           "explica": "A critical error never disappears into the average. It was only caught because the action was at yellow; at green, it would have gone out the door. Fix the cause and measure again. Shutting down is overkill: the control worked."
         },
         {
           "p": "The dashboard shows conversations rising from 702 to 901 per week. Does that justify giving the agent more autonomy?",
           "opcoes": [
-            "Yes, the volume proves it's working",
-            "No: volume doesn't show accuracy, discounts, or critical errors, and there's no earlier number to compare against",
-            "Yes, if satisfaction went up too"
+            "Yes: rising volume shows the agent works",
+            "No: volume shows neither hits nor misses, and the before is missing",
+            "Yes, as long as customer satisfaction also rises in the same period"
           ],
           "certa": 1,
           "ref": "passos",
@@ -211,11 +211,11 @@
         {
           "p": "When should you write the demotion criterion?",
           "opcoes": [
-            "Before promoting, along with the checklist",
-            "When the first error shows up",
-            "You don't need to: demoting is always obvious"
+            "When the first error shows up, with the case in hand",
+            "Before promoting the action, together with the checklist",
+            "No need: when the time comes, demoting is always obvious"
           ],
-          "certa": 0,
+          "certa": 1,
           "ref": "passos",
           "explica": "Written in advance, demoting is an agreed routine. Decided in a panic, it turns into an argument about blame, and the tendency is to cut everything back at once because of the last case you remember."
         }

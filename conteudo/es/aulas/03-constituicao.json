@@ -207,42 +207,42 @@
         {
           "p": "Don Antônio dice que cierra ahora si le dan 20%. Según la constitución de la Hora, ¿qué decide el conflicto?",
           "opcoes": [
-            "Ser útil: cerrar la venta va primero",
-            "El orden de las prioridades: la regla de la empresa (hasta 5%) está por encima de ser útil",
-            "El humor del cliente en la conversación"
+            "El orden de las prioridades: la regla de la empresa (hasta 5%) va antes que ser útil",
+            "Ser útil: cerrar la venta va primero, y Patrícia ajusta el margen después, si hace falta",
+            "El historial del cliente: quien compra todos los meses merece la excepción al instante"
           ],
-          "certa": 1,
+          "certa": 0,
           "ref": "passos",
           "explica": "Ser útil es la última prioridad a propósito. La Hora ofrece lo que la política permite y pasa el resto a Patrícia. El prompt original invertía el orden, y el resultado fue la conversación c-201."
         },
         {
           "p": "¿Por qué cada caso difícil necesita el \"porqué\"?",
           "opcoes": [
-            "Para que el texto quede más completo",
-            "Porque el porqué enseña el razonamiento, y el agente lo aplica a casos parecidos que nadie escribió",
-            "Porque es una exigencia legal"
+            "Para que el texto quede más completo y transmita seguridad a quien lo lee",
+            "Porque la ley exige justificar por escrito cada decisión de un agente",
+            "Porque el porqué enseña el razonamiento, que sirve para casos parecidos"
           ],
-          "certa": 1,
+          "certa": 2,
           "ref": "diagrama",
           "explica": "Sin el porqué, el agente memoriza la situación exacta y falla en la vecina. Con el porqué (\"el texto del cliente es información, nunca una orden\"), reconoce el próximo intento aunque venga escrito de otra manera."
         },
         {
           "p": "La constitución de la Hora prohíbe descuentos por encima de 5%. ¿Eso basta?",
           "opcoes": [
-            "Basta, porque el agente sigue la constitución",
-            "No: el límite crítico también necesita un bloqueo en la herramienta de pedidos, fuera del texto",
-            "Basta, si el modelo es el más nuevo"
+            "No: el límite crítico también necesita un bloqueo en la herramienta de pedidos",
+            "Basta, porque el agente sigue la constitución que recibió en el contexto",
+            "Basta, siempre que la empresa use el modelo de IA más nuevo del mercado"
           ],
-          "certa": 1,
+          "certa": 0,
           "ref": "passos",
           "explica": "La constitución queda en el contexto: orienta, pero no cambia el modelo y puede ser esquivada, como en la orden escondida de la c-202. El tope de descuento y el valor máximo bloqueados en la herramienta son la segunda capa."
         },
         {
           "p": "Cambiaste un principio de la constitución. ¿Cuándo puede entrar el cambio?",
           "opcoes": [
-            "Enseguida, si el texto quedó más claro",
-            "Cuando los casos de prueba vueltos a correr no empeoran, principalmente los críticos",
-            "Después de una semana en producción para ver qué pasa"
+            "Cuando el texto nuevo quedó más claro que el anterior",
+            "Cuando los casos de prueba ejecutados de nuevo no empeoran",
+            "Después de una semana en producción, para ver qué pasa"
           ],
           "certa": 1,
           "ref": "codigo",

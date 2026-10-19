@@ -327,31 +327,31 @@
         {
           "p": "What is the difference between sending back and stopping?",
           "opcoes": [
-            "None: both halt the order",
-            "Sending back is when something is missing (it returns with what's missing and a deadline); stopping is when there is risk (it leaves normal operation until you understand it)",
-            "Sending back is for new customers; stopping is for existing ones"
+            "None: both stop the order and wait for the manager",
+            "Sending back is for a new customer; stopping is for an old customer",
+            "Send back: something is missing, it returns with a deadline. Stop: there is risk"
           ],
-          "certa": 1,
+          "certa": 2,
           "ref": "diagrama",
           "explica": "They are distinct decisions and leave distinct records. The customer without a CNPJ is a send-back; the order with the hidden instruction is a stop. Mixing the two lets an incident pass as an ordinary pending item."
         },
         {
           "p": "Hora only asks, \"approve order 4471?\" What do you do?",
           "opcoes": [
-            "Open the whole conversation and investigate",
-            "Send it back asking for the package: exact content, reason, evidence and recommendation",
-            "Approve it, because she is usually right"
+            "It sends it back asking for the package: content, reason, evidence",
+            "She opens the whole conversation and investigates the case on her own",
+            "She approves, because Hora usually gets these orders right"
           ],
-          "certa": 1,
+          "certa": 0,
           "ref": "passos",
           "explica": "Without a package, you are the one investigating, every day. Sending back the incomplete request teaches the pattern; within a few weeks the packages arrive complete."
         },
         {
           "p": "Seu Antônio asks for 15%; Hora's authority limit is 5% and yours is 10%. Which decision is best?",
           "opcoes": [
-            "Give the 15% so you don't lose the customer",
-            "Offer up to 10% within your authority limit, with the reason logged, and plan what to do if he doesn't accept",
-            "Always send it to the owner"
+            "Give the 15%, so you don't lose a customer since 2019",
+            "Offer up to 10%, with the reason recorded and an exit planned",
+            "Send it to Carlos, who is the one who always decides on discounts"
           ],
           "certa": 1,
           "ref": "simconversa",
@@ -360,22 +360,22 @@
         {
           "p": "Why sort the queue by risk and deadline, and not by order of arrival?",
           "opcoes": [
-            "Because it is faster",
-            "Because the most dangerous exception can't wait behind the simplest one",
-            "Because the agent prefers it that way"
+            "Because that way the queue moves faster at the end of the day",
+            "Because the agent organizes the queue better that way",
+            "Because the dangerous exception cannot wait behind the simple one"
           ],
-          "certa": 1,
+          "certa": 2,
           "ref": "diagrama",
           "explica": "An order with a manipulation attempt and R$ 28 mil at stake needs a decision before a missing record does. With first come, first served, priority is left to luck."
         },
         {
           "p": "Patrícia's queue went from 3 to 12 exceptions a day. What might this indicate?",
           "opcoes": [
-            "That the agent got worse and should be switched off",
-            "That the matrix is too tight, that the agent calls without a package, or that something changed in the process: it's time to look at the causes",
-            "Nothing: a big queue is a sign of safety"
+            "It could be a tight matrix, a missing package or a changed process",
+            "That the agent got worse and must be turned off today, until IT reviews it",
+            "Nothing: a big queue only shows that the safety net works"
           ],
-          "certa": 1,
+          "certa": 0,
           "ref": "passos",
           "explica": "Supervision load is an indicator. Before you turn the agent off or approve in bulk, look at the causes that repeat in the weekly review; often the fix is one line in the matrix or in the constitution."
         }

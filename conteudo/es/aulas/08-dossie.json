@@ -155,7 +155,7 @@
           "sub": "ejemplos intercambiables",
           "texto": [
             "OpenAI: los Workspace Agents, que reemplazan a los Custom GPTs, pasaron a cobrarse por token (06/07/2026); ChatGPT Work entrega documento, hoja de cálculo y diapositiva (09/07/2026). El Agent Builder de AgentKit se desactivará el 30/11/2026.",
-            "Anthropic: Managed Agents y, en Claude Code, uso del computador en segundo plano (09/2026). Microsoft: Agent 365, anunciado en Build (06/2026). Fuentes: notas de lanzamiento y anuncios de cada proveedor."
+            "Anthropic: Managed Agents (agentes que trabajan solos, por horas); y, en Claude Code, uso de la computadora en segundo plano, en beta (09/2026). Microsoft: Agent 365, anunciado en Build (06/2026). Fuentes: notas de lanzamiento y anuncios de cada proveedor."
           ],
           "exemplo": {
             "rot": "Para el expediente",
@@ -178,8 +178,8 @@
           "titulo": "Brasil y el mundo",
           "sub": "compara la definición antes que el número",
           "texto": [
-            "GFT, Tech Trends 2026 LATAM, con datos de BCG: 18% de las empresas brasileñas integran agentes, frente a 13% en el mundo. ABES e IDC (15/06/2026, 103 ejecutivos): 40% ya invierten en agentes y 33% planean hacerlo en 12 meses. Gartner (2026): solo 17% de las empresas tienen agentes en uso.",
-            "Deloitte (17/09/2026): 27% de las empresas brasileñas con gobernanza de IA madura. Okta (2026): casi dos tercios aplican controles más débiles a los agentes que a las personas."
+            "GFT, Tech Trends 2026 LATAM, con datos de BCG (encuesta): 18 % de las empresas brasileñas integran agentes, frente a 13 % en el mundo. ABES e IDC (15/06/2026, encuesta a 103 ejecutivos): 40 % ya invierten en agentes y 33 % planean hacerlo en 12 meses. Gartner (2026, análisis de mercado): solo 17 % de las empresas tienen agentes en uso.",
+            "Deloitte (17/09/2026, encuesta): 27 % de las empresas brasileñas con gobernanza de IA madura. Okta (2026, encuesta de proveedor): casi dos tercios aplican controles más débiles a los agentes que a las personas."
           ],
           "exemplo": {
             "rot": "Por qué los números no coinciden",
@@ -239,7 +239,7 @@
           "titulo": "Supervisar",
           "sub": "equipo y excepciones",
           "saida": "Rutina diaria y semanal medida, paquete y destinos de excepción.",
-          "passo": "Requiere la matriz: la cola de excepciones es todo lo que la matriz te envía a ti. El equipo (clase 6) entra solo si aparece una de las tres señales."
+          "passo": "Requiere la matriz: la cola de excepciones es todo lo que la matriz te manda a ti. El equipo (clase 6) entra solo si aparece una de las tres señales."
         }
       ],
       "rolagem_fim": {
@@ -342,31 +342,31 @@
         {
           "p": "El expediente de Hora sacó 92 puntos, pero la acción \"crear pedido sin límite de valor\" está en verde. ¿Resultado?",
           "opcoes": [
-            "Aprobado: 92 está muy por encima de 75",
-            "Reprobado: falta un tope numérico en una acción que involucra valor, y eso es obligatorio",
-            "Aprobado con reservas"
+            "Aprobado: 92 puntos está muy por encima del mínimo de 75",
+            "Aprobado con reservas, para corregir en la revisión",
+            "Reprobado: falta un tope en número, que es obligatorio"
           ],
-          "certa": 1,
+          "certa": 2,
           "ref": "codigo",
           "explica": "Los obligatorios existen justamente para que una nota alta no esconda un daño grande. Si falta uno, reprueba; el expediente vuelve a la matriz, no a cero."
         },
         {
           "p": "¿Quién debe firmar la contratación de Hora?",
           "opcoes": [
-            "Patrícia, que armó el expediente y lo conoce todo",
-            "Carlos, después de que Rafael confirme los bloqueos: quien armó no aprueba",
-            "El propio agente, después de leer el expediente"
+            "Carlos, después de que Rafael confirme los bloqueos",
+            "Patrícia, que armó el expediente y conoce cada pieza",
+            "Rafael, que configuró el agente y los bloqueos"
           ],
-          "certa": 1,
+          "certa": 0,
           "ref": "passos",
-          "explica": "Separación de funciones: quien registra no aprueba. Patrícia arma y responde por el resultado; la aprobación es de otra persona, con la confirmación técnica de que los bloqueos existen fuera del texto."
+          "explica": "Separación de funciones: quien registra no aprueba. Patrícia arma y responde por el resultado; la aprobación es de otra persona, con la confirmación técnica de que los bloqueos existen fuera del texto. Rafael confirma los bloqueos, pero fue quien configuró el agente: tampoco firma."
         },
         {
           "p": "Un informe dice que el 40% de las empresas invierte en agentes; otro, que solo el 17% tiene agentes en uso. ¿Qué hacer antes de citar?",
           "opcoes": [
             "Elegir el número que ayuda a tu argumento",
-            "Comparar la definición (invertir × tener en uso), la muestra y quién lo publicó",
-            "Sacar el promedio de los dos"
+            "Comparar la definición, la muestra y quién lo publicó",
+            "Sacar el promedio de los dos y citar el resultado"
           ],
           "certa": 1,
           "ref": "passos",
@@ -375,9 +375,9 @@
         {
           "p": "El proveedor de la herramienta del agente anunció que la va a desactivar. ¿Qué cambia en el expediente?",
           "opcoes": [
-            "Nada: el expediente es sobre el agente, no sobre la herramienta",
-            "Las acciones afectadas vuelven al amarillo, los casos de prueba se ejecutan de nuevo en la herramienta nueva y el expediente recibe una nueva versión",
-            "Basta con cambiar el nombre de la herramienta en la portada"
+            "Nada: el expediente trata del agente, no de la herramienta que usa",
+            "Las acciones afectadas vuelven al amarillo y las pruebas se ejecutan de nuevo",
+            "Basta cambiar el nombre de la herramienta en la portada del expediente"
           ],
           "certa": 1,
           "ref": "passos",

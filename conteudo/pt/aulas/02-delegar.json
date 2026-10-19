@@ -7,12 +7,24 @@
   "minutos": 18,
   "lead": "\"Cuida dos pedidos do WhatsApp\" não é delegação: é torcer para dar certo. Quem delega de verdade entrega o objetivo, o tamanho da responsabilidade, o contexto, as ferramentas, o prazo e a forma de provar que terminou. É o que você faria com uma pessoa nova na equipe, e o agente merece a mesma clareza.",
   "objetivo": "entregar a um agente objetivo, contexto, ferramentas, prazo e evidência de conclusão numa ficha de delegação de uma página.",
-  "competencias": ["delegar-por-resultado", "escolher-tarefa-delegavel", "definir-evidencia-de-conclusao"],
+  "competencias": [
+    "delegar-por-resultado",
+    "escolher-tarefa-delegavel",
+    "definir-evidencia-de-conclusao"
+  ],
   "aprende": [
-    {"t": "Distinguir tarefa, processo e responsabilidade"},
-    {"t": "Escolher o que vale delegar com três filtros"},
-    {"t": "Escrever critério, indicador, prazo e evidência de conclusão"},
-    {"t": "Tratar a delegação como integração de um funcionário novo"}
+    {
+      "t": "Distinguir tarefa, processo e responsabilidade"
+    },
+    {
+      "t": "Escolher o que vale delegar com três filtros"
+    },
+    {
+      "t": "Escrever critério, indicador, prazo e evidência de conclusão"
+    },
+    {
+      "t": "Tratar a delegação como integração de um funcionário novo"
+    }
   ],
   "hero_alt": "Gerente comercial entrega uma pasta a um colega numa reunião rápida em pé, apontando para um tablet; ao fundo, prateleiras do estoque.",
   "secoes": [
@@ -22,18 +34,43 @@
       "sub": "Faltou uma, o agente preenche o buraco sozinho. Clique em cada peça.",
       "volta": "A evidência de cada entrega alimenta a próxima conversa sobre autonomia (aula 5)",
       "nos": [
-        {"icone": "alvo", "titulo": "Objetivo", "sub": "resultado, não esforço",
-         "detalhe": "O que precisa estar verdadeiro quando o trabalho terminar. \"Todo pedido de reposição registrado no mesmo dia\" é objetivo. \"Atender bem os clientes\" é esforço: não diz quando acabou."},
-        {"icone": "camadas", "titulo": "Responsabilidade", "sub": "o tamanho",
-         "detalhe": "Tarefa (começa e termina numa sentada), processo (sequência com fim) ou responsabilidade (contínua, cobrada por resultado toda semana). O tamanho muda o que você precisa escrever: uma responsabilidade pede indicador e revisão periódica."},
-        {"icone": "memoria", "titulo": "Contexto", "sub": "o que ele precisa saber",
-         "detalhe": "As fontes que o agente lê, onde estão, quem é o dono de cada uma e até quando valem: tabela de preços, cadastro, regras de entrega, política de desconto. Contexto sem dono envelhece e o agente responde errado com toda a segurança."},
-        {"icone": "chip", "titulo": "Ferramentas", "sub": "o que ele toca",
-         "detalhe": "O que o agente pode usar e em que modo: ler, escrever, enviar. Comece pelo mínimo que permite trabalhar. A matriz de alçada, ação por ação, vem na aula 4."},
-        {"icone": "relogio", "titulo": "Prazo", "sub": "até quando, e o mínimo",
-         "detalhe": "O tempo combinado para cada entrega e o mínimo aceitável. Prazo também é condição de parada: se não terminou no prazo, o agente avisa em vez de insistir."},
-        {"icone": "check", "titulo": "Evidência", "sub": "como provar que terminou", "forte": true,
-         "detalhe": "O que o agente mostra para você saber que acabou e ficou certo, sem refazer: o número do pedido no app, o identificador da conversa, o relatório do dia. É a peça mais esquecida e a que mais economiza conversa."}
+        {
+          "icone": "alvo",
+          "titulo": "Objetivo",
+          "sub": "resultado, não esforço",
+          "detalhe": "O que precisa estar verdadeiro quando o trabalho terminar. \"Todo pedido de reposição registrado no mesmo dia\" é objetivo. \"Atender bem os clientes\" é esforço: não diz quando acabou."
+        },
+        {
+          "icone": "camadas",
+          "titulo": "Responsabilidade",
+          "sub": "o tamanho",
+          "detalhe": "Tarefa (começa e termina numa sentada), processo (sequência com fim) ou responsabilidade (contínua, cobrada por resultado toda semana). O tamanho muda o que você precisa escrever: uma responsabilidade pede indicador e revisão periódica."
+        },
+        {
+          "icone": "memoria",
+          "titulo": "Contexto",
+          "sub": "o que ele precisa saber",
+          "detalhe": "As fontes que o agente lê, onde estão, quem é o dono de cada uma e até quando valem: tabela de preços, cadastro, regras de entrega, política de desconto. Contexto sem dono envelhece e o agente responde errado com toda a segurança."
+        },
+        {
+          "icone": "chip",
+          "titulo": "Ferramentas",
+          "sub": "o que ele toca",
+          "detalhe": "O que o agente pode usar e em que modo: ler, escrever, enviar. Comece pelo mínimo que permite trabalhar. A matriz de alçada, ação por ação, vem na aula 4."
+        },
+        {
+          "icone": "relogio",
+          "titulo": "Prazo",
+          "sub": "até quando, e o mínimo",
+          "detalhe": "O tempo combinado para cada entrega e o mínimo aceitável. Prazo também é condição de parada: se não terminou no prazo, o agente avisa em vez de insistir."
+        },
+        {
+          "icone": "check",
+          "titulo": "Evidência",
+          "sub": "como provar que terminou",
+          "forte": true,
+          "detalhe": "O que o agente mostra para você saber que acabou e ficou certo, sem refazer: o número do pedido no app, o identificador da conversa, o relatório do dia. É a peça mais esquecida e a que mais economiza conversa."
+        }
       ],
       "legenda": "As seis peças vêm da competência 3 da área Gestão de IA (delegação): objetivo, responsabilidade, contexto, ferramentas, prazo e evidência de conclusão."
     },
@@ -42,18 +79,54 @@
       "titulo": "Como delegar na Horizonte",
       "sub": "A Patrícia vai entregar à Hora uma parte do processo de pedidos. Quatro decisões antes de escrever a ficha.",
       "passos": [
-        {"titulo": "Escolha o tamanho", "sub": "tarefa, processo ou responsabilidade",
-         "texto": ["Tarefa: \"responda se entregamos em Americana na sexta\". Processo: \"monte o pedido do Seu Antônio\". Responsabilidade: \"mantenha os pedidos de reposição dos clientes cadastrados registrados e prontos para a separação, todo dia\".", "Só a terceira descreve um agente trabalhando por resultado. As duas primeiras descrevem alguém apertando um botão."],
-         "exemplo": {"rot": "Na Horizonte", "texto": "A Patrícia delega uma responsabilidade estreita: pedidos de reposição de clientes cadastrados. Cliente novo, negociação e reclamação ficam fora."}},
-        {"titulo": "Passe nos três filtros", "sub": "repetitivo, verificável, em sistema",
-         "texto": ["Bom trabalho para agente acontece toda semana com pouca variação, tem um critério que diz se ficou certo e acontece em sistemas e mensagens, não no mundo físico. Falhou em um filtro, fica com a pessoa por enquanto.", "O pedido de reposição passa nos três. A negociação do contrato anual do hotel não passa: acontece uma vez por ano e depende de relação. Fica com a Patrícia."],
-         "exemplo": {"rot": "Pergunta-teste", "texto": "Consigo dizer numa frase como saberia que o agente fez certo? Se não, ainda não dá para delegar."}},
-        {"titulo": "Escreva critério, número e prazo", "sub": "o que você cobraria de uma pessoa",
-         "texto": ["Critério de aceite: o que é entrega boa. Indicador: o número que você olha toda semana, com meta. Prazo: quanto tempo cada entrega pode levar.", "Para saber se vale a pena, acompanhe o custo por resultado aceito: o custo do mês (uso do modelo, ferramentas e o seu tempo de revisão) dividido pelas entregas aceitas sem correção. É uma estimativa, e o que foi corrigido custou sem entregar."],
-         "exemplo": {"rot": "Na Horizonte (números fictícios)", "texto": "Critério: pedido que a separação não corrige. Indicador: aceitos sem correção, meta 95%. Prazo: registrado até 30 minutos depois de o cliente confirmar."}},
-        {"titulo": "Trate como integração", "sub": "o agente também precisa de onboarding",
-         "texto": ["A Deloitte (Tech Trends 2026) trata agentes como uma nova força de trabalho: eles precisam de integração nos dados e na operação, de autonomia graduada com gatilhos de supervisão humana, e quem os supervisiona também precisa de treino. É a leitura de uma consultoria, útil como mapa.", "Na prática: a primeira semana do agente é de integração, com tudo passando por você. A autonomia sobe depois, com evidência."],
-         "exemplo": {"rot": "Primeira semana da Hora", "texto": "Todo pedido sai como rascunho e a Patrícia aprova. A Juliana registra o que precisou corrigir. Na sexta, as duas olham a lista juntas."}}
+        {
+          "titulo": "Escolha o tamanho",
+          "sub": "tarefa, processo ou responsabilidade",
+          "texto": [
+            "Tarefa: \"responda se entregamos em Americana na sexta\". Processo: \"monte o pedido do Seu Antônio\". Responsabilidade: \"mantenha os pedidos de reposição dos clientes cadastrados registrados e prontos para a separação, todo dia\".",
+            "Só a terceira descreve um agente trabalhando por resultado. As duas primeiras descrevem alguém apertando um botão."
+          ],
+          "exemplo": {
+            "rot": "Na Horizonte",
+            "texto": "A Patrícia delega uma responsabilidade estreita: pedidos de reposição de clientes cadastrados. Cliente novo, negociação e reclamação ficam fora."
+          }
+        },
+        {
+          "titulo": "Passe nos três filtros",
+          "sub": "repetitivo, verificável, em sistema",
+          "texto": [
+            "Bom trabalho para agente acontece toda semana com pouca variação, tem um critério que diz se ficou certo e acontece em sistemas e mensagens, não no mundo físico. Falhou em um filtro, fica com a pessoa por enquanto.",
+            "O pedido de reposição passa nos três. A negociação do contrato anual do hotel não passa: acontece uma vez por ano e depende de relação. Fica com a Patrícia."
+          ],
+          "exemplo": {
+            "rot": "Pergunta-teste",
+            "texto": "Consigo dizer numa frase como saberia que o agente fez certo? Se não, ainda não dá para delegar."
+          }
+        },
+        {
+          "titulo": "Escreva critério, número e prazo",
+          "sub": "o que você cobraria de uma pessoa",
+          "texto": [
+            "Critério de aceite: o que é entrega boa. Indicador: o número que você olha toda semana, com meta. Prazo: quanto tempo cada entrega pode levar.",
+            "Para saber se vale a pena, acompanhe o custo por resultado aceito: o custo do mês (uso do modelo, ferramentas e o seu tempo de revisão) dividido pelas entregas aceitas sem correção. É uma estimativa, e o que foi corrigido custou sem entregar."
+          ],
+          "exemplo": {
+            "rot": "Na Horizonte (números fictícios)",
+            "texto": "Critério: pedido que a separação não corrige. Indicador: aceitos sem correção, meta 95%. Prazo: registrado até 30 minutos depois de o cliente confirmar."
+          }
+        },
+        {
+          "titulo": "Trate como integração",
+          "sub": "o agente também precisa de onboarding",
+          "texto": [
+            "A Deloitte (Tech Trends 2026) trata agentes como uma nova força de trabalho: eles precisam de integração nos dados e na operação, de autonomia graduada com gatilhos de supervisão humana, e quem os supervisiona também precisa de treino. É a leitura de uma consultoria, útil como mapa.",
+            "Na prática: a primeira semana do agente é de integração, com tudo passando por você. A autonomia sobe depois, com evidência."
+          ],
+          "exemplo": {
+            "rot": "Primeira semana da Hora",
+            "texto": "Todo pedido sai como rascunho e a Patrícia aprova. A Juliana registra o que precisou corrigir. Na sexta, as duas olham a lista juntas."
+          }
+        }
       ]
     },
     {
@@ -61,27 +134,50 @@
       "titulo": "Modelo para copiar: ficha de delegação",
       "sub": "Uma ficha por responsabilidade delegada. Ela complementa a ficha de cargo: o cargo diz quem o agente é, a delegação diz o que ele recebeu agora.",
       "blocos": [
-        {"rot": "Ficha de delegação", "icone": "lista",
-         "conteudo": "FICHA DE DELEGAÇÃO · <agente> · <data> · delegado por <nome>\n\nTAMANHO: [ ] tarefa  [ ] processo  [ ] responsabilidade contínua\nTRÊS FILTROS: repetitivo? <sim/não> · verificável? <sim/não> · em sistema? <sim/não>\n\n1. OBJETIVO (o que estará verdadeiro quando terminar):\n   <frase de resultado>\n\n2. FORA DO ESCOPO (o que não é dele):\n   - <caso 1>\n   - <caso 2>\n\n3. CONTEXTO (fonte · onde está · dono · válido até):\n   - <tabela de preços> · <local> · <dono> · <data>\n   - <cadastro de clientes> · <local> · <dono> · <data>\n   - <regras e políticas> · <local> · <dono> · <data>\n\n4. FERRAMENTAS (o quê · modo: ler / escrever rascunho / escrever / enviar):\n   - <ferramenta> · <modo> · <limite>\n\n5. PRAZO:\n   - Cada entrega em até <tempo>\n   - Se não terminar no prazo: <avisa quem, como>\n\n6. EVIDÊNCIA DE CONCLUSÃO (o que ele mostra, sem eu refazer):\n   - <registro, número, link, relatório>\n\nCRITÉRIO DE ACEITE: <o que é entrega boa>\nINDICADOR E META: <número> · meta <valor> · olhado <quando>\nPARA E CHAMA QUANDO: <situação> → <pessoa> (detalhe na aula 3)\nINTEGRAÇÃO: na 1ª semana tudo passa por <nome>; revisão em <data>"},
-        {"rot": "Prompt · achar o buraco na delegação", "icone": "chat",
-         "conteudo": "Você vai receber uma ficha de delegação para um agente de IA.\nFinja que é o agente, no primeiro dia de trabalho, e liste:\n\n1. As três perguntas que você precisaria fazer antes de começar,\n   porque a ficha não responde.\n2. Uma situação comum em que você não saberia se terminou.\n3. Uma fonte de contexto citada sem dono ou sem validade.\n4. Uma ferramenta em que não está claro se você pode escrever ou só ler.\n\nNão invente respostas para as perguntas: só aponte os buracos.\n\nFicha:\n\"\"\"<cole a ficha aqui>\"\"\""}
+        {
+          "rot": "Ficha de delegação",
+          "icone": "lista",
+          "conteudo": "FICHA DE DELEGAÇÃO · <agente> · <data> · delegado por <nome>\n\nTAMANHO: [ ] tarefa  [ ] processo  [ ] responsabilidade contínua\nTRÊS FILTROS: repetitivo? <sim/não> · verificável? <sim/não> · em sistema? <sim/não>\n\n1. OBJETIVO (o que estará verdadeiro quando terminar):\n   <frase de resultado>\n\n2. FORA DO ESCOPO (o que não é dele):\n   - <caso 1>\n   - <caso 2>\n\n3. CONTEXTO (fonte · onde está · dono · válido até):\n   - <tabela de preços> · <local> · <dono> · <data>\n   - <cadastro de clientes> · <local> · <dono> · <data>\n   - <regras e políticas> · <local> · <dono> · <data>\n\n4. FERRAMENTAS (o quê · modo: ler / escrever rascunho / escrever / enviar):\n   - <ferramenta> · <modo> · <limite>\n\n5. PRAZO:\n   - Cada entrega em até <tempo>\n   - Se não terminar no prazo: <avisa quem, como>\n\n6. EVIDÊNCIA DE CONCLUSÃO (o que ele mostra, sem eu refazer):\n   - <registro, número, link, relatório>\n\nCRITÉRIO DE ACEITE: <o que é entrega boa>\nINDICADOR E META: <número> · meta <valor> · olhado <quando>\nPARA E CHAMA QUANDO: <situação> → <pessoa> (detalhe na aula 3)\nINTEGRAÇÃO: na 1ª semana tudo passa por <nome>; revisão em <data>"
+        },
+        {
+          "rot": "Prompt · achar o buraco na delegação",
+          "icone": "chat",
+          "conteudo": "Você vai receber uma ficha de delegação para um agente de IA.\nFinja que é o agente, no primeiro dia de trabalho, e liste:\n\n1. As três perguntas que você precisaria fazer antes de começar,\n   porque a ficha não responde.\n2. Uma situação comum em que você não saberia se terminou.\n3. Uma fonte de contexto citada sem dono ou sem validade.\n4. Uma ferramenta em que não está claro se você pode escrever ou só ler.\n\nNão invente respostas para as perguntas: só aponte os buracos.\n\nFicha:\n\"\"\"<cole a ficha aqui>\"\"\""
+        }
       ],
-      "saida": {"selo": "simulacao", "abas": [
-        {"rot": "Delegação da Hora (exemplo)", "html": "<p><b>Hora · delegada pela Patrícia</b> · Horizonte, empresa fictícia de estudo</p><ul><li><b>Tamanho:</b> responsabilidade contínua; passa nos três filtros.</li><li><b>Objetivo:</b> todo pedido de reposição de cliente cadastrado registrado no app no mesmo dia, com preço de tabela.</li><li><b>Fora do escopo:</b> cliente novo, contrato anual, reclamação, troca e devolução.</li><li><b>Contexto:</b> catálogo e tabela (dona: Patrícia, revisão mensal); cadastro de clientes (leitura); regra de entrega \"pedido até quinta 14 h sai na sexta\"; política de desconto.</li><li><b>Ferramentas:</b> consultar catálogo (ler); consultar cliente (ler); criar pedido (escrever, até R$ 5 mil; acima disso só rascunho).</li><li><b>Prazo:</b> pedido registrado até 30 min depois da confirmação; se não der, avisa a Juliana.</li><li><b>Evidência:</b> número do pedido + identificador da conversa no registro; resumo do dia às 18 h.</li></ul>"},
-        {"rot": "Erros comuns", "html": "<ul><li><b>Delegar a tarefa errada primeiro:</b> começar pela negociação (que não passa nos filtros) em vez da reposição.</li><li><b>Contexto sem dono:</b> a tabela de preços mudou e ninguém avisou o agente.</li><li><b>Evidência = \"o agente disse que fez\":</b> explicação não é evidência; registro é.</li><li><b>Pular a integração:</b> dar autonomia no primeiro dia, antes de ver uma semana de trabalho.</li></ul>"}
-      ]}
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Delegação da Hora (exemplo)",
+            "html": "<p><b>Hora · delegada pela Patrícia</b> · Horizonte, empresa fictícia de estudo</p><ul><li><b>Tamanho:</b> responsabilidade contínua; passa nos três filtros.</li><li><b>Objetivo:</b> todo pedido de reposição de cliente cadastrado registrado no app no mesmo dia, com preço de tabela.</li><li><b>Fora do escopo:</b> cliente novo, contrato anual, reclamação, troca e devolução.</li><li><b>Contexto:</b> catálogo e tabela (dona: Patrícia, revisão mensal); cadastro de clientes (leitura); regra de entrega \"pedido até quinta 14 h sai na sexta\"; política de desconto.</li><li><b>Ferramentas:</b> consultar catálogo (ler); consultar cliente (ler); criar pedido (escrever, até R$ 5 mil; acima disso só rascunho).</li><li><b>Prazo:</b> pedido registrado até 30 min depois da confirmação; se não der, avisa a Juliana.</li><li><b>Evidência:</b> número do pedido + identificador da conversa no registro; resumo do dia às 18 h.</li></ul>"
+          },
+          {
+            "rot": "Erros comuns",
+            "html": "<ul><li><b>Delegar a tarefa errada primeiro:</b> começar pela negociação (que não passa nos filtros) em vez da reposição.</li><li><b>Contexto sem dono:</b> a tabela de preços mudou e ninguém avisou o agente.</li><li><b>Evidência = \"o agente disse que fez\":</b> explicação não é evidência; registro é.</li><li><b>Pular a integração:</b> dar autonomia no primeiro dia, antes de ver uma semana de trabalho.</li></ul>"
+          }
+        ]
+      }
     },
     {
       "tipo": "pratica",
       "titulo": "Prática",
       "sub": "Uma delegação treinada na Horizonte e uma de verdade no seu trabalho.",
       "exercicios": [
-        {"id": "e1", "titulo": "1 · A delegação da reposição", "min": "20 min",
-         "texto": "Escreva a ficha de delegação que a Patrícia entrega à Hora para os pedidos de reposição. Use a ficha de cargo da aula 1 como base e não copie o exemplo: escreva e depois compare. Rode o prompt \"achar o buraco\" e corrija o que ele apontar.",
-         "pronto": "a ficha tem as seis peças, pelo menos dois casos fora do escopo, cada fonte de contexto com dono e uma evidência de conclusão que você confere sem abrir a conversa inteira."},
-        {"id": "e2", "titulo": "2 · Uma delegação sua", "min": "25 min",
-         "texto": "Liste cinco atividades da sua área e passe cada uma pelos três filtros. Escolha uma que passe nos três e escreva a ficha de delegação dela. Mostre a lista de \"fora do escopo\" para quem faz esse trabalho hoje e anote o que essa pessoa acrescentar.",
-         "pronto": "a ficha está salva com as seis peças, a atividade escolhida passa nos três filtros por escrito e há pelo menos um item acrescentado por quem faz o trabalho hoje."}
+        {
+          "id": "e1",
+          "titulo": "1 · A delegação da reposição",
+          "min": "20 min",
+          "texto": "Escreva a ficha de delegação que a Patrícia entrega à Hora para os pedidos de reposição. Use a ficha de cargo da aula 1 como base e não copie o exemplo: escreva e depois compare. Rode o prompt \"achar o buraco\" e corrija o que ele apontar.",
+          "pronto": "a ficha tem as seis peças, pelo menos dois casos fora do escopo, cada fonte de contexto com dono e uma evidência de conclusão que você confere sem abrir a conversa inteira."
+        },
+        {
+          "id": "e2",
+          "titulo": "2 · Uma delegação sua",
+          "min": "25 min",
+          "texto": "Liste cinco atividades da sua área e passe cada uma pelos três filtros. Escolha uma que passe nos três e escreva a ficha de delegação dela. Mostre a lista de \"fora do escopo\" para quem faz esse trabalho hoje e anote o que essa pessoa acrescentar.",
+          "pronto": "a ficha está salva com as seis peças, a atividade escolhida passa nos três filtros por escrito e há pelo menos um item acrescentado por quem faz o trabalho hoje."
+        }
       ]
     },
     {
@@ -89,41 +185,93 @@
       "titulo": "Teste rápido",
       "sub": "4 perguntas. A explicação aparece depois da sua tentativa.",
       "perguntas": [
-        {"p": "A Patrícia escreveu: \"Hora, cuida dos pedidos do WhatsApp\". O que falta, antes de tudo?",
-         "opcoes": ["Um tom de voz mais animado", "Objetivo, contexto, ferramentas, prazo e evidência de conclusão", "Um modelo de IA mais potente"],
-         "certa": 1, "ref": "diagrama",
-         "explica": "A frase não diz o resultado, as fontes, o que ela pode tocar, o prazo nem como provar que terminou. O agente preenche cada buraco sozinho. Modelo mais potente preenche os buracos com mais confiança, não com mais acerto."},
-        {"p": "Qual destas atividades da Horizonte passa nos três filtros para ser delegada agora?",
-         "opcoes": ["Negociar o contrato anual do hotel", "Registrar pedidos de reposição de clientes cadastrados", "Decidir qual cliente merece prazo de pagamento maior"],
-         "certa": 1, "ref": "passos",
-         "explica": "A reposição é repetitiva, verificável (o pedido bate com a tabela e o cadastro) e acontece em sistema. O contrato anual é raro e depende de relação; o prazo de pagamento é decisão de crédito, sem critério escrito."},
-        {"p": "O agente diz \"terminei os pedidos de hoje\". Isso é evidência de conclusão?",
-         "opcoes": ["Sim, se ele costuma acertar", "Não: evidência é o registro que se confere, como o número do pedido e a conversa de origem", "Sim, desde que ele explique como fez"],
-         "certa": 1, "ref": "diagrama",
-         "explica": "Explicação do agente não é evidência. Evidência é o que fica registrado e que você confere sem refazer: número no app, identificador da conversa, resumo do dia."},
-        {"p": "O agente custou R$ 400 no mês (somando o tempo de revisão) e entregou 500 pedidos, dos quais 320 foram aceitos sem correção. Como calcular o custo por resultado aceito?",
-         "opcoes": ["400 ÷ 500 = R$ 0,80 por pedido", "400 ÷ 320 = R$ 1,25 por pedido aceito", "Não dá para calcular sem saber o preço do modelo"],
-         "certa": 1, "ref": "passos",
-         "explica": "Só conta o que serviu: 400 ÷ 320. Os 180 corrigidos custaram e não entregaram. O número é uma estimativa para acompanhar a tendência, não prova de economia. Os valores do exemplo são fictícios."}
+        {
+          "p": "A Patrícia escreveu: \"Hora, cuida dos pedidos do WhatsApp\". O que falta, antes de tudo?",
+          "opcoes": [
+            "Um tom de voz mais animado e próximo do jeito do cliente",
+            "Um modelo de IA mais potente, que entende melhor o que o cliente pede",
+            "Objetivo, contexto, ferramentas, prazo e evidência de conclusão"
+          ],
+          "certa": 2,
+          "ref": "diagrama",
+          "explica": "A frase não diz o resultado, as fontes, o que ela pode tocar, o prazo nem como provar que terminou. O agente preenche cada buraco sozinho. Modelo mais potente preenche os buracos com mais confiança, não com mais acerto."
+        },
+        {
+          "p": "Qual destas atividades da Horizonte passa nos três filtros para ser delegada agora?",
+          "opcoes": [
+            "Registrar pedidos de reposição de clientes cadastrados",
+            "Negociar o contrato anual de fornecimento do hotel",
+            "Decidir qual cliente merece prazo de pagamento maior"
+          ],
+          "certa": 0,
+          "ref": "passos",
+          "explica": "A reposição é repetitiva, verificável (o pedido bate com a tabela e o cadastro) e acontece em sistema. O contrato anual é raro e depende de relação; o prazo de pagamento é decisão de crédito, sem critério escrito."
+        },
+        {
+          "p": "O agente diz \"terminei os pedidos de hoje\". Isso é evidência de conclusão?",
+          "opcoes": [
+            "Sim, se ele costuma acertar e nunca deu problema antes",
+            "Não: evidência é o registro que se confere, como o nº do pedido",
+            "Sim, desde que ele explique passo a passo como fez cada um dos pedidos"
+          ],
+          "certa": 1,
+          "ref": "diagrama",
+          "explica": "Explicação do agente não é evidência. Evidência é o que fica registrado e que você confere sem refazer: número no app, identificador da conversa, resumo do dia."
+        },
+        {
+          "p": "O agente custou R$ 400 no mês (somando o tempo de revisão) e entregou 500 pedidos, dos quais 320 foram aceitos sem correção. Como calcular o custo por resultado aceito?",
+          "opcoes": [
+            "400 ÷ 500 = R$ 0,80 por pedido entregue",
+            "Não dá para calcular sem o preço do modelo",
+            "400 ÷ 320 = R$ 1,25 por pedido aceito"
+          ],
+          "certa": 2,
+          "ref": "passos",
+          "explica": "Só conta o que serviu: 400 ÷ 320. Os 180 corrigidos custaram e não entregaram. O número é uma estimativa para acompanhar a tendência, não prova de economia. Os valores do exemplo são fictícios."
+        }
       ]
     },
     {
       "tipo": "resumo",
       "titulo": "Resumo",
       "itens": [
-        {"t": "Seis peças", "texto": "Objetivo, responsabilidade, contexto, ferramentas, prazo e evidência."},
-        {"t": "Três filtros", "texto": "Repetitivo, verificável, em sistema. Falhou em um, fica com a pessoa."},
-        {"t": "Critério, número, prazo", "texto": "E custo por resultado aceito, sempre como estimativa."},
-        {"t": "Integração primeiro", "texto": "Na primeira semana tudo passa por você; a autonomia sobe com evidência."}
+        {
+          "t": "Seis peças",
+          "texto": "Objetivo, responsabilidade, contexto, ferramentas, prazo e evidência."
+        },
+        {
+          "t": "Três filtros",
+          "texto": "Repetitivo, verificável, em sistema. Falhou em um, fica com a pessoa."
+        },
+        {
+          "t": "Critério, número, prazo",
+          "texto": "E custo por resultado aceito, sempre como estimativa."
+        },
+        {
+          "t": "Integração primeiro",
+          "texto": "Na primeira semana tudo passa por você; a autonomia sobe com evidência."
+        }
       ]
     },
     {
       "tipo": "links",
       "titulo": "Para ir além",
       "links": [
-        {"t": "Super-Agentes na prática: delegue responsabilidades, não tarefas", "href": "https://inematds.github.io/agi-pratica/", "icone": "robo"},
-        {"t": "Kit do Arquiteto de Agentes: pedido de longo horizonte", "href": "https://inematds.github.io/kit-arquiteto-agentes/", "icone": "arquivo"},
-        {"t": "Laboratório Horizonte: conversas da Hora (empresa fictícia de estudo)", "href": "https://inematds.github.io/prof2030-lab/pecas/agente-whatsapp/", "icone": "chat"}
+        {
+          "t": "Super-Agentes na prática: delegue responsabilidades, não tarefas",
+          "href": "https://inematds.github.io/agi-pratica/",
+          "icone": "robo"
+        },
+        {
+          "t": "Kit do Arquiteto de Agentes: pedido de longo horizonte",
+          "href": "https://inematds.github.io/kit-arquiteto-agentes/",
+          "icone": "arquivo"
+        },
+        {
+          "t": "Laboratório Horizonte: conversas da Hora (empresa fictícia de estudo)",
+          "href": "https://inematds.github.io/prof2030-lab/pecas/agente-whatsapp/",
+          "icone": "chat"
+        }
       ]
     }
   ]

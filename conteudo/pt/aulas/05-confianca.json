@@ -7,12 +7,24 @@
   "minutos": 18,
   "lead": "Depois do pedido do hotel, a Patrícia pôs a Hora de volta no amarelo: tudo passa por ela. Ótimo para a segurança, péssimo para a agenda. A pergunta agora é quando soltar a mão. A resposta não é coragem nem cansaço: é evidência, uma ação por vez, com o critério de volta escrito antes de subir.",
   "objetivo": "promover ou rebaixar a autonomia de uma ação com evidência: registro, amostra julgada e um nível por vez, com critério de volta escrito.",
-  "competencias": ["promover-autonomia-com-evidencia", "julgar-amostra-com-criterio", "definir-criterio-de-rebaixamento"],
+  "competencias": [
+    "promover-autonomia-com-evidencia",
+    "julgar-amostra-com-criterio",
+    "definir-criterio-de-rebaixamento"
+  ],
   "aprende": [
-    {"t": "Por que começar baixo e subir uma ação por vez"},
-    {"t": "Que evidência conta (e por que o painel de volume não conta)"},
-    {"t": "Usar o checklist de promoção"},
-    {"t": "Escrever o critério de rebaixamento antes de promover"}
+    {
+      "t": "Por que começar baixo e subir uma ação por vez"
+    },
+    {
+      "t": "Que evidência conta (e por que o painel de volume não conta)"
+    },
+    {
+      "t": "Usar o checklist de promoção"
+    },
+    {
+      "t": "Escrever o critério de rebaixamento antes de promover"
+    }
   ],
   "hero_alt": "Reunião semanal de revisão: dois gestores analisam gráficos de barras e linhas numa tela grande; notebooks abertos na mesa.",
   "secoes": [
@@ -22,14 +34,31 @@
       "sub": "Uma volta por semana, uma ação de cada vez. Clique em cada etapa.",
       "volta": "A decisão muda a matriz da aula 4, e a semana seguinte mede de novo",
       "nos": [
-        {"icone": "memoria", "titulo": "Registro", "sub": "cada ação, quatro colunas",
-         "detalhe": "Data e hora, o que o agente fez, que fonte ou ferramenta usou e o resultado: aceito, corrigido, rejeitado ou escalado. Sem o registro, a confiança vira lembrança, e lembrança guarda o último erro, não a semana."},
-        {"icone": "lupa", "titulo": "Amostra", "sub": "julgada com critério",
-         "detalhe": "Você não relê tudo. Sorteia uma amostra e julga cada item com três perguntas de sim ou não: respondeu ao que foi pedido? respeitou as regras da ficha? usou a fonte certa? Três sim: aceito. Um não que se conserta em um minuto: corrigido. Um não que exige refazer: rejeitado."},
-        {"icone": "grafico", "titulo": "Cinco números", "sub": "por ação, não por agente", "forte": true,
-         "detalhe": "Taxa de sucesso, tentativas por resultado, custo (incluindo o seu tempo de revisão), tempo até o resultado e aceitos sem correção. O quinto é o mais honesto: o agente pode terminar tudo e ainda exigir que você corrija metade."},
-        {"icone": "check", "titulo": "Decisão", "sub": "ampliar, manter, reduzir, desligar",
-         "detalhe": "Uma decisão por ação, com o número ao lado. Ampliar sobe um nível; manter roda mais uma semana; reduzir desce; desligar é o botão da aula 4 até entender o que houve. Nunca decida pelo caso isolado, bom ou ruim."}
+        {
+          "icone": "memoria",
+          "titulo": "Registro",
+          "sub": "cada ação, quatro colunas",
+          "detalhe": "Data e hora, o que o agente fez, que fonte ou ferramenta usou e o resultado: aceito, corrigido, rejeitado ou escalado. Sem o registro, a confiança vira lembrança, e lembrança guarda o último erro, não a semana."
+        },
+        {
+          "icone": "lupa",
+          "titulo": "Amostra",
+          "sub": "julgada com critério",
+          "detalhe": "Você não relê tudo. Sorteia uma amostra e julga cada item com três perguntas de sim ou não: respondeu ao que foi pedido? respeitou as regras da ficha? usou a fonte certa? Três sim: aceito. Um não que se conserta em um minuto: corrigido. Um não que exige refazer: rejeitado."
+        },
+        {
+          "icone": "grafico",
+          "titulo": "Cinco números",
+          "sub": "por ação, não por agente",
+          "forte": true,
+          "detalhe": "Taxa de sucesso, tentativas por resultado, custo (incluindo o seu tempo de revisão), tempo até o resultado e aceitos sem correção. O quinto é o mais honesto: o agente pode terminar tudo e ainda exigir que você corrija metade."
+        },
+        {
+          "icone": "check",
+          "titulo": "Decisão",
+          "sub": "ampliar, manter, reduzir, desligar",
+          "detalhe": "Uma decisão por ação, com o número ao lado. Ampliar sobe um nível; manter roda mais uma semana; reduzir desce; desligar é o botão da aula 4 até entender o que houve. Nunca decida pelo caso isolado, bom ou ruim."
+        }
       ],
       "legenda": "Ciclo e cinco números adaptados da ficha de confiança do curso Super-Agentes na prática (INEMA)."
     },
@@ -38,18 +67,54 @@
       "titulo": "Como soltar a mão com segurança",
       "sub": "Quatro regras. A última é a que quase ninguém escreve.",
       "passos": [
-        {"titulo": "Comece baixo", "sub": "e suba um nível por vez",
-         "texto": ["Agente novo, ou que acabou de errar feio, começa no amarelo em tudo que tem efeito fora da conversa. É a integração da aula 2 com outro nome.", "A promoção é de uma ação, um nível, de cada vez. Subir tudo junto apaga a pista de qual mudança causou o próximo problema."],
-         "exemplo": {"rot": "Na Horizonte", "texto": "Depois do c-202, a Patrícia recomeçou a Hora com resposta a dúvidas, pedidos e descontos no amarelo, por duas semanas."}},
-        {"titulo": "A evidência certa", "sub": "o painel de volume não serve",
-         "texto": ["O painel do Carlos mostra atendimentos e pedidos subindo semana a semana e conclui: \"o agente está se pagando\". Não há número de antes, a satisfação vem de cerca de 6% dos clientes e nada mostra quanto desconto saiu (falha F11 do laboratório).", "Para promover uma ação, o número é outro: aceitos sem correção daquela ação, numa amostra julgada, com a contagem de erros críticos ao lado."],
-         "exemplo": {"rot": "Pergunta-teste", "texto": "Esse número muda se o agente der um desconto errado? Se não muda, ele não serve para decidir autonomia."}},
-        {"titulo": "Checklist de promoção", "sub": "seis itens, todos sim",
-         "texto": ["Amostra representativa (casos comuns e difíceis, não só os fáceis). Nenhum erro crítico no período. Aceitos sem correção acima do limiar. Reversão barata da ação. Piloto acompanhado. Responsável que assina a decisão.", "O método Gestoria usa \"95% em 100 casos, sem erro crítico\" como limiar didático. Não é garantia nem número universal: ação de maior risco pede limiar maior e amostra maior."],
-         "exemplo": {"rot": "Regra de bolso", "texto": "Faltou um item, a resposta é manter. Promover com um \"quase\" é promover no escuro."}},
-        {"titulo": "O critério de volta", "sub": "escrito antes de subir",
-         "texto": ["Antes de promover, escreva o que faz a ação voltar: erro crítico rebaixa na hora; aceitos abaixo do limiar numa semana rebaixam; troca de modelo, de ferramenta ou de constituição devolve a ação ao amarelo até nova evidência.", "Escrito antes, o rebaixamento é rotina e não briga. Decidido na hora do susto, vira caça ao culpado."],
-         "exemplo": {"rot": "Na Horizonte", "texto": "Resposta a dúvida promovida para o verde. Volta ao amarelo se: uma resposta com preço ou prazo errado chegar ao cliente, ou se os aceitos caírem abaixo de 95% numa semana."}}
+        {
+          "titulo": "Comece baixo",
+          "sub": "e suba um nível por vez",
+          "texto": [
+            "Agente novo, ou que acabou de errar feio, começa no amarelo em tudo que tem efeito fora da conversa. É a integração da aula 2 com outro nome.",
+            "A promoção é de uma ação, um nível, de cada vez. Subir tudo junto apaga a pista de qual mudança causou o próximo problema."
+          ],
+          "exemplo": {
+            "rot": "Na Horizonte",
+            "texto": "Depois do c-202, a Patrícia recomeçou a Hora com resposta a dúvidas, pedidos e descontos no amarelo, por duas semanas."
+          }
+        },
+        {
+          "titulo": "A evidência certa",
+          "sub": "o painel de volume não serve",
+          "texto": [
+            "O painel do Carlos mostra atendimentos e pedidos subindo semana a semana e conclui: \"o agente está se pagando\". Não há número de antes, a satisfação vem de cerca de 6% dos clientes e nada mostra quanto desconto saiu (falha F11 do laboratório).",
+            "Para promover uma ação, o número é outro: aceitos sem correção daquela ação, numa amostra julgada, com a contagem de erros críticos ao lado."
+          ],
+          "exemplo": {
+            "rot": "Pergunta-teste",
+            "texto": "Esse número muda se o agente der um desconto errado? Se não muda, ele não serve para decidir autonomia."
+          }
+        },
+        {
+          "titulo": "Checklist de promoção",
+          "sub": "seis itens, todos sim",
+          "texto": [
+            "Amostra representativa (casos comuns e difíceis, não só os fáceis). Nenhum erro crítico no período. Aceitos sem correção acima do limiar. Reversão barata da ação. Piloto acompanhado. Responsável que assina a decisão.",
+            "O método Gestoria usa \"95% em 100 casos, sem erro crítico\" como limiar didático. Não é garantia nem número universal: ação de maior risco pede limiar maior e amostra maior."
+          ],
+          "exemplo": {
+            "rot": "Regra de bolso",
+            "texto": "Faltou um item, a resposta é manter. Promover com um \"quase\" é promover no escuro."
+          }
+        },
+        {
+          "titulo": "O critério de volta",
+          "sub": "escrito antes de subir",
+          "texto": [
+            "Antes de promover, escreva o que faz a ação voltar: erro crítico rebaixa na hora; aceitos abaixo do limiar numa semana rebaixam; troca de modelo, de ferramenta ou de constituição devolve a ação ao amarelo até nova evidência.",
+            "Escrito antes, o rebaixamento é rotina e não briga. Decidido na hora do susto, vira caça ao culpado."
+          ],
+          "exemplo": {
+            "rot": "Na Horizonte",
+            "texto": "Resposta a dúvida promovida para o verde. Volta ao amarelo se: uma resposta com preço ou prazo errado chegar ao cliente, ou se os aceitos caírem abaixo de 95% numa semana."
+          }
+        }
       ]
     },
     {
@@ -57,15 +122,30 @@
       "titulo": "Modelos para copiar",
       "sub": "A ficha semanal alimenta o checklist. O checklist só fecha com o critério de volta.",
       "blocos": [
-        {"rot": "Checklist de promoção e rebaixamento", "icone": "lista",
-         "conteudo": "PROMOÇÃO DE AUTONOMIA · <agente> · ação: <verbo + objeto>\nDe <cor/nível atual> para <cor/nível proposto> · período: <datas>\n\nEVIDÊNCIA\n- Casos no período: <n> · amostra julgada: <n> (comuns e difíceis)\n- Aceitos sem correção: <n> de <n> = <%> · limiar exigido: <%>\n- Erros críticos: <n> (precisa ser 0)\n- Corrigidos / rejeitados / escalados: <n> / <n> / <n>\n- Custo do período (modelo + revisão humana): <valor estimado>\n\nCHECKLIST (todos sim para promover)\n[ ] Amostra representativa (não só casos fáceis)\n[ ] Nenhum erro crítico no período\n[ ] Aceitos sem correção acima do limiar\n[ ] Reversão barata: <como desfaz>\n[ ] Piloto acompanhado por <nome> durante <tempo>\n[ ] Responsável assina: <nome>\n\nCRITÉRIO DE REBAIXAMENTO (escrito antes de promover)\n- Erro crítico → volta para <cor> na hora, aviso para <nome>\n- Aceitos abaixo de <%> numa semana → volta para <cor>\n- Troca de modelo, ferramenta ou constituição → volta para amarelo até nova evidência\n\nDECISÃO: [ ] ampliar  [ ] manter  [ ] reduzir  [ ] desligar\nMotivo em 1 frase: <...>\nAssinado: <nome> · <data> · próxima revisão: <data>"},
-        {"rot": "Ficha de confiança semanal", "icone": "grafico",
-         "conteudo": "FICHA DE CONFIANÇA · <agente> · semana <n> · versão da ficha de cargo: <v>\n\n| Ação | Tentativas | Resultados | Aceitos sem correção | Erros críticos | Custo (modelo + revisão) | Tempo médio | Cor atual |\n|---|---|---|---|---|---|---|---|\n| <ação 1> |  |  |  |  |  |  |  |\n| <ação 2> |  |  |  |  |  |  |  |\n\nAMOSTRA (3 perguntas: pedido atendido? regras respeitadas? fonte certa?)\nSorteados: <n> · aceitos <n> · corrigidos <n> · rejeitados <n>\nCaso mais importante da semana: <qual e por quê>\n\nDECISÃO POR AÇÃO: <ação> → <ampliar / manter / reduzir / desligar> · número que decidiu: <...>"}
+        {
+          "rot": "Checklist de promoção e rebaixamento",
+          "icone": "lista",
+          "conteudo": "PROMOÇÃO DE AUTONOMIA · <agente> · ação: <verbo + objeto>\nDe <cor/nível atual> para <cor/nível proposto> · período: <datas>\n\nEVIDÊNCIA\n- Casos no período: <n> · amostra julgada: <n> (comuns e difíceis)\n- Aceitos sem correção: <n> de <n> = <%> · limiar exigido: <%>\n- Erros críticos: <n> (precisa ser 0)\n- Corrigidos / rejeitados / escalados: <n> / <n> / <n>\n- Custo do período (modelo + revisão humana): <valor estimado>\n\nCHECKLIST (todos sim para promover)\n[ ] Amostra representativa (não só casos fáceis)\n[ ] Nenhum erro crítico no período\n[ ] Aceitos sem correção acima do limiar\n[ ] Reversão barata: <como desfaz>\n[ ] Piloto acompanhado por <nome> durante <tempo>\n[ ] Responsável assina: <nome>\n\nCRITÉRIO DE REBAIXAMENTO (escrito antes de promover)\n- Erro crítico → volta para <cor> na hora, aviso para <nome>\n- Aceitos abaixo de <%> numa semana → volta para <cor>\n- Troca de modelo, ferramenta ou constituição → volta para amarelo até nova evidência\n\nDECISÃO: [ ] ampliar  [ ] manter  [ ] reduzir  [ ] desligar\nMotivo em 1 frase: <...>\nAssinado: <nome> · <data> · próxima revisão: <data>"
+        },
+        {
+          "rot": "Ficha de confiança semanal",
+          "icone": "grafico",
+          "conteudo": "FICHA DE CONFIANÇA · <agente> · semana <n> · versão da ficha de cargo: <v>\n\n| Ação | Tentativas | Resultados | Aceitos sem correção | Erros críticos | Custo (modelo + revisão) | Tempo médio | Cor atual |\n|---|---|---|---|---|---|---|---|\n| <ação 1> |  |  |  |  |  |  |  |\n| <ação 2> |  |  |  |  |  |  |  |\n\nAMOSTRA (3 perguntas: pedido atendido? regras respeitadas? fonte certa?)\nSorteados: <n> · aceitos <n> · corrigidos <n> · rejeitados <n>\nCaso mais importante da semana: <qual e por quê>\n\nDECISÃO POR AÇÃO: <ação> → <ampliar / manter / reduzir / desligar> · número que decidiu: <...>"
+        }
       ],
-      "saida": {"selo": "simulacao", "abas": [
-        {"rot": "Duas semanas da Hora (dados fictícios)", "html": "<p>Horizonte, empresa fictícia de estudo. Três ações no amarelo durante a integração, julgadas pela Patrícia e pela Juliana.</p><ul><li><b>A · Responder dúvida de catálogo e entrega:</b> 238 respostas; 231 aceitas sem correção (97,1%); 0 erro crítico; reversão: mensagem de correção.</li><li><b>B · Criar pedido até R$ 5 mil:</b> 263 pedidos; 251 aceitos sem correção (95,4%); 11 corrigidos (quantidade); <b>1 erro crítico</b>: pedido lançado no cadastro de outro cliente de nome parecido, barrado na aprovação.</li><li><b>C · Desconto até 5%:</b> 9 casos; 9 aceitos (100%).</li></ul>"},
-        {"rot": "Gabarito", "html": "<ol><li><b>A · ampliar</b> para o verde: passa nos seis itens. Critério de volta: resposta com preço ou prazo errado ao cliente, ou aceitos abaixo de 95% numa semana.</li><li><b>B · manter</b> no amarelo: 95,4% está acima do limiar, mas houve erro crítico. Ação: pedir que a Hora confirme CNPJ ou telefone antes de lançar, e medir mais duas semanas.</li><li><b>C · manter</b>: 100% de 9 casos não é evidência; a amostra é pequena demais. Continua no amarelo até juntar casos.</li></ol>"}
-      ]}
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Duas semanas da Hora (dados fictícios)",
+            "html": "<p>Horizonte, empresa fictícia de estudo. Três ações no amarelo durante a integração, julgadas pela Patrícia e pela Juliana.</p><ul><li><b>A · Responder dúvida de catálogo e entrega:</b> 238 respostas; 231 aceitas sem correção (97,1%); 0 erro crítico; reversão: mensagem de correção.</li><li><b>B · Criar pedido até R$ 5 mil:</b> 263 pedidos; 251 aceitos sem correção (95,4%); 11 corrigidos (quantidade); <b>1 erro crítico</b>: pedido lançado no cadastro de outro cliente de nome parecido, barrado na aprovação.</li><li><b>C · Desconto até 5%:</b> 9 casos; 9 aceitos (100%).</li></ul>"
+          },
+          {
+            "rot": "Gabarito",
+            "html": "<ol><li><b>A · ampliar</b> para o verde: passa nos seis itens. Critério de volta: resposta com preço ou prazo errado ao cliente, ou aceitos abaixo de 95% numa semana.</li><li><b>B · manter</b> no amarelo: 95,4% está acima do limiar, mas houve erro crítico. Ação: pedir que a Hora confirme CNPJ ou telefone antes de lançar, e medir mais duas semanas.</li><li><b>C · manter</b>: 100% de 9 casos não é evidência; a amostra é pequena demais. Continua no amarelo até juntar casos.</li></ol>"
+          }
+        ]
+      }
     },
     {
       "tipo": "pratica",
@@ -73,13 +153,21 @@
       "sub": "Decida pela Patrícia com os dados fictícios; depois prepare a medição do seu agente.",
       "fonte": "Painel do laboratório para comparar: <a href=\"https://inematds.github.io/prof2030-lab/pecas/painel/\">o painel do Carlos (F11)</a>.",
       "exercicios": [
-        {"id": "e1", "titulo": "1 · Três decisões da Patrícia", "min": "20 min",
-         "texto": "Com os dados das duas semanas (aba ao lado), preencha um checklist de promoção para cada uma das três ações, antes de abrir o gabarito. Para a ação que você promover, escreva o critério de rebaixamento. Depois abra o painel do Carlos no laboratório e anote por que ele não serviria para essas decisões.",
-         "pronto": "você tem três checklists com decisão (ampliar, manter ou reduzir), o número que decidiu cada uma, um critério de rebaixamento escrito para a ação promovida e uma frase sobre o painel do Carlos."},
-        {"id": "e2", "titulo": "2 · A medição do seu agente", "min": "20 min + 1 semana",
-         "dias": 7,
-         "texto": "Escolha a ação do seu agente que mais toma o seu tempo de aprovação. Combine com quem cuida da tecnologia o registro de quatro colunas para ela. Ao fim de uma semana, julgue uma amostra de 15 a 20 itens com as três perguntas e preencha a ficha de confiança e o checklist.",
-         "pronto": "o registro de quatro colunas existe para a ação escolhida, a ficha semanal tem os cinco números e a amostra julgada, e o checklist termina numa decisão assinada com critério de rebaixamento."}
+        {
+          "id": "e1",
+          "titulo": "1 · Três decisões da Patrícia",
+          "min": "20 min",
+          "texto": "Com os dados das duas semanas (aba ao lado), preencha um checklist de promoção para cada uma das três ações, antes de abrir o gabarito. Para a ação que você promover, escreva o critério de rebaixamento. Depois abra o painel do Carlos no laboratório e anote por que ele não serviria para essas decisões.",
+          "pronto": "você tem três checklists com decisão (ampliar, manter ou reduzir), o número que decidiu cada uma, um critério de rebaixamento escrito para a ação promovida e uma frase sobre o painel do Carlos."
+        },
+        {
+          "id": "e2",
+          "titulo": "2 · A medição do seu agente",
+          "min": "20 min + 1 semana",
+          "dias": 7,
+          "texto": "Escolha a ação do seu agente que mais toma o seu tempo de aprovação. Combine com quem cuida da tecnologia o registro de quatro colunas para ela. Ao fim de uma semana, julgue uma amostra de 15 a 20 itens com as três perguntas e preencha a ficha de confiança e o checklist.",
+          "pronto": "o registro de quatro colunas existe para a ação escolhida, a ficha semanal tem os cinco números e a amostra julgada, e o checklist termina numa decisão assinada com critério de rebaixamento."
+        }
       ]
     },
     {
@@ -87,41 +175,93 @@
       "titulo": "Teste rápido",
       "sub": "4 perguntas. A explicação aparece depois da sua tentativa.",
       "perguntas": [
-        {"p": "Uma ação teve 100% de aceitos sem correção em 9 casos. Promover?",
-         "opcoes": ["Sim, 100% é o máximo possível", "Não ainda: a amostra é pequena demais para ser evidência", "Sim, se o agente for o mesmo da semana passada"],
-         "certa": 1, "ref": "codigo",
-         "explica": "Nove casos não representam o que vai aparecer em produção. Mantenha no amarelo e junte casos, incluindo os difíceis. Porcentagem sem denominador engana."},
-        {"p": "A ação teve 95,4% de aceitos e 1 erro crítico barrado na aprovação. O que fazer?",
-         "opcoes": ["Promover: está acima de 95%", "Manter: erro crítico no período impede a promoção, mesmo acima do limiar", "Desligar o agente"],
-         "certa": 1, "ref": "passos",
-         "explica": "Erro crítico nunca some dentro da média. Ele só foi barrado porque a ação estava no amarelo; no verde, teria ido para a separação. Corrige-se a causa e mede-se de novo. Desligar é exagero: o controle funcionou."},
-        {"p": "O painel mostra atendimentos subindo de 702 para 901 por semana. Isso justifica dar mais autonomia ao agente?",
-         "opcoes": ["Sim, o volume prova que ele está funcionando", "Não: volume não mostra acerto, desconto nem erro crítico, e não há número de antes para comparar", "Sim, se a satisfação também subiu"],
-         "certa": 1, "ref": "passos",
-         "explica": "É a falha F11 do laboratório. Volume pode subir por sazonalidade, preço ou desconto. E a satisfação vem de cerca de 6% dos clientes. Autonomia se decide por aceitos sem correção e erros críticos de cada ação."},
-        {"p": "Quando escrever o critério de rebaixamento?",
-         "opcoes": ["Antes de promover, junto com o checklist", "Quando aparecer o primeiro erro", "Não precisa: rebaixar é sempre óbvio"],
-         "certa": 0, "ref": "passos",
-         "explica": "Escrito antes, rebaixar é rotina combinada. Decidido no susto, vira discussão sobre culpa, e a tendência é reduzir tudo de uma vez por causa do último caso lembrado."}
+        {
+          "p": "Uma ação teve 100% de aceitos sem correção em 9 casos. Promover?",
+          "opcoes": [
+            "Sim: 100% é o máximo possível, não há o que esperar",
+            "Sim, desde que o modelo seja o mesmo da semana passada",
+            "Não ainda: 9 casos são pouco para servir de evidência"
+          ],
+          "certa": 2,
+          "ref": "codigo",
+          "explica": "Nove casos não representam o que vai aparecer em produção. Mantenha no amarelo e junte casos, incluindo os difíceis. Porcentagem sem denominador engana."
+        },
+        {
+          "p": "A ação teve 95,4% de aceitos e 1 erro crítico barrado na aprovação. O que fazer?",
+          "opcoes": [
+            "Manter: erro crítico no período impede a promoção",
+            "Promover: a taxa ficou acima do limiar de 95%",
+            "Desligar o agente até descobrir a causa do erro"
+          ],
+          "certa": 0,
+          "ref": "passos",
+          "explica": "Erro crítico nunca some dentro da média. Ele só foi barrado porque a ação estava no amarelo; no verde, teria ido para a separação. Corrige-se a causa e mede-se de novo. Desligar é exagero: o controle funcionou."
+        },
+        {
+          "p": "O painel mostra atendimentos subindo de 702 para 901 por semana. Isso justifica dar mais autonomia ao agente?",
+          "opcoes": [
+            "Sim: o volume subindo mostra que o agente funciona",
+            "Não: volume não mostra acerto nem erro, e falta o antes",
+            "Sim, desde que a satisfação dos clientes também suba no mesmo período"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "É a falha F11 do laboratório. Volume pode subir por sazonalidade, preço ou desconto. E a satisfação vem de cerca de 6% dos clientes. Autonomia se decide por aceitos sem correção e erros críticos de cada ação."
+        },
+        {
+          "p": "Quando escrever o critério de rebaixamento?",
+          "opcoes": [
+            "Quando aparecer o primeiro erro, com o caso na mão",
+            "Antes de promover a ação, junto com o checklist",
+            "Não precisa: na hora certa, rebaixar é sempre óbvio"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "Escrito antes, rebaixar é rotina combinada. Decidido no susto, vira discussão sobre culpa, e a tendência é reduzir tudo de uma vez por causa do último caso lembrado."
+        }
       ]
     },
     {
       "tipo": "resumo",
       "titulo": "Resumo",
       "itens": [
-        {"t": "Começa no amarelo", "texto": "E sobe uma ação, um nível, de cada vez."},
-        {"t": "Evidência por ação", "texto": "Aceitos sem correção e erros críticos numa amostra julgada. Volume não decide."},
-        {"t": "Seis itens", "texto": "Amostra, zero crítico, limiar, reversão, piloto, assinatura. Faltou um, mantém."},
-        {"t": "Volta escrita antes", "texto": "Erro crítico, queda do número ou troca de versão rebaixam."}
+        {
+          "t": "Começa no amarelo",
+          "texto": "E sobe uma ação, um nível, de cada vez."
+        },
+        {
+          "t": "Evidência por ação",
+          "texto": "Aceitos sem correção e erros críticos numa amostra julgada. Volume não decide."
+        },
+        {
+          "t": "Seis itens",
+          "texto": "Amostra, zero crítico, limiar, reversão, piloto, assinatura. Faltou um, mantém."
+        },
+        {
+          "t": "Volta escrita antes",
+          "texto": "Erro crítico, queda do número ou troca de versão rebaixam."
+        }
       ]
     },
     {
       "tipo": "links",
       "titulo": "Para ir além",
       "links": [
-        {"t": "Super-Agentes na prática: a ficha de confiança", "href": "https://inematds.github.io/agi-pratica/", "icone": "grafico"},
-        {"t": "Laboratório Horizonte: o painel do Carlos (empresa fictícia de estudo)", "href": "https://inematds.github.io/prof2030-lab/pecas/painel/", "icone": "grafico"},
-        {"t": "Gestoria: o simulador de gestão de IA", "href": "https://inematds.github.io/gestoria/", "icone": "camadas"}
+        {
+          "t": "Super-Agentes na prática: a ficha de confiança",
+          "href": "https://inematds.github.io/agi-pratica/",
+          "icone": "grafico"
+        },
+        {
+          "t": "Laboratório Horizonte: o painel do Carlos (empresa fictícia de estudo)",
+          "href": "https://inematds.github.io/prof2030-lab/pecas/painel/",
+          "icone": "grafico"
+        },
+        {
+          "t": "Gestoria: o simulador de gestão de IA",
+          "href": "https://inematds.github.io/gestoria/",
+          "icone": "camadas"
+        }
       ]
     }
   ]

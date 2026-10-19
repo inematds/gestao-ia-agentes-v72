@@ -180,12 +180,12 @@
     {
       "tipo": "codigo",
       "titulo": "Modelo para copiar: ficha de puesto del agente",
-      "sub": "Una página por agente. Cópiala a un documento de la empresa; los campos marcados con (clase N) los completas en las próximas clases.",
+      "sub": "Una página por agente. Cópiala en un documento de la empresa; los campos marcados con (clase N) los completas en las próximas clases.",
       "blocos": [
         {
           "rot": "Ficha de puesto del agente",
           "icone": "arquivo",
-          "conteudo": "FICHA DE PUESTO · <nombre del agente> · versión <1.0> · <fecha>\n\nPROCESO: <de dónde hasta dónde, ej.: pedido por WhatsApp hasta el despacho>\nMISIÓN (1 frase): <qué hace> para <qué resultado>, dentro de <límite principal>.\n\nRECIBE (entradas permitidas):\n- <canal/sistema 1>\n- <canal/sistema 2>\n\nENTREGA (salida que se revisa sin rehacer):\n- <qué sale, en qué formato, dónde queda registrado>\n\nCALIDAD:\n- Criterio de aceptación: <qué separa lo aceptado de lo corregido>\n- Número que se sigue: <indicador> · meta <valor> · revisado <cuándo>\n\nPUEDE (acciones concretas):\n- <verbo + objeto>\n- <verbo + objeto>\n\nNO PUEDE (acciones concretas):\n- <verbo + objeto + límite>\n- <verbo + objeto + límite>\n- <verbo + objeto + límite>\n\nRESPONSABLE DEL RESULTADO: <nombre y puesto, del negocio>\nSOPORTE TÉCNICO: <nombre>\nCUÁNDO ESCALAR / A QUIÉN: <situación> → <persona>, en hasta <plazo> (clase 3)\n\nHERRAMIENTAS Y OPERACIONES: <leer/escribir qué> (clase 4)\nNIVEL Y MATRIZ DE ACCIONES: <enlace a la matriz> (clase 4)\nLÍMITE DE COSTO / PLAZO / INTENTOS: <valores> (clase 6)\nEVALUACIÓN Y DUEÑO DE LA PROMOCIÓN: <quién decide subir o bajar la autonomía> (clase 5)\n\nAPROBADO POR: <nombre> el <fecha>"
+          "conteudo": "FICHA DE PUESTO · <nombre del agente> · versión <1.0> · <fecha>\n\nPROCESO: <de dónde a dónde, ej.: pedido por WhatsApp hasta la preparación>\nMISIÓN (1 frase): <qué hace> para <qué resultado>, dentro de <límite principal>.\n\nRECIBE (entradas permitidas):\n- <canal/sistema 1>\n- <canal/sistema 2>\n\nENTREGA (salida que se verifica sin rehacer):\n- <qué sale, en qué formato, dónde queda registrado>\n\nCALIDAD:\n- Criterio de aceptación: <qué separa lo aceptado de lo corregido>\n- Número que se sigue: <indicador> · meta <valor> · revisado <cuándo>\n\nPUEDE (acciones concretas):\n- <verbo + objeto>\n- <verbo + objeto>\n\nNO PUEDE (acciones concretas):\n- <verbo + objeto + límite>\n- <verbo + objeto + límite>\n- <verbo + objeto + límite>\n\nRESPONSABLE DEL RESULTADO: <nombre y puesto, del negocio>\nSOPORTE TÉCNICO: <nombre>\nCUÁNDO ESCALAR / A QUIÉN: <situación> → <persona>, en hasta <plazo> (clase 3)\n\nHERRAMIENTAS Y OPERACIONES: <leer/escribir qué> (clase 4)\nNIVEL Y MATRIZ DE ACCIONES: <enlace a la matriz> (clase 4)\nLÍMITE DE COSTO / PLAZO / INTENTOS: <valores> (clase 6)\nEVALUACIÓN Y DUEÑO DE LA PROMOCIÓN: <quién decide subir o bajar la autonomía> (clase 5)\n\nAPROBADO POR: <nombre> el <fecha>"
         },
         {
           "rot": "Prompt · revisar la ficha antes de firmar",
@@ -237,55 +237,55 @@
         {
           "p": "La encuesta interna de Horizonte mostró que alguien pega la hoja de cálculo de clientes en un chatbot gratuito, en su cuenta personal, para escribir propuestas. ¿Cuál es el primer paso de gestión?",
           "opcoes": [
-            "Prohibir toda IA en la empresa",
-            "Ignorarlo: está ahorrando tiempo",
-            "Ponerla en la lista de herramientas de IA en uso y decidir: recibe puesto, responsable y reglas, o se apaga"
+            "Ponerla en la lista de IA en uso y decidir: recibe puesto, dueño y reglas, o se apaga",
+            "Prohibir toda IA en la empresa hasta que TI apruebe una lista oficial de herramientas seguras",
+            "Dejarlo como está, porque la persona ahorra tiempo y el cliente ni lo nota"
           ],
-          "certa": 2,
+          "certa": 0,
           "ref": "passos",
           "explica": "Es IA en la sombra (F12 del laboratorio): trabajo hecho por IA sin puesto, sin dueño y con datos de clientes saliendo de la empresa. Prohibir todo empuja el uso lejos de tu vista; ignorarlo deja el riesgo corriendo. El gestor le da puesto y dueño, o la apaga."
         },
         {
           "p": "¿Cuál de estas es la mejor misión para el agente de ventas de Horizonte?",
           "opcoes": [
-            "Cerrar el máximo de pedidos posible, siempre con simpatía",
-            "Registrar los pedidos de reposición de clientes registrados que llegan por WhatsApp, con precios de la tabla, listos para que el almacén los revise",
-            "Ayudar a la empresa a crecer usando inteligencia artificial"
+            "Cerrar el máximo de pedidos posible por WhatsApp, siempre con simpatía y con respuesta rápida al cliente",
+            "Atender a todo cliente que escriba por WhatsApp y ayudar a la empresa a crecer usando IA",
+            "Registrar pedidos de reposición de clientes registrados, a precio de lista, listos para verificar"
           ],
-          "certa": 1,
+          "certa": 2,
           "ref": "passos",
           "explica": "La buena misión dice el proceso, el resultado y ya trae un límite (clientes registrados, precio de tabla). \"El máximo\" es un deseo que el agente cumple al pie de la letra, con descuento. \"Ayudar a crecer\" no se le puede exigir a nadie."
         },
         {
           "p": "¿Quién debe figurar como responsable del resultado de Hora?",
           "opcoes": [
-            "Rafael, que montó el agente y mantiene la integración",
-            "El equipo comercial, en conjunto",
-            "Patrícia, la gerente comercial, con Rafael como soporte técnico"
+            "Rafael, que armó el agente y mantiene la integración funcionando",
+            "Patrícia, la gerente comercial; Rafael queda como soporte técnico",
+            "Todo el equipo comercial, en conjunto, para repartir la responsabilidad"
           ],
-          "certa": 2,
+          "certa": 1,
           "ref": "diagrama",
           "explica": "Responde por el resultado quien responde por el margen y por el cliente: la gerente comercial. TI mantiene el agente encendido. \"El equipo\" no es un responsable: cuando todos responden, nadie responde."
         },
         {
           "p": "¿Cuál de estas prohibiciones está bien escrita?",
           "opcoes": [
-            "No perjudicar el margen de la empresa",
-            "No conceder descuentos superiores al 5%",
-            "Usar el sentido común en los descuentos"
+            "No conceder descuento superior al 5% sin aprobación de la gerente",
+            "No perjudicar el margen de la empresa al negociar con clientes",
+            "Usar el buen criterio en los descuentos, pensando en el cliente y en el margen"
           ],
-          "certa": 1,
+          "certa": 0,
           "ref": "diagrama",
           "explica": "Una buena prohibición tiene verbo, objeto y, cuando hay un valor, un número. Así se puede comprobar en una conversación si se respetó. \"Sentido común\" y \"no perjudicar\" son intenciones: cada uno las lee a su manera, incluido el agente."
         },
         {
           "p": "¿Cómo saber si la entrega de un agente está bien definida?",
           "opcoes": [
-            "Otra persona puede decir si fue aceptada o corregida sin rehacer el trabajo",
-            "El agente puede explicar lo que hizo",
-            "El cliente quedó satisfecho"
+            "El agente puede explicar con claridad qué hizo y por qué",
+            "Otra persona dice si fue aceptada o corregida sin rehacer el trabajo",
+            "El cliente quedó satisfecho y respondió bien a la encuesta enviada después del pedido"
           ],
-          "certa": 0,
+          "certa": 1,
           "ref": "diagrama",
           "explica": "Una salida verificable es la que se comprueba con un criterio, sin opinión y sin rehacer. La explicación del agente no es evidencia, y la satisfacción del cliente (que en Horizonte responde en cerca del 6% de las conversaciones) mide otra cosa."
         }

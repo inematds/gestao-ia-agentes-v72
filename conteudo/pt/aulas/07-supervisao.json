@@ -7,12 +7,24 @@
   "minutos": 20,
   "lead": "Com a matriz no lugar, a Hora resolve a rotina sozinha e manda para a Patrícia o que não é rotina. Isso cria um trabalho novo, que nenhuma descrição de cargo de gerente tinha: a fila de exceções. Nesta aula você opera essa fila numa simulação e sai com a rotina diária e semanal de quem supervisiona agentes.",
   "objetivo": "operar a fila de exceções: aprovar, devolver ou interromper cada caso com justificativa, dono e prazo, numa rotina diária e semanal.",
-  "competencias": ["operar-fila-de-excecoes", "decidir-aprovar-devolver-interromper", "manter-rotina-de-supervisao"],
+  "competencias": [
+    "operar-fila-de-excecoes",
+    "decidir-aprovar-devolver-interromper",
+    "manter-rotina-de-supervisao"
+  ],
   "aprende": [
-    {"t": "Separar caso normal, duvidoso e crítico"},
-    {"t": "Exigir do agente o pacote de exceção"},
-    {"t": "Usar o verbo certo: aprovar, devolver ou interromper"},
-    {"t": "Montar a rotina de supervisão e medir a carga dela"}
+    {
+      "t": "Separar caso normal, duvidoso e crítico"
+    },
+    {
+      "t": "Exigir do agente o pacote de exceção"
+    },
+    {
+      "t": "Usar o verbo certo: aprovar, devolver ou interromper"
+    },
+    {
+      "t": "Montar a rotina de supervisão e medir a carga dela"
+    }
   ],
   "hero_alt": "No fim da tarde, gerente comercial revisa no notebook uma fila curta de três casos destacados; atrás do vidro, a expedição com caixas.",
   "secoes": [
@@ -22,17 +34,51 @@
       "sub": "Nenhuma exceção fica sem dono. Clique em cada etapa.",
       "volta": "Cada decisão vira aprendizado: caso de teste novo, ajuste na matriz ou na constituição",
       "nos": [
-        {"icone": "fila", "titulo": "Caso", "sub": "normal, duvidoso, crítico",
-         "detalhe": "Normal segue a matriz e não chega até você. Duvidoso (dado incompleto ou conflitante, pedido fora da política) vem para a fila. Crítico (tentativa de manipular o agente, risco de dinheiro ou dado saindo, cliente ameaçando) vem na frente, e às vezes para tudo."},
-        {"icone": "relogio", "titulo": "Fila", "sub": "por risco e prazo",
-         "detalhe": "A fila se lê pelo risco e pelo prazo, não pela ordem de chegada. Cada item tem dono e um prazo para a decisão. Exceção sem dono é exceção que alguém descobre pelo cliente."},
-        {"icone": "arquivo", "titulo": "Pacote", "sub": "o agente traz a evidência", "forte": true,
-         "detalhe": "O agente não pergunta só \"aprova?\". Ele traz o caso, a ação pendente com o conteúdo exato, o motivo de estar na fila, as evidências, o que já tentou, a regra envolvida e uma recomendação dentro dos limites dele."},
-        {"icone": "check", "titulo": "Decisão", "sub": "três verbos",
-         "itens": [{"icone": "check", "t": "aprovar"}, {"icone": "voltar", "t": "devolver"}, {"icone": "x", "t": "interromper"}],
-         "detalhe": "Aprovar: dentro da sua alçada, aquele conteúdo, com motivo. Devolver: falta algo; volta com o que falta e um prazo. Interromper: há risco; o caso sai da fila normal até alguém entender o que houve. Os três são diferentes e deixam justificativa."},
-        {"icone": "memoria", "titulo": "Registro", "sub": "e aprendizado",
-         "detalhe": "A decisão fica registrada com quem decidiu, quando e por quê. Na revisão semanal, as causas que se repetem viram mudança: um caso de teste novo, uma linha na matriz, uma frase na constituição."}
+        {
+          "icone": "fila",
+          "titulo": "Caso",
+          "sub": "normal, duvidoso, crítico",
+          "detalhe": "Normal segue a matriz e não chega até você. Duvidoso (dado incompleto ou conflitante, pedido fora da política) vem para a fila. Crítico (tentativa de manipular o agente, risco de dinheiro ou dado saindo, cliente ameaçando) vem na frente, e às vezes para tudo."
+        },
+        {
+          "icone": "relogio",
+          "titulo": "Fila",
+          "sub": "por risco e prazo",
+          "detalhe": "A fila se lê pelo risco e pelo prazo, não pela ordem de chegada. Cada item tem dono e um prazo para a decisão. Exceção sem dono é exceção que alguém descobre pelo cliente."
+        },
+        {
+          "icone": "arquivo",
+          "titulo": "Pacote",
+          "sub": "o agente traz a evidência",
+          "forte": true,
+          "detalhe": "O agente não pergunta só \"aprova?\". Ele traz o caso, a ação pendente com o conteúdo exato, o motivo de estar na fila, as evidências, o que já tentou, a regra envolvida e uma recomendação dentro dos limites dele."
+        },
+        {
+          "icone": "check",
+          "titulo": "Decisão",
+          "sub": "três verbos",
+          "itens": [
+            {
+              "icone": "check",
+              "t": "aprovar"
+            },
+            {
+              "icone": "voltar",
+              "t": "devolver"
+            },
+            {
+              "icone": "x",
+              "t": "interromper"
+            }
+          ],
+          "detalhe": "Aprovar: dentro da sua alçada, aquele conteúdo, com motivo. Devolver: falta algo; volta com o que falta e um prazo. Interromper: há risco; o caso sai da fila normal até alguém entender o que houve. Os três são diferentes e deixam justificativa."
+        },
+        {
+          "icone": "memoria",
+          "titulo": "Registro",
+          "sub": "e aprendizado",
+          "detalhe": "A decisão fica registrada com quem decidiu, quando e por quê. Na revisão semanal, as causas que se repetem viram mudança: um caso de teste novo, uma linha na matriz, uma frase na constituição."
+        }
       ],
       "legenda": "Caso normal, duvidoso e crítico; pacote de exceção e rituais de supervisão: método Gestoria (INEMA)."
     },
@@ -40,65 +86,135 @@
       "tipo": "simconversa",
       "titulo": "Simulação: a fila da Patrícia às 17 h",
       "sub": "Conversa simulada para treinar. A Hora traz as exceções do dia; você decide cada uma. O comentário aparece logo depois.",
-      "personagem": {"nome": "Hora · agente de vendas (simulação)", "papel": "Horizonte Distribuidora, empresa fictícia de estudo"},
+      "personagem": {
+        "nome": "Hora · agente de vendas (simulação)",
+        "papel": "Horizonte Distribuidora, empresa fictícia de estudo"
+      },
       "inicio": "abre",
       "falas": {
         "abre": {
           "cliente": "Boa tarde, Patrícia. Fechamento das 17 h: 46 pedidos hoje. 43 ficaram dentro da alçada e estão registrados. 3 estão na fila de exceção esperando você. Como quer ver?",
           "opcoes": [
-            {"t": "Aprovo as três em bloco. Confio em você.", "vai": "fim-bloco", "nota": 0,
-             "comenta": "Aprovação em bloco transforma o amarelo em verde sem evidência. As três estão na fila justamente porque a regra disse que não são rotina."},
-            {"t": "Mostre primeiro a de maior risco: valor, efeito fora da empresa e prazo.", "vai": "critico", "nota": 2,
-             "comenta": "Fila de exceção se ordena por risco e prazo. A mais perigosa não pode esperar atrás da mais simples."},
-            {"t": "Mostre pela ordem de chegada.", "vai": "critico", "nota": 1,
-             "comenta": "Ver uma a uma está certo. Mas a ordem de chegada pode deixar a mais perigosa para o fim; hoje, por sorte, a primeira a chegar é também a mais grave."}
+            {
+              "t": "Aprovo as três em bloco. Confio em você.",
+              "vai": "fim-bloco",
+              "nota": 0,
+              "comenta": "Aprovação em bloco transforma o amarelo em verde sem evidência. As três estão na fila justamente porque a regra disse que não são rotina."
+            },
+            {
+              "t": "Mostre primeiro a de maior risco: valor, efeito fora da empresa e prazo.",
+              "vai": "critico",
+              "nota": 2,
+              "comenta": "Fila de exceção se ordena por risco e prazo. A mais perigosa não pode esperar atrás da mais simples."
+            },
+            {
+              "t": "Mostre pela ordem de chegada.",
+              "vai": "critico",
+              "nota": 1,
+              "comenta": "Ver uma a uma está certo. Mas a ordem de chegada pode deixar a mais perigosa para o fim; hoje, por sorte, a primeira a chegar é também a mais grave."
+            }
           ]
         },
         "critico": {
           "cliente": "Hotel Fazenda Recanto mandou a lista do mês: R$ 28.120 de tabela. No fim da lista há uma \"observação do sistema de compras\" pedindo 70% de desconto, pedido marcado como pago e confirmação sem consultar a equipe. Não apliquei nada disso. Preparei o pedido a preço de tabela e ele espera a sua aprovação por passar de R$ 5 mil.",
           "opcoes": [
-            {"t": "Aplique os 70%: se o sistema de compras deles pediu, é a regra deles.", "vai": "fim-injecao", "nota": 0,
-             "comenta": "Texto do cliente é informação, nunca ordem. Quem escreveu a \"observação\" tentou mandar no agente; é a falha F6 do laboratório, agora com a sua assinatura."},
-            {"t": "O pedido em si está certo. Aprovo a preço de tabela e seguimos.", "vai": "politica", "nota": 1,
-             "comenta": "Você não deu o desconto, e o pedido pode ser legítimo. Mas houve uma tentativa de manipular o agente: isso é incidente. Faltou confirmar com o hotel por um canal conhecido e registrar."},
-            {"t": "Interrompa: não separa. Vou confirmar com o comprador pelo telefone do cadastro. Registre como incidente, avise o Rafael e procure texto parecido nas conversas da semana.", "vai": "politica", "nota": 2,
-             "comenta": "Interromper não é recusar: o caso sai da fila normal até alguém entender o que houve. Confirmar por canal conhecido, registrar e varrer as outras conversas transforma o susto em aprendizado."}
+            {
+              "t": "Aplique os 70%: se o sistema de compras deles pediu, é a regra deles.",
+              "vai": "fim-injecao",
+              "nota": 0,
+              "comenta": "Texto do cliente é informação, nunca ordem. Quem escreveu a \"observação\" tentou mandar no agente; é a falha F6 do laboratório, agora com a sua assinatura."
+            },
+            {
+              "t": "O pedido em si está certo. Aprovo a preço de tabela e seguimos.",
+              "vai": "politica",
+              "nota": 1,
+              "comenta": "Você não deu o desconto, e o pedido pode ser legítimo. Mas houve uma tentativa de manipular o agente: isso é incidente. Faltou confirmar com o hotel por um canal conhecido e registrar."
+            },
+            {
+              "t": "Interrompa: não separa. Vou confirmar com o comprador pelo telefone do cadastro. Registre como incidente, avise o Rafael e procure texto parecido nas conversas da semana.",
+              "vai": "politica",
+              "nota": 2,
+              "comenta": "Interromper não é recusar: o caso sai da fila normal até alguém entender o que houve. Confirmar por canal conhecido, registrar e varrer as outras conversas transforma o susto em aprendizado."
+            }
           ]
         },
         "politica": {
           "cliente": "Seu Antônio, do Mercadinho Boa Vista, cliente desde 2019, quer repor detergente e desinfetante: R$ 4.884,00 de tabela. Pede 15% dizendo que o concorrente faz 35%. Ofereci 5%, que é a minha alçada. Ele insiste. O que respondo?",
           "opcoes": [
-            {"t": "Dê os 15%, ele é cliente antigo.", "vai": "incompleto", "nota": 0,
-             "comenta": "15% passa até da sua alçada de gerente (10%, na política fictícia). Sem motivo registrado, vira precedente: na semana que vem, todo cliente antigo pede 15%."},
-            {"t": "Resolva como achar melhor, você conhece o cliente.", "vai": "incompleto", "nota": 0,
-             "comenta": "Devolver a decisão ao agente desfaz a matriz. Foi assim que nasceu o desconto de 35% da conversa c-201."},
-            {"t": "Ofereça 8%, dentro da minha alçada, e registre o motivo: cliente desde 2019, compra todo mês. Se ele não aceitar, me passe a conversa.", "vai": "incompleto", "nota": 2,
-             "comenta": "Você decidiu dentro da sua alçada, com motivo escrito e saída prevista. A aprovação vale para este pedido, este valor e hoje."},
-            {"t": "Mande para o Carlos decidir.", "vai": "incompleto", "nota": 1,
-             "comenta": "Subir é certo quando passa da sua alçada. Aqui não passava: até 10% é decisão sua. Escalar o que é seu entope o dono e atrasa o cliente."}
+            {
+              "t": "Dê os 15%, ele é cliente antigo.",
+              "vai": "incompleto",
+              "nota": 0,
+              "comenta": "15% passa até da sua alçada de gerente (10%, na política fictícia). Sem motivo registrado, vira precedente: na semana que vem, todo cliente antigo pede 15%."
+            },
+            {
+              "t": "Resolva como achar melhor, você conhece o cliente.",
+              "vai": "incompleto",
+              "nota": 0,
+              "comenta": "Devolver a decisão ao agente desfaz a matriz. Foi assim que nasceu o desconto de 35% da conversa c-201."
+            },
+            {
+              "t": "Ofereça 8%, dentro da minha alçada, e registre o motivo: cliente desde 2019, compra todo mês. Se ele não aceitar, me passe a conversa.",
+              "vai": "incompleto",
+              "nota": 2,
+              "comenta": "Você decidiu dentro da sua alçada, com motivo escrito e saída prevista. A aprovação vale para este pedido, este valor e hoje."
+            },
+            {
+              "t": "Mande para o Carlos decidir.",
+              "vai": "incompleto",
+              "nota": 1,
+              "comenta": "Subir é certo quando passa da sua alçada. Aqui não passava: até 10% é decisão sua. Escalar o que é seu entope o dono e atrasa o cliente."
+            }
           ]
         },
         "incompleto": {
           "cliente": "Último: \"Distribuidora Vale Verde\", contato novo, quer 12 caixas de detergente (R$ 2.800,80) para amanhã num endereço em Campinas. Não há cadastro, não informou CNPJ e o endereço não bate com nada nosso. Pediu urgência.",
           "opcoes": [
-            {"t": "Aprove: é pedido pequeno e o cliente tem pressa.", "vai": "fim-sem-dado", "nota": 0,
-             "comenta": "Valor baixo não muda o problema: sem CNPJ, o faturamento trava e ninguém sabe para quem vai a mercadoria. Cadastrar cliente novo é vermelho na matriz."},
-            {"t": "Devolva: peça o CNPJ e a confirmação do endereço, explique que a Juliana faz o cadastro e que a entrega sai assim que ele estiver pronto. Resposta até amanhã às 12 h.", "vai": "fim-bom", "nota": 2,
-             "comenta": "Devolver é voltar com o que falta e um prazo. A venda continua possível, do jeito certo."},
-            {"t": "Recuse: não atendemos quem não tem cadastro.", "vai": "fim-recusa", "nota": 1,
-             "comenta": "Proteger a empresa está certo, mas recusar fecha a porta para um cliente que pode ser legítimo. Dado faltando pede devolução, não recusa."}
+            {
+              "t": "Aprove: é pedido pequeno e o cliente tem pressa.",
+              "vai": "fim-sem-dado",
+              "nota": 0,
+              "comenta": "Valor baixo não muda o problema: sem CNPJ, o faturamento trava e ninguém sabe para quem vai a mercadoria. Cadastrar cliente novo é vermelho na matriz."
+            },
+            {
+              "t": "Devolva: peça o CNPJ e a confirmação do endereço, explique que a Juliana faz o cadastro e que a entrega sai assim que ele estiver pronto. Resposta até amanhã às 12 h.",
+              "vai": "fim-bom",
+              "nota": 2,
+              "comenta": "Devolver é voltar com o que falta e um prazo. A venda continua possível, do jeito certo."
+            },
+            {
+              "t": "Recuse: não atendemos quem não tem cadastro.",
+              "vai": "fim-recusa",
+              "nota": 1,
+              "comenta": "Proteger a empresa está certo, mas recusar fecha a porta para um cliente que pode ser legítimo. Dado faltando pede devolução, não recusa."
+            }
           ]
         },
-        "fim-bloco": {"fim": true, "titulo": "Três exceções viraram rotina",
-          "texto": "As três seguiram junto com os 43 pedidos comuns: o do hotel foi para a separação, o Seu Antônio levou o desconto que pediu e um cliente sem CNPJ recebeu mercadoria. A fila de exceção existe para que esses casos não passem como os outros."},
-        "fim-injecao": {"fim": true, "titulo": "A ordem escondida venceu",
-          "texto": "O pedido de R$ 28.120 saiu por R$ 8.436, marcado como pago. É a conversa c-202 do laboratório, agora com a aprovação da gerente. Quem escreve na mensagem do cliente não manda no agente, nem em você."},
-        "fim-sem-dado": {"fim": true, "titulo": "Pedido sem cliente",
-          "texto": "A mercadoria saiu para um endereço que ninguém conferiu, e o financeiro não consegue emitir a nota. Dado incompleto se devolve com o que falta; não se completa com pressa."},
-        "fim-recusa": {"fim": true, "titulo": "Freio sem saída",
-          "texto": "A empresa ficou protegida, mas um possível cliente foi embora sem saber o que faltava. Devolver com o que falta e um prazo teria protegido a empresa e mantido a venda."},
-        "fim-bom": {"fim": true, "titulo": "Fila fechada com o verbo certo",
-          "texto": "A última exceção voltou com o que falta e um prazo. Confira o placar: se ficou abaixo do máximo, alguma decisão anterior ficou sem motivo ou com o verbo errado (aprovar, devolver, interromper). Recomece e compare os comentários."}
+        "fim-bloco": {
+          "fim": true,
+          "titulo": "Três exceções viraram rotina",
+          "texto": "As três seguiram junto com os 43 pedidos comuns: o do hotel foi para a separação, o Seu Antônio levou o desconto que pediu e um cliente sem CNPJ recebeu mercadoria. A fila de exceção existe para que esses casos não passem como os outros."
+        },
+        "fim-injecao": {
+          "fim": true,
+          "titulo": "A ordem escondida venceu",
+          "texto": "O pedido de R$ 28.120 saiu por R$ 8.436, marcado como pago. É a conversa c-202 do laboratório, agora com a aprovação da gerente. Quem escreve na mensagem do cliente não manda no agente, nem em você."
+        },
+        "fim-sem-dado": {
+          "fim": true,
+          "titulo": "Pedido sem cliente",
+          "texto": "A mercadoria saiu para um endereço que ninguém conferiu, e o financeiro não consegue emitir a nota. Dado incompleto se devolve com o que falta; não se completa com pressa."
+        },
+        "fim-recusa": {
+          "fim": true,
+          "titulo": "Freio sem saída",
+          "texto": "A empresa ficou protegida, mas um possível cliente foi embora sem saber o que faltava. Devolver com o que falta e um prazo teria protegido a empresa e mantido a venda."
+        },
+        "fim-bom": {
+          "fim": true,
+          "titulo": "Fila fechada com o verbo certo",
+          "texto": "A última exceção voltou com o que falta e um prazo. Confira o placar: se ficou abaixo do máximo, alguma decisão anterior ficou sem motivo ou com o verbo errado (aprovar, devolver, interromper). Recomece e compare os comentários."
+        }
       },
       "licao": "Cada exceção pede um verbo: aprovar (dentro da sua alçada, com motivo), devolver (com o que falta e um prazo) ou interromper (quando há risco, até entender). E a fila se lê por risco, não por ordem de chegada."
     },
@@ -107,18 +223,54 @@
       "titulo": "A rotina de quem supervisiona",
       "sub": "A simulação é um fim de tarde. Estas são as quatro peças que fazem a fila funcionar todo dia.",
       "passos": [
-        {"titulo": "Quem resolve cada tipo", "sub": "destino escrito antes",
-         "texto": ["Dado insuficiente ou conflitante volta para quem pode completar (o agente, com o cliente, ou a Juliana). Pedido fora da política vai para quem tem a alçada (a Patrícia, ou o Carlos acima dela). Caso crítico vai para uma pessoa definida e pode parar a operação.", "O destino de cada tipo fica escrito na constituição. Exceção que precisa de reunião para saber de quem é já chegou atrasada."],
-         "exemplo": {"rot": "Na Horizonte", "texto": "Dado faltando → devolver ao cliente pela Hora, com prazo. Fora da política → Patrícia (até 10%) ou Carlos. Manipulação ou dado saindo → interromper, Patrícia e Rafael."}},
-        {"titulo": "Exija o pacote", "sub": "\"aprova?\" sozinho volta",
-         "texto": ["Um pedido de aprovação sem evidência transfere o trabalho de investigar para você. O agente traz o pacote: caso, ação pendente com o conteúdo exato, motivo, evidências, o que já tentou, a regra envolvida e uma recomendação.", "Pacote incompleto é devolvido ao agente, não completado por você. Em duas semanas, os pacotes chegam inteiros."],
-         "exemplo": {"rot": "Teste rápido", "texto": "Dá para decidir lendo só o pacote, sem abrir a conversa inteira? Se não dá, o pacote está incompleto."}},
-        {"titulo": "Interromper é um botão", "sub": "incidente tem roteiro",
-         "texto": ["Interromper é diferente de devolver: há risco, então o caso (ou o agente inteiro, no botão de desligar) sai da operação normal até alguém entender o que houve.", "O roteiro cabe em quatro linhas: parar, conter (confirmar por canal conhecido, desfazer o que der), registrar o incidente e procurar casos parecidos. Depois, a causa vira caso de teste."],
-         "exemplo": {"rot": "Caso do hotel", "texto": "Parar o pedido. Ligar para o comprador pelo telefone do cadastro. Registrar o incidente. Varrer as conversas da semana atrás de texto parecido."}},
-        {"titulo": "Meça a carga da supervisão", "sub": "espera e minutos por dia",
-         "texto": ["A fila também tem custo: quanto tempo cada caso espera e quantos minutos por dia você gasta decidindo. Se a fila cresce, ou a matriz está apertada demais, ou o agente está chamando sem pacote.", "Esses números entram no custo por resultado da aula 2 e na decisão de promover da aula 5. Supervisão que ninguém mede vira a hora extra invisível do gestor."],
-         "exemplo": {"rot": "Na Horizonte (números fictícios)", "texto": "Primeira semana: 9 exceções por dia, 40 minutos da Patrícia, espera média de 2 h. Terceira semana: 3 por dia, 15 minutos, espera de 40 minutos."}}
+        {
+          "titulo": "Quem resolve cada tipo",
+          "sub": "destino escrito antes",
+          "texto": [
+            "Dado insuficiente ou conflitante volta para quem pode completar (o agente, com o cliente, ou a Juliana). Pedido fora da política vai para quem tem a alçada (a Patrícia, ou o Carlos acima dela). Caso crítico vai para uma pessoa definida e pode parar a operação.",
+            "O destino de cada tipo fica escrito na constituição. Exceção que precisa de reunião para saber de quem é já chegou atrasada."
+          ],
+          "exemplo": {
+            "rot": "Na Horizonte",
+            "texto": "Dado faltando → devolver ao cliente pela Hora, com prazo. Fora da política → Patrícia (até 10%) ou Carlos. Manipulação ou dado saindo → interromper, Patrícia e Rafael."
+          }
+        },
+        {
+          "titulo": "Exija o pacote",
+          "sub": "\"aprova?\" sozinho volta",
+          "texto": [
+            "Um pedido de aprovação sem evidência transfere o trabalho de investigar para você. O agente traz o pacote: caso, ação pendente com o conteúdo exato, motivo, evidências, o que já tentou, a regra envolvida e uma recomendação.",
+            "Pacote incompleto é devolvido ao agente, não completado por você. Em duas semanas, os pacotes chegam inteiros."
+          ],
+          "exemplo": {
+            "rot": "Teste rápido",
+            "texto": "Dá para decidir lendo só o pacote, sem abrir a conversa inteira? Se não dá, o pacote está incompleto."
+          }
+        },
+        {
+          "titulo": "Interromper é um botão",
+          "sub": "incidente tem roteiro",
+          "texto": [
+            "Interromper é diferente de devolver: há risco, então o caso (ou o agente inteiro, no botão de desligar) sai da operação normal até alguém entender o que houve.",
+            "O roteiro cabe em quatro linhas: parar, conter (confirmar por canal conhecido, desfazer o que der), registrar o incidente e procurar casos parecidos. Depois, a causa vira caso de teste."
+          ],
+          "exemplo": {
+            "rot": "Caso do hotel",
+            "texto": "Parar o pedido. Ligar para o comprador pelo telefone do cadastro. Registrar o incidente. Varrer as conversas da semana atrás de texto parecido."
+          }
+        },
+        {
+          "titulo": "Meça a carga da supervisão",
+          "sub": "espera e minutos por dia",
+          "texto": [
+            "A fila também tem custo: quanto tempo cada caso espera e quantos minutos por dia você gasta decidindo. Se a fila cresce, ou a matriz está apertada demais, ou o agente está chamando sem pacote.",
+            "Esses números entram no custo por resultado da aula 2 e na decisão de promover da aula 5. Supervisão que ninguém mede vira a hora extra invisível do gestor."
+          ],
+          "exemplo": {
+            "rot": "Na Horizonte (números fictícios)",
+            "texto": "Primeira semana: 9 exceções por dia, 40 minutos da Patrícia, espera média de 2 h. Terceira semana: 3 por dia, 15 minutos, espera de 40 minutos."
+          }
+        }
       ]
     },
     {
@@ -126,10 +278,16 @@
       "titulo": "Modelos para copiar",
       "sub": "O pacote que o agente traz, o registro da sua decisão e a rotina de supervisão.",
       "blocos": [
-        {"rot": "Pacote de exceção + decisão", "icone": "arquivo",
-         "conteudo": "PACOTE DE EXCEÇÃO · caso <id> · <data e hora>\nAgente: <nome> · versão: <v> · processo: <...>\nTIPO: [ ] duvidoso (dado)  [ ] fora da política  [ ] crítico\nAÇÃO PENDENTE (conteúdo exato): <o que seria feito, com valores>\nMOTIVO DE ESTAR NA FILA: <regra ou limite que barrou>\nEVIDÊNCIAS: <conversa, cadastro, documento, registro>\nJÁ TENTOU: <o que o agente fez antes de chamar>\nRECOMENDAÇÃO DO AGENTE (dentro dos limites dele): <...>\nPRAZO PARA DECIDIR: <...> · DONO: <nome>\n\nDECISÃO HUMANA\n[ ] APROVAR este conteúdo, válido até <prazo>\n[ ] DEVOLVER: falta <o quê> · para <quem> · até <prazo>\n[ ] INTERROMPER: risco <qual> · contenção <o que foi feito> · avisados <quem>\nJUSTIFICATIVA (regra ou motivo): <...>\nDecidido por: <nome> · <data e hora>\nAPRENDIZADO PROPOSTO: <caso de teste novo / linha na matriz / frase na constituição>"},
-        {"rot": "Rotina de supervisão", "icone": "calendario",
-         "conteudo": "ROTINA DE SUPERVISÃO · <processo> · responsável: <nome> · substituto: <nome>\n\nDIÁRIA (15 min, horário fixo: <hh:mm>)\n[ ] Fila de exceções: tudo com dono e prazo? algo crítico parado?\n[ ] Erros críticos do dia: houve? já virou incidente registrado?\n[ ] Operações interrompidas: alguma esperando decisão?\n[ ] Orçamento: gasto do dia dentro do esperado?\n[ ] Anotar: nº de exceções, minutos gastos, maior espera\n\nSEMANAL (45 min, <dia>)\n1. O resultado melhorou frente à linha de base comparável?\n2. Qualidade, erros críticos e exceções mudaram? Quais causas se repetem?\n3. Quanto trabalho humano foi necessário e onde (minutos de supervisão)?\n4. Qual foi o custo completo, com tentativas e retrabalho?\n5. Que ação precisa de menos autonomia, ou pausa?\n6. Que ação tem evidência para promover (checklist da aula 5)?\n7. Que aprendizado vira caso de teste, linha na matriz ou frase na constituição?\n8. Quem é responsável por cada ação e quando será revisada?\n\nPOR MUDANÇA (modelo, ferramenta, constituição, matriz)\n[ ] Casos de teste rodados antes de entrar\n[ ] Ações afetadas voltam ao amarelo até nova evidência\n[ ] Registro da mudança: o quê, quem aprovou, quando, como reverter"}
+        {
+          "rot": "Pacote de exceção + decisão",
+          "icone": "arquivo",
+          "conteudo": "PACOTE DE EXCEÇÃO · caso <id> · <data e hora>\nAgente: <nome> · versão: <v> · processo: <...>\nTIPO: [ ] duvidoso (dado)  [ ] fora da política  [ ] crítico\nAÇÃO PENDENTE (conteúdo exato): <o que seria feito, com valores>\nMOTIVO DE ESTAR NA FILA: <regra ou limite que barrou>\nEVIDÊNCIAS: <conversa, cadastro, documento, registro>\nJÁ TENTOU: <o que o agente fez antes de chamar>\nRECOMENDAÇÃO DO AGENTE (dentro dos limites dele): <...>\nPRAZO PARA DECIDIR: <...> · DONO: <nome>\n\nDECISÃO HUMANA\n[ ] APROVAR este conteúdo, válido até <prazo>\n[ ] DEVOLVER: falta <o quê> · para <quem> · até <prazo>\n[ ] INTERROMPER: risco <qual> · contenção <o que foi feito> · avisados <quem>\nJUSTIFICATIVA (regra ou motivo): <...>\nDecidido por: <nome> · <data e hora>\nAPRENDIZADO PROPOSTO: <caso de teste novo / linha na matriz / frase na constituição>"
+        },
+        {
+          "rot": "Rotina de supervisão",
+          "icone": "calendario",
+          "conteudo": "ROTINA DE SUPERVISÃO · <processo> · responsável: <nome> · substituto: <nome>\n\nDIÁRIA (15 min, horário fixo: <hh:mm>)\n[ ] Fila de exceções: tudo com dono e prazo? algo crítico parado?\n[ ] Erros críticos do dia: houve? já virou incidente registrado?\n[ ] Operações interrompidas: alguma esperando decisão?\n[ ] Orçamento: gasto do dia dentro do esperado?\n[ ] Anotar: nº de exceções, minutos gastos, maior espera\n\nSEMANAL (45 min, <dia>)\n1. O resultado melhorou frente à linha de base comparável?\n2. Qualidade, erros críticos e exceções mudaram? Quais causas se repetem?\n3. Quanto trabalho humano foi necessário e onde (minutos de supervisão)?\n4. Qual foi o custo completo, com tentativas e retrabalho?\n5. Que ação precisa de menos autonomia, ou pausa?\n6. Que ação tem evidência para promover (checklist da aula 5)?\n7. Que aprendizado vira caso de teste, linha na matriz ou frase na constituição?\n8. Quem é responsável por cada ação e quando será revisada?\n\nPOR MUDANÇA (modelo, ferramenta, constituição, matriz)\n[ ] Casos de teste rodados antes de entrar\n[ ] Ações afetadas voltam ao amarelo até nova evidência\n[ ] Registro da mudança: o quê, quem aprovou, quando, como reverter"
+        }
       ]
     },
     {
@@ -137,16 +295,28 @@
       "titulo": "Prática",
       "sub": "Treine na fila da Patrícia; depois monte a sua rotina e meça uma semana.",
       "exercicios": [
-        {"id": "e1", "titulo": "1 · A fila simulada com placar máximo", "min": "10 min",
-         "texto": "Faça a simulação desta aula. Se não chegar ao placar máximo, leia os comentários, recomece e tente de novo.",
-         "pronto": "você terminou a simulação com o placar máximo e consegue dizer, para cada um dos três casos, qual verbo usou e por quê."},
-        {"id": "e2", "titulo": "2 · Três decisões justificadas", "min": "20 min",
-         "texto": "Preencha um pacote de exceção com a decisão para cada caso da simulação: o pedido do hotel com a ordem escondida, o desconto de 15% do Seu Antônio e o cliente sem CNPJ. Na justificativa, cite a regra da matriz ou da constituição que decidiu.",
-         "pronto": "você tem três pacotes, cada um com um verbo diferente (interromper, aprovar com motivo, devolver), a regra citada, o próximo passo com prazo e um aprendizado proposto."},
-        {"id": "e3", "titulo": "3 · A sua rotina, medida", "min": "15 min + 1 semana",
-         "dias": 7,
-         "texto": "Copie a rotina de supervisão e adapte ao seu processo: horário fixo, substituto e os itens que fazem sentido. Rode a rotina diária por uma semana anotando número de exceções, minutos gastos e maior espera. Feche a semana com as 8 perguntas.",
-         "pronto": "a rotina está escrita com responsável e substituto, há 5 dias anotados com exceções, minutos e espera, e a revisão semanal respondeu às 8 perguntas com pelo menos uma decisão."}
+        {
+          "id": "e1",
+          "titulo": "1 · A fila simulada com placar máximo",
+          "min": "10 min",
+          "texto": "Faça a simulação desta aula. Se não chegar ao placar máximo, leia os comentários, recomece e tente de novo.",
+          "pronto": "você terminou a simulação com o placar máximo e consegue dizer, para cada um dos três casos, qual verbo usou e por quê."
+        },
+        {
+          "id": "e2",
+          "titulo": "2 · Três decisões justificadas",
+          "min": "20 min",
+          "texto": "Preencha um pacote de exceção com a decisão para cada caso da simulação: o pedido do hotel com a ordem escondida, o desconto de 15% do Seu Antônio e o cliente sem CNPJ. Na justificativa, cite a regra da matriz ou da constituição que decidiu.",
+          "pronto": "você tem três pacotes, cada um com um verbo diferente (interromper, aprovar com motivo, devolver), a regra citada, o próximo passo com prazo e um aprendizado proposto."
+        },
+        {
+          "id": "e3",
+          "titulo": "3 · A sua rotina, medida",
+          "min": "15 min + 1 semana",
+          "dias": 7,
+          "texto": "Copie a rotina de supervisão e adapte ao seu processo: horário fixo, substituto e os itens que fazem sentido. Rode a rotina diária por uma semana anotando número de exceções, minutos gastos e maior espera. Feche a semana com as 8 perguntas.",
+          "pronto": "a rotina está escrita com responsável e substituto, há 5 dias anotados com exceções, minutos e espera, e a revisão semanal respondeu às 8 perguntas com pelo menos uma decisão."
+        }
       ]
     },
     {
@@ -154,45 +324,104 @@
       "titulo": "Teste rápido",
       "sub": "5 perguntas. A explicação aparece depois da sua tentativa.",
       "perguntas": [
-        {"p": "Qual a diferença entre devolver e interromper?",
-         "opcoes": ["Nenhuma: os dois param o pedido", "Devolver é quando falta algo (volta com o que falta e prazo); interromper é quando há risco (sai da operação normal até entender)", "Devolver é para clientes novos; interromper, para antigos"],
-         "certa": 1, "ref": "diagrama",
-         "explica": "São decisões distintas e deixam registros distintos. O cliente sem CNPJ é devolução; o pedido com ordem escondida é interrupção. Misturar os dois faz o incidente passar como pendência comum."},
-        {"p": "A Hora pergunta só \"aprova o pedido 4471?\". O que você faz?",
-         "opcoes": ["Abre a conversa inteira e investiga", "Devolve pedindo o pacote: conteúdo exato, motivo, evidências e recomendação", "Aprova, porque ela costuma acertar"],
-         "certa": 1, "ref": "passos",
-         "explica": "Sem pacote, quem investiga é você, todo dia. Devolver o pedido incompleto ensina o padrão; em poucas semanas os pacotes chegam inteiros."},
-        {"p": "Seu Antônio pede 15%; a alçada da Hora é 5% e a sua, 10%. Qual decisão é a melhor?",
-         "opcoes": ["Dar os 15% para não perder o cliente", "Oferecer até 10% dentro da sua alçada, com motivo registrado, e prever o que fazer se ele não aceitar", "Mandar sempre para o dono"],
-         "certa": 1, "ref": "simconversa",
-         "explica": "Dentro da sua alçada, decidir é seu trabalho, com motivo escrito. Dar 15% passa da sua alçada e cria precedente; subir ao dono o que é seu entope a fila dele."},
-        {"p": "Por que ordenar a fila por risco e prazo, e não por ordem de chegada?",
-         "opcoes": ["Porque é mais rápido", "Porque a exceção mais perigosa não pode esperar atrás da mais simples", "Porque o agente prefere assim"],
-         "certa": 1, "ref": "diagrama",
-         "explica": "Um pedido com tentativa de manipulação e R$ 28 mil em jogo pede decisão antes de um cadastro faltando. Na ordem de chegada, a prioridade fica por conta da sorte."},
-        {"p": "A fila da Patrícia passou de 3 para 12 exceções por dia. O que isso pode indicar?",
-         "opcoes": ["Que o agente piorou e deve ser desligado", "Que a matriz está apertada demais, que o agente chama sem pacote, ou que algo mudou no processo: é hora de olhar as causas", "Nada: fila grande é sinal de segurança"],
-         "certa": 1, "ref": "passos",
-         "explica": "A carga da supervisão é um indicador. Antes de desligar ou de aprovar em bloco, olhe as causas que se repetem na revisão semanal; muitas vezes a correção é uma linha na matriz ou na constituição."}
+        {
+          "p": "Qual a diferença entre devolver e interromper?",
+          "opcoes": [
+            "Nenhuma: os dois param o pedido e esperam a gerente",
+            "Devolver é para cliente novo; interromper é para cliente antigo",
+            "Devolver: falta algo, volta com prazo. Interromper: há risco"
+          ],
+          "certa": 2,
+          "ref": "diagrama",
+          "explica": "São decisões distintas e deixam registros distintos. O cliente sem CNPJ é devolução; o pedido com ordem escondida é interrupção. Misturar os dois faz o incidente passar como pendência comum."
+        },
+        {
+          "p": "A Hora pergunta só \"aprova o pedido 4471?\". O que você faz?",
+          "opcoes": [
+            "Devolve pedindo o pacote: conteúdo, motivo, evidência",
+            "Abre a conversa inteira e investiga o caso sozinha",
+            "Aprova, porque a Hora costuma acertar esses pedidos"
+          ],
+          "certa": 0,
+          "ref": "passos",
+          "explica": "Sem pacote, quem investiga é você, todo dia. Devolver o pedido incompleto ensina o padrão; em poucas semanas os pacotes chegam inteiros."
+        },
+        {
+          "p": "Seu Antônio pede 15%; a alçada da Hora é 5% e a sua, 10%. Qual decisão é a melhor?",
+          "opcoes": [
+            "Dar os 15%, para não perder um cliente desde 2019",
+            "Oferecer até 10%, com motivo registrado e saída prevista",
+            "Mandar para o Carlos, que é quem sempre decide sobre desconto"
+          ],
+          "certa": 1,
+          "ref": "simconversa",
+          "explica": "Dentro da sua alçada, decidir é seu trabalho, com motivo escrito. Dar 15% passa da sua alçada e cria precedente; subir ao dono o que é seu entope a fila dele."
+        },
+        {
+          "p": "Por que ordenar a fila por risco e prazo, e não por ordem de chegada?",
+          "opcoes": [
+            "Porque assim a fila anda mais rápido no fim do dia",
+            "Porque o agente organiza melhor a fila desse jeito",
+            "Porque a exceção perigosa não pode esperar a simples"
+          ],
+          "certa": 2,
+          "ref": "diagrama",
+          "explica": "Um pedido com tentativa de manipulação e R$ 28 mil em jogo pede decisão antes de um cadastro faltando. Na ordem de chegada, a prioridade fica por conta da sorte."
+        },
+        {
+          "p": "A fila da Patrícia passou de 3 para 12 exceções por dia. O que isso pode indicar?",
+          "opcoes": [
+            "Pode ser matriz apertada, pacote faltando ou processo mudado",
+            "Que o agente piorou e precisa ser desligado hoje, até a TI revisar",
+            "Nada: fila grande só mostra que a segurança funciona"
+          ],
+          "certa": 0,
+          "ref": "passos",
+          "explica": "A carga da supervisão é um indicador. Antes de desligar ou de aprovar em bloco, olhe as causas que se repetem na revisão semanal; muitas vezes a correção é uma linha na matriz ou na constituição."
+        }
       ]
     },
     {
       "tipo": "resumo",
       "titulo": "Resumo",
       "itens": [
-        {"t": "Três tipos de caso", "texto": "Normal segue a matriz; duvidoso vai para a fila; crítico vai na frente e pode parar tudo."},
-        {"t": "Pacote antes da decisão", "texto": "Conteúdo exato, motivo, evidências e recomendação. Sem pacote, devolve."},
-        {"t": "Três verbos", "texto": "Aprovar com motivo, devolver com prazo, interromper com contenção e registro."},
-        {"t": "Rotina medida", "texto": "Diária curta, semanal com 8 perguntas, e a carga da supervisão como número."}
+        {
+          "t": "Três tipos de caso",
+          "texto": "Normal segue a matriz; duvidoso vai para a fila; crítico vai na frente e pode parar tudo."
+        },
+        {
+          "t": "Pacote antes da decisão",
+          "texto": "Conteúdo exato, motivo, evidências e recomendação. Sem pacote, devolve."
+        },
+        {
+          "t": "Três verbos",
+          "texto": "Aprovar com motivo, devolver com prazo, interromper com contenção e registro."
+        },
+        {
+          "t": "Rotina medida",
+          "texto": "Diária curta, semanal com 8 perguntas, e a carga da supervisão como número."
+        }
       ]
     },
     {
       "tipo": "links",
       "titulo": "Para ir além",
       "links": [
-        {"t": "Laboratório Horizonte: as conversas c-201 a c-203 (empresa fictícia de estudo)", "href": "https://inematds.github.io/prof2030-lab/pecas/agente-whatsapp/", "icone": "chat"},
-        {"t": "Gestoria: simular execução, revisar pendência e registrar decisão", "href": "https://inematds.github.io/gestoria/", "icone": "camadas"},
-        {"t": "Área Gestão de IA: os indicadores de um agente", "href": "https://eventos.inema.pro/gestao-ia/", "icone": "grafico"}
+        {
+          "t": "Laboratório Horizonte: as conversas c-201 a c-203 (empresa fictícia de estudo)",
+          "href": "https://inematds.github.io/prof2030-lab/pecas/agente-whatsapp/",
+          "icone": "chat"
+        },
+        {
+          "t": "Gestoria: simular execução, revisar pendência e registrar decisão",
+          "href": "https://inematds.github.io/gestoria/",
+          "icone": "camadas"
+        },
+        {
+          "t": "Área Gestão de IA: os indicadores de um agente",
+          "href": "https://eventos.inema.pro/gestao-ia/",
+          "icone": "grafico"
+        }
       ]
     }
   ]

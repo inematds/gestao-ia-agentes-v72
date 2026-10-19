@@ -178,31 +178,31 @@
         {
           "p": "Una acción tuvo 100% de aceptados sin corrección en 9 casos. ¿Promover?",
           "opcoes": [
-            "Sí, 100% es el máximo posible",
-            "Todavía no: la muestra es demasiado pequeña para ser evidencia",
-            "Sí, si el agente es el mismo de la semana pasada"
+            "Sí: 100% es el máximo posible, no hay nada más que esperar",
+            "Sí, siempre que el modelo sea el mismo de la semana pasada",
+            "Todavía no: 9 casos son pocos para servir de evidencia"
           ],
-          "certa": 1,
+          "certa": 2,
           "ref": "codigo",
           "explica": "Nueve casos no representan lo que va a aparecer en producción. Mantén en amarillo y suma casos, incluyendo los difíciles. Un porcentaje sin denominador engaña."
         },
         {
           "p": "La acción tuvo 95,4% de aceptados y 1 error crítico detenido en la aprobación. ¿Qué hacer?",
           "opcoes": [
-            "Promover: está por encima del 95%",
-            "Mantener: un error crítico en el período impide la promoción, aunque esté por encima del umbral",
-            "Apagar el agente"
+            "Mantener: un error crítico en el período impide la promoción",
+            "Promover: la tasa quedó por encima del umbral de 95%",
+            "Apagar el agente hasta descubrir la causa del error"
           ],
-          "certa": 1,
+          "certa": 0,
           "ref": "passos",
           "explica": "Un error crítico nunca desaparece dentro del promedio. Solo se detuvo porque la acción estaba en amarillo; en verde, habría pasado a la separación. Se corrige la causa y se mide de nuevo. Apagar es exagerado: el control funcionó."
         },
         {
           "p": "El panel muestra atenciones subiendo de 702 a 901 por semana. ¿Eso justifica darle más autonomía al agente?",
           "opcoes": [
-            "Sí, el volumen prueba que está funcionando",
-            "No: el volumen no muestra aciertos, descuentos ni errores críticos, y no hay un número de antes para comparar",
-            "Sí, si la satisfacción también subió"
+            "Sí: que el volumen suba muestra que el agente funciona",
+            "No: el volumen no muestra aciertos ni errores, y falta el antes",
+            "Sí, siempre que la satisfacción de los clientes también suba en el mismo período"
           ],
           "certa": 1,
           "ref": "passos",
@@ -211,11 +211,11 @@
         {
           "p": "¿Cuándo escribir el criterio de degradación?",
           "opcoes": [
-            "Antes de promover, junto con el checklist de promoción",
-            "Cuando aparezca el primer error",
-            "No hace falta: degradar siempre es obvio"
+            "Cuando aparezca el primer error, con el caso a mano",
+            "Antes de promover la acción, junto con el checklist",
+            "No hace falta: en el momento justo, degradar siempre es obvio"
           ],
-          "certa": 0,
+          "certa": 1,
           "ref": "passos",
           "explica": "Escrito antes, degradar es una rutina acordada. Decidido del susto, se vuelve una discusión sobre culpas, y la tendencia es reducir todo de una vez por el último caso que se recuerda."
         }

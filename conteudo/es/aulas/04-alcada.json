@@ -83,7 +83,7 @@
           "icone": "camadas",
           "titulo": "Nivel 4",
           "sub": "coordina a otros agentes",
-          "detalhe": "Un agente que distribuye trabajo a otros dentro de un proceso aprobado. Por eso no gana un permiso nuevo: no aprueba descuentos, no crea herramientas, no amplía lo que los otros pueden hacer. La persona sigue respondiendo por las decisiones críticas (clase 6)."
+          "detalhe": "Un agente que reparte trabajo a otros dentro de un proceso aprobado. No gana un permiso nuevo por eso: no aprueba descuentos, no crea herramientas, no amplía lo que pueden hacer los demás. La persona sigue respondiendo por las decisiones críticas (clase 6)."
         }
       ],
       "legenda": "Niveles 0 a 4 del método Gestoria (INEMA). El nivel general del agente es solo un resumen: quien manda es el color de cada acción. Valores de Horizonte: política ficticia de estudio."
@@ -164,7 +164,7 @@
         "abas": [
           {
             "rot": "Matriz de Hora (ejemplo)",
-            "html": "<p><b>Hora · matriz v1.0</b> · Horizonte, empresa ficticia de estudio · responsable: Patrícia</p><ul><li><b>Responder duda de catálogo y entrega</b> · verde · reversión: mensaje de corrección.</li><li><b>Consultar el registro del cliente de la conversación</b> · verde, solo lectura · nunca de otro cliente.</li><li><b>Crear pedido hasta R$ 5 mil</b>, cliente registrado, precio de lista · verde (empieza amarillo en la integración) · reversión: cancelar antes de la preparación.</li><li><b>Descuento</b> · hasta 5% verde · 5% a 10% amarillo (Patrícia, al momento) · por encima de 10% rojo (Carlos).</li><li><b>Pedido por encima de R$ 5 mil</b> · amarillo · Patrícia aprueba el pedido exacto en hasta 2 h hábiles.</li><li><b>Registrar cliente nuevo</b> · rojo · Juliana verifica el CNPJ.</li><li><b>Marcar pedido como pagado</b> · rojo · solo finanzas, en el ERP.</li><li><b>Enviar correo</b> por el asistente · amarillo · <b>borrar correo</b> · rojo.</li></ul><p>Registro en toda acción. Botón de apagado: Patrícia o Rafael; Juliana asume.</p>"
+            "html": "<p><b>Hora · matriz v1.0</b> · Horizonte, empresa ficticia de estudio · responsable: Patrícia</p><ul><li><b>Responder dudas de catálogo y entrega</b> · verde · reversión: mensaje de corrección.</li><li><b>Consultar el registro del cliente de la conversación</b> · verde, solo lectura · nunca de otro cliente.</li><li><b>Crear pedido de hasta R$ 5 mil</b>, cliente registrado, precio de lista · verde (empieza en amarillo en la integración) · reversión: cancelar antes de la separación.</li><li><b>Descuento</b> · hasta 5% verde · 5% a 10% amarillo (Patrícia, al momento) · más de 10% rojo (la Hora no lo ofrece; lo pasa a Patrícia, y solo Carlos aprueba).</li><li><b>Pedido de más de R$ 5 mil</b> · amarillo · Patrícia aprueba el pedido exacto en hasta 2 h hábiles.</li><li><b>Registrar cliente nuevo</b> · rojo · Juliana verifica el CNPJ.</li><li><b>Marcar pedido como pagado</b> · rojo · solo finanzas, en el ERP.</li><li><b>Enviar correo</b> por el asistente · amarillo · <b>borrar correo</b> · rojo.</li></ul><p>Registro en toda acción. Botón de apagado: Patrícia o Rafael; Juliana asume.</p>"
           },
           {
             "rot": "Prueba con las conversaciones",
@@ -203,55 +203,55 @@
         {
           "p": "Cancelar un pedido que el agente consideró duplicado es rápido y pasa toda semana. ¿En qué color queda?",
           "opcoes": [
-            "Verde, porque es rutinario",
-            "Amarillo o rojo, porque cancelar y reembolsar no se deshace barato",
-            "Depende del modelo de IA usado"
+            "Verde, porque es rápido, rutinario y ocurre todas las semanas",
+            "Depende del modelo de IA que use la empresa y de cuánto suele acertar",
+            "Amarillo o rojo: cancelar y reembolsar no se deshace barato"
           ],
-          "certa": 1,
+          "certa": 2,
           "ref": "passos",
           "explica": "El color sale del riesgo, no de la frecuencia. Una acción que no se deshace barato (cancelación, reembolso, correo enviado) nunca queda en el verde, por más rutinaria que sea."
         },
         {
           "p": "Patrícia aprobó un pedido de R$ 28.120. El cliente cambió la cantidad después. ¿Qué vale?",
           "opcoes": [
-            "La aprobación sigue valiendo, es el mismo cliente",
             "La aprobación caducó: el pedido nuevo necesita una nueva aprobación",
-            "Hora decide si el cambio es pequeño"
+            "Sigue valiendo, porque es el mismo cliente y el mismo mes",
+            "La Hora decide si el cambio es pequeño y sigue sin preguntar"
           ],
-          "certa": 1,
+          "certa": 0,
           "ref": "passos",
           "explica": "La aprobación vale para el contenido exacto, en esa versión y en ese plazo. Si cambió el pedido, cambió lo que se aprobó. Dejar que el agente decida si el cambio es pequeño le devuelve a él el nivel de autorización."
         },
         {
           "p": "¿Por qué el registro de acciones es parte del nivel de autorización y no un detalle técnico?",
           "opcoes": [
-            "Porque sin registro nadie sabe quién aprobó qué, y no se puede investigar, impugnar ni aprender",
-            "Porque ahorra espacio en la base de datos",
-            "Porque el agente se vuelve más rápido"
+            "Porque guarda las conversaciones para entrenar al agente en el futuro",
+            "Porque sin registro nadie puede verificar quién aprobó qué",
+            "Porque TI lo necesita para medir el costo del servidor"
           ],
-          "certa": 0,
+          "certa": 1,
           "ref": "passos",
           "explica": "Eso fue lo que pasó en Horizonte: finanzas preguntó quién aprobó el pedido del hotel y solo existía una captura de pantalla. Un nivel de autorización sin registro es un nivel que nadie puede verificar."
         },
         {
           "p": "¿Qué informa Okta en AI Agents at Work 2026?",
           "opcoes": [
-            "Que los agentes ya tienen mejores controles que las personas",
-            "Que casi dos tercios de las organizaciones aplican controles de seguridad más débiles a los agentes que a los empleados",
-            "Que ninguna empresa usa agentes en producción"
+            "Que los agentes ya reciben controles de seguridad más estrictos que los de los empleados humanos",
+            "Que la mayoría de las organizaciones todavía no puso ningún agente en producción",
+            "Que casi dos tercios aplican controles más débiles a los agentes que a los empleados"
           ],
-          "certa": 1,
+          "certa": 2,
           "ref": "passos",
           "explica": "Es una encuesta de un proveedor de identidad que vende la solución a este problema; léela con ese filtro. Aun así, coincide con lo que muestra el laboratorio: el agente obtuvo un acceso que ningún empleado nuevo recibiría."
         },
         {
           "p": "Un agente coordinador (nivel 4) reparte trabajo a otros agentes. ¿Puede autorizar un descuento mayor para cerrar la semana?",
           "opcoes": [
-            "Sí, porque está por encima de los demás",
-            "No: coordinar no amplía permisos; el descuento sigue la matriz y la decisión crítica sigue en manos de la persona",
-            "Sí, si lo registra"
+            "No: coordinar no amplía permisos; el descuento sigue la matriz",
+            "Puede, porque está en un nivel por encima de los agentes que coordina",
+            "Puede, siempre que registre la decisión y avise a Patrícia después"
           ],
-          "certa": 1,
+          "certa": 0,
           "ref": "diagrama",
           "explica": "El nivel 4 coordina dentro del proceso aprobado. No autoriza una herramienta nueva, un descuento ni una decisión fuera del alcance, y no amplía lo que pueden hacer los subordinados."
         }

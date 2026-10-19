@@ -188,31 +188,31 @@
         {
           "p": "Patrícia escribió: \"Hora, encárgate de los pedidos de WhatsApp\". ¿Qué falta, antes que nada?",
           "opcoes": [
-            "Un tono de voz más animado",
-            "Objetivo, contexto, herramientas, plazo y evidencia de conclusión",
-            "Un modelo de IA más potente"
+            "Un tono de voz más animado y cercano al estilo del cliente",
+            "Un modelo de IA más potente, que entiende mejor lo que pide el cliente",
+            "Objetivo, contexto, herramientas, plazo y evidencia de conclusión"
           ],
-          "certa": 1,
+          "certa": 2,
           "ref": "diagrama",
           "explica": "La frase no dice el resultado, las fuentes, qué puede tocar, el plazo ni cómo probar que terminó. El agente rellena cada hueco por su cuenta. Un modelo más potente rellena los huecos con más confianza, no con más acierto."
         },
         {
           "p": "¿Cuál de estas actividades de Horizonte pasa los tres filtros para delegarse ahora?",
           "opcoes": [
-            "Negociar el contrato anual del hotel",
             "Registrar pedidos de reposición de clientes registrados",
+            "Negociar el contrato anual de suministro del hotel",
             "Decidir qué cliente merece un plazo de pago mayor"
           ],
-          "certa": 1,
+          "certa": 0,
           "ref": "passos",
           "explica": "La reposición es repetitiva, verificable (el pedido coincide con la tabla y el registro) y ocurre en un sistema. El contrato anual es poco frecuente y depende de la relación; el plazo de pago es una decisión de crédito, sin criterio escrito."
         },
         {
           "p": "El agente dice \"terminé los pedidos de hoy\". ¿Eso es evidencia de conclusión?",
           "opcoes": [
-            "Sí, si suele acertar",
-            "No: la evidencia es el registro que se verifica, como el número del pedido y la conversación de origen",
-            "Sí, siempre que explique cómo lo hizo"
+            "Sí, si suele acertar y nunca dio problemas antes",
+            "No: la evidencia es el registro que se puede verificar, como el nº del pedido",
+            "Sí, siempre que explique paso a paso cómo hizo cada uno de los pedidos"
           ],
           "certa": 1,
           "ref": "diagrama",
@@ -221,11 +221,11 @@
         {
           "p": "El agente costó R$ 400 en el mes (sumando el tiempo de revisión) y entregó 500 pedidos, de los cuales 320 fueron aceptados sin corrección. ¿Cómo se calcula el costo por resultado aceptado?",
           "opcoes": [
-            "400 ÷ 500 = R$ 0,80 por pedido",
-            "400 ÷ 320 = R$ 1,25 por pedido aceptado",
-            "No se puede calcular sin saber el precio del modelo"
+            "400 ÷ 500 = R$ 0,80 por pedido entregado",
+            "No se puede calcular sin el precio del modelo",
+            "400 ÷ 320 = R$ 1,25 por pedido aceptado"
           ],
-          "certa": 1,
+          "certa": 2,
           "ref": "passos",
           "explica": "Solo cuenta lo que sirvió: 400 ÷ 320. Los 180 corregidos costaron y no entregaron. El número es una estimación para seguir la tendencia, no una prueba de ahorro. Los valores del ejemplo son ficticios."
         }

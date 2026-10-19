@@ -155,7 +155,7 @@
           "sub": "interchangeable examples",
           "texto": [
             "OpenAI: Workspace Agents, which replace Custom GPTs, are now billed per token (07/06/2026); ChatGPT Work delivers documents, spreadsheets and slides (07/09/2026). The AgentKit Agent Builder will be shut down on 11/30/2026.",
-            "Anthropic: Managed Agents and, in Claude Code, background computer use (09/2026). Microsoft: Agent 365, announced at Build (06/2026). Sources: each vendor's release notes and announcements."
+            "Anthropic: Managed Agents (agents that work on their own, for hours); and, in Claude Code, background computer use, in beta (09/2026). Microsoft: Agent 365, announced at Build (06/2026). Sources: each vendor's release notes and announcements."
           ],
           "exemplo": {
             "rot": "For the dossier",
@@ -178,8 +178,8 @@
           "titulo": "Brazil and the world",
           "sub": "compare the definition before the number",
           "texto": [
-            "GFT, Tech Trends 2026 LATAM, with data from BCG: 18% of Brazilian companies integrate agents, versus 13% worldwide. ABES and IDC (06/15/2026, 103 executives): 40% already invest in agents and 33% plan to within 12 months. Gartner (2026): only 17% of companies have agents in use.",
-            "Deloitte (09/17/2026): 27% of Brazilian companies have mature AI governance. Okta (2026): nearly two-thirds apply weaker controls to agents than to people."
+            "GFT, Tech Trends 2026 LATAM, with BCG data (survey): 18% of Brazilian companies integrate agents, versus 13% worldwide. ABES and IDC (06/15/2026, survey of 103 executives): 40% already invest in agents and 33% plan to within 12 months. Gartner (2026, market analysis): only 17% of companies have agents in use.",
+            "Deloitte (09/17/2026, survey): 27% of Brazilian companies have mature AI governance. Okta (2026, vendor survey): almost two-thirds apply weaker controls to agents than to people."
           ],
           "exemplo": {
             "rot": "Why the numbers don't match",
@@ -342,31 +342,31 @@
         {
           "p": "Hora's dossier scored 92 points, but the action \"create order with no value limit\" is in green. Result?",
           "opcoes": [
-            "Approved: 92 is well above 75",
-            "Rejected: a numeric cap is missing on an action that involves money, and that is required",
-            "Approved with reservations"
+            "Approved: 92 points is well above the minimum of 75",
+            "Approved with a caveat, to be fixed at the review",
+            "Rejected: the cap in numbers is missing, and it is mandatory"
           ],
-          "certa": 1,
+          "certa": 2,
           "ref": "codigo",
           "explica": "The required items exist precisely so that a high score doesn't hide major damage. One missing means a fail; the dossier goes back to the matrix, not back to zero."
         },
         {
           "p": "Who should sign off on hiring Hora?",
           "opcoes": [
-            "Patrícia, who built the dossier and knows everything",
-            "Carlos, after Rafael confirms the locks: whoever built it doesn't approve",
-            "The agent itself, after reading the dossier"
+            "Carlos, after Rafael confirms the safeguards",
+            "Patrícia, who built the dossier and knows each piece of it",
+            "Rafael, who configured the agent and the safeguards"
           ],
-          "certa": 1,
+          "certa": 0,
           "ref": "passos",
-          "explica": "Separation of duties: whoever enters it doesn't approve it. Patrícia builds it and answers for the result; approval belongs to someone else, with technical confirmation that the locks exist outside the text."
+          "explica": "Separation of duties: whoever submits does not approve. Patrícia builds it and answers for the result; approval belongs to someone else, with technical confirmation that the safeguards exist outside the text. Rafael confirms the safeguards, but he is the one who configured the agent: he does not sign either."
         },
         {
           "p": "One report says 40% of companies are investing in agents; another says only 17% have agents in use. What should you do before citing either?",
           "opcoes": [
             "Pick the number that helps your argument",
-            "Compare the definition (investing vs. having in use), the sample and who published it",
-            "Average the two"
+            "Compare the definition, the sample and who published it",
+            "Average the two and cite the result"
           ],
           "certa": 1,
           "ref": "passos",
@@ -375,9 +375,9 @@
         {
           "p": "The vendor of the agent's tool announced it will shut it down. What changes in the dossier?",
           "opcoes": [
-            "Nothing: the dossier is about the agent, not the tool",
-            "Affected actions go back to yellow, the test cases run again on the new tool, and the dossier gets a new version",
-            "Just change the tool name on the cover"
+            "Nothing: the dossier is about the agent, not the tool it uses",
+            "Affected actions go back to yellow and the tests run again",
+            "Just swap the tool name on the dossier cover"
           ],
           "certa": 1,
           "ref": "passos",

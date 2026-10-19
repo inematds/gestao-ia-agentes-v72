@@ -188,31 +188,31 @@
         {
           "p": "Patrícia wrote: \"Hora, take care of the WhatsApp orders\". What is missing, first of all?",
           "opcoes": [
-            "A more upbeat tone of voice",
-            "Goal, context, tools, deadline and proof of completion",
-            "A more powerful AI model"
+            "A livelier tone of voice that is closer to the customer's way of speaking",
+            "A more powerful AI model that better understands what the customer asks for",
+            "Goal, context, tools, deadline and proof of completion"
           ],
-          "certa": 1,
+          "certa": 2,
           "ref": "diagrama",
           "explica": "The sentence doesn't state the result, the sources, what it may touch, the deadline or how to prove it finished. The agent fills in each gap on its own. A more powerful model fills the gaps with more confidence, not with more accuracy."
         },
         {
           "p": "Which of these Horizonte activities passes the three filters to be delegated now?",
           "opcoes": [
-            "Negotiating the hotel's annual contract",
             "Logging restock orders from registered customers",
+            "Negotiate the hotel's annual supply contract",
             "Deciding which customer deserves a longer payment term"
           ],
-          "certa": 1,
+          "certa": 0,
           "ref": "passos",
           "explica": "Restocking is repetitive, verifiable (the order matches the table and the records) and happens in a system. The annual contract is rare and depends on the relationship; the payment term is a credit decision, with no written criterion."
         },
         {
           "p": "The agent says \"I finished today's orders\". Is that proof of completion?",
           "opcoes": [
-            "Yes, if it is usually right",
-            "No: proof is the record you can check, like the order number and the source conversation",
-            "Yes, as long as it explains how it did it"
+            "Yes, if it usually gets things right and has never caused a problem before",
+            "No: evidence is a record you can check, like the order number",
+            "Yes, as long as it explains step by step how it handled each of the orders"
           ],
           "certa": 1,
           "ref": "diagrama",
@@ -221,11 +221,11 @@
         {
           "p": "The agent cost R$ 400 in the month (adding up review time) and delivered 500 requests, of which 320 were accepted without correction. How do you calculate the cost per accepted result?",
           "opcoes": [
-            "400 ÷ 500 = R$ 0.80 per request",
-            "400 ÷ 320 = R$ 1.25 per accepted request",
-            "You can't calculate it without knowing the model's price"
+            "400 ÷ 500 = R$ 0.80 per delivered order",
+            "You can't calculate it without the model's price",
+            "400 ÷ 320 = R$ 1.25 per accepted request"
           ],
-          "certa": 1,
+          "certa": 2,
           "ref": "passos",
           "explica": "Only what was actually useful counts: 400 ÷ 320. The 180 that needed fixing cost money and delivered nothing. The number is an estimate for tracking the trend, not proof of savings. The values in the example are fictional."
         }

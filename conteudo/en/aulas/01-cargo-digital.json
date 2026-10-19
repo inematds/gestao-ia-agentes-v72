@@ -237,55 +237,55 @@
         {
           "p": "Horizonte's internal survey showed that someone pastes the customer spreadsheet into a free chatbot, on a personal account, to write proposals. What is the first management step?",
           "opcoes": [
-            "Ban all AI in the company",
-            "Ignore it: it's saving time",
-            "Put it on the list of AI tools in use and decide: it gets a role, an owner and rules, or it is turned off"
+            "Add it to the list of AI in use and decide: it gets a role, an owner and rules, or it is turned off",
+            "Ban all AI in the company until IT approves an official list of safe tools",
+            "Leave it as it is, because the person saves time and the customer doesn't even notice"
           ],
-          "certa": 2,
+          "certa": 0,
           "ref": "passos",
           "explica": "This is shadow AI (F12 of the lab): work done by AI with no role, no owner and customer data leaving the company. Banning everything pushes the use further out of sight; ignoring it leaves the risk running. The manager gives it a role and an owner, or turns it off."
         },
         {
           "p": "Which of these is the best mission for Horizonte's sales agent?",
           "opcoes": [
-            "Close as many orders as possible, always with a friendly tone",
-            "Log the restock orders from registered customers that come in through WhatsApp, with list prices, ready for the picking team to check",
-            "Help the company grow using artificial intelligence"
+            "Close as many orders as possible on WhatsApp, always friendly and with a fast reply to the customer",
+            "Serve every customer who writes on WhatsApp and help the company grow using AI",
+            "Record restock orders from registered customers, at list price, ready to be checked"
           ],
-          "certa": 1,
+          "certa": 2,
           "ref": "passos",
           "explica": "A good mission states the process and the result, and already comes with a limit (registered customers, list price). \"As many as possible\" is a wish the agent follows to the letter, with discounts. \"Help grow\" can't be held against anyone."
         },
         {
           "p": "Who should be listed as the owner of Hora's results?",
           "opcoes": [
-            "Rafael, who built the agent and maintains the integration",
-            "The sales team, together",
-            "Patrícia, the sales manager, with Rafael as technical support"
+            "Rafael, who built the agent and keeps the integration running",
+            "Patrícia, the sales manager; Rafael stays on as technical support",
+            "The whole sales team, together, to share the responsibility"
           ],
-          "certa": 2,
+          "certa": 1,
           "ref": "diagrama",
           "explica": "The person who answers for the margin and the customer answers for the result: the sales manager. IT keeps the agent running. \"The team\" is not an owner: when everyone is responsible, no one is."
         },
         {
           "p": "Which of these prohibitions is well written?",
           "opcoes": [
-            "Do not harm the company's margin",
-            "Do not grant discounts above 5%",
-            "Use good judgment on discounts"
+            "Do not grant a discount above 5% without the manager's approval",
+            "Do not hurt the company's margin when negotiating with customers",
+            "Use good judgment on discounts, thinking of the customer and the margin"
           ],
-          "certa": 1,
+          "certa": 0,
           "ref": "diagrama",
           "explica": "A good prohibition has a verb, an object and, when there is a value, a number. That way you can check in a conversation whether it was respected. \"Good judgment\" and \"do not harm\" are intentions: everyone reads them differently, including the agent."
         },
         {
           "p": "How do you know whether an agent's deliverable is well defined?",
           "opcoes": [
-            "Someone else can say whether it was accepted or corrected without redoing the work",
-            "The agent can explain what it did",
-            "The customer was satisfied"
+            "The agent can explain clearly what it did and why",
+            "Another person says whether it was accepted or corrected without redoing the work",
+            "The customer was satisfied and responded well to the survey sent after the order"
           ],
-          "certa": 0,
+          "certa": 1,
           "ref": "diagrama",
           "explica": "A verifiable output is one you check against a criterion, without opinion and without redoing it. The agent's explanation is not evidence, and customer satisfaction (which at Horizonte comes from about 6% of conversations) measures something else."
         }

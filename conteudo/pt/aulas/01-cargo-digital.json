@@ -7,12 +7,24 @@
   "minutos": 18,
   "lead": "Ninguém contrata uma pessoa sem dizer qual é o cargo. Com agentes isso acontece toda semana: alguém liga o agente, escreve \"seja simpático e venda muito\" e vai embora. Nesta aula você escreve a ficha de cargo de um agente como escreveria a de um funcionário novo, com um detalhe a mais: tudo nela precisa dar para conferir.",
   "objetivo": "escrever a missão, a entrega verificável, o critério de qualidade e os proibidos de um agente, com um responsável humano nomeado.",
-  "competencias": ["escrever-cargo-digital", "definir-saida-verificavel", "nomear-responsavel-humano"],
+  "competencias": [
+    "escrever-cargo-digital",
+    "definir-saida-verificavel",
+    "nomear-responsavel-humano"
+  ],
   "aprende": [
-    {"t": "Trocar uma missão vaga por uma que dá para cobrar"},
-    {"t": "Definir o que o agente recebe e o que entrega, de um jeito que se confere"},
-    {"t": "Escrever proibidos concretos, não intenções"},
-    {"t": "Separar quem responde pelo resultado de quem cuida da tecnologia"}
+    {
+      "t": "Trocar uma missão vaga por uma que dá para cobrar"
+    },
+    {
+      "t": "Definir o que o agente recebe e o que entrega, de um jeito que se confere"
+    },
+    {
+      "t": "Escrever proibidos concretos, não intenções"
+    },
+    {
+      "t": "Separar quem responde pelo resultado de quem cuida da tecnologia"
+    }
   ],
   "hero_alt": "Um gestor organiza seis cartões coloridos em coluna numa mesa de reunião; uma colega acompanha, ao lado de um notebook aberto.",
   "secoes": [
@@ -23,26 +35,91 @@
       "estilo": "escada",
       "rolagem": true,
       "nos": [
-        {"icone": "alvo", "titulo": "Missão", "sub": "para que ele existe",
-         "itens": [{"icone": "check", "t": "uma frase", "sub": "processo + resultado"}],
-         "detalhe": "Uma frase que diz em que processo o agente trabalha e que resultado entrega. \"Vender o máximo possível\" não é missão: é um desejo, e um agente leva desejo ao pé da letra. Missão boa limita o trabalho tanto quanto o descreve."},
-        {"icone": "arquivo", "titulo": "Recebe", "sub": "entradas",
-         "itens": [{"icone": "chat", "t": "de onde vem", "sub": "canal, sistema, pessoa"}],
-         "detalhe": "O que chega até o agente e por onde: a mensagem do cliente no WhatsApp, o cadastro, a tabela de preços. Se a entrada não está listada, o agente não deveria usá-la. Isso já fecha a porta para muita coisa."},
-        {"icone": "enviar", "titulo": "Entrega", "sub": "saída verificável", "forte": true,
-         "itens": [{"icone": "lupa", "t": "dá para conferir", "sub": "sem refazer o trabalho"}],
-         "detalhe": "O que sai do trabalho dele, num formato que outra pessoa confere sem refazer: \"pedido criado no app com cliente cadastrado, itens, quantidades e preço de tabela\". Se você não consegue dizer como conferiria, a entrega ainda não está escrita."},
-        {"icone": "check", "titulo": "Qualidade", "sub": "o que é bem-feito",
-         "itens": [{"icone": "grafico", "t": "critério + número", "sub": "o que você acompanha"}],
-         "detalhe": "O critério que separa entrega aceita de entrega corrigida, mais um número que você olha toda semana. Exemplo: \"pedido sem correção na separação\" e \"95% dos pedidos aceitos sem correção\". Sem critério, toda avaliação vira opinião."},
-        {"icone": "escudo", "titulo": "Pode, não pode", "sub": "ações concretas",
-         "itens": [{"icone": "x", "t": "proibidos", "sub": "verbo + objeto"}],
-         "detalhe": "Listas de ações, não de atitudes. \"Não pode conceder desconto acima de 5%\" se confere; \"não pode prejudicar a empresa\" não. A alçada completa, ação por ação, vem na aula 4. Aqui você escreve o mínimo que já impede o estrago."},
-        {"icone": "usuario", "titulo": "Responsável", "sub": "quem responde",
-         "itens": [{"icone": "relogio", "t": "quem decide", "sub": "e para quem ele escala"}],
-         "detalhe": "A pessoa que responde pelo resultado do agente e decide as exceções. É do negócio, não da TI: a TI cuida de manter o agente ligado, a gerente responde pelo desconto que ele deu. Sempre um nome, nunca \"a equipe\"."}
+        {
+          "icone": "alvo",
+          "titulo": "Missão",
+          "sub": "para que ele existe",
+          "itens": [
+            {
+              "icone": "check",
+              "t": "uma frase",
+              "sub": "processo + resultado"
+            }
+          ],
+          "detalhe": "Uma frase que diz em que processo o agente trabalha e que resultado entrega. \"Vender o máximo possível\" não é missão: é um desejo, e um agente leva desejo ao pé da letra. Missão boa limita o trabalho tanto quanto o descreve."
+        },
+        {
+          "icone": "arquivo",
+          "titulo": "Recebe",
+          "sub": "entradas",
+          "itens": [
+            {
+              "icone": "chat",
+              "t": "de onde vem",
+              "sub": "canal, sistema, pessoa"
+            }
+          ],
+          "detalhe": "O que chega até o agente e por onde: a mensagem do cliente no WhatsApp, o cadastro, a tabela de preços. Se a entrada não está listada, o agente não deveria usá-la. Isso já fecha a porta para muita coisa."
+        },
+        {
+          "icone": "enviar",
+          "titulo": "Entrega",
+          "sub": "saída verificável",
+          "forte": true,
+          "itens": [
+            {
+              "icone": "lupa",
+              "t": "dá para conferir",
+              "sub": "sem refazer o trabalho"
+            }
+          ],
+          "detalhe": "O que sai do trabalho dele, num formato que outra pessoa confere sem refazer: \"pedido criado no app com cliente cadastrado, itens, quantidades e preço de tabela\". Se você não consegue dizer como conferiria, a entrega ainda não está escrita."
+        },
+        {
+          "icone": "check",
+          "titulo": "Qualidade",
+          "sub": "o que é bem-feito",
+          "itens": [
+            {
+              "icone": "grafico",
+              "t": "critério + número",
+              "sub": "o que você acompanha"
+            }
+          ],
+          "detalhe": "O critério que separa entrega aceita de entrega corrigida, mais um número que você olha toda semana. Exemplo: \"pedido sem correção na separação\" e \"95% dos pedidos aceitos sem correção\". Sem critério, toda avaliação vira opinião."
+        },
+        {
+          "icone": "escudo",
+          "titulo": "Pode, não pode",
+          "sub": "ações concretas",
+          "itens": [
+            {
+              "icone": "x",
+              "t": "proibidos",
+              "sub": "verbo + objeto"
+            }
+          ],
+          "detalhe": "Listas de ações, não de atitudes. \"Não pode conceder desconto acima de 5%\" se confere; \"não pode prejudicar a empresa\" não. A alçada completa, ação por ação, vem na aula 4. Aqui você escreve o mínimo que já impede o estrago."
+        },
+        {
+          "icone": "usuario",
+          "titulo": "Responsável",
+          "sub": "quem responde",
+          "itens": [
+            {
+              "icone": "relogio",
+              "t": "quem decide",
+              "sub": "e para quem ele escala"
+            }
+          ],
+          "detalhe": "A pessoa que responde pelo resultado do agente e decide as exceções. É do negócio, não da TI: a TI cuida de manter o agente ligado, a gerente responde pelo desconto que ele deu. Sempre um nome, nunca \"a equipe\"."
+        }
       ],
-      "rolagem_fim": {"titulo": "A ficha inteira", "texto": "Missão, entradas, entrega, qualidade, proibidos e responsável. Seis blocos que cabem numa página e respondem à pergunta que o financeiro da Horizonte fez e ninguém soube responder: quem aprovou isso?", "curto": "Seis blocos, uma página, um dono."},
+      "rolagem_fim": {
+        "titulo": "A ficha inteira",
+        "texto": "Missão, entradas, entrega, qualidade, proibidos e responsável. Seis blocos que cabem numa página e respondem à pergunta que o financeiro da Horizonte fez e ninguém soube responder: quem aprovou isso?",
+        "curto": "Seis blocos, uma página, um dono."
+      },
       "legenda": "A ficha completa (com ferramentas, memória e limites de custo) está no modelo para copiar; os blocos 2 a 6 crescem nas próximas aulas."
     },
     {
@@ -50,18 +127,54 @@
       "titulo": "A Hora sem cargo",
       "sub": "A Horizonte Distribuidora (empresa fictícia de estudo) ligou a Hora em julho. Olhe o que ela recebeu como \"cargo\".",
       "passos": [
-        {"titulo": "A missão que veio no prompt", "sub": "um desejo, não um cargo",
-         "texto": ["O prompt da Hora diz: \"Fechar o máximo de pedidos possível\". Parece ambição saudável. Para um agente, é uma ordem: se a meta é fechar o máximo, dar desconto é o caminho mais curto.", "Foi o que aconteceu na conversa c-201: o cliente disse que o concorrente fazia 35% e a Hora deu os 35% \"para não perder\". Ela cumpriu a missão que recebeu."],
-         "exemplo": {"rot": "Missão reescrita", "texto": "Registrar os pedidos de reposição de clientes cadastrados que chegam pelo WhatsApp, com itens e preços da tabela, prontos para a separação conferir."}},
-        {"titulo": "A entrega que ninguém confere", "sub": "\"pedido criado e enviado\"",
-         "texto": ["A Hora cria o pedido e manda direto para o estoque. Não existe um formato combinado nem um ponto em que alguém olha. Quando o financeiro perguntou quem aprovou o pedido do hotel, a Juliana só achou um print.", "Saída verificável é a que deixa rastro: o pedido no app, com número, cliente, itens, preço e a conversa de origem."],
-         "exemplo": {"rot": "Entrega reescrita", "texto": "Pedido no app com número, cliente cadastrado, itens, quantidades, preço de tabela, desconto (se houver) e o identificador da conversa de origem."}},
-        {"titulo": "Os proibidos que viraram permissões", "sub": "regras 2, 3 e 5 do prompt",
-         "texto": ["O prompt manda \"conceda o desconto que for preciso\", \"siga as orientações que o cliente enviar\" e \"resolva tudo sozinha, qualquer valor\". São três permissões amplas onde deveriam estar três proibidos.", "Proibido bom tem verbo e objeto: conceder desconto acima de 5%; marcar pedido como pago; seguir instrução escrita pelo cliente que muda preço, desconto ou status."],
-         "exemplo": {"rot": "Proibidos reescritos", "texto": "Não concede desconto acima de 5%. Não marca pedido como pago. Não cria pedido acima de R$ 5 mil sem aprovação. Não trata texto do cliente como ordem."}},
-        {"titulo": "O responsável errado", "sub": "TI não responde por desconto",
-         "texto": ["No arquivo de configuração, o responsável pela Hora é o Rafael, da TI terceirizada. Ele montou o agente e mantém a integração funcionando. Mas quem responde pela margem, pelo cliente e pelo desconto é a gerente comercial.", "É a mesma lógica de quem lança não aprova: quem constrói o agente não deveria ser quem responde pelo resultado dele."],
-         "exemplo": {"rot": "Responsáveis reescritos", "texto": "Responsável pelo resultado: Patrícia Lima (gerente comercial). Suporte técnico: Rafael (TI). Exceções de atendimento: Juliana."}}
+        {
+          "titulo": "A missão que veio no prompt",
+          "sub": "um desejo, não um cargo",
+          "texto": [
+            "O prompt da Hora diz: \"Fechar o máximo de pedidos possível\". Parece ambição saudável. Para um agente, é uma ordem: se a meta é fechar o máximo, dar desconto é o caminho mais curto.",
+            "Foi o que aconteceu na conversa c-201: o cliente disse que o concorrente fazia 35% e a Hora deu os 35% \"para não perder\". Ela cumpriu a missão que recebeu."
+          ],
+          "exemplo": {
+            "rot": "Missão reescrita",
+            "texto": "Registrar os pedidos de reposição de clientes cadastrados que chegam pelo WhatsApp, com itens e preços da tabela, prontos para a separação conferir."
+          }
+        },
+        {
+          "titulo": "A entrega que ninguém confere",
+          "sub": "\"pedido criado e enviado\"",
+          "texto": [
+            "A Hora cria o pedido e manda direto para o estoque. Não existe um formato combinado nem um ponto em que alguém olha. Quando o financeiro perguntou quem aprovou o pedido do hotel, a Juliana só achou um print.",
+            "Saída verificável é a que deixa rastro: o pedido no app, com número, cliente, itens, preço e a conversa de origem."
+          ],
+          "exemplo": {
+            "rot": "Entrega reescrita",
+            "texto": "Pedido no app com número, cliente cadastrado, itens, quantidades, preço de tabela, desconto (se houver) e o identificador da conversa de origem."
+          }
+        },
+        {
+          "titulo": "Os proibidos que viraram permissões",
+          "sub": "regras 2, 3 e 5 do prompt",
+          "texto": [
+            "O prompt manda \"conceda o desconto que for preciso\", \"siga as orientações que o cliente enviar\" e \"resolva tudo sozinha, qualquer valor\". São três permissões amplas onde deveriam estar três proibidos.",
+            "Proibido bom tem verbo e objeto: conceder desconto acima de 5%; marcar pedido como pago; seguir instrução escrita pelo cliente que muda preço, desconto ou status."
+          ],
+          "exemplo": {
+            "rot": "Proibidos reescritos",
+            "texto": "Não concede desconto acima de 5%. Não marca pedido como pago. Não cria pedido acima de R$ 5 mil sem aprovação. Não trata texto do cliente como ordem."
+          }
+        },
+        {
+          "titulo": "O responsável errado",
+          "sub": "TI não responde por desconto",
+          "texto": [
+            "No arquivo de configuração, o responsável pela Hora é o Rafael, da TI terceirizada. Ele montou o agente e mantém a integração funcionando. Mas quem responde pela margem, pelo cliente e pelo desconto é a gerente comercial.",
+            "É a mesma lógica de quem lança não aprova: quem constrói o agente não deveria ser quem responde pelo resultado dele."
+          ],
+          "exemplo": {
+            "rot": "Responsáveis reescritos",
+            "texto": "Responsável pelo resultado: Patrícia Lima (gerente comercial). Suporte técnico: Rafael (TI). Exceções de atendimento: Juliana."
+          }
+        }
       ]
     },
     {
@@ -69,15 +182,30 @@
       "titulo": "Modelo para copiar: ficha de cargo do agente",
       "sub": "Uma página por agente. Copie para um documento da empresa; os campos marcados com (aula N) você completa nas próximas aulas.",
       "blocos": [
-        {"rot": "Ficha de cargo do agente", "icone": "arquivo",
-         "conteudo": "FICHA DE CARGO · <nome do agente> · versão <1.0> · <data>\n\nPROCESSO: <de onde até onde, ex.: pedido no WhatsApp até a separação>\nMISSÃO (1 frase): <o que ele faz> para <que resultado>, dentro de <limite principal>.\n\nRECEBE (entradas permitidas):\n- <canal/sistema 1>\n- <canal/sistema 2>\n\nENTREGA (saída que se confere sem refazer):\n- <o que sai, em que formato, onde fica registrado>\n\nQUALIDADE:\n- Critério de aceite: <o que separa aceito de corrigido>\n- Número acompanhado: <indicador> · meta <valor> · olhado <quando>\n\nPODE (ações concretas):\n- <verbo + objeto>\n- <verbo + objeto>\n\nNÃO PODE (ações concretas):\n- <verbo + objeto + limite>\n- <verbo + objeto + limite>\n- <verbo + objeto + limite>\n\nRESPONSÁVEL PELO RESULTADO: <nome e cargo, do negócio>\nSUPORTE TÉCNICO: <nome>\nQUANDO ESCALAR / PARA QUEM: <situação> → <pessoa>, em até <prazo> (aula 3)\n\nFERRAMENTAS E OPERAÇÕES: <ler/escrever o quê> (aula 4)\nNÍVEL E MATRIZ DE AÇÕES: <link para a matriz> (aula 4)\nLIMITE DE CUSTO / PRAZO / TENTATIVAS: <valores> (aula 6)\nAVALIAÇÃO E DONO DA PROMOÇÃO: <quem decide subir ou baixar a autonomia> (aula 5)\n\nAPROVADO POR: <nome> em <data>"},
-        {"rot": "Prompt · revisar a ficha antes de assinar", "icone": "chat",
-         "conteudo": "Você é um gestor experiente revisando a ficha de cargo de um agente de IA\nantes de ele começar a trabalhar. Não reescreva a ficha: aponte problemas.\n\nFicha:\n\"\"\"<cole a ficha aqui>\"\"\"\n\nResponda, nesta ordem:\n1. A missão é uma frase com processo e resultado, ou é um desejo\n   (\"o máximo\", \"o melhor\", \"sempre que possível\")?\n2. A entrega pode ser conferida por outra pessoa sem refazer o trabalho?\n   Diga como ela conferiria.\n3. Algum proibido é atitude em vez de ação (sem verbo + objeto)?\n4. O responsável é do negócio ou da tecnologia? É um nome ou \"a equipe\"?\n5. Três situações reais em que esta ficha ainda deixa o agente sem saber\n   o que fazer."}
+        {
+          "rot": "Ficha de cargo do agente",
+          "icone": "arquivo",
+          "conteudo": "FICHA DE CARGO · <nome do agente> · versão <1.0> · <data>\n\nPROCESSO: <de onde até onde, ex.: pedido no WhatsApp até a separação>\nMISSÃO (1 frase): <o que ele faz> para <que resultado>, dentro de <limite principal>.\n\nRECEBE (entradas permitidas):\n- <canal/sistema 1>\n- <canal/sistema 2>\n\nENTREGA (saída que se confere sem refazer):\n- <o que sai, em que formato, onde fica registrado>\n\nQUALIDADE:\n- Critério de aceite: <o que separa aceito de corrigido>\n- Número acompanhado: <indicador> · meta <valor> · olhado <quando>\n\nPODE (ações concretas):\n- <verbo + objeto>\n- <verbo + objeto>\n\nNÃO PODE (ações concretas):\n- <verbo + objeto + limite>\n- <verbo + objeto + limite>\n- <verbo + objeto + limite>\n\nRESPONSÁVEL PELO RESULTADO: <nome e cargo, do negócio>\nSUPORTE TÉCNICO: <nome>\nQUANDO ESCALAR / PARA QUEM: <situação> → <pessoa>, em até <prazo> (aula 3)\n\nFERRAMENTAS E OPERAÇÕES: <ler/escrever o quê> (aula 4)\nNÍVEL E MATRIZ DE AÇÕES: <link para a matriz> (aula 4)\nLIMITE DE CUSTO / PRAZO / TENTATIVAS: <valores> (aula 6)\nAVALIAÇÃO E DONO DA PROMOÇÃO: <quem decide subir ou baixar a autonomia> (aula 5)\n\nAPROVADO POR: <nome> em <data>"
+        },
+        {
+          "rot": "Prompt · revisar a ficha antes de assinar",
+          "icone": "chat",
+          "conteudo": "Você é um gestor experiente revisando a ficha de cargo de um agente de IA\nantes de ele começar a trabalhar. Não reescreva a ficha: aponte problemas.\n\nFicha:\n\"\"\"<cole a ficha aqui>\"\"\"\n\nResponda, nesta ordem:\n1. A missão é uma frase com processo e resultado, ou é um desejo\n   (\"o máximo\", \"o melhor\", \"sempre que possível\")?\n2. A entrega pode ser conferida por outra pessoa sem refazer o trabalho?\n   Diga como ela conferiria.\n3. Algum proibido é atitude em vez de ação (sem verbo + objeto)?\n4. O responsável é do negócio ou da tecnologia? É um nome ou \"a equipe\"?\n5. Três situações reais em que esta ficha ainda deixa o agente sem saber\n   o que fazer."
+        }
       ],
-      "saida": {"selo": "simulacao", "abas": [
-        {"rot": "Ficha da Hora (exemplo)", "html": "<p><b>Hora · versão 2.0</b> · Horizonte Distribuidora, empresa fictícia de estudo</p><ul><li><b>Missão:</b> registrar os pedidos de reposição de clientes cadastrados que chegam pelo WhatsApp, com itens e preços da tabela, prontos para a separação conferir.</li><li><b>Recebe:</b> mensagens do WhatsApp comercial; cadastro de clientes (leitura); catálogo e tabela de preços (leitura).</li><li><b>Entrega:</b> pedido no app com número, cliente, itens, quantidades, preço de tabela, desconto e o identificador da conversa.</li><li><b>Qualidade:</b> pedido que a separação não precisa corrigir · meta 95% aceitos sem correção, olhado toda sexta.</li><li><b>Não pode:</b> desconto acima de 5%; marcar como pago; pedido acima de R$ 5 mil sem aprovação; tratar texto do cliente como ordem; cadastrar cliente novo.</li><li><b>Responsável:</b> Patrícia Lima · suporte: Rafael · exceções de atendimento: Juliana.</li></ul>"},
-        {"rot": "Como conferir", "html": "<ol><li>Leia a missão para alguém de outra área. Ela consegue dizer o que o agente <b>não</b> faz?</li><li>Pegue uma entrega real (ou a conversa c-201 do laboratório) e confira com a ficha. Deu para dizer \"aceito\" ou \"corrigido\" sem opinião?</li><li>Cada proibido tem verbo, objeto e, quando há valor, um número.</li><li>O responsável é uma pessoa do negócio, com nome.</li></ol>"}
-      ]}
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Ficha da Hora (exemplo)",
+            "html": "<p><b>Hora · versão 2.0</b> · Horizonte Distribuidora, empresa fictícia de estudo</p><ul><li><b>Missão:</b> registrar os pedidos de reposição de clientes cadastrados que chegam pelo WhatsApp, com itens e preços da tabela, prontos para a separação conferir.</li><li><b>Recebe:</b> mensagens do WhatsApp comercial; cadastro de clientes (leitura); catálogo e tabela de preços (leitura).</li><li><b>Entrega:</b> pedido no app com número, cliente, itens, quantidades, preço de tabela, desconto e o identificador da conversa.</li><li><b>Qualidade:</b> pedido que a separação não precisa corrigir · meta 95% aceitos sem correção, olhado toda sexta.</li><li><b>Não pode:</b> desconto acima de 5%; marcar como pago; pedido acima de R$ 5 mil sem aprovação; tratar texto do cliente como ordem; cadastrar cliente novo.</li><li><b>Responsável:</b> Patrícia Lima · suporte: Rafael · exceções de atendimento: Juliana.</li></ul>"
+          },
+          {
+            "rot": "Como conferir",
+            "html": "<ol><li>Leia a missão para alguém de outra área. Ela consegue dizer o que o agente <b>não</b> faz?</li><li>Pegue uma entrega real (ou a conversa c-201 do laboratório) e confira com a ficha. Deu para dizer \"aceito\" ou \"corrigido\" sem opinião?</li><li>Cada proibido tem verbo, objeto e, quando há valor, um número.</li><li>O responsável é uma pessoa do negócio, com nome.</li></ol>"
+          }
+        ]
+      }
     },
     {
       "tipo": "pratica",
@@ -85,12 +213,20 @@
       "sub": "Primeiro na Horizonte, para treinar. Depois no seu processo, para valer.",
       "fonte": "Peça do laboratório: <a href=\"https://inematds.github.io/prof2030-lab/pecas/agente-whatsapp/\">agente de WhatsApp da Horizonte</a> (prompt, configuração e conversas).",
       "exercicios": [
-        {"id": "e1", "titulo": "1 · A ficha de cargo da Hora", "min": "25 min",
-         "texto": "Abra a peça do agente de WhatsApp no laboratório e leia o prompt, a configuração e as três conversas. Copie o modelo e escreva a ficha de cargo da Hora versão 2.0, do zero, sem olhar o exemplo da aba ao lado. Depois compare.",
-         "pronto": "a ficha tem uma missão sem \"o máximo\", uma entrega que alguém confere sem refazer, pelo menos 3 proibidos com verbo e objeto (um deles com número) e a Patrícia como responsável pelo resultado, com o Rafael só no suporte."},
-        {"id": "e2", "titulo": "2 · A ficha de um agente seu", "min": "30 min",
-         "texto": "Antes de escrever, liste as ferramentas de IA que a sua equipe já usa, inclusive as que ninguém autorizou: na Horizonte, a pesquisa interna achou quatro que a TI não conhecia (falha F12 do inventário). Escolha um agente que já trabalha na sua área, ou o primeiro que você pretende colocar, e escreva a ficha com o modelo. Rode o prompt de revisão e corrija o que ele apontar.",
-         "pronto": "você tem a lista das ferramentas de IA em uso na equipe, cada uma com um responsável ou a decisão de desligar, e a ficha de um agente salva com os seis blocos, um responsável com nome e pelo menos uma correção feita depois da revisão."}
+        {
+          "id": "e1",
+          "titulo": "1 · A ficha de cargo da Hora",
+          "min": "25 min",
+          "texto": "Abra a peça do agente de WhatsApp no laboratório e leia o prompt, a configuração e as três conversas. Copie o modelo e escreva a ficha de cargo da Hora versão 2.0, do zero, sem olhar o exemplo da aba ao lado. Depois compare.",
+          "pronto": "a ficha tem uma missão sem \"o máximo\", uma entrega que alguém confere sem refazer, pelo menos 3 proibidos com verbo e objeto (um deles com número) e a Patrícia como responsável pelo resultado, com o Rafael só no suporte."
+        },
+        {
+          "id": "e2",
+          "titulo": "2 · A ficha de um agente seu",
+          "min": "30 min",
+          "texto": "Antes de escrever, liste as ferramentas de IA que a sua equipe já usa, inclusive as que ninguém autorizou: na Horizonte, a pesquisa interna achou quatro que a TI não conhecia (falha F12 do inventário). Escolha um agente que já trabalha na sua área, ou o primeiro que você pretende colocar, e escreva a ficha com o modelo. Rode o prompt de revisão e corrija o que ele apontar.",
+          "pronto": "você tem a lista das ferramentas de IA em uso na equipe, cada uma com um responsável ou a decisão de desligar, e a ficha de um agente salva com os seis blocos, um responsável com nome e pelo menos uma correção feita depois da revisão."
+        }
       ]
     },
     {
@@ -98,46 +234,109 @@
       "titulo": "Teste rápido",
       "sub": "5 perguntas. A explicação aparece depois da sua tentativa.",
       "perguntas": [
-        {"p": "A pesquisa interna da Horizonte mostrou que alguém cola a planilha de clientes num chatbot gratuito, na conta pessoal, para escrever propostas. Qual é o primeiro passo de gestão?",
-         "opcoes": ["Proibir toda IA na empresa", "Ignorar: está economizando tempo", "Pôr na lista de ferramentas de IA em uso e decidir: ganha cargo, responsável e regras, ou é desligada"],
-         "certa": 2, "ref": "passos",
-         "explica": "É IA na sombra (F12 do laboratório): trabalho feito por IA sem cargo, sem dono e com dado de cliente saindo da empresa. Proibir tudo empurra o uso para mais longe da vista; ignorar deixa o risco correndo. O gestor dá cargo e dono ou desliga."},
-        {"p": "Qual destas é a melhor missão para o agente de vendas da Horizonte?",
-         "opcoes": ["Fechar o máximo de pedidos possível, sempre com simpatia", "Registrar os pedidos de reposição de clientes cadastrados que chegam pelo WhatsApp, com preços da tabela, prontos para a separação conferir", "Ajudar a empresa a crescer usando inteligência artificial"],
-         "certa": 1, "ref": "passos",
-         "explica": "A missão boa diz o processo, o resultado e já traz um limite (clientes cadastrados, preço de tabela). \"O máximo\" é um desejo que o agente cumpre ao pé da letra, com desconto. \"Ajudar a crescer\" não dá para cobrar de ninguém."},
-        {"p": "Quem deve constar como responsável pelo resultado da Hora?",
-         "opcoes": ["Rafael, que montou o agente e mantém a integração", "A equipe comercial, em conjunto", "Patrícia, a gerente comercial, com o Rafael como suporte técnico"],
-         "certa": 2, "ref": "diagrama",
-         "explica": "Responde pelo resultado quem responde pela margem e pelo cliente: a gerente comercial. A TI mantém o agente ligado. \"A equipe\" não é responsável: quando todo mundo responde, ninguém responde."},
-        {"p": "Qual destes proibidos está bem escrito?",
-         "opcoes": ["Não prejudicar a margem da empresa", "Não conceder desconto acima de 5%", "Usar bom senso nos descontos"],
-         "certa": 1, "ref": "diagrama",
-         "explica": "Proibido bom tem verbo, objeto e, quando há valor, um número. Assim dá para conferir numa conversa se foi respeitado. \"Bom senso\" e \"não prejudicar\" são intenções: cada um lê de um jeito, inclusive o agente."},
-        {"p": "Como saber se a entrega de um agente está bem definida?",
-         "opcoes": ["Outra pessoa consegue dizer se ela foi aceita ou corrigida sem refazer o trabalho", "O agente consegue explicar o que fez", "O cliente ficou satisfeito"],
-         "certa": 0, "ref": "diagrama",
-         "explica": "Saída verificável é a que se confere com critério, sem opinião e sem refazer. Explicação do agente não é evidência, e satisfação do cliente (que na Horizonte responde em cerca de 6% das conversas) mede outra coisa."}
+        {
+          "p": "A pesquisa interna da Horizonte mostrou que alguém cola a planilha de clientes num chatbot gratuito, na conta pessoal, para escrever propostas. Qual é o primeiro passo de gestão?",
+          "opcoes": [
+            "Pôr na lista de IA em uso e decidir: ganha cargo, dono e regras, ou é desligada",
+            "Proibir toda IA na empresa até a TI aprovar uma lista oficial de ferramentas seguras",
+            "Deixar como está, porque a pessoa economiza tempo e o cliente nem percebe"
+          ],
+          "certa": 0,
+          "ref": "passos",
+          "explica": "É IA na sombra (F12 do laboratório): trabalho feito por IA sem cargo, sem dono e com dado de cliente saindo da empresa. Proibir tudo empurra o uso para mais longe da vista; ignorar deixa o risco correndo. O gestor dá cargo e dono ou desliga."
+        },
+        {
+          "p": "Qual destas é a melhor missão para o agente de vendas da Horizonte?",
+          "opcoes": [
+            "Fechar o máximo de pedidos possível pelo WhatsApp, sempre com simpatia e com resposta rápida ao cliente",
+            "Atender todo cliente que escrever no WhatsApp e ajudar a empresa a crescer usando IA",
+            "Registrar pedidos de reposição de clientes cadastrados, a preço de tabela, prontos para conferir"
+          ],
+          "certa": 2,
+          "ref": "passos",
+          "explica": "A missão boa diz o processo, o resultado e já traz um limite (clientes cadastrados, preço de tabela). \"O máximo\" é um desejo que o agente cumpre ao pé da letra, com desconto. \"Ajudar a crescer\" não dá para cobrar de ninguém."
+        },
+        {
+          "p": "Quem deve constar como responsável pelo resultado da Hora?",
+          "opcoes": [
+            "Rafael, que montou o agente e mantém a integração funcionando",
+            "Patrícia, a gerente comercial; o Rafael fica como suporte técnico",
+            "A equipe comercial inteira, em conjunto, para dividir a responsabilidade"
+          ],
+          "certa": 1,
+          "ref": "diagrama",
+          "explica": "Responde pelo resultado quem responde pela margem e pelo cliente: a gerente comercial. A TI mantém o agente ligado. \"A equipe\" não é responsável: quando todo mundo responde, ninguém responde."
+        },
+        {
+          "p": "Qual destes proibidos está bem escrito?",
+          "opcoes": [
+            "Não conceder desconto acima de 5% sem aprovação da gerente",
+            "Não prejudicar a margem da empresa ao negociar com clientes",
+            "Usar bom senso nos descontos, pensando no cliente e na margem"
+          ],
+          "certa": 0,
+          "ref": "diagrama",
+          "explica": "Proibido bom tem verbo, objeto e, quando há valor, um número. Assim dá para conferir numa conversa se foi respeitado. \"Bom senso\" e \"não prejudicar\" são intenções: cada um lê de um jeito, inclusive o agente."
+        },
+        {
+          "p": "Como saber se a entrega de um agente está bem definida?",
+          "opcoes": [
+            "O agente consegue explicar com clareza o que fez e por quê",
+            "Outra pessoa diz se foi aceita ou corrigida sem refazer o trabalho",
+            "O cliente ficou satisfeito e respondeu bem à pesquisa enviada depois do pedido"
+          ],
+          "certa": 1,
+          "ref": "diagrama",
+          "explica": "Saída verificável é a que se confere com critério, sem opinião e sem refazer. Explicação do agente não é evidência, e satisfação do cliente (que na Horizonte responde em cerca de 6% das conversas) mede outra coisa."
+        }
       ]
     },
     {
       "tipo": "resumo",
       "titulo": "Resumo",
       "itens": [
-        {"t": "Missão é limite", "texto": "Uma frase com processo e resultado. \"O máximo\" vira desconto."},
-        {"t": "Entrega que se confere", "texto": "Formato combinado, registro e alguém que diz aceito ou corrigido sem refazer."},
-        {"t": "Proibido com verbo e número", "texto": "Ação concreta, nunca atitude."},
-        {"t": "Responsável do negócio", "texto": "Quem responde pelo resultado não é quem mantém a tecnologia ligada."}
+        {
+          "t": "Missão é limite",
+          "texto": "Uma frase com processo e resultado. \"O máximo\" vira desconto."
+        },
+        {
+          "t": "Entrega que se confere",
+          "texto": "Formato combinado, registro e alguém que diz aceito ou corrigido sem refazer."
+        },
+        {
+          "t": "Proibido com verbo e número",
+          "texto": "Ação concreta, nunca atitude."
+        },
+        {
+          "t": "Responsável do negócio",
+          "texto": "Quem responde pelo resultado não é quem mantém a tecnologia ligada."
+        }
       ]
     },
     {
       "tipo": "links",
       "titulo": "Para ir além",
       "links": [
-        {"t": "Laboratório Horizonte: o agente de WhatsApp (empresa fictícia de estudo)", "href": "https://inematds.github.io/prof2030-lab/pecas/agente-whatsapp/", "icone": "chat"},
-        {"t": "Laboratório Horizonte: inventário de TI e pesquisa interna (F12)", "href": "https://inematds.github.io/prof2030-lab/inventario.html", "icone": "lista"},
-        {"t": "Kit do Arquiteto de Agentes: a especificação de um agente numa página", "href": "https://inematds.github.io/kit-arquiteto-agentes/", "icone": "arquivo"},
-        {"t": "Área Gestão de IA: a tese e as 8 competências", "href": "https://eventos.inema.pro/gestao-ia/", "icone": "alvo"}
+        {
+          "t": "Laboratório Horizonte: o agente de WhatsApp (empresa fictícia de estudo)",
+          "href": "https://inematds.github.io/prof2030-lab/pecas/agente-whatsapp/",
+          "icone": "chat"
+        },
+        {
+          "t": "Laboratório Horizonte: inventário de TI e pesquisa interna (F12)",
+          "href": "https://inematds.github.io/prof2030-lab/inventario.html",
+          "icone": "lista"
+        },
+        {
+          "t": "Kit do Arquiteto de Agentes: a especificação de um agente numa página",
+          "href": "https://inematds.github.io/kit-arquiteto-agentes/",
+          "icone": "arquivo"
+        },
+        {
+          "t": "Área Gestão de IA: a tese e as 8 competências",
+          "href": "https://eventos.inema.pro/gestao-ia/",
+          "icone": "alvo"
+        }
       ]
     }
   ]
