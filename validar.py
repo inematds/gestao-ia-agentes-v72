@@ -68,7 +68,9 @@ for p in aulas:
     if not re.search(r'data-competencias="[^"]+"', h): erros.append(f"{nome}: sem data-competencias")
     texto = re.sub(r"<(pre|script|template)[^>]*>.*?</\1>", "", h, flags=re.S)
     for ruim in ("[Nome", "[Resultado", "TODO", "lorem", "{a}", "undefined"):
-        if ruim in texto: erros.append(f"{nome}: sobra '{ruim}'")
+        # TODO só como palavra inteira: "METODO.md" não é sobra (7.5.5)
+        achou = re.search(r"\bTODO\b", texto) if ruim == "TODO" else ruim in texto
+        if achou: erros.append(f"{nome}: sobra '{ruim}'")
     # placeholder tipo <o gatilho> fora de bloco de código vira tag e some na tela (7.5.2)
     for tag in sorted(set(re.findall(r"<([^\s/!>][^\s/>]*)", texto))):
         if tag.lower() not in TAGS_HTML and "-" not in tag:
@@ -81,6 +83,20 @@ for p in aulas:
     for src in re.findall(r'(?:src|poster)="(\.\./\.\./[^"]+)"', h):
         if not (p.parent / src).resolve().exists(): erros.append(f"{nome}: arquivo local ausente {src}")
 if not (base / "index.html").exists(): erros.append("index.html ausente")
+
+# viés do teste (7.7.9): a certa sempre na mesma posição, ou sempre a mais longa, deixa o aluno acertar sem ler
+qs = []
+for j in sorted((RAIZ / "conteudo" / args.lang / "aulas").glob("*.json")):
+    for s in json.loads(j.read_text()).get("secoes", []):
+        if s.get("tipo") == "quiz": qs += [q for q in s.get("perguntas", []) if q.get("opcoes")]
+if len(qs) >= 8:
+    pos = [q["certa"] for q in qs]
+    topo = max(set(pos), key=pos.count)
+    if pos.count(topo) / len(qs) > 0.5:
+        erros.append(f"teste: a certa é a opção {topo + 1} em {pos.count(topo)} de {len(qs)} perguntas; varie a posição")
+    longa = sum(1 for q in qs if len(q["opcoes"][q["certa"]]) > max(len(o) for i, o in enumerate(q["opcoes"]) if i != q["certa"]))
+    if longa / len(qs) > 0.5:
+        erros.append(f"teste: a certa é a opção mais longa em {longa} de {len(qs)} perguntas; deixe as erradas do mesmo tamanho")
 
 # a capa da página inicial e a foto de cada aula são obrigatórias (o gerador usa sem conferir)
 for img in ["assets/img/hero/inicio.jpg", *[f"assets/img/hero/{p.parent.name}.jpg" for p in aulas]]:
